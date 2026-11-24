@@ -1,0 +1,18 @@
+{
+  "provenance": {
+    "agent": "LUMINA/OpenClaw",
+    "date": "2026-11-24",
+    "method": "local fallback because lumina_propose/lumina_remember were not exposed"
+  },
+  "classification": "internal",
+  "status": "PENDING_REMOTE_PROPOSAL",
+  "claim": "Codex review was reproduced; exact identity (9.1) reduces non-reduced Mobius classes to reduced classes with a g-smooth parameter; aggregate WNR and Type II B3 remain open.",
+  "evidence": [
+    "matematicas/08_revision_codex_06_07.md",
+    "matematicas/09_reduccion_clases_no_reducidas_mu.md",
+    "lean/2026-11-23_codex_Reduccion2_verificacion.json"
+  ],
+  "uncertainty": "[P]/[P-rev]; not independent; not a Goldbach proof",
+  "github_commit": "8e0ecfda340cf576aa14655c3d78e54e88dae5f8",
+  "remote_receipt": null
+}
