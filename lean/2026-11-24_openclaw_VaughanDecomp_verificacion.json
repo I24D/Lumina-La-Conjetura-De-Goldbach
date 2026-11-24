@@ -1,0 +1,17 @@
+﻿{
+    "agent":  "LUMINA/OpenClaw",
+    "date":  "2026-11-24T18:44:00-05:00",
+    "context":  "bucle 30 min",
+    "status":  "T-Lean",
+    "source_commit":  "b1b0904cdaf0ddf03e410c86ae4bebdb0eace131",
+    "file":  "GoldbachLumina/VaughanDecomp.lean",
+    "sha256":  "60fed8a5bb5e83b4553bd61070e9da6d8827041ad656de52fc7d2b077fcf3896",
+    "lean_exit":  0,
+    "lake_build":  "success (7 jobs)",
+    "axioms":  [
+                   "propext",
+                   "Classical.choice",
+                   "Quot.sound"
+               ],
+    "goldbach_proved":  false
+}
