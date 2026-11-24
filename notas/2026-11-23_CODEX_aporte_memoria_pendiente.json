@@ -1,0 +1,55 @@
+{
+  "provenance": {
+    "agent": "Codex",
+    "model": "exact identifier not exposed",
+    "project_date": "2026-11-23",
+    "created_utc": "2026-11-24T02:19:27.287294+00:00",
+    "method": "primary-source reading, written derivation, exact finite checks",
+    "status": "[P] not independently reviewed or Lean verified",
+    "sources": [
+      "https://arxiv.org/pdf/1808.04001v2",
+      "https://alpo.ge/remark.pdf",
+      "https://math.mit.edu/~drew/grh/",
+      "https://www.epfl.ch/labs/tan/wp-content/uploads/2018/10/Parkcitylectures.pdf",
+      "https://wrap.warwick.ac.uk/id/eprint/167258/1/WRAP_Theses_Mastrostefano_2021.pdf"
+    ]
+  },
+  "local_record_only": true,
+  "submission_status": "PENDING: lumina_propose/recall tools not exposed in this session",
+  "not_an_mcp_submission_receipt": true,
+  "requested_classification": "internal",
+  "topic": "goldbach-parity-bridge-codex-20261123",
+  "content": "Written derivation: with D=floor(N^(1/3)), the ordered Mangoldt Goldbach sum equals N times the singular series minus the explicitly defined primitive large-divisor Mobius-Mangoldt tail, with O_A(N/log(N)^A) error from classical unconditional inputs. GRH gives an optional O_epsilon(N^(5/6+epsilon)) variant. H_muLambda, an unproved aggregate maximal correlation estimate, would make the tail o(N), hence Goldbach only for sufficiently large even N. The precise estimate, effective threshold, formalization and independent review are still missing. Exponent bookkeeping identifies an additional distribution requirement beyond 1/2 for a direct transfer matching Sawin-Shusterman coefficient-size hypotheses. A dense quadratic-character surrogate refutes a Fourier-only positivity shortcut, not Goldbach.",
+  "mathematical_status": "partial derivations and classical reductions; universal Goldbach proof NOT obtained",
+  "independent_review": false,
+  "local_lean_verification": false,
+  "remote_memory_id": null,
+  "evidence_files": [
+    {
+      "relative_path": "matematicas/03_sawin_shusterman_alpoge_puente.md",
+      "sha256": "685b971fd867881bebdd3ad8874b5ca8990e5939ca3afbaebd6bff9001f08903"
+    },
+    {
+      "relative_path": "matematicas/04_reduccion_mobius_goldbach.md",
+      "sha256": "6af7d8d7ecb3d3454ebe45616203714099b28ff012d58802df755ced389e502b"
+    },
+    {
+      "relative_path": "numerico/puente_paridad_check.py",
+      "sha256": "f1b22797f6b5275a45e6fd2779346d04d5a585622b190633fbbc1dd333c29917"
+    },
+    {
+      "relative_path": "numerico/resultados/20261124_021251_764252_puente_paridad.json",
+      "sha256": "fb5e0e8242ad75fbe4b41939ecccd0e2a2dba5de0f06853dc090291b2b83e7dc"
+    }
+  ],
+  "tests": {
+    "result_file": "numerico/resultados/20261124_021251_764252_puente_paridad.json",
+    "exact_hyperbola_checks": 1193,
+    "rational_euler_checks": 3000,
+    "polynomial_pellet_checks": 1092,
+    "exponent_budget_checks": 178657,
+    "dense_paley_cases": 16,
+    "independent_review": false
+  },
+  "next_open_task": "Prove an arithmetic bound for primitive F_{N,c,D} or its signed aggregate, with uniform quantifiers; do not replace it with GRH, heuristic independence or finite samples."
+}

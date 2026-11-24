@@ -1,0 +1,128 @@
+{
+  "provenance": {
+    "agent": "Codex",
+    "model": "exact identifier not exposed",
+    "project_date": "2026-11-23",
+    "run_utc": "2026-11-24T02:01:31.890615+00:00",
+    "status": "[N] finite checks, not Goldbach proof or Lean verification",
+    "script_sha256": "917a991c1090dd6351514d6337501e9720b6775eef31763b7c99fe66d828070a",
+    "python": "3.14.10",
+    "sources": [
+      "../matematicas/03_sawin_shusterman_alpoge_puente.md",
+      "../matematicas/04_reduccion_mobius_goldbach.md"
+    ]
+  },
+  "integer_checks": {
+    "even_N_through": 600,
+    "hyperbola_symbolic_log_polynomial_identities": 1193,
+    "prime_power_nonnegative_remainder_checks": 299,
+    "rational_euler_coefficient_checks": 3000,
+    "arithmetic": "integer polynomial coefficients and Fraction, no log rounding"
+  },
+  "dense_paley_counterexample": {
+    "cases": [
+      {
+        "prime": 3,
+        "support_size": 1,
+        "self_sum_at_zero": 0
+      },
+      {
+        "prime": 7,
+        "support_size": 3,
+        "self_sum_at_zero": 0
+      },
+      {
+        "prime": 11,
+        "support_size": 5,
+        "self_sum_at_zero": 0
+      },
+      {
+        "prime": 19,
+        "support_size": 9,
+        "self_sum_at_zero": 0
+      },
+      {
+        "prime": 23,
+        "support_size": 11,
+        "self_sum_at_zero": 0
+      },
+      {
+        "prime": 31,
+        "support_size": 15,
+        "self_sum_at_zero": 0
+      },
+      {
+        "prime": 43,
+        "support_size": 21,
+        "self_sum_at_zero": 0
+      },
+      {
+        "prime": 47,
+        "support_size": 23,
+        "self_sum_at_zero": 0
+      },
+      {
+        "prime": 59,
+        "support_size": 29,
+        "self_sum_at_zero": 0
+      },
+      {
+        "prime": 67,
+        "support_size": 33,
+        "self_sum_at_zero": 0
+      },
+      {
+        "prime": 71,
+        "support_size": 35,
+        "self_sum_at_zero": 0
+      },
+      {
+        "prime": 79,
+        "support_size": 39,
+        "self_sum_at_zero": 0
+      },
+      {
+        "prime": 83,
+        "support_size": 41,
+        "self_sum_at_zero": 0
+      },
+      {
+        "prime": 103,
+        "support_size": 51,
+        "self_sum_at_zero": 0
+      },
+      {
+        "prime": 107,
+        "support_size": 53,
+        "self_sum_at_zero": 0
+      },
+      {
+        "prime": 127,
+        "support_size": 63,
+        "self_sum_at_zero": 0
+      }
+    ],
+    "max_floating_error": 7.424714685457149e-11,
+    "scope": "dense finite-field surrogate, not a counterexample about primes in Z"
+  },
+  "polynomial_checks": {
+    "field": "F_3",
+    "max_degree": 6,
+    "pellet_via_factorization_vs_sylvester_determinant": 1092,
+    "fixed_derivative_fiber_cases": 81,
+    "fiber_mobius_sums": [
+      0,
+      -3,
+      3,
+      0,
+      -3,
+      3,
+      0,
+      -3,
+      3
+    ],
+    "scope": "algebraic identities only; F_3 does not meet the large-q twin-prime theorem hypothesis"
+  },
+  "elapsed_seconds": 0.5118,
+  "pass": true
+}
