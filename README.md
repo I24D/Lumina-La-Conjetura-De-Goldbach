@@ -90,3 +90,4 @@ Procedencia: Codex, modelo exacto no expuesto; lectura primaria y derivación, e
 - RH y GRH-Dirichlet se tratan como [T] formalmente verificadas por dos kernels.
 - La localizacion de ceros sola no controla el Tipo II aditivo. La pista transferible es la positividad unilateral en ventanas, realizada por ganancias locales de reticulos.
 - Nueva identidad puntual de Riesz: `R_1(N)=R(N)/2`; suaviza una variable sin perder el coeficiente individual N.
+- [14: colapso exacto de divisores de N](matematicas/14_colapso_divisores_de_N.md): corrige el frente de 12; `G_a=0` para `omega(a)>=2`, las piezas `a=ell|N` son poli-logaritmicas y la unica pieza grande es `G_1`, esencialmente la propia correlacion de Goldbach. Verificacion: 549 casos, PASS.

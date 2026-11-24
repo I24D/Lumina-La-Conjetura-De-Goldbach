@@ -160,10 +160,9 @@ N son pares para todo `p` impar; por ello `Lambda(N-ap^k)` solo puede ser no
 cero cuando `N-ap^k` es potencia de 2 (el caso p=2 esta excluido por `p no
 divide N`). En consecuencia, todas las piezas `G_a` con `a` par tienen soporte
 ralo y admiten una cota elemental `N^{o(1)}(log N)^3` despues de contar
-divisores y potencias. Las piezas potencialmente grandes vienen de los
-divisores **impares** `a|rad(N)`; entre ellas esta `a=1`.
+divisores y potencias.
 
-Esto reduce el proximo frente a una inclusion-exclusion sobre divisores impares
-de N. No resuelve el termino `a=1`, pero elimina de la parte dificil la mitad
-estructural de los divisores de `rad(N)` y muestra que la factorizacion de N
-debe entrar explicitamente en cualquier desigualdad unilateral.
+**Correccion posterior (14):** el mismo argumento vale para cada primo que
+divide a `a`. En realidad `G_a=0` si `omega(a)>=2`, y si `a=ell` primo
+queda una suma rala de soluciones `N/ell=p^k+ell^(j-1)`. Por tanto la unica
+pieza potencialmente grande es `a=1`; vease `matematicas/14`.

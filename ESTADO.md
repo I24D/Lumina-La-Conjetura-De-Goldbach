@@ -188,3 +188,14 @@ Informe principal: [08_revision_codex_06_07.md](matematicas/08_revision_codex_06
 | [PROGRAMA] | Buscar un complejo Z/2 y una desigualdad de pendientes que controle el supertrazo de Mobius mediante ganancias locales positivas | `13`, seccion 6 |
 
 **Direccion activa:** estudiar el motor de positividad de Alpoge, no solo usar RH como caja negra. La transferencia necesita un puente multiplicativo-aditivo nuevo; Goldbach sigue abierta.
+
+## Colapso de la expansion por divisores de N - 2026-11-24
+
+| Etiqueta | Resultado | Evidencia |
+|---|---|---|
+| [P] | En (12.8), `G_a(N)=0` exactamente si `omega(a)>=2`; para `a=ell|N`, todo termino no nulo satisface `N/ell=p^k+ell^(j-1)` y es `O((log N)^3)` | `matematicas/14_colapso_divisores_de_N.md`, seccion 1 |
+| [P] | La suma completa colapsa a `-G_1` mas correcciones sobre los primos divisores de N; ademas `G_1=R(N)+O(omega(N)log^3 N)` | `14`, ecuaciones (14.1)-(14.2) y corolario |
+| [N] | Ambos lados de (14.1) coinciden en 549 pares; error maximo `1.14e-13`; soporte prohibido exactamente cero | `numerico/resultados/20261124_colapso_divisores_N.json` |
+| [FALSO como frente] | La inclusion-exclusion grande sobre divisores impares propuesta en 12/13 no existe: los grados >=2 se anulan antes. Un puente nuevo debe actuar directamente sobre `G_1` | `14`, seccion 3 |
+
+**Direccion activa corregida:** estudiar kernels aditivos Fejer/Riesz o una formula espectral unilateral que controle el coeficiente individual `G_1(N)`. Goldbach sigue abierta.

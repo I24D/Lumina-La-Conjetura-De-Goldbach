@@ -1,0 +1,11 @@
+{
+  "claim": "Eq. (14.1): only a=1 or a prime divisor of N survives in (12.8)",
+  "limit": 5000,
+  "random_cases": 300,
+  "total_cases": 549,
+  "seed": 20261124,
+  "max_abs_error": 1.1368683772161603e-13,
+  "max_forbidden_support": 0.0,
+  "failures": [],
+  "status": "PASS"
+}
