@@ -169,6 +169,51 @@ plausible con margen amplio; el margen unilateral medido disponible es
   a dos sucesiones con estructura multiplicitiva explícita — un blanco
   mucho más pequeño para un argumento maximal/paridad (familia `08` §4)
   que el "todos los N".
+
+## 5-bis. Resultado del barrido de familias [N]
+
+Ejecutado el mismo día (`numerico/deficit_familias.py`, 15 458 filas
+exactas, 396 s; salida
+`numerico/resultados/20261124_225515_deficit_familias.json`).
+Pregunta pre-registrada en §5: ¿`sup ρ` familiar ≥ 0.4201 (sup global
+denso)? **Veredicto: SÍ — las familias delgadas capturan y superan el
+supremo global.**
+
+| familia | n | sup ρ | @ N | mediana ρ | captura |
+|---|---|---|---|---|---|
+| `2^a` (a≤19) | 18 | 0.3990 | 8192 | +0.044 | no |
+| `2p` (N≤10^5) | 5132 | **0.4816** | 2218 | **+0.231** | sí |
+| `4p` (N≤10^5) | 2761 | **0.4798** | 34324 | **+0.230** | sí |
+| `2p²` (N≤10^5) | 47 | 0.3945 | 32258 | +0.186 | no |
+| ventana (25000,40000] | 7500 | **0.4841** | 32728 | ≈0.001 | sí |
+
+La ventana (25000,40000] es exhaustiva y **post-observacional**
+(añadida tras ver que el sup global denso estaba en 30916=2²·59·131,
+que no pertenece a ninguna familia estricta); se reporta separada
+por higiene del pre-registro.
+
+Observaciones:
+
+1. **Nuevo supremo medido de `ρ`: 0.4841 en `N=32728=2³·4091`** — otra
+   vez `2^a·(primo grande)`. El sup familiar no crece con `N` dentro
+de la familia: en `2p` ocurre en `N=2218`, en `4p` en `N=34324`;
+en ningún brazo el máximo está en el extremo superior del rango.
+2. **Las medianas de `2p` y `4p` son +0.23** — es decir, en las
+   familias de `𝔖` casi mínima la cola primitiva es sistemáticamente
+   *más grande* que la media (frente a mediana global ≈ −0.013). Esto
+   es exactamente lo que predice la heurística: `𝔖(N)` mínimo →
+   denominador pequeño → `ρ=T_prim/(N𝔖)` grande. La cola primitiva
+   es un *déficit crónico* en estas familias, no un fenómeno puntual.
+3. El mínimo absoluto del brazo ventana es `ρ=−0.878` en
+   `N=30030=2·3·5·7·11·13` (primorial): los primoriales tienen cola
+   primitiva fuertemente negativa. Extremos positivos y negativos de
+   `ρ` viven en sucesiones de estructura multiplicitiva explícita.
+4. Consecuencia para `H_ε`: el `ε` medido se ajusta a
+   `ε ≥ 1−0.4841 ≈ 0.52`, aún amplio, pero el sup es sensible al
+   muestreo (0.37 global → 0.48 en familias delgadas). La uniformidad
+   pendiente queda acotada al problema: ¿puede `sup ρ` de `2p`/`4p`
+   crecer con `N` más allá de ~0.5? Siguiente experimento
+   pre-registrable: `2p` y `4p` densos hasta `10^6` (no solo `10^5`).
 - `07` da control promedio (Parseval sobre `N`); el conjunto excepcional
   observado tiene justo la forma de familias delgadas de `𝔖` mínima.
 - No se presupone positividad de `R(N)`: `r(N)` se registra como dato;
@@ -178,5 +223,7 @@ plausible con margen amplio; el margen unilateral medido disponible es
 
 - Comando: `python numerico/deficit_unilateral.py --limit 1000000`
   (ejecución 1) y `--dense` (ejecución 2); semilla 20261124.
+- Barrido de familias: `python numerico/deficit_familias.py` (sin RNG;
+  familias deterministas + ventana post-observacional etiquetada).
 - Salida: `numerico/resultados/20261124_*_deficit_unilateral_*.json`.
 - Dependencias: `cola_mobius_scan.py` (mismo directorio).
