@@ -119,3 +119,51 @@ Expandir la primera suma de (12.6) por divisores cuadrados libres `a|rad(N)`:
 `a` admite una forma de Selberg positiva o una comparacion con la segunda suma
 de (12.6). Toda desigualdad candidata debe conservar el termino `a=1`; borrarlo
 seria borrar exactamente Goldbach.
+
+## 6. Expansion explicita por divisores de N [P]
+
+La clasificacion de la seccion 3 da, sin aproximaciones,
+
+\[
+Q_N(m)=
+\sum_{a\mid\operatorname{rad}(N)}\mu(a)\log a\,1_{m=a}
+-\sum_{a\mid\operatorname{rad}(N)}\mu(a)
+\sum_{\substack{p\nmid N,\ k\ge1}}\log p\,1_{m=ap^k}. \tag{12.7}
+\]
+
+En efecto, el primer sumando es exactamente el caso `s=0`, y el segundo el
+caso `s=1`; la representacion `m=ap^k` es unica porque `p` es el unico primo
+de `m` que no divide a N.
+
+Por tanto, si
+
+\[
+G_a(N)=\sum_{\substack{p\nmid N,\ k\ge1\\ap^k<N}}
+\log p\,\Lambda(N-ap^k),
+\]
+
+la parte completa de (12.6) es
+
+\[
+\sum_{n<N}\Lambda(n)Q_N(N-n)=
+\sum_{\substack{a\mid\operatorname{rad}(N)\\a<N}}
+\mu(a)\log a\,\Lambda(N-a)
+-\sum_{a\mid\operatorname{rad}(N)}\mu(a)G_a(N). \tag{12.8}
+\]
+
+Para `a=1`, `G_1(N)` es la convolucion binaria de von Mangoldt, salvo los
+primeros argumentos `p|N` y con la misma inclusion de potencias propias. Es el
+termino circular que no se puede estimar suponiendo Goldbach.
+
+Hay una simplificacion especial porque N es par. Si `2|a`, entonces `ap^k` y
+N son pares para todo `p` impar; por ello `Lambda(N-ap^k)` solo puede ser no
+cero cuando `N-ap^k` es potencia de 2 (el caso p=2 esta excluido por `p no
+divide N`). En consecuencia, todas las piezas `G_a` con `a` par tienen soporte
+ralo y admiten una cota elemental `N^{o(1)}(log N)^3` despues de contar
+divisores y potencias. Las piezas potencialmente grandes vienen de los
+divisores **impares** `a|rad(N)`; entre ellas esta `a=1`.
+
+Esto reduce el proximo frente a una inclusion-exclusion sobre divisores impares
+de N. No resuelve el termino `a=1`, pero elimina de la parte dificil la mitad
+estructural de los divisores de `rad(N)` y muestra que la factorizacion de N
+debe entrar explicitamente en cualquier desigualdad unilateral.
