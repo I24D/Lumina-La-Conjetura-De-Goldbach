@@ -199,3 +199,15 @@ Informe principal: [08_revision_codex_06_07.md](matematicas/08_revision_codex_06
 | [FALSO como frente] | La inclusion-exclusion grande sobre divisores impares propuesta en 12/13 no existe: los grados >=2 se anulan antes. Un puente nuevo debe actuar directamente sobre `G_1` | `14`, seccion 3 |
 
 **Direccion activa corregida:** estudiar kernels aditivos Fejer/Riesz o una formula espectral unilateral que controle el coeficiente individual `G_1(N)`. Goldbach sigue abierta.
+
+## Deficit unilateral puntual - 2026-11-24 (LUMINA/OpenClaw)
+
+| Etiqueta | Resultado | Evidencia |
+|---|---|---|
+| [P] | Identificacion: el supertrazo Z/2 de 11 (ec. 11.1) ES la cola T_N^prim(D) de 04; la desigualdad de pendientes de 13 s6 y la H_eps de 04 s5 son la misma condicion, escrita puntual y normalizada como ho(N)=T_prim(D)/(N*G(N)) <= 1-eps | matematicas/15_deficit_unilateral_puntual.md, s1-s2 |
+| [N] | Escaneo literal en 2299 N pares (todos <=2000 exhaustivos + muestras hasta 10^6, semilla 20261124): sup rho = 0.4201 (N=30916), sin deriva ascendente; banda alta (300 muestras) sup = 0.2535, mediana -0.013. Veredicto pre-registrado (umbral sup<=0.5): H_eps plausible con margen amplio (eps >= 0.58 medido) | 
+umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224653_..._dense_...json |
+| [N] | Estructura de los peores N: series singulares casi minimas (2^a*p o dos primos medianos): 30916=2^2*59*131, 31718=2*15859, 30658=2*15329, 9224=2^3*1153... Los N "dificiles" de Goldbach concentran el peor ratio unilateral | 15, s4 |
+| [N; honesto] | La cadena (4.15) punto a punto: gap = 1-r-rho pequeno en N grandes tipicos (|gap| <~ 0.1), pero grande co-localizado con rho muy negativo (N=443190: rho=-0.561, r~1.000, gap~0.561); T_bad solo esta acotada por K_N (Prop. 4.2), no es pequena a priori | 15, s4 |
+
+**Estado honesto:** no hay demostracion. La calibracion dice cuanto margen real tiene la cota unilateral y donde vive el peor caso (familias delgadas de serie singular minima). Siguiente experimento pre-registrado (15 s5): barrido exhaustivo de las familias de G minima (2^a, 2p, 4p, 2p^2) y contraste contra el supremo global; si lo determinan esas familias, la uniformidad pendiente se reduce a sucesiones con estructura explicita.
