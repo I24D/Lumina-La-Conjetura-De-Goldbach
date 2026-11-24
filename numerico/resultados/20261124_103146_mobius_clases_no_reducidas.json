@@ -1,0 +1,2533 @@
+{
+  "provenance": "LUMINA/OpenClaw; exact finite diagnostic; not a proof",
+  "created_utc": "2026-11-24T10:31:46.353469+00:00",
+  "parameters": {
+    "hasta": [
+      10000,
+      100000,
+      1000000
+    ],
+    "q_factor": 0.25,
+    "checks": 1000,
+    "seed": 20261124
+  },
+  "scales": [
+    {
+      "x": 10000,
+      "qmax": 25,
+      "identity_checks": 1000,
+      "E_reduced": 897,
+      "E_all": 989,
+      "E_all_over_reduced": 1.1025641025641026,
+      "E_reduced_logx_over_x": 0.8261675313662638,
+      "E_all_logx_over_x": 0.9109026627884445,
+      "nonreduced_winner_fraction": 0.4,
+      "rows": [
+        {
+          "q": 1,
+          "max_reduced": 43,
+          "max_all": 43,
+          "winner": 0,
+          "winner_gcd": 1
+        },
+        {
+          "q": 2,
+          "max_reduced": 55,
+          "max_all": 55,
+          "winner": 1,
+          "winner_gcd": 1
+        },
+        {
+          "q": 3,
+          "max_reduced": 28,
+          "max_all": 31,
+          "winner": 0,
+          "winner_gcd": 3
+        },
+        {
+          "q": 4,
+          "max_reduced": 43,
+          "max_all": 43,
+          "winner": 1,
+          "winner_gcd": 1
+        },
+        {
+          "q": 5,
+          "max_reduced": 32,
+          "max_all": 32,
+          "winner": 1,
+          "winner_gcd": 1
+        },
+        {
+          "q": 6,
+          "max_reduced": 65,
+          "max_all": 74,
+          "winner": 3,
+          "winner_gcd": 3
+        },
+        {
+          "q": 7,
+          "max_reduced": 31,
+          "max_all": 31,
+          "winner": 6,
+          "winner_gcd": 1
+        },
+        {
+          "q": 8,
+          "max_reduced": 41,
+          "max_all": 41,
+          "winner": 5,
+          "winner_gcd": 1
+        },
+        {
+          "q": 9,
+          "max_reduced": 27,
+          "max_all": 27,
+          "winner": 2,
+          "winner_gcd": 1
+        },
+        {
+          "q": 10,
+          "max_reduced": 34,
+          "max_all": 48,
+          "winner": 5,
+          "winner_gcd": 5
+        },
+        {
+          "q": 11,
+          "max_reduced": 32,
+          "max_all": 32,
+          "winner": 8,
+          "winner_gcd": 1
+        },
+        {
+          "q": 12,
+          "max_reduced": 38,
+          "max_all": 62,
+          "winner": 6,
+          "winner_gcd": 6
+        },
+        {
+          "q": 13,
+          "max_reduced": 42,
+          "max_all": 42,
+          "winner": 1,
+          "winner_gcd": 1
+        },
+        {
+          "q": 14,
+          "max_reduced": 35,
+          "max_all": 37,
+          "winner": 7,
+          "winner_gcd": 7
+        },
+        {
+          "q": 15,
+          "max_reduced": 22,
+          "max_all": 26,
+          "winner": 0,
+          "winner_gcd": 15
+        },
+        {
+          "q": 16,
+          "max_reduced": 41,
+          "max_all": 41,
+          "winner": 5,
+          "winner_gcd": 1
+        },
+        {
+          "q": 17,
+          "max_reduced": 42,
+          "max_all": 42,
+          "winner": 7,
+          "winner_gcd": 1
+        },
+        {
+          "q": 18,
+          "max_reduced": 31,
+          "max_all": 46,
+          "winner": 15,
+          "winner_gcd": 3
+        },
+        {
+          "q": 19,
+          "max_reduced": 38,
+          "max_all": 38,
+          "winner": 1,
+          "winner_gcd": 1
+        },
+        {
+          "q": 20,
+          "max_reduced": 27,
+          "max_all": 36,
+          "winner": 10,
+          "winner_gcd": 10
+        },
+        {
+          "q": 21,
+          "max_reduced": 26,
+          "max_all": 26,
+          "winner": 10,
+          "winner_gcd": 1
+        },
+        {
+          "q": 22,
+          "max_reduced": 27,
+          "max_all": 30,
+          "winner": 11,
+          "winner_gcd": 11
+        },
+        {
+          "q": 23,
+          "max_reduced": 30,
+          "max_all": 30,
+          "winner": 16,
+          "winner_gcd": 1
+        },
+        {
+          "q": 24,
+          "max_reduced": 30,
+          "max_all": 39,
+          "winner": 18,
+          "winner_gcd": 6
+        },
+        {
+          "q": 25,
+          "max_reduced": 37,
+          "max_all": 37,
+          "winner": 7,
+          "winner_gcd": 1
+        }
+      ]
+    },
+    {
+      "x": 100000,
+      "qmax": 79,
+      "identity_checks": 1000,
+      "E_reduced": 6919,
+      "E_all": 7381,
+      "E_all_over_reduced": 1.066772655007949,
+      "E_reduced_logx_over_x": 0.7965793129212901,
+      "E_all_logx_over_x": 0.8497690285694527,
+      "nonreduced_winner_fraction": 0.1518987341772152,
+      "rows": [
+        {
+          "q": 1,
+          "max_reduced": 132,
+          "max_all": 132,
+          "winner": 0,
+          "winner_gcd": 1
+        },
+        {
+          "q": 2,
+          "max_reduced": 124,
+          "max_all": 124,
+          "winner": 1,
+          "winner_gcd": 1
+        },
+        {
+          "q": 3,
+          "max_reduced": 81,
+          "max_all": 81,
+          "winner": 1,
+          "winner_gcd": 1
+        },
+        {
+          "q": 4,
+          "max_reduced": 95,
+          "max_all": 95,
+          "winner": 1,
+          "winner_gcd": 1
+        },
+        {
+          "q": 5,
+          "max_reduced": 96,
+          "max_all": 96,
+          "winner": 4,
+          "winner_gcd": 1
+        },
+        {
+          "q": 6,
+          "max_reduced": 130,
+          "max_all": 148,
+          "winner": 3,
+          "winner_gcd": 3
+        },
+        {
+          "q": 7,
+          "max_reduced": 121,
+          "max_all": 121,
+          "winner": 3,
+          "winner_gcd": 1
+        },
+        {
+          "q": 8,
+          "max_reduced": 80,
+          "max_all": 80,
+          "winner": 5,
+          "winner_gcd": 1
+        },
+        {
+          "q": 9,
+          "max_reduced": 79,
+          "max_all": 79,
+          "winner": 1,
+          "winner_gcd": 1
+        },
+        {
+          "q": 10,
+          "max_reduced": 89,
+          "max_all": 96,
+          "winner": 5,
+          "winner_gcd": 5
+        },
+        {
+          "q": 11,
+          "max_reduced": 136,
+          "max_all": 136,
+          "winner": 10,
+          "winner_gcd": 1
+        },
+        {
+          "q": 12,
+          "max_reduced": 90,
+          "max_all": 124,
+          "winner": 6,
+          "winner_gcd": 6
+        },
+        {
+          "q": 13,
+          "max_reduced": 139,
+          "max_all": 139,
+          "winner": 4,
+          "winner_gcd": 1
+        },
+        {
+          "q": 14,
+          "max_reduced": 109,
+          "max_all": 109,
+          "winner": 3,
+          "winner_gcd": 1
+        },
+        {
+          "q": 15,
+          "max_reduced": 62,
+          "max_all": 62,
+          "winner": 14,
+          "winner_gcd": 1
+        },
+        {
+          "q": 16,
+          "max_reduced": 80,
+          "max_all": 80,
+          "winner": 9,
+          "winner_gcd": 1
+        },
+        {
+          "q": 17,
+          "max_reduced": 151,
+          "max_all": 151,
+          "winner": 14,
+          "winner_gcd": 1
+        },
+        {
+          "q": 18,
+          "max_reduced": 68,
+          "max_all": 88,
+          "winner": 15,
+          "winner_gcd": 3
+        },
+        {
+          "q": 19,
+          "max_reduced": 135,
+          "max_all": 135,
+          "winner": 14,
+          "winner_gcd": 1
+        },
+        {
+          "q": 20,
+          "max_reduced": 69,
+          "max_all": 89,
+          "winner": 6,
+          "winner_gcd": 2
+        },
+        {
+          "q": 21,
+          "max_reduced": 63,
+          "max_all": 63,
+          "winner": 16,
+          "winner_gcd": 1
+        },
+        {
+          "q": 22,
+          "max_reduced": 89,
+          "max_all": 89,
+          "winner": 21,
+          "winner_gcd": 1
+        },
+        {
+          "q": 23,
+          "max_reduced": 119,
+          "max_all": 119,
+          "winner": 1,
+          "winner_gcd": 1
+        },
+        {
+          "q": 24,
+          "max_reduced": 84,
+          "max_all": 84,
+          "winner": 1,
+          "winner_gcd": 1
+        },
+        {
+          "q": 25,
+          "max_reduced": 94,
+          "max_all": 94,
+          "winner": 22,
+          "winner_gcd": 1
+        },
+        {
+          "q": 26,
+          "max_reduced": 94,
+          "max_all": 94,
+          "winner": 17,
+          "winner_gcd": 1
+        },
+        {
+          "q": 27,
+          "max_reduced": 125,
+          "max_all": 125,
+          "winner": 19,
+          "winner_gcd": 1
+        },
+        {
+          "q": 28,
+          "max_reduced": 85,
+          "max_all": 85,
+          "winner": 17,
+          "winner_gcd": 1
+        },
+        {
+          "q": 29,
+          "max_reduced": 106,
+          "max_all": 106,
+          "winner": 17,
+          "winner_gcd": 1
+        },
+        {
+          "q": 30,
+          "max_reduced": 83,
+          "max_all": 177,
+          "winner": 15,
+          "winner_gcd": 15
+        },
+        {
+          "q": 31,
+          "max_reduced": 94,
+          "max_all": 94,
+          "winner": 27,
+          "winner_gcd": 1
+        },
+        {
+          "q": 32,
+          "max_reduced": 79,
+          "max_all": 79,
+          "winner": 5,
+          "winner_gcd": 1
+        },
+        {
+          "q": 33,
+          "max_reduced": 73,
+          "max_all": 73,
+          "winner": 5,
+          "winner_gcd": 1
+        },
+        {
+          "q": 34,
+          "max_reduced": 96,
+          "max_all": 96,
+          "winner": 31,
+          "winner_gcd": 1
+        },
+        {
+          "q": 35,
+          "max_reduced": 83,
+          "max_all": 83,
+          "winner": 27,
+          "winner_gcd": 1
+        },
+        {
+          "q": 36,
+          "max_reduced": 57,
+          "max_all": 80,
+          "winner": 30,
+          "winner_gcd": 6
+        },
+        {
+          "q": 37,
+          "max_reduced": 101,
+          "max_all": 101,
+          "winner": 12,
+          "winner_gcd": 1
+        },
+        {
+          "q": 38,
+          "max_reduced": 100,
+          "max_all": 100,
+          "winner": 15,
+          "winner_gcd": 1
+        },
+        {
+          "q": 39,
+          "max_reduced": 89,
+          "max_all": 89,
+          "winner": 25,
+          "winner_gcd": 1
+        },
+        {
+          "q": 40,
+          "max_reduced": 80,
+          "max_all": 80,
+          "winner": 17,
+          "winner_gcd": 1
+        },
+        {
+          "q": 41,
+          "max_reduced": 100,
+          "max_all": 100,
+          "winner": 5,
+          "winner_gcd": 1
+        },
+        {
+          "q": 42,
+          "max_reduced": 66,
+          "max_all": 135,
+          "winner": 21,
+          "winner_gcd": 21
+        },
+        {
+          "q": 43,
+          "max_reduced": 83,
+          "max_all": 83,
+          "winner": 32,
+          "winner_gcd": 1
+        },
+        {
+          "q": 44,
+          "max_reduced": 94,
+          "max_all": 94,
+          "winner": 7,
+          "winner_gcd": 1
+        },
+        {
+          "q": 45,
+          "max_reduced": 82,
+          "max_all": 82,
+          "winner": 17,
+          "winner_gcd": 1
+        },
+        {
+          "q": 46,
+          "max_reduced": 75,
+          "max_all": 75,
+          "winner": 1,
+          "winner_gcd": 1
+        },
+        {
+          "q": 47,
+          "max_reduced": 99,
+          "max_all": 99,
+          "winner": 17,
+          "winner_gcd": 1
+        },
+        {
+          "q": 48,
+          "max_reduced": 88,
+          "max_all": 88,
+          "winner": 25,
+          "winner_gcd": 1
+        },
+        {
+          "q": 49,
+          "max_reduced": 94,
+          "max_all": 94,
+          "winner": 47,
+          "winner_gcd": 1
+        },
+        {
+          "q": 50,
+          "max_reduced": 67,
+          "max_all": 67,
+          "winner": 39,
+          "winner_gcd": 1
+        },
+        {
+          "q": 51,
+          "max_reduced": 88,
+          "max_all": 88,
+          "winner": 32,
+          "winner_gcd": 1
+        },
+        {
+          "q": 52,
+          "max_reduced": 84,
+          "max_all": 84,
+          "winner": 43,
+          "winner_gcd": 1
+        },
+        {
+          "q": 53,
+          "max_reduced": 96,
+          "max_all": 96,
+          "winner": 29,
+          "winner_gcd": 1
+        },
+        {
+          "q": 54,
+          "max_reduced": 72,
+          "max_all": 72,
+          "winner": 19,
+          "winner_gcd": 1
+        },
+        {
+          "q": 55,
+          "max_reduced": 75,
+          "max_all": 75,
+          "winner": 43,
+          "winner_gcd": 1
+        },
+        {
+          "q": 56,
+          "max_reduced": 64,
+          "max_all": 64,
+          "winner": 9,
+          "winner_gcd": 1
+        },
+        {
+          "q": 57,
+          "max_reduced": 80,
+          "max_all": 80,
+          "winner": 14,
+          "winner_gcd": 1
+        },
+        {
+          "q": 58,
+          "max_reduced": 82,
+          "max_all": 82,
+          "winner": 17,
+          "winner_gcd": 1
+        },
+        {
+          "q": 59,
+          "max_reduced": 95,
+          "max_all": 95,
+          "winner": 29,
+          "winner_gcd": 1
+        },
+        {
+          "q": 60,
+          "max_reduced": 58,
+          "max_all": 133,
+          "winner": 30,
+          "winner_gcd": 30
+        },
+        {
+          "q": 61,
+          "max_reduced": 88,
+          "max_all": 88,
+          "winner": 25,
+          "winner_gcd": 1
+        },
+        {
+          "q": 62,
+          "max_reduced": 66,
+          "max_all": 66,
+          "winner": 53,
+          "winner_gcd": 1
+        },
+        {
+          "q": 63,
+          "max_reduced": 93,
+          "max_all": 93,
+          "winner": 46,
+          "winner_gcd": 1
+        },
+        {
+          "q": 64,
+          "max_reduced": 74,
+          "max_all": 74,
+          "winner": 25,
+          "winner_gcd": 1
+        },
+        {
+          "q": 65,
+          "max_reduced": 60,
+          "max_all": 60,
+          "winner": 36,
+          "winner_gcd": 1
+        },
+        {
+          "q": 66,
+          "max_reduced": 68,
+          "max_all": 105,
+          "winner": 33,
+          "winner_gcd": 33
+        },
+        {
+          "q": 67,
+          "max_reduced": 79,
+          "max_all": 79,
+          "winner": 63,
+          "winner_gcd": 1
+        },
+        {
+          "q": 68,
+          "max_reduced": 73,
+          "max_all": 73,
+          "winner": 29,
+          "winner_gcd": 1
+        },
+        {
+          "q": 69,
+          "max_reduced": 74,
+          "max_all": 74,
+          "winner": 68,
+          "winner_gcd": 1
+        },
+        {
+          "q": 70,
+          "max_reduced": 58,
+          "max_all": 90,
+          "winner": 35,
+          "winner_gcd": 35
+        },
+        {
+          "q": 71,
+          "max_reduced": 103,
+          "max_all": 103,
+          "winner": 11,
+          "winner_gcd": 1
+        },
+        {
+          "q": 72,
+          "max_reduced": 67,
+          "max_all": 67,
+          "winner": 67,
+          "winner_gcd": 1
+        },
+        {
+          "q": 73,
+          "max_reduced": 80,
+          "max_all": 80,
+          "winner": 47,
+          "winner_gcd": 1
+        },
+        {
+          "q": 74,
+          "max_reduced": 80,
+          "max_all": 80,
+          "winner": 49,
+          "winner_gcd": 1
+        },
+        {
+          "q": 75,
+          "max_reduced": 60,
+          "max_all": 60,
+          "winner": 28,
+          "winner_gcd": 1
+        },
+        {
+          "q": 76,
+          "max_reduced": 81,
+          "max_all": 81,
+          "winner": 63,
+          "winner_gcd": 1
+        },
+        {
+          "q": 77,
+          "max_reduced": 76,
+          "max_all": 76,
+          "winner": 43,
+          "winner_gcd": 1
+        },
+        {
+          "q": 78,
+          "max_reduced": 59,
+          "max_all": 92,
+          "winner": 39,
+          "winner_gcd": 39
+        },
+        {
+          "q": 79,
+          "max_reduced": 78,
+          "max_all": 78,
+          "winner": 19,
+          "winner_gcd": 1
+        }
+      ]
+    },
+    {
+      "x": 1000000,
+      "qmax": 250,
+      "identity_checks": 1000,
+      "E_reduced": 54163,
+      "E_all": 55170,
+      "E_all_over_reduced": 1.0185920277680336,
+      "E_reduced_logx_over_x": 0.748289498351019,
+      "E_all_logx_over_x": 0.762201717482889,
+      "nonreduced_winner_fraction": 0.108,
+      "rows": [
+        {
+          "q": 1,
+          "max_reduced": 368,
+          "max_all": 368,
+          "winner": 0,
+          "winner_gcd": 1
+        },
+        {
+          "q": 2,
+          "max_reduced": 288,
+          "max_all": 288,
+          "winner": 1,
+          "winner_gcd": 1
+        },
+        {
+          "q": 3,
+          "max_reduced": 271,
+          "max_all": 271,
+          "winner": 2,
+          "winner_gcd": 1
+        },
+        {
+          "q": 4,
+          "max_reduced": 332,
+          "max_all": 332,
+          "winner": 1,
+          "winner_gcd": 1
+        },
+        {
+          "q": 5,
+          "max_reduced": 345,
+          "max_all": 345,
+          "winner": 2,
+          "winner_gcd": 1
+        },
+        {
+          "q": 6,
+          "max_reduced": 250,
+          "max_all": 279,
+          "winner": 3,
+          "winner_gcd": 3
+        },
+        {
+          "q": 7,
+          "max_reduced": 359,
+          "max_all": 359,
+          "winner": 2,
+          "winner_gcd": 1
+        },
+        {
+          "q": 8,
+          "max_reduced": 290,
+          "max_all": 290,
+          "winner": 5,
+          "winner_gcd": 1
+        },
+        {
+          "q": 9,
+          "max_reduced": 330,
+          "max_all": 330,
+          "winner": 5,
+          "winner_gcd": 1
+        },
+        {
+          "q": 10,
+          "max_reduced": 305,
+          "max_all": 305,
+          "winner": 3,
+          "winner_gcd": 1
+        },
+        {
+          "q": 11,
+          "max_reduced": 353,
+          "max_all": 353,
+          "winner": 4,
+          "winner_gcd": 1
+        },
+        {
+          "q": 12,
+          "max_reduced": 267,
+          "max_all": 267,
+          "winner": 7,
+          "winner_gcd": 1
+        },
+        {
+          "q": 13,
+          "max_reduced": 319,
+          "max_all": 319,
+          "winner": 9,
+          "winner_gcd": 1
+        },
+        {
+          "q": 14,
+          "max_reduced": 273,
+          "max_all": 273,
+          "winner": 9,
+          "winner_gcd": 1
+        },
+        {
+          "q": 15,
+          "max_reduced": 280,
+          "max_all": 280,
+          "winner": 8,
+          "winner_gcd": 1
+        },
+        {
+          "q": 16,
+          "max_reduced": 295,
+          "max_all": 295,
+          "winner": 9,
+          "winner_gcd": 1
+        },
+        {
+          "q": 17,
+          "max_reduced": 538,
+          "max_all": 538,
+          "winner": 13,
+          "winner_gcd": 1
+        },
+        {
+          "q": 18,
+          "max_reduced": 198,
+          "max_all": 198,
+          "winner": 7,
+          "winner_gcd": 1
+        },
+        {
+          "q": 19,
+          "max_reduced": 488,
+          "max_all": 488,
+          "winner": 1,
+          "winner_gcd": 1
+        },
+        {
+          "q": 20,
+          "max_reduced": 260,
+          "max_all": 260,
+          "winner": 13,
+          "winner_gcd": 1
+        },
+        {
+          "q": 21,
+          "max_reduced": 217,
+          "max_all": 217,
+          "winner": 19,
+          "winner_gcd": 1
+        },
+        {
+          "q": 22,
+          "max_reduced": 244,
+          "max_all": 244,
+          "winner": 7,
+          "winner_gcd": 1
+        },
+        {
+          "q": 23,
+          "max_reduced": 423,
+          "max_all": 423,
+          "winner": 12,
+          "winner_gcd": 1
+        },
+        {
+          "q": 24,
+          "max_reduced": 238,
+          "max_all": 238,
+          "winner": 19,
+          "winner_gcd": 1
+        },
+        {
+          "q": 25,
+          "max_reduced": 360,
+          "max_all": 360,
+          "winner": 4,
+          "winner_gcd": 1
+        },
+        {
+          "q": 26,
+          "max_reduced": 299,
+          "max_all": 299,
+          "winner": 9,
+          "winner_gcd": 1
+        },
+        {
+          "q": 27,
+          "max_reduced": 272,
+          "max_all": 272,
+          "winner": 26,
+          "winner_gcd": 1
+        },
+        {
+          "q": 28,
+          "max_reduced": 208,
+          "max_all": 208,
+          "winner": 25,
+          "winner_gcd": 1
+        },
+        {
+          "q": 29,
+          "max_reduced": 396,
+          "max_all": 396,
+          "winner": 8,
+          "winner_gcd": 1
+        },
+        {
+          "q": 30,
+          "max_reduced": 284,
+          "max_all": 391,
+          "winner": 15,
+          "winner_gcd": 15
+        },
+        {
+          "q": 31,
+          "max_reduced": 281,
+          "max_all": 281,
+          "winner": 9,
+          "winner_gcd": 1
+        },
+        {
+          "q": 32,
+          "max_reduced": 299,
+          "max_all": 299,
+          "winner": 25,
+          "winner_gcd": 1
+        },
+        {
+          "q": 33,
+          "max_reduced": 395,
+          "max_all": 395,
+          "winner": 14,
+          "winner_gcd": 1
+        },
+        {
+          "q": 34,
+          "max_reduced": 326,
+          "max_all": 326,
+          "winner": 23,
+          "winner_gcd": 1
+        },
+        {
+          "q": 35,
+          "max_reduced": 259,
+          "max_all": 259,
+          "winner": 29,
+          "winner_gcd": 1
+        },
+        {
+          "q": 36,
+          "max_reduced": 210,
+          "max_all": 210,
+          "winner": 25,
+          "winner_gcd": 1
+        },
+        {
+          "q": 37,
+          "max_reduced": 255,
+          "max_all": 255,
+          "winner": 17,
+          "winner_gcd": 1
+        },
+        {
+          "q": 38,
+          "max_reduced": 316,
+          "max_all": 316,
+          "winner": 37,
+          "winner_gcd": 1
+        },
+        {
+          "q": 39,
+          "max_reduced": 264,
+          "max_all": 264,
+          "winner": 28,
+          "winner_gcd": 1
+        },
+        {
+          "q": 40,
+          "max_reduced": 236,
+          "max_all": 236,
+          "winner": 21,
+          "winner_gcd": 1
+        },
+        {
+          "q": 41,
+          "max_reduced": 280,
+          "max_all": 280,
+          "winner": 35,
+          "winner_gcd": 1
+        },
+        {
+          "q": 42,
+          "max_reduced": 170,
+          "max_all": 308,
+          "winner": 21,
+          "winner_gcd": 21
+        },
+        {
+          "q": 43,
+          "max_reduced": 358,
+          "max_all": 358,
+          "winner": 42,
+          "winner_gcd": 1
+        },
+        {
+          "q": 44,
+          "max_reduced": 253,
+          "max_all": 253,
+          "winner": 9,
+          "winner_gcd": 1
+        },
+        {
+          "q": 45,
+          "max_reduced": 255,
+          "max_all": 255,
+          "winner": 38,
+          "winner_gcd": 1
+        },
+        {
+          "q": 46,
+          "max_reduced": 329,
+          "max_all": 329,
+          "winner": 35,
+          "winner_gcd": 1
+        },
+        {
+          "q": 47,
+          "max_reduced": 325,
+          "max_all": 325,
+          "winner": 36,
+          "winner_gcd": 1
+        },
+        {
+          "q": 48,
+          "max_reduced": 221,
+          "max_all": 221,
+          "winner": 47,
+          "winner_gcd": 1
+        },
+        {
+          "q": 49,
+          "max_reduced": 265,
+          "max_all": 265,
+          "winner": 37,
+          "winner_gcd": 1
+        },
+        {
+          "q": 50,
+          "max_reduced": 239,
+          "max_all": 239,
+          "winner": 29,
+          "winner_gcd": 1
+        },
+        {
+          "q": 51,
+          "max_reduced": 378,
+          "max_all": 378,
+          "winner": 47,
+          "winner_gcd": 1
+        },
+        {
+          "q": 52,
+          "max_reduced": 311,
+          "max_all": 311,
+          "winner": 27,
+          "winner_gcd": 1
+        },
+        {
+          "q": 53,
+          "max_reduced": 313,
+          "max_all": 313,
+          "winner": 1,
+          "winner_gcd": 1
+        },
+        {
+          "q": 54,
+          "max_reduced": 215,
+          "max_all": 215,
+          "winner": 25,
+          "winner_gcd": 1
+        },
+        {
+          "q": 55,
+          "max_reduced": 213,
+          "max_all": 213,
+          "winner": 37,
+          "winner_gcd": 1
+        },
+        {
+          "q": 56,
+          "max_reduced": 220,
+          "max_all": 220,
+          "winner": 9,
+          "winner_gcd": 1
+        },
+        {
+          "q": 57,
+          "max_reduced": 281,
+          "max_all": 281,
+          "winner": 37,
+          "winner_gcd": 1
+        },
+        {
+          "q": 58,
+          "max_reduced": 258,
+          "max_all": 258,
+          "winner": 37,
+          "winner_gcd": 1
+        },
+        {
+          "q": 59,
+          "max_reduced": 334,
+          "max_all": 334,
+          "winner": 17,
+          "winner_gcd": 1
+        },
+        {
+          "q": 60,
+          "max_reduced": 225,
+          "max_all": 294,
+          "winner": 30,
+          "winner_gcd": 30
+        },
+        {
+          "q": 61,
+          "max_reduced": 252,
+          "max_all": 252,
+          "winner": 25,
+          "winner_gcd": 1
+        },
+        {
+          "q": 62,
+          "max_reduced": 249,
+          "max_all": 249,
+          "winner": 61,
+          "winner_gcd": 1
+        },
+        {
+          "q": 63,
+          "max_reduced": 210,
+          "max_all": 210,
+          "winner": 62,
+          "winner_gcd": 1
+        },
+        {
+          "q": 64,
+          "max_reduced": 219,
+          "max_all": 253,
+          "winner": 30,
+          "winner_gcd": 2
+        },
+        {
+          "q": 65,
+          "max_reduced": 236,
+          "max_all": 236,
+          "winner": 14,
+          "winner_gcd": 1
+        },
+        {
+          "q": 66,
+          "max_reduced": 221,
+          "max_all": 232,
+          "winner": 33,
+          "winner_gcd": 33
+        },
+        {
+          "q": 67,
+          "max_reduced": 322,
+          "max_all": 322,
+          "winner": 15,
+          "winner_gcd": 1
+        },
+        {
+          "q": 68,
+          "max_reduced": 265,
+          "max_all": 265,
+          "winner": 43,
+          "winner_gcd": 1
+        },
+        {
+          "q": 69,
+          "max_reduced": 258,
+          "max_all": 258,
+          "winner": 58,
+          "winner_gcd": 1
+        },
+        {
+          "q": 70,
+          "max_reduced": 236,
+          "max_all": 236,
+          "winner": 29,
+          "winner_gcd": 1
+        },
+        {
+          "q": 71,
+          "max_reduced": 315,
+          "max_all": 315,
+          "winner": 6,
+          "winner_gcd": 1
+        },
+        {
+          "q": 72,
+          "max_reduced": 193,
+          "max_all": 197,
+          "winner": 50,
+          "winner_gcd": 2
+        },
+        {
+          "q": 73,
+          "max_reduced": 251,
+          "max_all": 251,
+          "winner": 10,
+          "winner_gcd": 1
+        },
+        {
+          "q": 74,
+          "max_reduced": 279,
+          "max_all": 279,
+          "winner": 17,
+          "winner_gcd": 1
+        },
+        {
+          "q": 75,
+          "max_reduced": 225,
+          "max_all": 225,
+          "winner": 59,
+          "winner_gcd": 1
+        },
+        {
+          "q": 76,
+          "max_reduced": 263,
+          "max_all": 263,
+          "winner": 1,
+          "winner_gcd": 1
+        },
+        {
+          "q": 77,
+          "max_reduced": 256,
+          "max_all": 256,
+          "winner": 36,
+          "winner_gcd": 1
+        },
+        {
+          "q": 78,
+          "max_reduced": 168,
+          "max_all": 224,
+          "winner": 39,
+          "winner_gcd": 39
+        },
+        {
+          "q": 79,
+          "max_reduced": 290,
+          "max_all": 290,
+          "winner": 38,
+          "winner_gcd": 1
+        },
+        {
+          "q": 80,
+          "max_reduced": 227,
+          "max_all": 227,
+          "winner": 21,
+          "winner_gcd": 1
+        },
+        {
+          "q": 81,
+          "max_reduced": 228,
+          "max_all": 228,
+          "winner": 55,
+          "winner_gcd": 1
+        },
+        {
+          "q": 82,
+          "max_reduced": 214,
+          "max_all": 214,
+          "winner": 19,
+          "winner_gcd": 1
+        },
+        {
+          "q": 83,
+          "max_reduced": 196,
+          "max_all": 196,
+          "winner": 58,
+          "winner_gcd": 1
+        },
+        {
+          "q": 84,
+          "max_reduced": 192,
+          "max_all": 239,
+          "winner": 42,
+          "winner_gcd": 42
+        },
+        {
+          "q": 85,
+          "max_reduced": 229,
+          "max_all": 229,
+          "winner": 6,
+          "winner_gcd": 1
+        },
+        {
+          "q": 86,
+          "max_reduced": 222,
+          "max_all": 222,
+          "winner": 21,
+          "winner_gcd": 1
+        },
+        {
+          "q": 87,
+          "max_reduced": 197,
+          "max_all": 197,
+          "winner": 86,
+          "winner_gcd": 1
+        },
+        {
+          "q": 88,
+          "max_reduced": 231,
+          "max_all": 231,
+          "winner": 15,
+          "winner_gcd": 1
+        },
+        {
+          "q": 89,
+          "max_reduced": 232,
+          "max_all": 232,
+          "winner": 66,
+          "winner_gcd": 1
+        },
+        {
+          "q": 90,
+          "max_reduced": 238,
+          "max_all": 238,
+          "winner": 83,
+          "winner_gcd": 1
+        },
+        {
+          "q": 91,
+          "max_reduced": 212,
+          "max_all": 212,
+          "winner": 22,
+          "winner_gcd": 1
+        },
+        {
+          "q": 92,
+          "max_reduced": 218,
+          "max_all": 218,
+          "winner": 39,
+          "winner_gcd": 1
+        },
+        {
+          "q": 93,
+          "max_reduced": 230,
+          "max_all": 230,
+          "winner": 76,
+          "winner_gcd": 1
+        },
+        {
+          "q": 94,
+          "max_reduced": 279,
+          "max_all": 279,
+          "winner": 83,
+          "winner_gcd": 1
+        },
+        {
+          "q": 95,
+          "max_reduced": 223,
+          "max_all": 223,
+          "winner": 29,
+          "winner_gcd": 1
+        },
+        {
+          "q": 96,
+          "max_reduced": 171,
+          "max_all": 221,
+          "winner": 94,
+          "winner_gcd": 2
+        },
+        {
+          "q": 97,
+          "max_reduced": 264,
+          "max_all": 264,
+          "winner": 36,
+          "winner_gcd": 1
+        },
+        {
+          "q": 98,
+          "max_reduced": 218,
+          "max_all": 218,
+          "winner": 43,
+          "winner_gcd": 1
+        },
+        {
+          "q": 99,
+          "max_reduced": 238,
+          "max_all": 238,
+          "winner": 14,
+          "winner_gcd": 1
+        },
+        {
+          "q": 100,
+          "max_reduced": 176,
+          "max_all": 184,
+          "winner": 26,
+          "winner_gcd": 2
+        },
+        {
+          "q": 101,
+          "max_reduced": 247,
+          "max_all": 247,
+          "winner": 24,
+          "winner_gcd": 1
+        },
+        {
+          "q": 102,
+          "max_reduced": 227,
+          "max_all": 227,
+          "winner": 49,
+          "winner_gcd": 1
+        },
+        {
+          "q": 103,
+          "max_reduced": 208,
+          "max_all": 208,
+          "winner": 55,
+          "winner_gcd": 1
+        },
+        {
+          "q": 104,
+          "max_reduced": 208,
+          "max_all": 218,
+          "winner": 54,
+          "winner_gcd": 2
+        },
+        {
+          "q": 105,
+          "max_reduced": 183,
+          "max_all": 183,
+          "winner": 62,
+          "winner_gcd": 1
+        },
+        {
+          "q": 106,
+          "max_reduced": 224,
+          "max_all": 224,
+          "winner": 1,
+          "winner_gcd": 1
+        },
+        {
+          "q": 107,
+          "max_reduced": 205,
+          "max_all": 205,
+          "winner": 39,
+          "winner_gcd": 1
+        },
+        {
+          "q": 108,
+          "max_reduced": 211,
+          "max_all": 211,
+          "winner": 7,
+          "winner_gcd": 1
+        },
+        {
+          "q": 109,
+          "max_reduced": 206,
+          "max_all": 206,
+          "winner": 13,
+          "winner_gcd": 1
+        },
+        {
+          "q": 110,
+          "max_reduced": 186,
+          "max_all": 186,
+          "winner": 29,
+          "winner_gcd": 1
+        },
+        {
+          "q": 111,
+          "max_reduced": 204,
+          "max_all": 204,
+          "winner": 70,
+          "winner_gcd": 1
+        },
+        {
+          "q": 112,
+          "max_reduced": 170,
+          "max_all": 170,
+          "winner": 43,
+          "winner_gcd": 1
+        },
+        {
+          "q": 113,
+          "max_reduced": 183,
+          "max_all": 183,
+          "winner": 109,
+          "winner_gcd": 1
+        },
+        {
+          "q": 114,
+          "max_reduced": 165,
+          "max_all": 176,
+          "winner": 57,
+          "winner_gcd": 57
+        },
+        {
+          "q": 115,
+          "max_reduced": 198,
+          "max_all": 198,
+          "winner": 12,
+          "winner_gcd": 1
+        },
+        {
+          "q": 116,
+          "max_reduced": 166,
+          "max_all": 228,
+          "winner": 42,
+          "winner_gcd": 2
+        },
+        {
+          "q": 117,
+          "max_reduced": 219,
+          "max_all": 219,
+          "winner": 67,
+          "winner_gcd": 1
+        },
+        {
+          "q": 118,
+          "max_reduced": 231,
+          "max_all": 231,
+          "winner": 17,
+          "winner_gcd": 1
+        },
+        {
+          "q": 119,
+          "max_reduced": 287,
+          "max_all": 287,
+          "winner": 13,
+          "winner_gcd": 1
+        },
+        {
+          "q": 120,
+          "max_reduced": 171,
+          "max_all": 171,
+          "winner": 109,
+          "winner_gcd": 1
+        },
+        {
+          "q": 121,
+          "max_reduced": 186,
+          "max_all": 186,
+          "winner": 105,
+          "winner_gcd": 1
+        },
+        {
+          "q": 122,
+          "max_reduced": 235,
+          "max_all": 235,
+          "winner": 109,
+          "winner_gcd": 1
+        },
+        {
+          "q": 123,
+          "max_reduced": 194,
+          "max_all": 194,
+          "winner": 100,
+          "winner_gcd": 1
+        },
+        {
+          "q": 124,
+          "max_reduced": 208,
+          "max_all": 208,
+          "winner": 15,
+          "winner_gcd": 1
+        },
+        {
+          "q": 125,
+          "max_reduced": 196,
+          "max_all": 196,
+          "winner": 17,
+          "winner_gcd": 1
+        },
+        {
+          "q": 126,
+          "max_reduced": 186,
+          "max_all": 186,
+          "winner": 31,
+          "winner_gcd": 1
+        },
+        {
+          "q": 127,
+          "max_reduced": 237,
+          "max_all": 237,
+          "winner": 121,
+          "winner_gcd": 1
+        },
+        {
+          "q": 128,
+          "max_reduced": 179,
+          "max_all": 180,
+          "winner": 86,
+          "winner_gcd": 2
+        },
+        {
+          "q": 129,
+          "max_reduced": 196,
+          "max_all": 196,
+          "winner": 32,
+          "winner_gcd": 1
+        },
+        {
+          "q": 130,
+          "max_reduced": 163,
+          "max_all": 163,
+          "winner": 79,
+          "winner_gcd": 1
+        },
+        {
+          "q": 131,
+          "max_reduced": 200,
+          "max_all": 200,
+          "winner": 111,
+          "winner_gcd": 1
+        },
+        {
+          "q": 132,
+          "max_reduced": 172,
+          "max_all": 177,
+          "winner": 14,
+          "winner_gcd": 2
+        },
+        {
+          "q": 133,
+          "max_reduced": 175,
+          "max_all": 175,
+          "winner": 23,
+          "winner_gcd": 1
+        },
+        {
+          "q": 134,
+          "max_reduced": 237,
+          "max_all": 237,
+          "winner": 75,
+          "winner_gcd": 1
+        },
+        {
+          "q": 135,
+          "max_reduced": 209,
+          "max_all": 209,
+          "winner": 107,
+          "winner_gcd": 1
+        },
+        {
+          "q": 136,
+          "max_reduced": 174,
+          "max_all": 184,
+          "winner": 86,
+          "winner_gcd": 2
+        },
+        {
+          "q": 137,
+          "max_reduced": 186,
+          "max_all": 186,
+          "winner": 37,
+          "winner_gcd": 1
+        },
+        {
+          "q": 138,
+          "max_reduced": 207,
+          "max_all": 207,
+          "winner": 127,
+          "winner_gcd": 1
+        },
+        {
+          "q": 139,
+          "max_reduced": 164,
+          "max_all": 164,
+          "winner": 3,
+          "winner_gcd": 1
+        },
+        {
+          "q": 140,
+          "max_reduced": 199,
+          "max_all": 199,
+          "winner": 29,
+          "winner_gcd": 1
+        },
+        {
+          "q": 141,
+          "max_reduced": 202,
+          "max_all": 202,
+          "winner": 119,
+          "winner_gcd": 1
+        },
+        {
+          "q": 142,
+          "max_reduced": 244,
+          "max_all": 244,
+          "winner": 77,
+          "winner_gcd": 1
+        },
+        {
+          "q": 143,
+          "max_reduced": 200,
+          "max_all": 200,
+          "winner": 115,
+          "winner_gcd": 1
+        },
+        {
+          "q": 144,
+          "max_reduced": 182,
+          "max_all": 182,
+          "winner": 65,
+          "winner_gcd": 1
+        },
+        {
+          "q": 145,
+          "max_reduced": 195,
+          "max_all": 195,
+          "winner": 66,
+          "winner_gcd": 1
+        },
+        {
+          "q": 146,
+          "max_reduced": 189,
+          "max_all": 189,
+          "winner": 143,
+          "winner_gcd": 1
+        },
+        {
+          "q": 147,
+          "max_reduced": 213,
+          "max_all": 213,
+          "winner": 100,
+          "winner_gcd": 1
+        },
+        {
+          "q": 148,
+          "max_reduced": 189,
+          "max_all": 189,
+          "winner": 97,
+          "winner_gcd": 1
+        },
+        {
+          "q": 149,
+          "max_reduced": 235,
+          "max_all": 235,
+          "winner": 104,
+          "winner_gcd": 1
+        },
+        {
+          "q": 150,
+          "max_reduced": 163,
+          "max_all": 163,
+          "winner": 139,
+          "winner_gcd": 1
+        },
+        {
+          "q": 151,
+          "max_reduced": 236,
+          "max_all": 236,
+          "winner": 61,
+          "winner_gcd": 1
+        },
+        {
+          "q": 152,
+          "max_reduced": 189,
+          "max_all": 189,
+          "winner": 37,
+          "winner_gcd": 1
+        },
+        {
+          "q": 153,
+          "max_reduced": 182,
+          "max_all": 182,
+          "winner": 56,
+          "winner_gcd": 1
+        },
+        {
+          "q": 154,
+          "max_reduced": 212,
+          "max_all": 212,
+          "winner": 139,
+          "winner_gcd": 1
+        },
+        {
+          "q": 155,
+          "max_reduced": 186,
+          "max_all": 186,
+          "winner": 134,
+          "winner_gcd": 1
+        },
+        {
+          "q": 156,
+          "max_reduced": 150,
+          "max_all": 163,
+          "winner": 78,
+          "winner_gcd": 78
+        },
+        {
+          "q": 157,
+          "max_reduced": 207,
+          "max_all": 207,
+          "winner": 129,
+          "winner_gcd": 1
+        },
+        {
+          "q": 158,
+          "max_reduced": 213,
+          "max_all": 213,
+          "winner": 149,
+          "winner_gcd": 1
+        },
+        {
+          "q": 159,
+          "max_reduced": 182,
+          "max_all": 182,
+          "winner": 112,
+          "winner_gcd": 1
+        },
+        {
+          "q": 160,
+          "max_reduced": 185,
+          "max_all": 185,
+          "winner": 59,
+          "winner_gcd": 1
+        },
+        {
+          "q": 161,
+          "max_reduced": 201,
+          "max_all": 201,
+          "winner": 124,
+          "winner_gcd": 1
+        },
+        {
+          "q": 162,
+          "max_reduced": 162,
+          "max_all": 162,
+          "winner": 77,
+          "winner_gcd": 1
+        },
+        {
+          "q": 163,
+          "max_reduced": 215,
+          "max_all": 215,
+          "winner": 55,
+          "winner_gcd": 1
+        },
+        {
+          "q": 164,
+          "max_reduced": 175,
+          "max_all": 175,
+          "winner": 131,
+          "winner_gcd": 1
+        },
+        {
+          "q": 165,
+          "max_reduced": 152,
+          "max_all": 152,
+          "winner": 161,
+          "winner_gcd": 1
+        },
+        {
+          "q": 166,
+          "max_reduced": 198,
+          "max_all": 198,
+          "winner": 77,
+          "winner_gcd": 1
+        },
+        {
+          "q": 167,
+          "max_reduced": 165,
+          "max_all": 165,
+          "winner": 55,
+          "winner_gcd": 1
+        },
+        {
+          "q": 168,
+          "max_reduced": 166,
+          "max_all": 166,
+          "winner": 29,
+          "winner_gcd": 1
+        },
+        {
+          "q": 169,
+          "max_reduced": 171,
+          "max_all": 171,
+          "winner": 127,
+          "winner_gcd": 1
+        },
+        {
+          "q": 170,
+          "max_reduced": 186,
+          "max_all": 186,
+          "winner": 91,
+          "winner_gcd": 1
+        },
+        {
+          "q": 171,
+          "max_reduced": 176,
+          "max_all": 176,
+          "winner": 37,
+          "winner_gcd": 1
+        },
+        {
+          "q": 172,
+          "max_reduced": 173,
+          "max_all": 204,
+          "winner": 14,
+          "winner_gcd": 2
+        },
+        {
+          "q": 173,
+          "max_reduced": 168,
+          "max_all": 168,
+          "winner": 136,
+          "winner_gcd": 1
+        },
+        {
+          "q": 174,
+          "max_reduced": 158,
+          "max_all": 158,
+          "winner": 79,
+          "winner_gcd": 1
+        },
+        {
+          "q": 175,
+          "max_reduced": 164,
+          "max_all": 164,
+          "winner": 36,
+          "winner_gcd": 1
+        },
+        {
+          "q": 176,
+          "max_reduced": 208,
+          "max_all": 208,
+          "winner": 141,
+          "winner_gcd": 1
+        },
+        {
+          "q": 177,
+          "max_reduced": 167,
+          "max_all": 171,
+          "winner": 81,
+          "winner_gcd": 3
+        },
+        {
+          "q": 178,
+          "max_reduced": 207,
+          "max_all": 207,
+          "winner": 111,
+          "winner_gcd": 1
+        },
+        {
+          "q": 179,
+          "max_reduced": 194,
+          "max_all": 194,
+          "winner": 55,
+          "winner_gcd": 1
+        },
+        {
+          "q": 180,
+          "max_reduced": 145,
+          "max_all": 156,
+          "winner": 150,
+          "winner_gcd": 30
+        },
+        {
+          "q": 181,
+          "max_reduced": 182,
+          "max_all": 182,
+          "winner": 172,
+          "winner_gcd": 1
+        },
+        {
+          "q": 182,
+          "max_reduced": 216,
+          "max_all": 216,
+          "winner": 113,
+          "winner_gcd": 1
+        },
+        {
+          "q": 183,
+          "max_reduced": 165,
+          "max_all": 165,
+          "winner": 65,
+          "winner_gcd": 1
+        },
+        {
+          "q": 184,
+          "max_reduced": 174,
+          "max_all": 174,
+          "winner": 41,
+          "winner_gcd": 1
+        },
+        {
+          "q": 185,
+          "max_reduced": 167,
+          "max_all": 167,
+          "winner": 63,
+          "winner_gcd": 1
+        },
+        {
+          "q": 186,
+          "max_reduced": 149,
+          "max_all": 151,
+          "winner": 27,
+          "winner_gcd": 3
+        },
+        {
+          "q": 187,
+          "max_reduced": 175,
+          "max_all": 175,
+          "winner": 13,
+          "winner_gcd": 1
+        },
+        {
+          "q": 188,
+          "max_reduced": 187,
+          "max_all": 222,
+          "winner": 166,
+          "winner_gcd": 2
+        },
+        {
+          "q": 189,
+          "max_reduced": 172,
+          "max_all": 172,
+          "winner": 169,
+          "winner_gcd": 1
+        },
+        {
+          "q": 190,
+          "max_reduced": 176,
+          "max_all": 176,
+          "winner": 151,
+          "winner_gcd": 1
+        },
+        {
+          "q": 191,
+          "max_reduced": 214,
+          "max_all": 214,
+          "winner": 46,
+          "winner_gcd": 1
+        },
+        {
+          "q": 192,
+          "max_reduced": 171,
+          "max_all": 171,
+          "winner": 161,
+          "winner_gcd": 1
+        },
+        {
+          "q": 193,
+          "max_reduced": 180,
+          "max_all": 180,
+          "winner": 98,
+          "winner_gcd": 1
+        },
+        {
+          "q": 194,
+          "max_reduced": 195,
+          "max_all": 195,
+          "winner": 133,
+          "winner_gcd": 1
+        },
+        {
+          "q": 195,
+          "max_reduced": 183,
+          "max_all": 183,
+          "winner": 164,
+          "winner_gcd": 1
+        },
+        {
+          "q": 196,
+          "max_reduced": 181,
+          "max_all": 181,
+          "winner": 155,
+          "winner_gcd": 1
+        },
+        {
+          "q": 197,
+          "max_reduced": 164,
+          "max_all": 164,
+          "winner": 144,
+          "winner_gcd": 1
+        },
+        {
+          "q": 198,
+          "max_reduced": 166,
+          "max_all": 166,
+          "winner": 109,
+          "winner_gcd": 1
+        },
+        {
+          "q": 199,
+          "max_reduced": 157,
+          "max_all": 157,
+          "winner": 35,
+          "winner_gcd": 1
+        },
+        {
+          "q": 200,
+          "max_reduced": 187,
+          "max_all": 187,
+          "winner": 71,
+          "winner_gcd": 1
+        },
+        {
+          "q": 201,
+          "max_reduced": 186,
+          "max_all": 186,
+          "winner": 149,
+          "winner_gcd": 1
+        },
+        {
+          "q": 202,
+          "max_reduced": 158,
+          "max_all": 158,
+          "winner": 137,
+          "winner_gcd": 1
+        },
+        {
+          "q": 203,
+          "max_reduced": 181,
+          "max_all": 181,
+          "winner": 125,
+          "winner_gcd": 1
+        },
+        {
+          "q": 204,
+          "max_reduced": 152,
+          "max_all": 200,
+          "winner": 98,
+          "winner_gcd": 2
+        },
+        {
+          "q": 205,
+          "max_reduced": 172,
+          "max_all": 172,
+          "winner": 136,
+          "winner_gcd": 1
+        },
+        {
+          "q": 206,
+          "max_reduced": 156,
+          "max_all": 156,
+          "winner": 137,
+          "winner_gcd": 1
+        },
+        {
+          "q": 207,
+          "max_reduced": 169,
+          "max_all": 169,
+          "winner": 68,
+          "winner_gcd": 1
+        },
+        {
+          "q": 208,
+          "max_reduced": 172,
+          "max_all": 172,
+          "winner": 123,
+          "winner_gcd": 1
+        },
+        {
+          "q": 209,
+          "max_reduced": 151,
+          "max_all": 151,
+          "winner": 196,
+          "winner_gcd": 1
+        },
+        {
+          "q": 210,
+          "max_reduced": 134,
+          "max_all": 327,
+          "winner": 105,
+          "winner_gcd": 105
+        },
+        {
+          "q": 211,
+          "max_reduced": 182,
+          "max_all": 182,
+          "winner": 41,
+          "winner_gcd": 1
+        },
+        {
+          "q": 212,
+          "max_reduced": 189,
+          "max_all": 189,
+          "winner": 107,
+          "winner_gcd": 1
+        },
+        {
+          "q": 213,
+          "max_reduced": 172,
+          "max_all": 172,
+          "winner": 77,
+          "winner_gcd": 1
+        },
+        {
+          "q": 214,
+          "max_reduced": 140,
+          "max_all": 140,
+          "winner": 15,
+          "winner_gcd": 1
+        },
+        {
+          "q": 215,
+          "max_reduced": 151,
+          "max_all": 151,
+          "winner": 37,
+          "winner_gcd": 1
+        },
+        {
+          "q": 216,
+          "max_reduced": 178,
+          "max_all": 178,
+          "winner": 109,
+          "winner_gcd": 1
+        },
+        {
+          "q": 217,
+          "max_reduced": 143,
+          "max_all": 150,
+          "winner": 63,
+          "winner_gcd": 7
+        },
+        {
+          "q": 218,
+          "max_reduced": 173,
+          "max_all": 173,
+          "winner": 13,
+          "winner_gcd": 1
+        },
+        {
+          "q": 219,
+          "max_reduced": 141,
+          "max_all": 141,
+          "winner": 14,
+          "winner_gcd": 1
+        },
+        {
+          "q": 220,
+          "max_reduced": 143,
+          "max_all": 143,
+          "winner": 93,
+          "winner_gcd": 1
+        },
+        {
+          "q": 221,
+          "max_reduced": 143,
+          "max_all": 143,
+          "winner": 98,
+          "winner_gcd": 1
+        },
+        {
+          "q": 222,
+          "max_reduced": 151,
+          "max_all": 151,
+          "winner": 181,
+          "winner_gcd": 1
+        },
+        {
+          "q": 223,
+          "max_reduced": 166,
+          "max_all": 166,
+          "winner": 136,
+          "winner_gcd": 1
+        },
+        {
+          "q": 224,
+          "max_reduced": 145,
+          "max_all": 156,
+          "winner": 86,
+          "winner_gcd": 2
+        },
+        {
+          "q": 225,
+          "max_reduced": 174,
+          "max_all": 174,
+          "winner": 196,
+          "winner_gcd": 1
+        },
+        {
+          "q": 226,
+          "max_reduced": 185,
+          "max_all": 185,
+          "winner": 99,
+          "winner_gcd": 1
+        },
+        {
+          "q": 227,
+          "max_reduced": 170,
+          "max_all": 170,
+          "winner": 77,
+          "winner_gcd": 1
+        },
+        {
+          "q": 228,
+          "max_reduced": 149,
+          "max_all": 149,
+          "winner": 173,
+          "winner_gcd": 1
+        },
+        {
+          "q": 229,
+          "max_reduced": 145,
+          "max_all": 145,
+          "winner": 100,
+          "winner_gcd": 1
+        },
+        {
+          "q": 230,
+          "max_reduced": 147,
+          "max_all": 147,
+          "winner": 129,
+          "winner_gcd": 1
+        },
+        {
+          "q": 231,
+          "max_reduced": 139,
+          "max_all": 139,
+          "winner": 158,
+          "winner_gcd": 1
+        },
+        {
+          "q": 232,
+          "max_reduced": 174,
+          "max_all": 174,
+          "winner": 17,
+          "winner_gcd": 1
+        },
+        {
+          "q": 233,
+          "max_reduced": 150,
+          "max_all": 150,
+          "winner": 180,
+          "winner_gcd": 1
+        },
+        {
+          "q": 234,
+          "max_reduced": 179,
+          "max_all": 179,
+          "winner": 209,
+          "winner_gcd": 1
+        },
+        {
+          "q": 235,
+          "max_reduced": 174,
+          "max_all": 174,
+          "winner": 203,
+          "winner_gcd": 1
+        },
+        {
+          "q": 236,
+          "max_reduced": 183,
+          "max_all": 183,
+          "winner": 15,
+          "winner_gcd": 1
+        },
+        {
+          "q": 237,
+          "max_reduced": 162,
+          "max_all": 162,
+          "winner": 38,
+          "winner_gcd": 1
+        },
+        {
+          "q": 238,
+          "max_reduced": 183,
+          "max_all": 183,
+          "winner": 13,
+          "winner_gcd": 1
+        },
+        {
+          "q": 239,
+          "max_reduced": 144,
+          "max_all": 144,
+          "winner": 32,
+          "winner_gcd": 1
+        },
+        {
+          "q": 240,
+          "max_reduced": 141,
+          "max_all": 141,
+          "winner": 53,
+          "winner_gcd": 1
+        },
+        {
+          "q": 241,
+          "max_reduced": 162,
+          "max_all": 162,
+          "winner": 31,
+          "winner_gcd": 1
+        },
+        {
+          "q": 242,
+          "max_reduced": 144,
+          "max_all": 144,
+          "winner": 71,
+          "winner_gcd": 1
+        },
+        {
+          "q": 243,
+          "max_reduced": 156,
+          "max_all": 156,
+          "winner": 34,
+          "winner_gcd": 1
+        },
+        {
+          "q": 244,
+          "max_reduced": 157,
+          "max_all": 157,
+          "winner": 185,
+          "winner_gcd": 1
+        },
+        {
+          "q": 245,
+          "max_reduced": 150,
+          "max_all": 150,
+          "winner": 233,
+          "winner_gcd": 1
+        },
+        {
+          "q": 246,
+          "max_reduced": 186,
+          "max_all": 186,
+          "winner": 197,
+          "winner_gcd": 1
+        },
+        {
+          "q": 247,
+          "max_reduced": 187,
+          "max_all": 187,
+          "winner": 142,
+          "winner_gcd": 1
+        },
+        {
+          "q": 248,
+          "max_reduced": 163,
+          "max_all": 163,
+          "winner": 123,
+          "winner_gcd": 1
+        },
+        {
+          "q": 249,
+          "max_reduced": 161,
+          "max_all": 161,
+          "winner": 184,
+          "winner_gcd": 1
+        },
+        {
+          "q": 250,
+          "max_reduced": 205,
+          "max_all": 205,
+          "winner": 17,
+          "winner_gcd": 1
+        }
+      ]
+    }
+  ]
+}

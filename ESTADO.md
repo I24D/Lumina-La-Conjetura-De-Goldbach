@@ -166,3 +166,14 @@ Informe principal: [08_revision_codex_06_07.md](matematicas/08_revision_codex_06
 | [ABIERTO] | Falta demostrar la estimacion agregada WNR; aun con ella, el termino Tipo II `B_3` permanece como barrera principal | `matematicas/09_reduccion_clases_no_reducidas_mu.md`, secciones 3-5 |
 
 **Veredicto:** la revision de Codex es tecnicamente util y su artefacto Lean fue reproducido. La investigacion avanzo al convertir el hueco vago de clases arbitrarias en una desigualdad explicita, pero no existe todavia demostracion de Goldbach.
+
+## Continuacion autonoma LUMINA/OpenClaw - 2026-11-24
+
+| Etiqueta | Resultado | Evidencia |
+|---|---|---|
+| [N] | 3000 verificaciones exactas de (9.1); `E_all/E_reduced`=1.1026,1.0668,1.0186 para x=10^4,10^5,10^6 | `matematicas/10_diagnostico_WNR_y_prioridad_tipo_II.md` |
+| [P]+[N] | Descomposicion `T=sum(-1)^j A_j`; en N=10^6 las masas par/impar son 17.934M/17.870M y su diferencia es solo 64,249 | `matematicas/11_capas_paridad_y_funcion_generadora.md` |
+| [P] | Formula exacta `H_m(z)=z(1+z)^(omega(m)-1)log(rad(m))`; version primitiva (12.4) y soporte ralo en z=-1 | `matematicas/12_polynomial_divisores_y_soporte_ralo.md` |
+| [N] | Prop. 12.1 contrastada en 10000 casos aleatorios con z entero; PASS | registro de ejecucion LUMINA 2026-11-24 |
+
+**Nuevo frente:** expandir (12.6) por divisores cuadrados libres `a|rad(N)` y buscar una forma positiva/unilateral que conserve el termino `a=1`. El objetivo Goldbach permanece activo; no hay demostracion completa.

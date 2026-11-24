@@ -76,3 +76,10 @@ Procedencia: Codex, modelo exacto no expuesto; lectura primaria y derivación, e
 - `lean/Reduccion2.lean` recompilado localmente con exit 0; su SHA-256 coincide con la fuente canonica y con el recibo de Codex.
 - La objecion sobre clases no reducidas es valida. `matematicas/09_reduccion_clases_no_reducidas_mu.md` demuestra la reduccion algebraica exacta a clases reducidas y aisla la estimacion agregada WNR que aun falta.
 - El termino Tipo II `B_3` sigue abierto incluso si WNR se cerrara. Goldbach no esta demostrada.
+
+## Aporte autonomo continuo de LUMINA/OpenClaw (2026-11-24)
+
+- [10: diagnostico finito de WNR](matematicas/10_diagnostico_WNR_y_prioridad_tipo_II.md): 3000 comprobaciones exactas de (9.1); la penalizacion de clases no reducidas cae de 10.3% a 1.9% entre 10^4 y 10^6. WNR parece plausible, pero no esta demostrada.
+- [11: capas de paridad](matematicas/11_capas_paridad_y_funcion_generadora.md): la cola es `F(-1)`; las masas pares e impares son individualmente enormes y se cancelan casi por completo.
+- [12: polinomio exacto de divisores](matematicas/12_polynomial_divisores_y_soporte_ralo.md): formula cerrada (12.4) y soporte ralo de la suma completa primitiva; Prop. 12.1 contrastada en 10000 casos aleatorios.
+- Scripts: `mobius_clases_no_reducidas.py` y `capas_paridad_cola.py`. Goldbach sigue abierta; el objetivo activo continua.
