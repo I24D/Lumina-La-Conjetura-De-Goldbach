@@ -1,0 +1,66 @@
+{
+  "provenance": {
+    "agent": "Codex",
+    "model": "exact identifier not exposed",
+    "project_date": "2026-11-23",
+    "created_utc": "2026-11-24T04:03:51.033894+00:00",
+    "method": "local documentary handoff only",
+    "status": "[P-rev]/[N]/[T-Lean], scopes separated"
+  },
+  "local_record_only": true,
+  "not_an_mcp_submission_receipt": true,
+  "submission_status": "PENDING: lumina_shared_memory, lumina_recall_v2 and lumina_propose not exposed in current tool catalog",
+  "remote_memory_id": null,
+  "independent_review": false,
+  "requested_classification": "internal",
+  "proposals": [
+    {
+      "topic": "goldbach-claude-bilinear-06-20261123",
+      "original_author": "Claude Code",
+      "source": "matematicas/06_descomposicion_bilineal.md",
+      "status": "[P], requires corrections detailed in 08",
+      "content": "Bilinear decomposition of the primitive Mobius-Mangoldt tail. Review confirms intended BV range with qualifications; Rankin exponents need correction, non-reduced residue Mobius BV step is not justified, exact R-3 identity omits minus Tbad. Type II and uniform HB+ are unproved. Never ingest original claims as verified overwrite."
+    },
+    {
+      "topic": "goldbach-claude-bias-almost-all-07-20261123",
+      "original_author": "Claude Code",
+      "source": "matematicas/07_sesgo_mobius_goldbach_y_casi_todo_N.md",
+      "status": "[P]/[N], requires corrections detailed in 08",
+      "content": "Numerical class bias and finite Ramanujan model, known model in literature. Parseval equality must be inequality; moving boxes require a maximal argument supplied in 08. Original singular-series correlation used a stride sample confined to multiples of five; not a representative population correlation. Model residual is not automatically a continuous minor-arc integral."
+    },
+    {
+      "topic": "goldbach-codex-review-06-07-20261123",
+      "original_author": "Codex",
+      "source": "matematicas/08_revision_codex_06_07.md",
+      "status": "[P-rev] written review, [N] experiments, finite lemmas [T-Lean]",
+      "content": "Reproduced both experiments at 1e6 and extended to 1e7. No stable residual mean sign useful to establish uniform HB+. Full tail sampled at 25 even N per scale, all c included. New Lean file verifies finite reindexing, explicit proper-prime-power error (4.12), and first explicit bad-tail inequality of Prop.4.2, with only standard axioms. No Goldbach proof, asymptotic Type II bound, or independently reviewed written proof is asserted."
+    }
+  ],
+  "evidence_files": [
+    {
+      "relative_path": "matematicas/06_descomposicion_bilineal.md",
+      "sha256": "50d47f118dc282c0926033d565d6a1f8d8e3edba571f778e0ff403b8ff6c1341"
+    },
+    {
+      "relative_path": "matematicas/07_sesgo_mobius_goldbach_y_casi_todo_N.md",
+      "sha256": "9882542d20b4deea6fdc370b053c775daf3d6a6db275d3eff9e54f0721e3439b"
+    },
+    {
+      "relative_path": "matematicas/08_revision_codex_06_07.md",
+      "sha256": "cd00cd436f11ce3efed5e2499131a38891439cfcc15ff5b79aa68aff1581a585"
+    },
+    {
+      "relative_path": "lean/Reduccion2.lean",
+      "sha256": "2568abd7e5ccd6a125cc0fbef40c9dc80b66cd5593ea0129764f9cb5e77096e6"
+    },
+    {
+      "relative_path": "lean/2026-11-23_codex_Reduccion2_verificacion.json",
+      "sha256": "639e4f423e797801d6ee8277d2a664a57f5176453676ee275477f4393d80969d"
+    },
+    {
+      "relative_path": "numerico/resultados/20261124_033802_732515_codex_residuos_06_07.json",
+      "sha256": "2a2ba3e4f7d4954dce01e2464df4e1f57beeac2463bc46affacf5c29d04baf95"
+    }
+  ],
+  "mathematical_status": "Goldbach open. Numerical evidence and almost-all statements do not prove the universal conjecture."
+}

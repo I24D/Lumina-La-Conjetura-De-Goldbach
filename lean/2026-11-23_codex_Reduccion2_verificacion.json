@@ -1,0 +1,34 @@
+{
+  "provenance": {
+    "agent": "Codex",
+    "model": "exact identifier not exposed",
+    "project_date": "2026-11-23",
+    "created_utc": "2026-11-24T04:02:37.765553+00:00",
+    "status": "[T-Lean]",
+    "method": "Actual compiler output from tool session 8809, exit 0; source hash and identical copy"
+  },
+  "command": "C:\\Users\\dal_n\\.elan\\bin\\lake.exe env lean GoldbachLumina/Reduccion2.lean",
+  "working_directory": "C:\\Users\\dal_n\\lean\\goldbach_lumina",
+  "exit_code": 0,
+  "canonical_source": "C:\\Users\\dal_n\\lean\\goldbach_lumina\\GoldbachLumina\\Reduccion2.lean",
+  "copy": "lean/Reduccion2.lean",
+  "sha256": "2568abd7e5ccd6a125cc0fbef40c9dc80b66cd5593ea0129764f9cb5e77096e6",
+  "utf8_without_bom": true,
+  "toolchain": "leanprover/lean4:v4.37.0-rc1",
+  "compiler_output": "'GoldbachLumina.Reduction2.reindex_divisor_tail' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GoldbachLumina.Reduction2.proper_prime_power_error' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GoldbachLumina.Reduction2.reindex_mobius_tail' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GoldbachLumina.Reduction2.primeConvolution_eq_log' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GoldbachLumina.Reduction2.badTail_eq_product' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GoldbachLumina.Reduction2.bad_tail_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "printed_theorems": [
+    "reindex_divisor_tail",
+    "proper_prime_power_error",
+    "reindex_mobius_tail",
+    "primeConvolution_eq_log",
+    "badTail_eq_product",
+    "bad_tail_bound"
+  ],
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "contains_sorryAx": false,
+  "scope": "Finite reindexing, Eq. 4.12 inequality, and first explicit inequality of Prop. 4.2. No analytic Type II bound, asymptotic K_N estimate, or Goldbach proof."
+}

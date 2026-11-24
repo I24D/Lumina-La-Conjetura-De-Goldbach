@@ -1,0 +1,158 @@
+{
+  "provenance": {
+    "agent": "Codex",
+    "model": "exact identifier not exposed",
+    "project_date": "2026-11-23",
+    "created_utc": "2026-11-24T04:05:15.305062+00:00",
+    "method": "adversarial written review, primary-source bibliography, reproduced finite experiments, Lean kernel checking, artifact integrity checks",
+    "status": "[P-rev]/[N]/[T-Lean], scopes separated; no independent human review"
+  },
+  "tasks": {
+    "T1": {
+      "delivery": "PASS",
+      "mathematical_findings": [
+        "Lemma 6.1 range and Rankin exponent corrections",
+        "Lemma 6.2 non-reduced Mobius BV justification GAP",
+        "R-3 exact identity misses minus Tbad",
+        "Theorem 7.1 Parseval inequality and moving-box maximal repair in written review"
+      ]
+    },
+    "T2": {
+      "delivery": "PASS",
+      "known_model": "Bhowmik-Grimmelt arXiv:2607.27282v2 (2.6)",
+      "specific_statistical_bias_publication": "not located in limited primary-source search; no novelty claim"
+    },
+    "T3": {
+      "delivery": "PASS",
+      "reproductions_exit_codes": [
+        0,
+        0
+      ],
+      "X": [
+        100000,
+        1000000,
+        10000000
+      ],
+      "full_tail_scope": "all c included; 25 even N per scale; not exhaustive",
+      "conclusion": "No stable useful sign for uniform HB+; numeric evidence is not a proof"
+    },
+    "T4": {
+      "delivery": "PASS for requested finite inequalities and reindexing",
+      "lean_exit_code": 0,
+      "printed_theorems": [
+        "reindex_divisor_tail",
+        "proper_prime_power_error",
+        "reindex_mobius_tail",
+        "primeConvolution_eq_log",
+        "badTail_eq_product",
+        "bad_tail_bound"
+      ],
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "scope_exclusions": [
+        "asymptotic little-o in Eq4.12",
+        "second small-divisor inequality in Prop4.2",
+        "asymptotic divisor estimate for K_N",
+        "analytic Lemmas6.1/6.2 and Theorem7.1"
+      ]
+    }
+  },
+  "integrity_checks": {
+    "all_listed_files_utf8_no_bom": true,
+    "lean_copy_identical": true,
+    "no_sorry_admit_or_custom_axiom_declarations": true,
+    "numeric_source_hashes_match": true,
+    "pending_memory_evidence_hashes_match": true
+  },
+  "original_lean_source_final_sha256": "7f2951a6c6a217ece79049fb4925e7ca7aa9a053f840b9b66654dca5bbf0ab61",
+  "preservation": "No edits to other agents' mathematics 04-07 or Reduccion.lean. README/ESTADO and lean README appended only.",
+  "shared_memory": {
+    "status": "PENDING, tools not exposed",
+    "remote_memory_id": null,
+    "local_pending_record": "notas/2026-11-23_CODEX_revision_06_07_memoria_pendiente.json"
+  },
+  "goldbach_proved": false,
+  "artifacts": [
+    {
+      "relative_path": "matematicas/06_descomposicion_bilineal.md",
+      "sha256": "50d47f118dc282c0926033d565d6a1f8d8e3edba571f778e0ff403b8ff6c1341",
+      "bytes": 22886,
+      "utf8_without_bom": true
+    },
+    {
+      "relative_path": "matematicas/07_sesgo_mobius_goldbach_y_casi_todo_N.md",
+      "sha256": "9882542d20b4deea6fdc370b053c775daf3d6a6db275d3eff9e54f0721e3439b",
+      "bytes": 10656,
+      "utf8_without_bom": true
+    },
+    {
+      "relative_path": "matematicas/08_revision_codex_06_07.md",
+      "sha256": "cd00cd436f11ce3efed5e2499131a38891439cfcc15ff5b79aa68aff1581a585",
+      "bytes": 22826,
+      "utf8_without_bom": true
+    },
+    {
+      "relative_path": "numerico/codex_residuos_06_07.py",
+      "sha256": "1fd294fe77050bf1babf27b21b2462499018f5a6419ae486de27463c427e3e7b",
+      "bytes": 16024,
+      "utf8_without_bom": true
+    },
+    {
+      "relative_path": "numerico/resultados/20261123_223206_mobius_goldbach_aleatoriedad_1000000.json",
+      "sha256": "09fb6146fa26974337bf92f17466a125f4b81939a590faa543bacca42ae7235c",
+      "bytes": 3164,
+      "utf8_without_bom": true
+    },
+    {
+      "relative_path": "numerico/resultados/20261123_223326_arcos_mayores_mobius_1000000.json",
+      "sha256": "632e8d2a315a24a0c9e30e7de7531e9fc1936416a2d5b211850cafce3902edfc",
+      "bytes": 2266,
+      "utf8_without_bom": true
+    },
+    {
+      "relative_path": "numerico/resultados/20261124_033802_732515_codex_residuos_06_07.json",
+      "sha256": "2a2ba3e4f7d4954dce01e2464df4e1f57beeac2463bc46affacf5c29d04baf95",
+      "bytes": 149021,
+      "utf8_without_bom": true
+    },
+    {
+      "relative_path": "lean/Reduccion2.lean",
+      "sha256": "2568abd7e5ccd6a125cc0fbef40c9dc80b66cd5593ea0129764f9cb5e77096e6",
+      "bytes": 19563,
+      "utf8_without_bom": true
+    },
+    {
+      "relative_path": "lean/2026-11-23_codex_Reduccion2_verificacion.json",
+      "sha256": "639e4f423e797801d6ee8277d2a664a57f5176453676ee275477f4393d80969d",
+      "bytes": 1920,
+      "utf8_without_bom": true
+    },
+    {
+      "relative_path": "lean/README.md",
+      "sha256": "d8732a5b306c36c1965f1ca49193e1a4b472eb1db3cd2d398c669aea9b5a84ea",
+      "bytes": 3163,
+      "utf8_without_bom": true
+    },
+    {
+      "relative_path": "README.md",
+      "sha256": "63771c092c7f2685c5ff64e71b92b4d967a97e9779930b8f2c1d102364525d4d",
+      "bytes": 5824,
+      "utf8_without_bom": true
+    },
+    {
+      "relative_path": "ESTADO.md",
+      "sha256": "befee535e00865d92979a139d961139ff88fa02fcca3d90fc34bd6cfce3e1dd5",
+      "bytes": 19380,
+      "utf8_without_bom": true
+    },
+    {
+      "relative_path": "notas/2026-11-23_CODEX_revision_06_07_memoria_pendiente.json",
+      "sha256": "e07f651d90f7bc9672d141024b84897ad00a6df57a4a20bf2e42811becf6f7ba",
+      "bytes": 3689,
+      "utf8_without_bom": true
+    }
+  ]
+}

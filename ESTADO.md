@@ -40,7 +40,7 @@ Cada entrada lleva: etiqueta, enunciado, fuente y quién la añadió. Etiquetas 
 *(nada)*
 
 ## Pendientes y bloqueos
-- **Lean 4 + Mathlib sin instalar.** Bloquea la línea L2 (formalización).
+- ~~**Lean 4 + Mathlib sin instalar.** Bloquea la línea L2 (formalización).~~ **Resuelto el 2026-11-23** (Claude, a petición de Dal): ver la entrada de Claude al final y `matematicas/06` §11.
 - **MCP `lumina_shared_memory` caído** (2026-11-23). Quedan pendientes de registrar como propuesta: la nota RH/Alpöge, `matematicas/01` y `matematicas/02`.
 - Tareas abiertas T-LL1 a T-LL4 (ver `matematicas/02` §4).
 - Lecturas pendientes:
@@ -77,3 +77,92 @@ Cada entrada lleva: etiqueta, enunciado, fuente y quién la añadió. Etiquetas 
 - Registrar este aporte como propuesta en memoria compartida: **PENDIENTE**, herramientas `lumina_shared_memory`/`lumina_propose` no expuestas. Respaldo con procedencia y hashes: `notas/2026-11-23_CODEX_aporte_memoria_pendiente.json`. No se eludió el contrato por REST/service_role.
 
 **Ejecuciones:** terminadas; ningún cálculo del verificador queda en segundo plano. No se iniciaron modelos, builds, instalaciones ni cambios de servicios. **Goldbach no está demostrada por este aporte.**
+
+## Aporte de LUMINA/OpenClaw - 2026-11-23
+
+| Etiqueta | Resultado / alcance | Evidencia |
+|---|---|---|
+| [P] | Reindexacion exacta de la cola por `n=N-cd`, que permite enumerar divisores de `N-n` | `matematicas/05_diagnostico_cola_y_objetivo_bilineal.md`, (5.1) |
+| [N] | Implementacion literal y reindexada coinciden para todos los pares `N<=300` | `numerico/cola_mobius_scan.py` |
+| [N] | `U log(N)/N` vale 3.2367, 3.4482, 3.2752 y 3.1691 para `N=10^3,10^4,10^5,10^6`; HmuLambda no recibe apoyo numerico y queda despriorizada, no refutada | `numerico/resultados/20261124_023525_cola_mobius_1000000.json` |
+| [P] | Una cota uniforme por cajas bilineales firmadas (HB) implica `T_N^prim=o(N)` conservando cancelacion entre fibras | `matematicas/05_diagnostico_cola_y_objetivo_bilineal.md`, seccion 4 |
+
+**Estado honesto:** Goldbach sigue abierta. El avance elimina un blanco numericamente sospechoso y lo reemplaza por una desigualdad bilineal precisa. El siguiente cuello es una descomposicion Tipo I/II valida en todos los rangos y uniforme para cada N par.
+
+## Aporte de Claude Code — 2026-11-23 (tarea HB; entrada posterior, preserva las anteriores)
+
+**Procedencia:** Claude Code, modelo `claude-opus-5-5`. Derivación escrita y diagnóstico numérico propio. Estado **[P]**, sin revisión independiente.
+
+| Etiqueta | Resultado / alcance | Evidencia |
+|---|---|---|
+| [P] | Lema 6.1: (HB) se cumple en las cajas con K ≤ √N/(log N)^B, por BV directo en c. Equivale a subir D de 04 a √N/(log N)^B | `matematicas/06_descomposicion_bilineal.md` §5 y R-2 |
+| [P] | Lema 6.2: con Vaughan y UV ≤ K^{1/2}/L^B, los términos de Tipo I y los degenerados son ≪ N/L^A (BV para μ en d). En R2, B_N = B₃ (Tipo II) + O(N/L^A) | `06` §6 |
+| **ABIERTO** | B₃ (Tipo II) en todas las cajas con K > √N/L^B. Con C ≥ N^δ basta [C: EH en clase fija]; con C < N^δ es el núcleo de paridad. Ningún resultado publicado lo controla (BFI, Zhang–Polymath y Maynard requieren módulos factorizables o lisos) | `06` §7 |
+| [T] elemental | Lema 6.0: en la caja c = 1, la parte con d primo es −Σ_{p~K} log p·Λ(N−p), un bloque diádico de Goldbach. (HB) en las cajas con C pequeño equivale en dificultad a Goldbach por bloques | `06` §4 y R-3 |
+| [P-rev + T] | Mejor cota: −(3+o(1))N𝔖(N) ≤ T^prim ≤ (1+o(1))N𝔖(N). Goldbach necesita ≤ (1−κ)N𝔖(N) | `06` §8 |
+| [N] | Comprobación cruzada independiente: T^prim/N = 0,0642495 en N = 10⁶, idéntico al de OpenClaw. ΣP/N y ΣQ/N valen ≈ ∓10,9 en N = 10⁷ con T/N = 0,086. La fila c = 1 reproduce −R(N)/N ≈ −1,761 frente a 𝔖 = 1,7604. max\|B\|/N por caja: 0,063 → 0,034 → 0,018 | `numerico/cajas_bilineales.py`; `numerico/resultados/20261123_215414_cajas_bilineales.json` y `20261123_215627_cajas_bilineales.json` |
+| infraestructura | **Lean 4 + Mathlib instalado.** elan 4.4.0; proyecto en `C:\Users\dal_n\lean\goldbach_lumina` (fuera de OneDrive), toolchain v4.37.0-rc1. La prueba de humo compila: enunciado de Goldbach, 100 = 3+97 e identidad Λ = −Σ μ log (Mathlib) | `06` §11 |
+
+**Informes sobre 04 y 05 (ninguno es un error):**
+- R-1: confirmación de (HB) ⇒ T = o(N), con la precisión de truncar en d > D la caja que contiene a D.
+- R-2: la Prop. 4.6 vale con D = √N/L^B.
+- R-3: la parte compuesta de la cola es ≈ N𝔖(N) incondicionalmente, así que "T = o(N)" es la asintótica de Hardy–Littlewood.
+
+**Recomendación:** no perseguir (HB) caja por caja en R2. El blanco honesto es la cota unilateral sobre C < N^δ (mejorar la constante 1 a 1−κ), y requiere información sensible a la paridad. Formalizar ya en Lean la Prop. 4.1, la Prop. 4.2 y el Lema 6.0.
+
+**Memoria compartida:** registro como propuesta **PENDIENTE**. El MCP `lumina_shared_memory` no está disponible en esta sesión de Claude. **Goldbach no está demostrada por este aporte.**
+
+## Aporte de Claude Code — 2026-11-23, segunda ronda (entrada posterior, preserva las anteriores)
+
+**Procedencia:** Claude Code, `claude-opus-5-5`. Experimentos FFT, derivación escrita y Lean. Detalle en `matematicas/07_sesgo_mobius_goldbach_y_casi_todo_N.md`.
+
+| Etiqueta | Resultado / alcance | Evidencia |
+|---|---|---|
+| [P] (entradas clásicas) | **Teorema 7.1:** (HB) se cumple en todas las cajas para todo N par de (X/2, X] salvo O(X/(log X)^B), por Parseval sobre N y Davenport 1937. Recupera E(X) ≪ X/log^B en el marco de cajas. Lección: (HB) es fácil en promedio sobre N; la dificultad está en cada N | `07` §1 |
+| [N] | **Fenómeno:** la correlación Möbius–Goldbach M0(N) = Σ μ(n)Λ(N−n) tiene varianza sub-aleatoria (≈ 0,90) y un **sesgo negativo cuando N tiene factores primos pequeños**: media de Z = −0,219 si 3 \| N y corr(Z, 𝔖(N)) = −0,49 en N ≤ 10⁶; −0,094 y −0,26 en N ≤ 10⁷ | `numerico/mobius_goldbach_aleatoriedad.py`; `resultados/20261123_220731_*.json` |
+| [H + N] | **Fórmula explicativa (arcos mayores):** P_Q(N) = Σ_{q≤Q} μ(q)/φ(q)·Σ_{n<N} μ(n)c_q(N−n); el término q = 1 es la función de Mertens. Con Q = 6 desaparece el sesgo de 3; con Q = 30, todos los sesgos de clase y la correlación con 𝔖 (−0,49 → −0,045 en 10⁶; −0,26 → −0,017 en 10⁷). R² = 0,13 / 0,29 / 0,45 con Q = 30 / 210 / 1000 | `numerico/arcos_mayores_mobius.py`; `resultados/20261123_2209*_*.json`, `…221209…`, `…221311…` |
+| [T-Lean] | **Verificado por el kernel** (solo propext, Classical.choice y Quot.sound): Prop. 4.1 de 04 (R = S − T para todo N y D), coprimalidad (N−cd, N) = 1 ⇒ (c, N) = 1, núcleo de la Prop. 4.2, Lema 6.0 y R-3 | `lean/README.md`; canónico en `C:\Users\dal_n\lean\goldbach_lumina\GoldbachLumina\Reduccion.lean` |
+
+**Estado honesto:** el sesgo explicado es de arcos mayores (tamaño √N; bajo GRH es inofensivo). **La parte de arcos menores del núcleo de paridad sigue abierta** (06, F1 y F2). No se reivindica novedad bibliográfica sin buscarla. Memoria compartida: **PENDIENTE** (MCP no disponible). **Goldbach no está demostrada.**
+
+
+## Codex - revision 06/07 en curso (2026-11-23)
+
+Procedencia: Codex; modelo exacto no expuesto; estado [P]/[N]. Lectura del encargo completada. Se reproduciran secuencialmente los dos scripts a 10^6, y despues se ampliara el diagnostico hasta 10^7, sin modelos ni calculos pesados simultaneos. Se prepara matematicas/08_revision_codex_06_07.md. La entrada final indicara el cierre y los resultados.
+
+## Cierre de Codex — revisión 06/07, 2026-11-23 ET
+
+**Procedencia:** Codex; identificador exacto de modelo no expuesto. Método: lectura del encargo y de 04–07, derivaciones escritas, búsqueda de fuentes primarias, experimentos secuenciales hasta 10^7 y pruebas nuevas en Lean. **[P-rev] NO independiente**, al compartir usuario de Windows. Se preservaron los documentos y fuentes de otros agentes; esta entrada posterior matiza expresamente afirmaciones anteriores.
+
+Informe principal: [08_revision_codex_06_07.md](matematicas/08_revision_codex_06_07.md).
+
+| Tarea / estado | Resultado comprobado y alcance |
+|---|---|
+| T1 — revisión entregada [P-rev] | Lema 6.1 válido en el rango previsto, explicando K≥N^δ y 2K dentro de BV; se corrige el par de exponentes de Rankin. Lema 6.2: (q,c)=1 correcto, pero la extensión de BV para μ a clases no reducidas queda como **HUECO**, no teorema acreditado. R-2 se mantiene. |
+| T1 — error explícito R-3 | Falta **−Tbad** en la identidad exacta de la parte compuesta. N=32,D=3 da Tbad=log 2·log 36≠0. Su asintótica N𝔖+o(N) sobrevive. HB+ implica una cota cuantitativa de representaciones; no se ha probado equivalencia con mera existencia. |
+| T1 — Teorema 7.1 [P-rev] | Parseval requiere ≤ al restringir N≤X; Davenport uniforme es aplicable. Para cajas móviles faltaba un argumento maximal. 08 §4 aporta la reparación escrita con descomposición diádica de prefijos y control de su energía. Sigue siendo para **casi todo** N y no se formaliza aquí en Lean. |
+| T2 — búsqueda entregada | Λ_Q=Σμ(q)c_q/φ(q) es un modelo aditivo conocido, explícito en Bhowmik–Grimmelt, arXiv:2607.27282v2 (2.6). Su convolución P_Q con μ no se presenta como fórmula nueva. No se localizó publicación del sesgo estadístico exacto −0,22/−0,49; búsqueda limitada, sin reivindicar novedad. |
+| T3 — PASS reproducción [N] | Ambos comandos pedidos a 10^6 salieron 0 y reproducen 07. Error FFT/directo 3,65·10⁻¹⁵. Se detecta muestreo por pasos restringido a múltiplos de 5 en la correlación original; −0,49 no representa por sí solo a todos los pares. |
+| T3 — PASS ampliación [N] | X=10^5,10^6,10^7; residuo Ramanujan Q=30 con medias −0,0005285,+0,0000536,−0,0000632 y asimetrías −0,17217,−0,08260,−0,02637. No emerge un signo estable para HB+. P_Q no es automáticamente una proyección continua de arcos mayores. |
+| T3 — cola completa [N] | Todas las c, **25 N por escala**, no todos los N. Medias de (T−T_30)/(N𝔖): −0,00534,+0,00211,+0,00693. La identidad Tprim=S−R−Tbad se contrasta con bucle literal; usar R para evaluarla no prueba HB+ independientemente. |
+| T4 — PASS [T-Lean] | `Reduccion2.lean`: reindexación (c,d), desigualdad explícita (4.12) y primera cota de Prop. 4.2 \|Tbad\|≤K_N. Fuente final compila con exit 0, sin errores ni advertencias. Seis `#print axioms`: únicamente propext, Classical.choice, Quot.sound. No se formalizan la segunda cota de Prop. 4.2, la estimación asintótica de K_N o las cotas analíticas de 06/07. |
+| Memoria — PENDIENTE | Sin herramientas `lumina_shared_memory`/`lumina_propose` expuestas. Tres propuestas locales: aportes de Claude 06/07 con sus observaciones de revisión, y el aporte de Codex. Sin ID remoto ni persistencia MCP afirmada. |
+
+**Archivos nuevos:** `matematicas/08_revision_codex_06_07.md`; `numerico/codex_residuos_06_07.py`; `lean/Reduccion2.lean`; `lean/2026-11-23_codex_Reduccion2_verificacion.json`; `notas/2026-11-23_CODEX_revision_06_07_memoria_pendiente.json`; `notas/2026-11-23_CODEX_revision_06_07_cierre.json`.
+
+**JSON de experimentos:** `numerico/resultados/20261123_223206_mobius_goldbach_aleatoriedad_1000000.json`, `20261123_223326_arcos_mayores_mobius_1000000.json` y `20261124_033802_732515_codex_residuos_06_07.json`. Los dos primeros nombres usan hora local; el tercero, UTC. El último contiene hashes, semilla 20261123, parámetros, estadísticas por clases y bloques y muestra de cola completa.
+
+**Lean canónico:** `C:\Users\dal_n\lean\goldbach_lumina\GoldbachLumina\Reduccion2.lean`, SHA-256 `2568abd7e5ccd6a125cc0fbef40c9dc80b66cd5593ea0129764f9cb5e77096e6`; copia idéntica UTF-8 sin BOM en OneDrive. `Reduccion.lean` permanece preservado. Se añaden resultados a `lean/README.md` y un enlace al README general.
+
+**Pendiente matemático:** justificar la entrada no reducida de Lema 6.2; revisión independiente de la reparación maximal; control unilateral uniforme de Tipo II sensible a la paridad, con constantes y cuantificadores; umbral efectivo y tramo finito. Los resultados numéricos, el teorema para casi todos y las identidades formales no resuelven esa obligación. **Goldbach sigue abierta.**
+
+## Verificacion LUMINA/OpenClaw - 2026-11-24
+
+| Etiqueta | Resultado | Evidencia |
+|---|---|---|
+| [T-Lean, reproducido] | `Reduccion2.lean` compila con exit 0; seis declaraciones sin `sorryAx`; hash de copia y fuente canonica identico | `lean/2026-11-23_codex_Reduccion2_verificacion.json` |
+| [P-rev] | Confirmados los tres errores documentados en 08 y el hueco de clases no reducidas; ninguno cierra el Tipo II | `matematicas/08_revision_codex_06_07.md` |
+| [P] | Identidad exacta (9.1) reduce una clase no reducida de `mu` a clases reducidas mediante `g=(r,q)` y un parametro `g`-liso `k` | `matematicas/09_reduccion_clases_no_reducidas_mu.md` |
+| [ABIERTO] | Falta demostrar la estimacion agregada WNR; aun con ella, el termino Tipo II `B_3` permanece como barrera principal | `matematicas/09_reduccion_clases_no_reducidas_mu.md`, secciones 3-5 |
+
+**Veredicto:** la revision de Codex es tecnicamente util y su artefacto Lean fue reproducido. La investigacion avanzo al convertir el hueco vago de clases arbitrarias en una desigualdad explicita, pero no existe todavia demostracion de Goldbach.

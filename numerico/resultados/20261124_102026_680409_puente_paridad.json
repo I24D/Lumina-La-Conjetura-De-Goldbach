@@ -1,0 +1,235 @@
+{
+  "provenance": {
+    "agent": "Codex",
+    "model": "exact identifier not exposed",
+    "project_date": "2026-11-23",
+    "run_utc": "2026-11-24T10:20:26.178818+00:00",
+    "status": "[N] finite checks, not Goldbach proof or Lean verification",
+    "script_sha256": "f1b22797f6b5275a45e6fd2779346d04d5a585622b190633fbbc1dd333c29917",
+    "python": "3.14.10",
+    "sources": [
+      "../matematicas/03_sawin_shusterman_alpoge_puente.md",
+      "../matematicas/04_reduccion_mobius_goldbach.md"
+    ]
+  },
+  "integer_checks": {
+    "even_N_through": 600,
+    "hyperbola_symbolic_log_polynomial_identities": 1193,
+    "prime_power_nonnegative_remainder_checks": 299,
+    "rational_euler_coefficient_checks": 3000,
+    "beyond_half_level_integer_budget_checks": 178657,
+    "coefficient_size_obstruction_example": {
+      "N": 600,
+      "D": 8,
+      "c": 31,
+      "d": 13,
+      "N_minus_cd_prime": 197,
+      "meaning": "admissible primitive tail term with coefficient c larger than variable d"
+    },
+    "arithmetic": "identities: exact integer/Fraction; tail diagnostics: floating logs",
+    "noncoprime_tail_terms_checked": 108,
+    "tail_diagnostics": [
+      {
+        "N": 30,
+        "D": 3,
+        "primitive_U": 14.946432581113127,
+        "U_times_logN_over_N": 1.6945255786690632,
+        "signed_tail": -42.90960991678643,
+        "noncoprime_absolute_tail": 12.694932373638334,
+        "elementary_noncomp_bound": 107.17159922667761
+      },
+      {
+        "N": 64,
+        "D": 4,
+        "primitive_U": 34.14527793560673,
+        "U_times_logN_over_N": 2.218847168484517,
+        "signed_tail": -62.30741216804762,
+        "noncoprime_absolute_tail": 14.988437332175318,
+        "elementary_noncomp_bound": 115.30872334036833
+      },
+      {
+        "N": 100,
+        "D": 4,
+        "primitive_U": 48.934736715910425,
+        "U_times_logN_over_N": 2.253527905832875,
+        "signed_tail": -109.26757915260698,
+        "noncoprime_absolute_tail": 33.87668823063435,
+        "elementary_noncomp_bound": 236.9124521566389
+      },
+      {
+        "N": 210,
+        "D": 5,
+        "primitive_U": 181.9364643956609,
+        "U_times_logN_over_N": 4.632542089914995,
+        "signed_tail": -745.2073822349522,
+        "noncoprime_absolute_tail": 72.64399657035233,
+        "elementary_noncomp_bound": 418.26444754415735
+      },
+      {
+        "N": 256,
+        "D": 6,
+        "primitive_U": 120.26518619364242,
+        "U_times_logN_over_N": 2.6050460853012534,
+        "signed_tail": -98.74507890345714,
+        "noncoprime_absolute_tail": 25.486514698517713,
+        "elementary_noncomp_bound": 322.8644253530313
+      },
+      {
+        "N": 512,
+        "D": 8,
+        "primitive_U": 272.5236951165088,
+        "U_times_logN_over_N": 3.320490777640773,
+        "signed_tail": -78.15515262884558,
+        "noncoprime_absolute_tail": 40.11366551719412,
+        "elementary_noncomp_bound": 514.5651779063937
+      },
+      {
+        "N": 600,
+        "D": 8,
+        "primitive_U": 475.8928645941697,
+        "U_times_logN_over_N": 5.07375529704701,
+        "signed_tail": -1768.3515741536946,
+        "noncoprime_absolute_tail": 123.98283637021139,
+        "elementary_noncomp_bound": 693.8241052430021
+      }
+    ]
+  },
+  "dense_paley_counterexample": {
+    "cases": [
+      {
+        "prime": 3,
+        "support_size": 1,
+        "self_sum_at_zero": 0,
+        "odd_lift_modulus": 6,
+        "odd_lift_sum_at_even_target": 0
+      },
+      {
+        "prime": 7,
+        "support_size": 3,
+        "self_sum_at_zero": 0,
+        "odd_lift_modulus": 14,
+        "odd_lift_sum_at_even_target": 0
+      },
+      {
+        "prime": 11,
+        "support_size": 5,
+        "self_sum_at_zero": 0,
+        "odd_lift_modulus": 22,
+        "odd_lift_sum_at_even_target": 0
+      },
+      {
+        "prime": 19,
+        "support_size": 9,
+        "self_sum_at_zero": 0,
+        "odd_lift_modulus": 38,
+        "odd_lift_sum_at_even_target": 0
+      },
+      {
+        "prime": 23,
+        "support_size": 11,
+        "self_sum_at_zero": 0,
+        "odd_lift_modulus": 46,
+        "odd_lift_sum_at_even_target": 0
+      },
+      {
+        "prime": 31,
+        "support_size": 15,
+        "self_sum_at_zero": 0,
+        "odd_lift_modulus": 62,
+        "odd_lift_sum_at_even_target": 0
+      },
+      {
+        "prime": 43,
+        "support_size": 21,
+        "self_sum_at_zero": 0,
+        "odd_lift_modulus": 86,
+        "odd_lift_sum_at_even_target": 0
+      },
+      {
+        "prime": 47,
+        "support_size": 23,
+        "self_sum_at_zero": 0,
+        "odd_lift_modulus": 94,
+        "odd_lift_sum_at_even_target": 0
+      },
+      {
+        "prime": 59,
+        "support_size": 29,
+        "self_sum_at_zero": 0,
+        "odd_lift_modulus": 118,
+        "odd_lift_sum_at_even_target": 0
+      },
+      {
+        "prime": 67,
+        "support_size": 33,
+        "self_sum_at_zero": 0,
+        "odd_lift_modulus": 134,
+        "odd_lift_sum_at_even_target": 0
+      },
+      {
+        "prime": 71,
+        "support_size": 35,
+        "self_sum_at_zero": 0,
+        "odd_lift_modulus": 142,
+        "odd_lift_sum_at_even_target": 0
+      },
+      {
+        "prime": 79,
+        "support_size": 39,
+        "self_sum_at_zero": 0,
+        "odd_lift_modulus": 158,
+        "odd_lift_sum_at_even_target": 0
+      },
+      {
+        "prime": 83,
+        "support_size": 41,
+        "self_sum_at_zero": 0,
+        "odd_lift_modulus": 166,
+        "odd_lift_sum_at_even_target": 0
+      },
+      {
+        "prime": 103,
+        "support_size": 51,
+        "self_sum_at_zero": 0,
+        "odd_lift_modulus": 206,
+        "odd_lift_sum_at_even_target": 0
+      },
+      {
+        "prime": 107,
+        "support_size": 53,
+        "self_sum_at_zero": 0,
+        "odd_lift_modulus": 214,
+        "odd_lift_sum_at_even_target": 0
+      },
+      {
+        "prime": 127,
+        "support_size": 63,
+        "self_sum_at_zero": 0,
+        "odd_lift_modulus": 254,
+        "odd_lift_sum_at_even_target": 0
+      }
+    ],
+    "max_floating_error": 7.424714685457149e-11,
+    "scope": "dense finite-field surrogate, not a counterexample about primes in Z"
+  },
+  "polynomial_checks": {
+    "field": "F_3",
+    "max_degree": 6,
+    "pellet_via_factorization_vs_sylvester_determinant": 1092,
+    "fixed_derivative_fiber_cases": 81,
+    "fiber_mobius_sums": [
+      0,
+      -3,
+      3,
+      0,
+      -3,
+      3,
+      0,
+      -3,
+      3
+    ],
+    "scope": "algebraic identities only; F_3 does not meet the large-q twin-prime theorem hypothesis"
+  },
+  "elapsed_seconds": 0.5015,
+  "pass": true
+}

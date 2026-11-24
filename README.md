@@ -43,3 +43,36 @@ Procedencia: Codex, modelo exacto no expuesto; lectura primaria y derivación, e
 - [04: reducción a una cola primitiva, pruebas y desigualdad pendiente](matematicas/04_reduccion_mobius_goldbach.md).
 - Verificador ligero: `python numerico/puente_paridad_check.py --hasta 600`.
 - Ver la entrada fechada de Codex en ESTADO para resultados, límites y memoria pendiente. Se conserva el trabajo anterior.
+
+## Aporte de LUMINA/OpenClaw (2026-11-23)
+
+- Reindexacion exacta y verificador de `T_N^prim`.
+- Calculo literal de `U_N(D)` hasta `N=10^6`: la normalizacion exigida por HmuLambda permanece cerca de 3.2, por lo que esa hipotesis queda despriorizada como blanco posiblemente demasiado fuerte.
+- Nuevo blanco que conserva cancelacion: cajas bilineales firmadas `B_N(C,K)`.
+- Ver `matematicas/05_diagnostico_cola_y_objetivo_bilineal.md`.
+
+## Aporte de Claude Code (2026-11-23, tarea HB)
+
+- [06: descomposición bilineal de B_N(C,K)](matematicas/06_descomposicion_bilineal.md). Qué rangos se controlan (BV, Vaughan Tipo I), cuáles no (Tipo II con K > √N) y por qué (clase fija más allá de 1/2; núcleo de paridad).
+- Diagnóstico por cajas: `python numerico/cajas_bilineales.py --N 1e6`.
+
+## Lean 4 + Mathlib (instalado el 2026-11-23)
+
+- Proyecto: `C:\Users\dal_n\lean\goldbach_lumina`. Está **fuera de OneDrive a propósito**, porque la caché de Mathlib ocupa unos 5 GB.
+- Compilar un archivo: `cd C:\Users\dal_n\lean\goldbach_lumina` y luego `lake env lean GoldbachLumina/<Archivo>.lean`.
+- Ejemplo que compila: `GoldbachLumina/Prueba.lean` (enunciado de Goldbach, sin demostrar; un caso concreto; identidad Λ = −Σ μ log de Mathlib).
+- Notación: usar `ArithmeticFunction.moebius` y `ArithmeticFunction.vonMangoldt` con nombre completo, porque las notaciones μ/Λ dan ambigüedad.
+
+## Aporte de Claude Code (2026-11-23, segunda ronda)
+
+- [07: sesgo Möbius–Goldbach, fórmula de arcos mayores, (HB) para casi todo N y Lean](matematicas/07_sesgo_mobius_goldbach_y_casi_todo_N.md).
+- Experimentos: `python numerico/mobius_goldbach_aleatoriedad.py --hasta 1e6` y `python numerico/arcos_mayores_mobius.py --hasta 1e6 --Q 1 6 30`.
+- Lean: ver `lean/README.md`, con 6 teoremas verificados por el kernel.
+
+- **Codex, 2026-11-23:** [revisión adversarial 08 de 06/07](matematicas/08_revision_codex_06_07.md), bibliografía y experimentos de residuos hasta 10^7; [Reduccion2.lean](lean/Reduccion2.lean) verifica reindexación, (4.12) y \|Tbad\|≤K_N. Ver cierre en ESTADO y registro en `lean/README.md`. [P-rev]/[N]/[T-Lean], alcances separados; **Goldbach sigue abierta**.
+
+## Verificacion LUMINA/OpenClaw posterior a Codex (2026-11-24)
+
+- `lean/Reduccion2.lean` recompilado localmente con exit 0; su SHA-256 coincide con la fuente canonica y con el recibo de Codex.
+- La objecion sobre clases no reducidas es valida. `matematicas/09_reduccion_clases_no_reducidas_mu.md` demuestra la reduccion algebraica exacta a clases reducidas y aisla la estimacion agregada WNR que aun falta.
+- El termino Tipo II `B_3` sigue abierto incluso si WNR se cerrara. Goldbach no esta demostrada.
