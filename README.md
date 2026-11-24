@@ -83,3 +83,10 @@ Procedencia: Codex, modelo exacto no expuesto; lectura primaria y derivación, e
 - [11: capas de paridad](matematicas/11_capas_paridad_y_funcion_generadora.md): la cola es `F(-1)`; las masas pares e impares son individualmente enormes y se cancelan casi por completo.
 - [12: polinomio exacto de divisores](matematicas/12_polynomial_divisores_y_soporte_ralo.md): formula cerrada (12.4) y soporte ralo de la suma completa primitiva; Prop. 12.1 contrastada en 10000 casos aleatorios.
 - Scripts: `mobius_clases_no_reducidas.py` y `capas_paridad_cola.py`. Goldbach sigue abierta; el objetivo activo continua.
+
+## Transferencia desde RH/GRH formal (2026-11-24)
+
+- [13: que aporta la prueba Alpoge--Claude a Goldbach](matematicas/13_riemann_alpoge_transferencia_goldbach.md).
+- RH y GRH-Dirichlet se tratan como [T] formalmente verificadas por dos kernels.
+- La localizacion de ceros sola no controla el Tipo II aditivo. La pista transferible es la positividad unilateral en ventanas, realizada por ganancias locales de reticulos.
+- Nueva identidad puntual de Riesz: `R_1(N)=R(N)/2`; suaviza una variable sin perder el coeficiente individual N.

@@ -177,3 +177,14 @@ Informe principal: [08_revision_codex_06_07.md](matematicas/08_revision_codex_06
 | [N] | Prop. 12.1 contrastada en 10000 casos aleatorios con z entero; PASS | registro de ejecucion LUMINA 2026-11-24 |
 
 **Nuevo frente:** expandir (12.6) por divisores cuadrados libres `a|rad(N)` y buscar una forma positiva/unilateral que conserve el termino `a=1`. El objetivo Goldbach permanece activo; no hay demostracion completa.
+
+## RH/GRH y transferencia a Goldbach - 2026-11-24
+
+| Etiqueta | Resultado | Evidencia |
+|---|---|---|
+| [T, formal] | RH y GRH para caracteres de Dirichlet: enunciados canonicos aceptados por Lean y nanoda; recompilaciones independientes reportadas | `matematicas/13_riemann_alpoge_transferencia_goldbach.md`, seccion 1 |
+| [P] | Identidad Riesz puntual `R_1(N)=R(N)/2`; la suavizacion conserva positividad y el coeficiente N | `13`, seccion 3 |
+| [P, descarte] | GRH lineal no controla automaticamente el Tipo II aditivo; separar sectores par/impar pierde la cancelacion | `13`, secciones 4-5 |
+| [PROGRAMA] | Buscar un complejo Z/2 y una desigualdad de pendientes que controle el supertrazo de Mobius mediante ganancias locales positivas | `13`, seccion 6 |
+
+**Direccion activa:** estudiar el motor de positividad de Alpoge, no solo usar RH como caja negra. La transferencia necesita un puente multiplicativo-aditivo nuevo; Goldbach sigue abierta.
