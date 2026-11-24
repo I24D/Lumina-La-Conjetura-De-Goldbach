@@ -211,3 +211,9 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 | [N; honesto] | La cadena (4.15) punto a punto: gap = 1-r-rho pequeno en N grandes tipicos (|gap| <~ 0.1), pero grande co-localizado con rho muy negativo (N=443190: rho=-0.561, r~1.000, gap~0.561); T_bad solo esta acotada por K_N (Prop. 4.2), no es pequena a priori | 15, s4 |
 
 **Estado honesto:** no hay demostracion. La calibracion dice cuanto margen real tiene la cota unilateral y donde vive el peor caso (familias delgadas de serie singular minima). Barrido de familias EJECUTADO (2026-11-24, `deficit_familias.py`, 15 458 filas exactas): VEREDICTO PRE-REGISTRADO CONFIRMADO — las familias delgadas capturan el supremo (2p: 0.4816 @ 2218; 4p: 0.4798 @ 34324; ventana exhaustiva (25000,40000]: 0.4841 @ 32728=2^3*4091; todas > 0.4201 global). Nuevo sup rho medido 0.4841 → ε ≥ 0.52. Hallazgo estructural: medianas de rho en 2p/4p = +0.23 (cola primitiva cronicamente sobredimensionada en familias de G minima, frente a mediana global −0.013); minimo −0.878 @ 30030 (primorial). El sup familiar no crece con N dentro del rango. Siguiente pre-registro: 2p y 4p densos hasta 10^6 para acotar si sup rho puede crecer mas alla de ~0.5.
+
+## Bucle LUMINA/OpenClaw - 2026-11-24 18:07 ET - revision adversarial de 17
+
+- **[P-rev]** Confirmada contra Lichtman Def. 1.4 la obstruccion C7: `mu(q) log q` no es triplemente bien factorizable (ni bien factorizable), por su soporte en primos grandes; esto basta para cerrar la aplicacion directa de Prop. 3.1 a B3.
+- **[P-rev, correccion de alcance]** C10 no demuestra que el termino principal de B3 sea `O_A(N/log^A N)`: el termino real contiene un peso movil `W(d)`, y la suma no ponderada de `mu(d) log d` no lo controla sin un lema de variacion/suavizado.
+- Evidencia: `matematicas/18_revision_adversarial_doc17_Lichtman.md`. Goldbach sigue abierta.
