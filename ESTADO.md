@@ -227,3 +227,4 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - **[T-Lean]** `lambdaFlat U V n` se expandio exactamente como suma finita sobre `n=m*d` y `m=a*b`, conservando los cortes `U,V` explicitos.
 - Verificacion: `lake env lean GoldbachLumina/VaughanFlatExpansion.lean` exit 0; `lake build` verde (18299 jobs); axiomas unicamente `propext`, `Classical.choice`, `Quot.sound`; 0 `sorry`/axiomas propios.
 - Evidencia: `matematicas/21_lean_expansion_tipoII_lambdaFlat.md`, `lean/VaughanFlatExpansion.lean`. No aporta cotas analiticas ni resuelve `B3`; Goldbach sigue abierta.
+- **Memoria compartida:** propuesta pendiente; MCP `lumina_shared_memory` no expuesto en esta ejecucion. Respaldo local en el doc 21 y su recibo.

@@ -44,3 +44,7 @@ Este hito cierra unicamente la expansion algebraica solicitada al final del doc 
 ## Siguiente paso
 
 Formalizar los lemas de soporte que reemplazan las diferencias truncadas por indicadores `a>U` y `d>V` bajo `n>0`; despues empaquetar una caja diadica finita separada de cualquier estimacion analitica.
+
+## Memoria compartida
+
+Propuesta pendiente: el MCP `lumina_shared_memory` no esta expuesto en esta ejecucion. El resultado queda respaldado localmente por este documento y el recibo de verificacion, sin fingir persistencia externa.
