@@ -34,3 +34,4 @@
 2026-11-25 13:44 ET | frente: identidad Buchstab y geometria de la cunha | resultado: [T]/[P-rev] para q<=N^(1/4) la cunha fuerza ell primo; rama compuesta solo si delta>1/4, ancho (4delta-1)/6; checks exactos PASS | siguiente: norma unilateral de la rama bilineal sobre dos primos.
 
 2026-11-25 14:14 ET | frente: norma unilateral de la rama prima de switching | resultado: [T]/[P-rev] la norma absoluta contiene la masa principal; Cauchy exige correlaciones de dos formas primas y BV no las controla; 500 checks PASS | siguiente: mayorante de criba local con serie singular y pesos Chen/Richert reales.
+2026-11-25 14:44 ET | frente: serie singular local de la rama prima de switching | resultado: [T]/[P-rev] S(N;q,r)=2C2 prod_{p|Nqr,p>2}(p-1)/(p-2), positiva y casi constante; mayorante aislada no decide el balance | siguiente: escribir pesos Chen/Richert concretos y comparar constantes favorables/penalizaciones con el mismo S_N.

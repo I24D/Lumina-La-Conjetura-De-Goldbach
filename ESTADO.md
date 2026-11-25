@@ -383,3 +383,8 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - **[T]** La norma bilineal absoluta de la rama prima contiene necesariamente toda su masa principal positiva; pedir cancelacion de esa norma antes de centrar es una meta imposible.
 - **[T]/[P-rev]** Cauchy expande el problema en correlaciones de dos formas primas; Bombieri--Vinogradov no controla esos productos, y fijar cualquier variable deja modulos supra-raiz.
 - Evidencia: `matematicas/43_norma_rama_prima_switching.md`; `python numerico/verifica_norma_rama_prima.py` PASS en 500 configuraciones. Falta una mayorante local con serie singular y el balance real de pesos Chen/Richert; no hay cota inferior de capas y Goldbach sigue abierta. Memoria compartida pendiente: MCP no expuesto.
+## Bucle LUMINA/OpenClaw - 2026-11-25 14:44 ET - serie singular local de la rama prima
+
+- **[T] elemental** Para `L_1(x)=x` y `L_2(x)=N-qrx`, la densidad local es `nu_p=1` si `p|Nqr` y `nu_p=2` en otro caso; por tanto `S(N;q,r)=2 C_2 prod_{p|Nqr,p>2}(p-1)/(p-2)`.
+- **[T]/[P-rev]** La dependencia en `q,r` es positiva, separable y `1+O(1/q+1/r)`: una mayorante local aislada no aporta cancelacion; falta insertar los pesos reales de Chen/Richert y probar que su balance de constantes sea positivo.
+- Evidencia: `matematicas/44_serie_singular_local_rama_prima.md`; `python numerico/verifica_serie_singular_switching.py` PASS en 400 ternas y 10000 factores locales. No hay cota inferior de capas y Goldbach sigue abierta. Memoria compartida pendiente: MCP no expuesto.
