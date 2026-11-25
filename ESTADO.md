@@ -237,6 +237,7 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - Evidencia: `matematicas/22_lean_soporte_tipoII.md`, `lean/VaughanFlatSupport.lean`. Falta filtrar la suma completa y definir cajas diadicas; no hay cota analitica de `B3` y Goldbach sigue abierta.
 - **Memoria compartida:** propuesta pendiente; MCP no expuesto en esta ejecucion.
 
+
 ## Bucle LUMINA/OpenClaw - 2026-11-24 20:37 ET - puente exacto `lambdaFlat` / `B3`
 
 - **[P-rev]** Auditada la notacion de los docs 19--22 contra el doc 06: el `B3` clasico corresponde a `lambdaFlat V U`, no a `lambdaFlat U V`; los nombres de los dos cortes estan intercambiados entre ambas interfaces.
