@@ -401,3 +401,11 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - **[T]/[P]** Si todos los margenes en `q` y `r` se anulan, los terminos de orden `1/Q+1/R` desaparecen exactamente y queda una cota de segundo orden `S_N sum|c|/((Q-2)(R-2))`; esto da una condicion auditable de diseno, no construye los pesos.
 - Evidencia: `matematicas/46_cancelacion_marginal_serie_singular.md`; `python numerico/verifica_cancelacion_marginal.py` PASS en 1000 matrices racionales. Siguiente: extraer del primer peso explicito de Chen/Richert sus margenes y medir el defecto. No hay cota inferior de capas y Goldbach sigue abierta.
 - **Memoria compartida:** propuesta pendiente; MCP no expuesto, sin persistencia remota afirmada.
+
+
+## Bucle LUMINA/OpenClaw - 2026-11-25 16:14 ET - margenes del peso de orden de switching
+
+- **[T] elemental** Toda matriz de pesos se descompone de forma canonica en una interaccion con margenes nulos y una proyeccion aditiva que contiene exactamente toda la perturbacion de primer orden de la serie singular.
+- **[T]/[P-rev]** Para el nucleo explicito de Buchstab `K_ij=1_{i<j}`, los margenes son `h-i` y `j-1`, y su masa marginal total coincide con `||K||_1`: el criterio del doc 46 falla a escala principal; centrar el peso no permite descartar la proyeccion aditiva.
+- Evidencia: `matematicas/47_descomposicion_marginal_peso_switching.md`; `python numerico/verifica_descomposicion_marginal.py` PASS en 1000 matrices racionales y `h=2..60`. Siguiente: calcular margenes de dos ramas consecutivas de Buchstab con sus signos. No hay cota inferior de capas y Goldbach sigue abierta.
+- **Memoria compartida:** propuesta pendiente; MCP no expuesto, sin persistencia remota afirmada.
