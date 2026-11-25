@@ -130,4 +130,3 @@ La verificacion solo comprueba algebra; no estima primos.
 
 Propuesta pendiente: el MCP canonico `lumina_shared_memory` / `lumina_propose`
 no esta expuesto. No se afirma persistencia remota.
-
