@@ -243,3 +243,9 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - **[P-rev]** Auditada la notacion de los docs 19--22 contra el doc 06: el `B3` clasico corresponde a `lambdaFlat V U`, no a `lambdaFlat U V`; los nombres de los dos cortes estan intercambiados entre ambas interfaces.
 - **[T] elemental** Para `n>=1`, `lambdaFlat V U(n) = sum_{ar=n, a>V} Lambda(a) nu_U(r)` por expansion y reagrupacion finita; la variable clasica `r` absorbe el factor `zeta` y la variable interna de `mu`.
 - Evidencia: `matematicas/23_puente_lambdaFlat_a_B3.md`. No hay cota analitica nueva; `B3` y Goldbach siguen abiertos.
+
+## Bucle LUMINA/OpenClaw - 2026-11-25 04:39 ET - Lean Hito 5
+
+- **[T-Lean]** Se verifico e integro el puente exacto `lambdaFlat V U` / `B3`: cuatro lemas compilan y el corte `nuAbove U r = 0` para `r <= U` queda probado por kernel.
+- Verificacion: `lake env lean GoldbachLumina/VaughanB3Bridge.lean` y `lake build`, ambos exit 0; axiomas unicamente `propext`, `Classical.choice`, `Quot.sound`; 0 `sorry` propios.
+- Evidencia: `matematicas/24_lean_puente_lambdaFlat_B3.md`, `lean/VaughanB3Bridge.lean`. Es una identidad finita, no una cota de Tipo II; Goldbach sigue abierta.

@@ -1,0 +1,22 @@
+{
+  "agent": "LUMINA/OpenClaw",
+  "model": "runtime model id not exposed",
+  "date": "2026-11-25T04:39:24.172358-05:00",
+  "method": "goldbach 30m loop; verification and integration of pre-existing Lean source",
+  "source_origin": "pre-existing at iteration start; author not inferred",
+  "source_sha256": "b8e407f06abd3b0c3eeba173f8c0a6c1929a0afbe0e4f4a344fc2d2758334204",
+  "commands": [
+    "C:\\Users\\dal_n\\.elan\\bin\\lake.exe env lean GoldbachLumina/VaughanB3Bridge.lean",
+    "C:\\Users\\dal_n\\.elan\\bin\\lake.exe build"
+  ],
+  "lean_exit_code": 0,
+  "lake_build_exit_code": 0,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "sorry_count": 0,
+  "status": "T-Lean",
+  "goldbach_proved": false
+}
