@@ -388,3 +388,9 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - **[T] elemental** Para `L_1(x)=x` y `L_2(x)=N-qrx`, la densidad local es `nu_p=1` si `p|Nqr` y `nu_p=2` en otro caso; por tanto `S(N;q,r)=2 C_2 prod_{p|Nqr,p>2}(p-1)/(p-2)`.
 - **[T]/[P-rev]** La dependencia en `q,r` es positiva, separable y `1+O(1/q+1/r)`: una mayorante local aislada no aporta cancelacion; falta insertar los pesos reales de Chen/Richert y probar que su balance de constantes sea positivo.
 - Evidencia: `matematicas/44_serie_singular_local_rama_prima.md`; `python numerico/verifica_serie_singular_switching.py` PASS en 400 ternas y 10000 factores locales. No hay cota inferior de capas y Goldbach sigue abierta. Memoria compartida pendiente: MCP no expuesto.
+
+## Bucle LUMINA/OpenClaw - 2026-11-25 15:16 ET - serie singular bajo pesos firmados
+
+- **[T] elemental** La extraccion de `S_N` de una caja con coeficientes `c(q,r)` tiene error acotado por `S_N O(1/Q+1/R) sum |c(q,r)|`, no por el tamano de la suma firmada.
+- **[T]/[P-rev]** Dos coeficientes `+1,-1` dan suma base cero pero correccion local no nula: la casi constancia puntual de la serie singular no justifica comparar constantes Chen/Richert tras cancelacion sin control L1/margen.
+- Evidencia: `matematicas/45_perturbacion_serie_singular_pesos_firmados.md`; `python numerico/verifica_perturbacion_serie_singular.py` PASS en 1000 matrices racionales. No hay cota inferior de capas y Goldbach sigue abierta. Memoria compartida pendiente: MCP no expuesto.
