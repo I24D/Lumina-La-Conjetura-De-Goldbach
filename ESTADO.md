@@ -345,3 +345,10 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - **[T]/[P-rev]** La sustitucion `a=-N` en los teoremas de shifted primes mira `p>N` y `p-N>0`, mientras las capas de Goldbach requieren `p<N` y `N-p>0`; la cota inferior de Timofeev para `p+2` no se transfiere directamente a `C_2+C_3`.
 - Evidencia: `matematicas/37_obstruccion_dominio_uniones_capas_shift.md`, contrastado con Ford Cor. 1. El siguiente frente es formular el tamiz directamente sobre `A_N={N-p:p<N}` y auditar su nivel uniforme.
 - No hay cota inferior nueva de una capa, y Goldbach sigue abierta. Memoria compartida pendiente: MCP no expuesto, sin persistencia remota afirmada.
+
+## Bucle LUMINA/OpenClaw - 2026-11-25 11:44 ET - nivel de criba reflejada
+
+- **[T]** Para `A_N={N-p:p<N}`, Bombieri--Vinogradov da nivel uniforme `D=N^(1/2)/log(N)^B` en los modulos coprimos con `N`, con densidad local `1/phi(d)`; los primos que dividen `N` solo aportan excepciones puntuales.
+- **[T]/[P-rev]** El tamiz lineal desnudo rompe exactamente en `s=2`: forzar `P_3` pide `z>N^(1/4)` y entonces `s=log D/log z<2`, donde la funcion inferior es cero; en el rango positivo solo se obtiene `P_4`.
+- Evidencia: `matematicas/38_nivel_distribucion_criba_reflejada_s2.md`. Hace falta auditar pesos de Chen/Richert y switching; no hay cota inferior nueva de capas y Goldbach sigue abierta.
+- **Memoria compartida:** propuesta pendiente; MCP no expuesto, sin persistencia remota afirmada.
