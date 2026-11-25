@@ -13,3 +13,5 @@
 2026-11-25 06:36 ET | frente: C10 / termino principal movil de B3 | resultado: [T] expansion exacta de coprimalidad y variacion geometrica; 500 checks PASS; cuello restante = sumas uniformes en e + cola r grande | siguiente: separar r<=R y r>R y acotar ambas partes.
 
 2026-11-25 07:06 ET | frente: C10 / cola r grande del termino principal B3 | resultado: [T] M_{r>N^delta}=N^{1-delta+o(1)} por cola de divisores y ||Lambda*nu_U||_1; queda solo r<=N^delta | siguiente: auditar uniformidad Mertens ponderada en e con (e,rN)=1.
+
+2026-11-25 07:36 ET | frente: C10 / serie de Dirichlet de la suma Mertens uniforme | resultado: [T] cero simple y factor local exacto 2*C2*prod(p-1)/(p-2)=O(log log q); [P] falta cola uniforme (30.8) | siguiente: Perron/region libre de ceros con derivadas locales uniformes.

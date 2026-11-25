@@ -292,3 +292,10 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - **[T] elemental** Para cualquier `0<delta<1/2`, la parte `r>N^delta` de (28.3) es `N^{1-delta+o(1)}`: el intercambio de sumas da `|M_{>R}| << log K ||F||_1 max_n sum_{r|n,r>R}1/phi(r)`, y para `F=Lambda_{>V}*nu_U` se usa `||F||_1<<N log^3 N`.
 - Evidencia: `matematicas/29_cola_divisores_grandes_main_B3.md`. El cuello del termino principal queda reducido a `r<=N^delta`, con sumas de `e` de longitud al menos `N^(1/2-delta)/log^B N`; falta auditar la uniformidad Mertens en los primos de `rN`.
 - No se controla el error de dispersion de `B3`; Goldbach sigue abierta. Memoria compartida pendiente: MCP no expuesto, sin persistencia remota afirmada.
+
+## Bucle LUMINA/OpenClaw - 2026-11-25 07:36 ET - serie de Dirichlet del cuello Mertens
+
+- **[T] elemental** Para `q` par, `A_q(s)=sum_{(e,q)=1} mu(e)/(phi(e)e^s)=zeta(1+s)^(-1)H_q(s)` tiene cero simple en `s=0`, con `H_q(0)=2 C_2 prod_{p|q,p>2}(p-1)/(p-2)`.
+- **[T] elemental** La dependencia local es `O(log log q)`: excluir los primos de `rN` no produce por si solo una perdida exponencial en `omega(rN)`; la constante se cancela en diferencias diadicas.
+- Evidencia: `matematicas/30_serie_Dirichlet_Mertens_main_B3.md`. Falta demostrar la cota uniforme de colas (30.8), incluyendo derivadas de factores locales; el error de dispersion de `B3` sigue abierto y Goldbach no esta demostrada.
+- **Memoria compartida:** propuesta pendiente; MCP no expuesto, sin persistencia remota afirmada.
