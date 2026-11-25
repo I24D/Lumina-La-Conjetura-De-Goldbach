@@ -15,3 +15,5 @@
 2026-11-25 07:06 ET | frente: C10 / cola r grande del termino principal B3 | resultado: [T] M_{r>N^delta}=N^{1-delta+o(1)} por cola de divisores y ||Lambda*nu_U||_1; queda solo r<=N^delta | siguiente: auditar uniformidad Mertens ponderada en e con (e,rN)=1.
 
 2026-11-25 07:36 ET | frente: C10 / serie de Dirichlet de la suma Mertens uniforme | resultado: [T] cero simple y factor local exacto 2*C2*prod(p-1)/(p-2)=O(log log q); [P] falta cola uniforme (30.8) | siguiente: Perron/region libre de ceros con derivadas locales uniformes.
+
+2026-11-25 08:06 ET | frente: C10 / derivadas de factores locales en la cola Mertens uniforme | resultado: [T] G_q y derivadas fijas cuestan solo (log log q)^O(1) en la franja KV; no hay perdida exp(omega(q)) | siguiente: Perron suavizado para (30.8) y auditoria de retirada del suavizado.

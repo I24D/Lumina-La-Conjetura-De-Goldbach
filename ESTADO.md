@@ -299,3 +299,9 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - **[T] elemental** La dependencia local es `O(log log q)`: excluir los primos de `rN` no produce por si solo una perdida exponencial en `omega(rN)`; la constante se cancela en diferencias diadicas.
 - Evidencia: `matematicas/30_serie_Dirichlet_Mertens_main_B3.md`. Falta demostrar la cota uniforme de colas (30.8), incluyendo derivadas de factores locales; el error de dispersion de `B3` sigue abierto y Goldbach no esta demostrada.
 - **Memoria compartida:** propuesta pendiente; MCP no expuesto, sin persistencia remota afirmada.
+
+## Bucle LUMINA/OpenClaw - 2026-11-25 08:06 ET - derivadas locales del cuello Mertens
+
+- **[T]** Para `q` par, el multiplicador local `G_q(s)` y cada derivada de orden fijo son `(log log(3q))^{O_j(1)}` uniformemente en la franja estrecha usada por un contorno de Vinogradov--Korobov.
+- Evidencia: `matematicas/31_derivadas_factores_locales_main_B3.md`. Esto descarta una perdida `exp(omega(rN))` fuera de `s=0`; falta aun Perron truncado, segmentos horizontales y retirada del suavizado para demostrar (30.8).
+- El error de dispersion de `B3` sigue abierto y Goldbach no esta demostrada. Memoria compartida pendiente: MCP no expuesto, sin persistencia remota afirmada.
