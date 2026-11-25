@@ -19,3 +19,5 @@
 2026-11-25 08:06 ET | frente: C10 / derivadas de factores locales en la cola Mertens uniforme | resultado: [T] G_q y derivadas fijas cuestan solo (log log q)^O(1) en la franja KV; no hay perdida exp(omega(q)) | siguiente: Perron suavizado para (30.8) y auditoria de retirada del suavizado.
 
 2026-11-25 08:36 ET | frente: C10 / Perron suavizado uniforme para el cuello Mertens | resultado: [T] suma exponencial uniforme con ahorro log^-A y residuo -H_q(0); no se retiro el suavizado | siguiente: insertar particion suave en e directamente en (28.3).
+
+2026-11-25 09:06 ET | frente: C10 / desuavizado uniforme del cuello Mertens | resultado: [T] cortes bruscos (30.8) y termino principal movil M cerrados con ahorro log^-A; dispersion B3 sigue abierta | siguiente: formular el error de dispersion con d=re y la norma unilateral suficiente.

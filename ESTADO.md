@@ -311,3 +311,10 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - **[T] derivado de teoremas clasicos** Para `q<=x^L`, las sumas exponencialmente suavizadas de `mu(e)/phi(e)` y `mu(e)log(e)/phi(e)`, con `(e,q)=1`, tienen ahorro arbitrario en logaritmos uniformemente en `q`; la segunda se centra exactamente en `-H_q(0)`.
 - Evidencia: `matematicas/32_perron_suavizado_uniforme_main_B3.md`. El argumento usa Mellin, la region libre de ceros de Vinogradov--Korobov y el control local del doc 31.
 - Falta insertar una particion suave directamente en (28.3) o justificar el desuavizado; el error de dispersion de `B3` sigue abierto y Goldbach no esta demostrada. Memoria compartida pendiente: MCP no expuesto, sin persistencia remota afirmada.
+
+## Bucle LUMINA/OpenClaw - 2026-11-25 09:06 ET - desuavizado y termino principal B3
+
+- **[T] derivado de teoremas clasicos** Una transicion suave de ancho relativo `log(N)^(-B)` se retira por masa absoluta; esto prueba las colas bruscas uniformes (30.8) para `mu(e)/phi(e)` y `mu(e)log(e)/phi(e)`.
+- **[T]** Combinado con la cola `r>N^delta` del doc 29, el termino principal movil `M` de (28.1) es `O_A(N/log(N)^A)` para todo `A`.
+- Evidencia: `matematicas/33_desuavizado_uniforme_main_B3.md`. El error de dispersion de `B3` no esta controlado; la barrera de paridad y Goldbach siguen abiertas.
+- **Memoria compartida:** propuesta pendiente; MCP no expuesto, sin persistencia remota afirmada.
