@@ -429,3 +429,10 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - **[T-Lean]** Se formalizo sobre cualquier anillo conmutativo la version sin denominadores de la descomposicion del doc 47: la interaccion escalada tiene ambos margenes exactamente nulos y reconstruye la matriz original junto con su proyeccion aditiva.
 - Evidencia: `matematicas/50_proyeccion_marginal_Lean.md`; `lake build` verde (18313 jobs) y `#print axioms` solo `propext`, `Classical.choice`, `Quot.sound`. No se construyen pesos Chen/Richert ni una cota de switching; Goldbach sigue abierta.
 - **Memoria compartida:** propuesta pendiente; MCP no expuesto, sin persistencia remota afirmada.
+
+## Bucle LUMINA/OpenClaw - 2026-11-25 18:14 ET - auditoria del peso publicado de switching
+
+- **[T-lit]/[T]** En el marco publicado de Matomaki--Zuniga Alterman, la rama penalizada usa `|mu(m)| W^+(p_1m)` (y una correccion positiva por bloque), de modo que sus coeficientes internos son no negativos.
+- **[P-rev]** La matriz firmada y la cancelacion marginal de los docs 46--48 no representan ese peso Kuhn/Richert real: la resta ocurre externamente como `Sigma_1-Sigma_2`, tras acotar cada rama positiva. Se desprioriza seguir centrando matrices.
+- Evidencia: `matematicas/51_revision_peso_publicado_switching.md`; `python numerico/verifica_peso_publicado_switching.py` PASS en 4000 pruebas racionales. Siguiente: instanciar la sucesion switched `b_{P,ell}` para `A_N={N-p}` y auditar A4--A5; no hay cota inferior nueva de capas y Goldbach sigue abierta.
+- **Memoria compartida:** propuesta pendiente; MCP no expuesto, sin persistencia remota afirmada.
