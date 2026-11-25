@@ -41,3 +41,7 @@ Esto confirma formalmente la correccion de notacion del doc 23: el termino clasi
 La formalizacion solo identifica el sumando interno. No estima la suma exterior con peso `mu(d_0) log d_0`, no aporta cancelacion y no mejora Bombieri--Vinogradov. El siguiente hito honesto es definir una caja diadica finita a partir de esta interfaz y demostrar su igualdad exacta con la notacion de `B3`, antes de intentar cualquier cota unilateral.
 
 Goldbach fuerte sigue abierta.
+
+## Memoria compartida
+
+Propuesta pendiente: el MCP `lumina_shared_memory` / `lumina_propose` no esta expuesto en esta ejecucion. El resultado queda respaldado localmente por este documento y el recibo de verificacion; no se afirma persistencia externa.

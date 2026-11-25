@@ -249,3 +249,5 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - **[T-Lean]** Se verifico e integro el puente exacto `lambdaFlat V U` / `B3`: cuatro lemas compilan y el corte `nuAbove U r = 0` para `r <= U` queda probado por kernel.
 - Verificacion: `lake env lean GoldbachLumina/VaughanB3Bridge.lean` y `lake build`, ambos exit 0; axiomas unicamente `propext`, `Classical.choice`, `Quot.sound`; 0 `sorry` propios.
 - Evidencia: `matematicas/24_lean_puente_lambdaFlat_B3.md`, `lean/VaughanB3Bridge.lean`. Es una identidad finita, no una cota de Tipo II; Goldbach sigue abierta.
+
+- **Memoria compartida:** propuesta pendiente; MCP `lumina_shared_memory` / `lumina_propose` no expuesto en esta ejecucion. Sin ID remoto ni persistencia afirmada.
