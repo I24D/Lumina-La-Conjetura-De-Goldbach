@@ -358,3 +358,9 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - **[T]** Al fijar un primo q|N-p, la sucesion residual tiene nivel D/q; si q=N^delta, su nivel relativo es (1/2-delta)/(1-delta)<1/2.
 - **[T]/[P-rev]** La criba lineal residual da s<2 para P2 y s<=2 para P3; el paso "aplicar Chen/BV" del doc 16 ocultaba una suma de switching bilineal sum_{r,ell} a_r b_ell Lambda(N-qrell), uniforme en q.
 - Evidencia: matematicas/39_auditoria_fijar_q_switching.md. No hay cota inferior nueva de capas; B3 y Goldbach siguen abiertos. Memoria compartida pendiente: MCP no expuesto.
+
+## Bucle LUMINA/OpenClaw - 2026-11-25 12:44 ET - geometria de cajas de switching
+
+- **[T] elemental** Si `q=N^delta` y `r<=ell`, las cajas `q r ell~N` fuera de Bombieri--Vinogradov ocupan exactamente `1/2-delta<rho<=(1-delta)/2`, una cunha de anchura `delta/2`.
+- **[T]/[P-rev]** Intercambiar `r` y `ell` no recupera BV: tanto `qr` como `qell` superan `N^(1/2)` en toda la region critica. Una adaptacion de Chen/Timofeev debe cubrir la cunha completa, no solo la caja balanceada.
+- Evidencia: `matematicas/40_geometria_cajas_switching.md`; verificacion racional exacta PASS en 3540 cajas. No hay estimacion nueva de switching, cota inferior de capas ni demostracion de Goldbach. Memoria compartida pendiente: MCP no expuesto.
