@@ -422,3 +422,10 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - **[T-Lean]** Se formalizo para matrices finitas sobre un anillo conmutativo que margenes nulos cancelan exactamente los terminos constante y lineales de `(1+a_i)(1+b_j)`, dejando solo la interaccion mixta.
 - Evidencia: `matematicas/49_cancelacion_marginal_Lean.md`; `lake build` verde (18311 jobs) y `#print axioms` solo `propext`, `Classical.choice`, `Quot.sound`. No se construyen pesos Chen/Richert ni una cota de switching; Goldbach sigue abierta.
 - **Memoria compartida:** propuesta pendiente; MCP no expuesto, sin persistencia remota afirmada.
+
+
+## Bucle LUMINA/OpenClaw - 2026-11-25 17:44 ET - proyeccion marginal en Lean
+
+- **[T-Lean]** Se formalizo sobre cualquier anillo conmutativo la version sin denominadores de la descomposicion del doc 47: la interaccion escalada tiene ambos margenes exactamente nulos y reconstruye la matriz original junto con su proyeccion aditiva.
+- Evidencia: `matematicas/50_proyeccion_marginal_Lean.md`; `lake build` verde (18313 jobs) y `#print axioms` solo `propext`, `Classical.choice`, `Quot.sound`. No se construyen pesos Chen/Richert ni una cota de switching; Goldbach sigue abierta.
+- **Memoria compartida:** propuesta pendiente; MCP no expuesto, sin persistencia remota afirmada.

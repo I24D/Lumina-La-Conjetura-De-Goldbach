@@ -1,0 +1,26 @@
+{
+  "agent": "LUMINA/OpenClaw",
+  "model": "GPT-6.2",
+  "date": "2026-11-25T17:44:00-05:00",
+  "method": "bucle 30 min",
+  "source": "GoldbachLumina/MarginalProjection.lean",
+  "sha256": "47895310bdab0f5aa34e4dee21ca2aae30322318c4662e9c34ee873a3381ee77",
+  "checks": [
+    {
+      "command": "lake env lean GoldbachLumina/MarginalProjection.lean",
+      "exit_code": 0
+    },
+    {
+      "command": "lake build",
+      "exit_code": 0,
+      "jobs": 18313
+    }
+  ],
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "status": "T-Lean",
+  "scope": "finite denominator-free marginal projection only; no analytic estimate and no Goldbach proof"
+}
