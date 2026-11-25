@@ -204,9 +204,11 @@ Informe principal: [08_revision_codex_06_07.md](matematicas/08_revision_codex_06
 
 | Etiqueta | Resultado | Evidencia |
 |---|---|---|
-| [P] | Identificacion: el supertrazo Z/2 de 11 (ec. 11.1) ES la cola T_N^prim(D) de 04; la desigualdad de pendientes de 13 s6 y la H_eps de 04 s5 son la misma condicion, escrita puntual y normalizada como ho(N)=T_prim(D)/(N*G(N)) <= 1-eps | matematicas/15_deficit_unilateral_puntual.md, s1-s2 |
-| [N] | Escaneo literal en 2299 N pares (todos <=2000 exhaustivos + muestras hasta 10^6, semilla 20261124): sup rho = 0.4201 (N=30916), sin deriva ascendente; banda alta (300 muestras) sup = 0.2535, mediana -0.013. Veredicto pre-registrado (umbral sup<=0.5): H_eps plausible con margen amplio (eps >= 0.58 medido) | 
-umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224653_..._dense_...json |
+| [P] | Identificacion: el supertrazo Z/2 de 11 (ec. 11.1) ES la cola T_N^prim(D) de 04; la desigualdad de pendientes de 13 s6 y la H_eps de 04 s5 son la misma condicion, escrita puntual y normalizada como
+ho(N)=T_prim(D)/(N*G(N)) <= 1-eps | matematicas/15_deficit_unilateral_puntual.md, s1-s2 |
+| [N] | Escaneo literal en 2299 N pares (todos <=2000 exhaustivos + muestras hasta 10^6, semilla 20261124): sup rho = 0.4201 (N=30916), sin deriva ascendente; banda alta (300 muestras) sup = 0.2535, mediana -0.013. Veredicto pre-registrado (umbral sup<=0.5): H_eps plausible con margen amplio (eps >= 0.58 medido) |
+umerico/deficit_unilateral.py;
+esultados/20261124_224341_...json y 20261124_224653_..._dense_...json |
 | [N] | Estructura de los peores N: series singulares casi minimas (2^a*p o dos primos medianos): 30916=2^2*59*131, 31718=2*15859, 30658=2*15329, 9224=2^3*1153... Los N "dificiles" de Goldbach concentran el peor ratio unilateral | 15, s4 |
 | [N; honesto] | La cadena (4.15) punto a punto: gap = 1-r-rho pequeno en N grandes tipicos (|gap| <~ 0.1), pero grande co-localizado con rho muy negativo (N=443190: rho=-0.561, r~1.000, gap~0.561); T_bad solo esta acotada por K_N (Prop. 4.2), no es pequena a priori | 15, s4 |
 
@@ -317,4 +319,11 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - **[T] derivado de teoremas clasicos** Una transicion suave de ancho relativo `log(N)^(-B)` se retira por masa absoluta; esto prueba las colas bruscas uniformes (30.8) para `mu(e)/phi(e)` y `mu(e)log(e)/phi(e)`.
 - **[T]** Combinado con la cola `r>N^delta` del doc 29, el termino principal movil `M` de (28.1) es `O_A(N/log(N)^A)` para todo `A`.
 - Evidencia: `matematicas/33_desuavizado_uniforme_main_B3.md`. El error de dispersion de `B3` no esta controlado; la barrera de paridad y Goldbach siguen abiertas.
+- **Memoria compartida:** propuesta pendiente; MCP no expuesto, sin persistencia remota afirmada.
+
+## Bucle LUMINA/OpenClaw - 2026-11-25 09:36 ET - error de dispersion B3
+
+- **[T] elemental** Se escribio exactamente `B3=M+E`, con `E=sum mu(d)log(d) Delta_d`, y se obtuvo el split bilineal literal `E=sum rho(r)rho(e)log(re)Delta_{re}`, `rho=mu/2^omega`, sin multiplicidad espuria.
+- **[T]/[P]** Se aislaron una norma bilineal suficiente y su version unilateral con los signos fijos de Mobius; no se probo ninguna ganancia sobre Cauchy ni una cota nueva de dispersion.
+- Evidencia: `matematicas/34_error_dispersion_split_mobius.md`; `python numerico/verifica_dispersion_split.py` PASS en 500 configuraciones racionales. El error Tipo II y Goldbach siguen abiertos.
 - **Memoria compartida:** propuesta pendiente; MCP no expuesto, sin persistencia remota afirmada.

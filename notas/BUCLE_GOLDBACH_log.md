@@ -21,3 +21,4 @@
 2026-11-25 08:36 ET | frente: C10 / Perron suavizado uniforme para el cuello Mertens | resultado: [T] suma exponencial uniforme con ahorro log^-A y residuo -H_q(0); no se retiro el suavizado | siguiente: insertar particion suave en e directamente en (28.3).
 
 2026-11-25 09:06 ET | frente: C10 / desuavizado uniforme del cuello Mertens | resultado: [T] cortes bruscos (30.8) y termino principal movil M cerrados con ahorro log^-A; dispersion B3 sigue abierta | siguiente: formular el error de dispersion con d=re y la norma unilateral suficiente.
+2026-11-25 09:36 ET | frente: error de dispersion B3 tras cerrar el termino principal | resultado: [T] B3=M+E y split exacto d=re con rho=mu/2^omega; norma unilateral suficiente aislada, 500 checks PASS | siguiente: expandir segundo momento de un bloque y medir si la diagonal satura Cauchy.
