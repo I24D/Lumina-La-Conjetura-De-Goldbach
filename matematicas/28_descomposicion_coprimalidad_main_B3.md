@@ -111,3 +111,9 @@ mismo orden que B3, registrar explicitamente la ruta como otra forma de la
 barrera de paridad.
 
 Goldbach fuerte sigue abierta.
+
+## Memoria compartida
+
+Propuesta pendiente: el MCP canonico `lumina_shared_memory` / `lumina_propose`
+no esta expuesto en esta ejecucion. El resultado queda respaldado localmente
+por este documento y el commit; no se afirma persistencia remota.

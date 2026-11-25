@@ -278,3 +278,4 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - **[T] elemental** El termino principal movil se expandio exactamente por inclusion-exclusion: `M=sum_{r,e} mu(e)log(re)W_r(re)/(phi(r)phi(e))`, con `r` libre de cuadrados y `(r,e)=1`.
 - **[T] elemental** Para `r` fijo, la variacion total debida al movimiento de los extremos se acota por dos veces la masa absoluta de `F=Lambda*nu_U` sobre multiplos de `r`; la movilidad geometrica no es el obstaculo restante.
 - Evidencia: `matematicas/28_descomposicion_coprimalidad_main_B3.md`; 500 verificaciones racionales exactas PASS. Quedan la uniformidad Mertens en `e` y la cola `r` grande; no hay cota de B3 ni demostracion de Goldbach.
+- **Memoria compartida:** propuesta pendiente; MCP canonico no expuesto, sin ID remoto ni persistencia afirmada.
