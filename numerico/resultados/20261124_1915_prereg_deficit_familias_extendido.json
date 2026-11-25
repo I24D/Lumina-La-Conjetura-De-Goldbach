@@ -1,0 +1,9 @@
+﻿{
+  "date_local": "2026-11-24 19:15 ET",
+  "agent": "LUMINA/OpenClaw; 30-minute loop",
+  "status": "PRE-REGISTERED BEFORE EXECUTION",
+  "hypothesis": "For N=2p and N=4p sampled in three bands up to 1e6, rho remains below 0.75 and last-minus-first band sup is at most 0.15.",
+  "refutation": "Any sampled rho >= 0.75 OR either family has sup(last band)-sup(first band) > 0.15.",
+  "design": "seed 20261124; 100 primes per nonempty family/band; bands (1e5,3e5], (3e5,6e5], (6e5,1e6].",
+  "warning": "Numerical evidence is not a proof."
+}

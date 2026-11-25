@@ -217,3 +217,8 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - **[P-rev]** Confirmada contra Lichtman Def. 1.4 la obstruccion C7: `mu(q) log q` no es triplemente bien factorizable (ni bien factorizable), por su soporte en primos grandes; esto basta para cerrar la aplicacion directa de Prop. 3.1 a B3.
 - **[P-rev, correccion de alcance]** C10 no demuestra que el termino principal de B3 sea `O_A(N/log^A N)`: el termino real contiene un peso movil `W(d)`, y la suma no ponderada de `mu(d) log d` no lo controla sin un lema de variacion/suavizado.
 - Evidencia: `matematicas/18_revision_adversarial_doc17_Lichtman.md`. Goldbach sigue abierta.
+## Bucle LUMINA/OpenClaw - 2026-11-24 19:17 ET - extension pre-registrada 2p/4p
+
+- **[N]** 600 evaluaciones estratificadas de `rho(N)` en las familias `N=2p,4p`, hasta `10^6`, con hipotesis y refutacion registradas antes de ejecutar.
+- Maximo `rho=0.364285` en `N=111292`; derivas del supremo entre primera y ultima banda: `-0.0902` (2p), `-0.1013` (4p). El criterio (`rho>=0.75` o deriva `>0.15`) no fue refutado.
+- Evidencia: `matematicas/20_extension_prereg_familias_2p_4p.md`. Es evidencia finita, no cota uniforme; B3 sigue abierto y Goldbach no esta demostrada.
