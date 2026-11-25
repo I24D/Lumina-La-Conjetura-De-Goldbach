@@ -364,3 +364,10 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - **[T] elemental** Si `q=N^delta` y `r<=ell`, las cajas `q r ell~N` fuera de Bombieri--Vinogradov ocupan exactamente `1/2-delta<rho<=(1-delta)/2`, una cunha de anchura `delta/2`.
 - **[T]/[P-rev]** Intercambiar `r` y `ell` no recupera BV: tanto `qr` como `qell` superan `N^(1/2)` en toda la region critica. Una adaptacion de Chen/Timofeev debe cubrir la cunha completa, no solo la caja balanceada.
 - Evidencia: `matematicas/40_geometria_cajas_switching.md`; verificacion racional exacta PASS en 3540 cajas. No hay estimacion nueva de switching, cota inferior de capas ni demostracion de Goldbach. Memoria compartida pendiente: MCP no expuesto.
+
+
+## Bucle LUMINA/OpenClaw - 2026-11-25 13:14 ET - peso acoplado del switching
+
+- **[T] elemental** El peso real de una extraccion de Buchstab contiene `K(r,ell)=1_{P^-(ell)>r}`; en primos intercalados su matriz es triangular de rango arbitrario, por lo que no puede absorberse en `a_r b_ell` ni en un numero fijo de productos independientes.
+- **[P-rev]** La forma (39.9) era una abreviatura geometrica, no aun un lema aplicable: una adaptacion de Chen debe conservar el nucleo de orden o introducir otra variable de switching y controlar la forma trilineal resultante.
+- Evidencia: `matematicas/41_auditoria_peso_switching.md`; `python numerico/verifica_peso_switching.py` PASS para rangos `h=1..25`. No hay cota nueva de switching, capas o `B3`; Goldbach sigue abierta. Memoria compartida pendiente: MCP no expuesto.
