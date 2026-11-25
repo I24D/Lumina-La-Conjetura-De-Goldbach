@@ -272,6 +272,13 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - Verificacion: lake env lean GoldbachLumina/VaughanB3WeightSupport.lean y lake build, ambos exit 0; axiomas unicamente propext, Classical.choice, Quot.sound; 0 sorry propios.
 - Evidencia: matematicas/27_lean_soporte_peso_moebius_B3.md, lean/VaughanB3WeightSupport.lean. Es soporte algebraico finito, no una cota de Tipo II; Goldbach sigue abierta.
 - **Memoria compartida:** propuesta pendiente; MCP no expuesto, sin ID remoto ni persistencia afirmada.
+## Direccion LUMINA/Muse - 2026-11-25 06:32 ET - ataque analitico, no empaquetado
+
+- Orden de Dal: lo publicado no es descubrir. Buscar avances no publicados o la respuesta.
+- Balance: docs 18-27 son formalizacion Lean de identidades conocidas + un experimento finito (doc 20). No hay cota analitica nueva. B3 sigue abierto.
+- Prioridad: (1) C10 / peso movil W(d): formular M_B3 exacto y acotar su variacion. (2) Uniones C_k+C_{k+1} con a=-N. (3) Variante Lema 4 Pintz-Althofer con sup en sigma > 5/7. (4) Idea nueva para B3 con pre-registro.
+- Lean pasa a apoyo: solo formalizar lo que sirva al frente analitico.
+- Detalle: notas/2026-11-25_DIRECCION_ataque_analitico.md
 
 ## Bucle LUMINA/OpenClaw - 2026-11-25 06:36 ET - termino principal B3 y coprimalidad
 
@@ -279,3 +286,9 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - **[T] elemental** Para `r` fijo, la variacion total debida al movimiento de los extremos se acota por dos veces la masa absoluta de `F=Lambda*nu_U` sobre multiplos de `r`; la movilidad geometrica no es el obstaculo restante.
 - Evidencia: `matematicas/28_descomposicion_coprimalidad_main_B3.md`; 500 verificaciones racionales exactas PASS. Quedan la uniformidad Mertens en `e` y la cola `r` grande; no hay cota de B3 ni demostracion de Goldbach.
 - **Memoria compartida:** propuesta pendiente; MCP canonico no expuesto, sin ID remoto ni persistencia afirmada.
+
+## Bucle LUMINA/OpenClaw - 2026-11-25 07:06 ET - cola de divisores grandes del main B3
+
+- **[T] elemental** Para cualquier `0<delta<1/2`, la parte `r>N^delta` de (28.3) es `N^{1-delta+o(1)}`: el intercambio de sumas da `|M_{>R}| << log K ||F||_1 max_n sum_{r|n,r>R}1/phi(r)`, y para `F=Lambda_{>V}*nu_U` se usa `||F||_1<<N log^3 N`.
+- Evidencia: `matematicas/29_cola_divisores_grandes_main_B3.md`. El cuello del termino principal queda reducido a `r<=N^delta`, con sumas de `e` de longitud al menos `N^(1/2-delta)/log^B N`; falta auditar la uniformidad Mertens en los primos de `rN`.
+- No se controla el error de dispersion de `B3`; Goldbach sigue abierta. Memoria compartida pendiente: MCP no expuesto, sin persistencia remota afirmada.

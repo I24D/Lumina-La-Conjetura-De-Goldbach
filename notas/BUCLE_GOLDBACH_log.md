@@ -11,3 +11,5 @@
 
 2026-11-25 06:10 ET | frente: Lean Hito 8 / soporte del peso exterior mu(d)log d | resultado: [T-Lean] beta(0)=beta(1)=0 y beta(d)!=0 implica d>=2 libre de cuadrados; lake build verde | siguiente: reescribir la caja con filtro squarefree y probar igualdad exacta.
 2026-11-25 06:36 ET | frente: C10 / termino principal movil de B3 | resultado: [T] expansion exacta de coprimalidad y variacion geometrica; 500 checks PASS; cuello restante = sumas uniformes en e + cola r grande | siguiente: separar r<=R y r>R y acotar ambas partes.
+
+2026-11-25 07:06 ET | frente: C10 / cola r grande del termino principal B3 | resultado: [T] M_{r>N^delta}=N^{1-delta+o(1)} por cola de divisores y ||Lambda*nu_U||_1; queda solo r<=N^delta | siguiente: auditar uniformidad Mertens ponderada en e con (e,rN)=1.
