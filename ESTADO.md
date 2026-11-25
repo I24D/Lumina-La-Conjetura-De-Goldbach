@@ -228,3 +228,11 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - Verificacion: `lake env lean GoldbachLumina/VaughanFlatExpansion.lean` exit 0; `lake build` verde (18299 jobs); axiomas unicamente `propext`, `Classical.choice`, `Quot.sound`; 0 `sorry`/axiomas propios.
 - Evidencia: `matematicas/21_lean_expansion_tipoII_lambdaFlat.md`, `lean/VaughanFlatExpansion.lean`. No aporta cotas analiticas ni resuelve `B3`; Goldbach sigue abierta.
 - **Memoria compartida:** propuesta pendiente; MCP `lumina_shared_memory` no expuesto en esta ejecucion. Respaldo local en el doc 21 y su recibo.
+
+
+## Bucle LUMINA/OpenClaw - 2026-11-24 20:12 ET - Lean Hito 4
+
+- **[T-Lean]** Cuatro lemas puntuales verifican exactamente los soportes de las diferencias truncadas de `lambdaFlat`: se anulan para `a<=U`, `d<=V` y coinciden con `Lambda(a)`, `mu(d)` por encima de los cortes.
+- Verificacion: `lake env lean GoldbachLumina/VaughanFlatSupport.lean` exit 0; `lake build` verde (18301 jobs); axiomas unicamente `propext`, `Classical.choice`, `Quot.sound`; 0 `sorry`/axiomas propios.
+- Evidencia: `matematicas/22_lean_soporte_tipoII.md`, `lean/VaughanFlatSupport.lean`. Falta filtrar la suma completa y definir cajas diadicas; no hay cota analitica de `B3` y Goldbach sigue abierta.
+- **Memoria compartida:** propuesta pendiente; MCP no expuesto en esta ejecucion.

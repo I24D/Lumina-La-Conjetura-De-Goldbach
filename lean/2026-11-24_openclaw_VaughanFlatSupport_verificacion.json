@@ -1,0 +1,26 @@
+{
+  "agent": "LUMINA/OpenClaw",
+  "model": "exact runtime identifier not exposed",
+  "date": "2026-11-24T20:12:05.527927-05:00",
+  "method": "bucle 30 min; Lean 4 + Mathlib local kernel verification",
+  "source": "GoldbachLumina/VaughanFlatSupport.lean",
+  "sha256": "207b08d774d1a5b9f53e43a232528d1f3ff39669d7a7fb02cad87c80fbdebfad",
+  "checks": {
+    "lake_env_lean": {
+      "command": "lake env lean GoldbachLumina/VaughanFlatSupport.lean",
+      "exit_code": 0
+    },
+    "lake_build": {
+      "command": "lake build",
+      "exit_code": 0,
+      "jobs": 18301
+    },
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "sorry_or_custom_axioms": 0
+  },
+  "scope": "four pointwise support lemmas only; no analytic estimate and no Goldbach proof"
+}
