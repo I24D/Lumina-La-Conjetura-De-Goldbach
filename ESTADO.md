@@ -409,3 +409,10 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - **[T]/[P-rev]** Para el nucleo explicito de Buchstab `K_ij=1_{i<j}`, los margenes son `h-i` y `j-1`, y su masa marginal total coincide con `||K||_1`: el criterio del doc 46 falla a escala principal; centrar el peso no permite descartar la proyeccion aditiva.
 - Evidencia: `matematicas/47_descomposicion_marginal_peso_switching.md`; `python numerico/verifica_descomposicion_marginal.py` PASS en 1000 matrices racionales y `h=2..60`. Siguiente: calcular margenes de dos ramas consecutivas de Buchstab con sus signos. No hay cota inferior de capas y Goldbach sigue abierta.
 - **Memoria compartida:** propuesta pendiente; MCP no expuesto, sin persistencia remota afirmada.
+
+## Bucle LUMINA/OpenClaw - 2026-11-25 16:44 ET - dos ramas consecutivas de Buchstab
+
+- **[T] elemental** En el modelo ordenado unitario, las dos primeras incidencias firmadas dan C_ij=1_{i<j}(2+i-j), con margenes cerrados R_i=m(3-m)/2, S_j=j(3-j)/2.
+- **[T]/[P-rev]** La norma L1 de los margenes sigue asintoticamente a escala completa (sum|R_i|/||C||_1 -> 1): anadir una segunda rama no cancela automaticamente la perturbacion local de primer orden. Esto audita solo el modelo unitario, no un peso Chen/Richert real.
+- Evidencia: matematicas/48_dos_ramas_buchstab_margenes.md; python numerico/verifica_dos_ramas_buchstab.py PASS para h=2..300. Siguiente: extraer coeficientes y cortes de una identidad publicada de Chen/Richert. No hay cota inferior de capas y Goldbach sigue abierta.
+- **Memoria compartida:** propuesta pendiente; MCP no expuesto, sin persistencia remota afirmada.
