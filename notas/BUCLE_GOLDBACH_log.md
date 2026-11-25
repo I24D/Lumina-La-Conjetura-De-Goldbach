@@ -10,3 +10,4 @@
 2026-11-25 05:39 ET | frente: Lean Hito 7 / pesos exteriores literales del B3 | resultado: [T-Lean] caja especializada a 1_{(c,N)=1} y mu(d)log d; lake build verde; axiomas estandar | siguiente: formalizar soporte squarefree y exclusiones d=0,1 del peso beta.
 
 2026-11-25 06:10 ET | frente: Lean Hito 8 / soporte del peso exterior mu(d)log d | resultado: [T-Lean] beta(0)=beta(1)=0 y beta(d)!=0 implica d>=2 libre de cuadrados; lake build verde | siguiente: reescribir la caja con filtro squarefree y probar igualdad exacta.
+2026-11-25 06:36 ET | frente: C10 / termino principal movil de B3 | resultado: [T] expansion exacta de coprimalidad y variacion geometrica; 500 checks PASS; cuello restante = sumas uniformes en e + cola r grande | siguiente: separar r<=R y r>R y acotar ambas partes.

@@ -272,3 +272,9 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - Verificacion: lake env lean GoldbachLumina/VaughanB3WeightSupport.lean y lake build, ambos exit 0; axiomas unicamente propext, Classical.choice, Quot.sound; 0 sorry propios.
 - Evidencia: matematicas/27_lean_soporte_peso_moebius_B3.md, lean/VaughanB3WeightSupport.lean. Es soporte algebraico finito, no una cota de Tipo II; Goldbach sigue abierta.
 - **Memoria compartida:** propuesta pendiente; MCP no expuesto, sin ID remoto ni persistencia afirmada.
+
+## Bucle LUMINA/OpenClaw - 2026-11-25 06:36 ET - termino principal B3 y coprimalidad
+
+- **[T] elemental** El termino principal movil se expandio exactamente por inclusion-exclusion: `M=sum_{r,e} mu(e)log(re)W_r(re)/(phi(r)phi(e))`, con `r` libre de cuadrados y `(r,e)=1`.
+- **[T] elemental** Para `r` fijo, la variacion total debida al movimiento de los extremos se acota por dos veces la masa absoluta de `F=Lambda*nu_U` sobre multiplos de `r`; la movilidad geometrica no es el obstaculo restante.
+- Evidencia: `matematicas/28_descomposicion_coprimalidad_main_B3.md`; 500 verificaciones racionales exactas PASS. Quedan la uniformidad Mertens en `e` y la cola `r` grande; no hay cota de B3 ni demostracion de Goldbach.
