@@ -325,3 +325,10 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - **[T]/[P]** Se aislaron una norma bilineal suficiente y su version unilateral con los signos fijos de Mobius; no se probo ninguna ganancia sobre Cauchy ni una cota nueva de dispersion.
 - Evidencia: `matematicas/34_error_dispersion_split_mobius.md`; `python numerico/verifica_dispersion_split.py` PASS en 500 configuraciones racionales. El error Tipo II y Goldbach siguen abiertos.
 - **Memoria compartida:** propuesta pendiente; MCP no expuesto, sin persistencia remota afirmada.
+
+## Bucle LUMINA/OpenClaw - 2026-11-25 10:14 ET - conservacion de la diagonal del split Mobius
+
+- **[T] elemental** Para cualquier particion en rectangulos de las factorizaciones coprimas `d=re`, los coeficientes normalizados tienen el mismo signo y suma absoluta 1; la suma de las normas diagonales por bloque es al menos la diagonal original.
+- Consecuencia: factorizar con `rho=mu/2^omega` y aplicar Cauchy bloque a bloque no produce por si solo ganancia; hace falta controlar productos distintos o una forma unilateral global.
+- Evidencia: `matematicas/35_conservacion_diagonal_split_mobius.md`; `python numerico/verifica_energia_split_mobius.py` PASS en 12160 enteros libres de cuadrados. No hay cota nueva de `B3`; Goldbach sigue abierta.
+- **Memoria compartida:** propuesta pendiente; MCP no expuesto, sin persistencia remota afirmada.

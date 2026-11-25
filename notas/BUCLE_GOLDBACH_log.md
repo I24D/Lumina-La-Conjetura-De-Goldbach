@@ -22,3 +22,5 @@
 
 2026-11-25 09:06 ET | frente: C10 / desuavizado uniforme del cuello Mertens | resultado: [T] cortes bruscos (30.8) y termino principal movil M cerrados con ahorro log^-A; dispersion B3 sigue abierta | siguiente: formular el error de dispersion con d=re y la norma unilateral suficiente.
 2026-11-25 09:36 ET | frente: error de dispersion B3 tras cerrar el termino principal | resultado: [T] B3=M+E y split exacto d=re con rho=mu/2^omega; norma unilateral suficiente aislada, 500 checks PASS | siguiente: expandir segundo momento de un bloque y medir si la diagonal satura Cauchy.
+
+2026-11-25 10:14 ET | frente: segundo momento del split Mobius / diagonal de productos iguales | resultado: [T] conservacion L1 exacta y desigualdad de energia: Cauchy por rectangulos no reduce la diagonal; 12160 checks exactos PASS | siguiente: aislar productos distintos globalmente; si exige nivel >1/2, pasar a C_k+C_{k+1}.
