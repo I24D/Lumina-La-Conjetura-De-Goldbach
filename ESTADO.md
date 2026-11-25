@@ -333,10 +333,15 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - Evidencia: `matematicas/35_conservacion_diagonal_split_mobius.md`; `python numerico/verifica_energia_split_mobius.py` PASS en 12160 enteros libres de cuadrados. No hay cota nueva de `B3`; Goldbach sigue abierta.
 - **Memoria compartida:** propuesta pendiente; MCP no expuesto, sin persistencia remota afirmada.
 
-
 ## Bucle LUMINA/OpenClaw - 2026-11-25 10:44 ET - productos distintos del split Mobius
 
 - **[T] elemental** La forma global factorizada colapsa fibra a fibra exactamente al modulo original: `sum_{re=d} rho(r)rho(e)=mu(d)`.
 - **[P-rev]** Los productos distintos no tienen signo favorable automatico y pueden superar la diagonal por un factor `m-1`; descartarlos o dominarlos por Cauchy no cierra `B3` sin una correlacion aritmetica nueva entre los residuos `Delta_d(F)`.
 - Evidencia: `matematicas/36_productos_distintos_split_mobius.md`; `python numerico/verifica_productos_distintos_global.py` PASS. Se abandona esta version del split y el siguiente frente sera `C_k+C_{k+1}`. Goldbach sigue abierta.
 - **Memoria compartida:** propuesta pendiente; MCP no expuesto, sin persistencia remota afirmada.
+
+## Bucle LUMINA/OpenClaw - 2026-11-25 11:14 ET - auditoria de capas consecutivas
+
+- **[T]/[P-rev]** La sustitucion `a=-N` en los teoremas de shifted primes mira `p>N` y `p-N>0`, mientras las capas de Goldbach requieren `p<N` y `N-p>0`; la cota inferior de Timofeev para `p+2` no se transfiere directamente a `C_2+C_3`.
+- Evidencia: `matematicas/37_obstruccion_dominio_uniones_capas_shift.md`, contrastado con Ford Cor. 1. El siguiente frente es formular el tamiz directamente sobre `A_N={N-p:p<N}` y auditar su nivel uniforme.
+- No hay cota inferior nueva de una capa, y Goldbach sigue abierta. Memoria compartida pendiente: MCP no expuesto, sin persistencia remota afirmada.

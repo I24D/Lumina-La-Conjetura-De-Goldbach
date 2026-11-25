@@ -25,3 +25,5 @@
 
 2026-11-25 10:14 ET | frente: segundo momento del split Mobius / diagonal de productos iguales | resultado: [T] conservacion L1 exacta y desigualdad de energia: Cauchy por rectangulos no reduce la diagonal; 12160 checks exactos PASS | siguiente: aislar productos distintos globalmente; si exige nivel >1/2, pasar a C_k+C_{k+1}.
 2026-11-25 10:44 ET | frente: productos distintos globales del split Mobius | resultado: [T]/[P-rev] el termino cruzado no tiene signo favorable y puede ser (m-1) veces la diagonal; la factorizacion sola no da ganancia | siguiente: pasar a C_k+C_{k+1}, fijando el caso k=2 con a=-N.
+
+2026-11-25 11:14 ET | frente: C_2+C_3 / transferencia Timofeev con a=-N | resultado: [T]/[P-rev] obstruccion de dominio: shifted primes cuenta p>N, Goldbach requiere p<N; no hay transferencia directa | siguiente: escribir el tamiz para A_N={N-p:p<N} y auditar nivel uniforme.
