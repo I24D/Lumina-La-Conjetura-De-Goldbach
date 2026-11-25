@@ -332,3 +332,11 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - Consecuencia: factorizar con `rho=mu/2^omega` y aplicar Cauchy bloque a bloque no produce por si solo ganancia; hace falta controlar productos distintos o una forma unilateral global.
 - Evidencia: `matematicas/35_conservacion_diagonal_split_mobius.md`; `python numerico/verifica_energia_split_mobius.py` PASS en 12160 enteros libres de cuadrados. No hay cota nueva de `B3`; Goldbach sigue abierta.
 - **Memoria compartida:** propuesta pendiente; MCP no expuesto, sin persistencia remota afirmada.
+
+
+## Bucle LUMINA/OpenClaw - 2026-11-25 10:44 ET - productos distintos del split Mobius
+
+- **[T] elemental** La forma global factorizada colapsa fibra a fibra exactamente al modulo original: `sum_{re=d} rho(r)rho(e)=mu(d)`.
+- **[P-rev]** Los productos distintos no tienen signo favorable automatico y pueden superar la diagonal por un factor `m-1`; descartarlos o dominarlos por Cauchy no cierra `B3` sin una correlacion aritmetica nueva entre los residuos `Delta_d(F)`.
+- Evidencia: `matematicas/36_productos_distintos_split_mobius.md`; `python numerico/verifica_productos_distintos_global.py` PASS. Se abandona esta version del split y el siguiente frente sera `C_k+C_{k+1}`. Goldbach sigue abierta.
+- **Memoria compartida:** propuesta pendiente; MCP no expuesto, sin persistencia remota afirmada.
