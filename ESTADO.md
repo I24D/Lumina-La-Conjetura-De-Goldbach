@@ -416,8 +416,9 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - **[T]/[P-rev]** La norma L1 de los margenes sigue asintoticamente a escala completa (sum|R_i|/||C||_1 -> 1): anadir una segunda rama no cancela automaticamente la perturbacion local de primer orden. Esto audita solo el modelo unitario, no un peso Chen/Richert real.
 - Evidencia: matematicas/48_dos_ramas_buchstab_margenes.md; python numerico/verifica_dos_ramas_buchstab.py PASS para h=2..300. Siguiente: extraer coeficientes y cortes de una identidad publicada de Chen/Richert. No hay cota inferior de capas y Goldbach sigue abierta.
 - **Memoria compartida:** propuesta pendiente; MCP no expuesto, sin persistencia remota afirmada.
+
 ## Bucle LUMINA/OpenClaw - 2026-11-25 17:18 ET - cancelacion marginal en Lean
 
-- **[T-Lean]** Se formalizo para matrices finitas sobre un anillo conmutativo que margenes nulos cancelan exactamente los terminos constante y lineales de $(1+a_i)(1+b_j)$, dejando solo la interaccion mixta.
-- Evidencia: matematicas/49_cancelacion_marginal_Lean.md; lake build verde (18311 jobs) y #print axioms solo propext, Classical.choice, Quot.sound. No se construyen pesos Chen/Richert ni una cota de switching; Goldbach sigue abierta.
+- **[T-Lean]** Se formalizo para matrices finitas sobre un anillo conmutativo que margenes nulos cancelan exactamente los terminos constante y lineales de `(1+a_i)(1+b_j)`, dejando solo la interaccion mixta.
+- Evidencia: `matematicas/49_cancelacion_marginal_Lean.md`; `lake build` verde (18311 jobs) y `#print axioms` solo `propext`, `Classical.choice`, `Quot.sound`. No se construyen pesos Chen/Richert ni una cota de switching; Goldbach sigue abierta.
 - **Memoria compartida:** propuesta pendiente; MCP no expuesto, sin persistencia remota afirmada.
