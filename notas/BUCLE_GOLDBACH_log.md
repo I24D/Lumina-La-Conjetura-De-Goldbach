@@ -17,3 +17,5 @@
 2026-11-25 07:36 ET | frente: C10 / serie de Dirichlet de la suma Mertens uniforme | resultado: [T] cero simple y factor local exacto 2*C2*prod(p-1)/(p-2)=O(log log q); [P] falta cola uniforme (30.8) | siguiente: Perron/region libre de ceros con derivadas locales uniformes.
 
 2026-11-25 08:06 ET | frente: C10 / derivadas de factores locales en la cola Mertens uniforme | resultado: [T] G_q y derivadas fijas cuestan solo (log log q)^O(1) en la franja KV; no hay perdida exp(omega(q)) | siguiente: Perron suavizado para (30.8) y auditoria de retirada del suavizado.
+
+2026-11-25 08:36 ET | frente: C10 / Perron suavizado uniforme para el cuello Mertens | resultado: [T] suma exponencial uniforme con ahorro log^-A y residuo -H_q(0); no se retiro el suavizado | siguiente: insertar particion suave en e directamente en (28.3).

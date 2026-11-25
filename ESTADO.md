@@ -305,3 +305,9 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - **[T]** Para `q` par, el multiplicador local `G_q(s)` y cada derivada de orden fijo son `(log log(3q))^{O_j(1)}` uniformemente en la franja estrecha usada por un contorno de Vinogradov--Korobov.
 - Evidencia: `matematicas/31_derivadas_factores_locales_main_B3.md`. Esto descarta una perdida `exp(omega(rN))` fuera de `s=0`; falta aun Perron truncado, segmentos horizontales y retirada del suavizado para demostrar (30.8).
 - El error de dispersion de `B3` sigue abierto y Goldbach no esta demostrada. Memoria compartida pendiente: MCP no expuesto, sin persistencia remota afirmada.
+
+## Bucle LUMINA/OpenClaw - 2026-11-25 08:36 ET - Perron suavizado del cuello Mertens
+
+- **[T] derivado de teoremas clasicos** Para `q<=x^L`, las sumas exponencialmente suavizadas de `mu(e)/phi(e)` y `mu(e)log(e)/phi(e)`, con `(e,q)=1`, tienen ahorro arbitrario en logaritmos uniformemente en `q`; la segunda se centra exactamente en `-H_q(0)`.
+- Evidencia: `matematicas/32_perron_suavizado_uniforme_main_B3.md`. El argumento usa Mellin, la region libre de ceros de Vinogradov--Korobov y el control local del doc 31.
+- Falta insertar una particion suave directamente en (28.3) o justificar el desuavizado; el error de dispersion de `B3` sigue abierto y Goldbach no esta demostrada. Memoria compartida pendiente: MCP no expuesto, sin persistencia remota afirmada.
