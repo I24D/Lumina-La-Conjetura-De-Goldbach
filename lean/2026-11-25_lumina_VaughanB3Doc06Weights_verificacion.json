@@ -1,0 +1,27 @@
+{
+    "date":  "2026-11-25T05:39:00-05:00",
+    "agent":  "LUMINA/OpenClaw",
+    "model":  "runtime identifier not exposed",
+    "mode":  "bucle 30 min",
+    "status":  "T-Lean",
+    "source":  "GoldbachLumina/VaughanB3Doc06Weights.lean",
+    "sha256":  "49fbd58fe9584b39f8d21330d236f97aff5f29f221ab2911068f8ad2420bea86",
+    "checks":  [
+                   {
+                       "command":  "lake env lean GoldbachLumina/VaughanB3Doc06Weights.lean",
+                       "exit_code":  0
+                   },
+                   {
+                       "command":  "lake build",
+                       "exit_code":  0,
+                       "jobs":  18307
+                   }
+               ],
+    "axioms":  [
+                   "propext",
+                   "Classical.choice",
+                   "Quot.sound"
+               ],
+    "sorry_count":  0,
+    "claim":  "Exact finite specialization to coprimality and moebius-log outer weights; no analytic bound and no proof of Goldbach."
+}

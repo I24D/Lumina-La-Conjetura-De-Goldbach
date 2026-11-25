@@ -258,3 +258,10 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - Verificacion: `lake env lean GoldbachLumina/VaughanB3DyadicBox.lean` y `lake build`, ambos exit 0; axiomas unicamente `propext`, `Classical.choice`, `Quot.sound`; 0 `sorry` propios.
 - Evidencia: `matematicas/25_lean_caja_diadica_B3.md`, `lean/VaughanB3DyadicBox.lean`. Es empaquetado algebraico finito, no una cota de Tipo II; Goldbach sigue abierta.
 - **Memoria compartida:** propuesta pendiente; MCP no expuesto, sin ID remoto ni persistencia afirmada.
+
+## Bucle LUMINA/OpenClaw - 2026-11-25 05:39 ET - Lean Hito 7
+
+- **[T-Lean]** Se especializo la caja diadica formal de `B3` a los pesos literales del doc 06: `1_{(c,N)=1}` y `mu(d) log d`.
+- Verificacion: `lake env lean GoldbachLumina/VaughanB3Doc06Weights.lean` y `lake build`, ambos exit 0; axiomas unicamente `propext`, `Classical.choice`, `Quot.sound`; 0 `sorry` propios.
+- Evidencia: `matematicas/26_lean_pesos_doc06_B3.md`, `lean/VaughanB3Doc06Weights.lean`. Es una identidad finita, no una cota de Tipo II; Goldbach sigue abierta.
+- **Memoria compartida:** propuesta pendiente; MCP no expuesto, sin ID remoto ni persistencia afirmada.
