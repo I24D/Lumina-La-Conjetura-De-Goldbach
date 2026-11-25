@@ -1,0 +1,17 @@
+{
+  "agent": "LUMINA/OpenClaw",
+  "date": "2026-11-24T19:37:00-05:00",
+  "method": "bucle 30 min",
+  "source": "C:\\Users\\dal_n\\lean\\goldbach_lumina\\GoldbachLumina\\VaughanFlatExpansion.lean",
+  "lean_exit": 0,
+  "lake_build": "success",
+  "jobs": 18299,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "sorry_or_custom_axiom_count": 0,
+  "sha256": "eaaef8687a43f86b85c50de79317f8c360790098efeed97838ae6beb366f7819",
+  "claim": "exact finite double-convolution expansion only; no analytic estimate"
+}

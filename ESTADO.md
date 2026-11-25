@@ -222,3 +222,8 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - **[N]** 600 evaluaciones estratificadas de `rho(N)` en las familias `N=2p,4p`, hasta `10^6`, con hipotesis y refutacion registradas antes de ejecutar.
 - Maximo `rho=0.364285` en `N=111292`; derivas del supremo entre primera y ultima banda: `-0.0902` (2p), `-0.1013` (4p). El criterio (`rho>=0.75` o deriva `>0.15`) no fue refutado.
 - Evidencia: `matematicas/20_extension_prereg_familias_2p_4p.md`. Es evidencia finita, no cota uniforme; B3 sigue abierto y Goldbach no esta demostrada.
+## Bucle LUMINA/OpenClaw - 2026-11-24 19:37 ET - Lean Hito 3
+
+- **[T-Lean]** `lambdaFlat U V n` se expandio exactamente como suma finita sobre `n=m*d` y `m=a*b`, conservando los cortes `U,V` explicitos.
+- Verificacion: `lake env lean GoldbachLumina/VaughanFlatExpansion.lean` exit 0; `lake build` verde (18299 jobs); axiomas unicamente `propext`, `Classical.choice`, `Quot.sound`; 0 `sorry`/axiomas propios.
+- Evidencia: `matematicas/21_lean_expansion_tipoII_lambdaFlat.md`, `lean/VaughanFlatExpansion.lean`. No aporta cotas analiticas ni resuelve `B3`; Goldbach sigue abierta.

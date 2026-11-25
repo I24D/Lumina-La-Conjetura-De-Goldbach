@@ -1,0 +1,1 @@
+2026-11-24 19:37 ET | frente: Lean Hito 3 / expansion finita de lambdaFlat | resultado: [T-Lean] doble convolucion n=m*d, m=a*b compilada; lake build verde; axiomas estandar | siguiente: formalizar soportes a>U y d>V y luego cajas diadicas finitas.
