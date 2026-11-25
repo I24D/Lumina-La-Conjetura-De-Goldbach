@@ -394,3 +394,10 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - **[T] elemental** La extraccion de `S_N` de una caja con coeficientes `c(q,r)` tiene error acotado por `S_N O(1/Q+1/R) sum |c(q,r)|`, no por el tamano de la suma firmada.
 - **[T]/[P-rev]** Dos coeficientes `+1,-1` dan suma base cero pero correccion local no nula: la casi constancia puntual de la serie singular no justifica comparar constantes Chen/Richert tras cancelacion sin control L1/margen.
 - Evidencia: `matematicas/45_perturbacion_serie_singular_pesos_firmados.md`; `python numerico/verifica_perturbacion_serie_singular.py` PASS en 1000 matrices racionales. No hay cota inferior de capas y Goldbach sigue abierta. Memoria compartida pendiente: MCP no expuesto.
+
+## Bucle LUMINA/OpenClaw - 2026-11-25 15:44 ET - cancelacion marginal de la serie singular
+
+- **[T] elemental** La perturbacion de primer orden de `S(N;q,r)=S_N(1+a_q)(1+b_r)` depende solo de los margenes del peso firmado `c(q,r)`.
+- **[T]/[P]** Si todos los margenes en `q` y `r` se anulan, los terminos de orden `1/Q+1/R` desaparecen exactamente y queda una cota de segundo orden `S_N sum|c|/((Q-2)(R-2))`; esto da una condicion auditable de diseno, no construye los pesos.
+- Evidencia: `matematicas/46_cancelacion_marginal_serie_singular.md`; `python numerico/verifica_cancelacion_marginal.py` PASS en 1000 matrices racionales. Siguiente: extraer del primer peso explicito de Chen/Richert sus margenes y medir el defecto. No hay cota inferior de capas y Goldbach sigue abierta.
+- **Memoria compartida:** propuesta pendiente; MCP no expuesto, sin persistencia remota afirmada.
