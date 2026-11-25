@@ -377,3 +377,9 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - **[T]** La primera extraccion de Buchstab es exacta: `ell=s t`, `s=P^-(ell)>r`, `P^-(t)>=s`.
 - **[T]/[P-rev]** En la cunha critica, si `q<=N^(1/4)` el cofactor `ell` debe ser primo; para `q>N^(1/4)` la rama compuesta solo ocupa `1/2-delta<rho<=(1-delta)/3`, de anchura `(4delta-1)/6`. Esto restringe la obstruccion abstracta de rango del doc 41.
 - Evidencia: `matematicas/42_cuna_switching_fuerza_cofactor_primo.md`; verificacion exacta de identidad y geometria PASS. Falta estimar la rama bilineal sobre dos primos; no hay cota inferior de capas y Goldbach sigue abierta. Memoria compartida pendiente: MCP no expuesto.
+
+## Bucle LUMINA/OpenClaw - 2026-11-25 14:14 ET - norma de la rama prima de switching
+
+- **[T]** La norma bilineal absoluta de la rama prima contiene necesariamente toda su masa principal positiva; pedir cancelacion de esa norma antes de centrar es una meta imposible.
+- **[T]/[P-rev]** Cauchy expande el problema en correlaciones de dos formas primas; Bombieri--Vinogradov no controla esos productos, y fijar cualquier variable deja modulos supra-raiz.
+- Evidencia: `matematicas/43_norma_rama_prima_switching.md`; `python numerico/verifica_norma_rama_prima.py` PASS en 500 configuraciones. Falta una mayorante local con serie singular y el balance real de pesos Chen/Richert; no hay cota inferior de capas y Goldbach sigue abierta. Memoria compartida pendiente: MCP no expuesto.
