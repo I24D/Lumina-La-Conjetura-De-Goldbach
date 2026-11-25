@@ -8,3 +8,5 @@
 2026-11-25 04:39 ET | frente: Lean Hito 5 / formalizacion del puente (23.1) | resultado: [T-Lean] cuatro lemas compilados; lake build verde; axiomas estandar | siguiente: definir caja diadica finita y probar igualdad exacta con B3.
 2026-11-25 05:15 ET | frente: Lean Hito 6 / caja diadica finita B3 | resultado: [T-Lean] igualdad exacta b3DyadicFlat=b3DyadicBridge; lake build verde; axiomas estandar | siguiente: especializar alpha,beta a coprimalidad y mu(d)log d del doc 06.
 2026-11-25 05:39 ET | frente: Lean Hito 7 / pesos exteriores literales del B3 | resultado: [T-Lean] caja especializada a 1_{(c,N)=1} y mu(d)log d; lake build verde; axiomas estandar | siguiente: formalizar soporte squarefree y exclusiones d=0,1 del peso beta.
+
+2026-11-25 06:10 ET | frente: Lean Hito 8 / soporte del peso exterior mu(d)log d | resultado: [T-Lean] beta(0)=beta(1)=0 y beta(d)!=0 implica d>=2 libre de cuadrados; lake build verde | siguiente: reescribir la caja con filtro squarefree y probar igualdad exacta.

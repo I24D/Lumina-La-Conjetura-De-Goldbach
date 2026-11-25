@@ -1,0 +1,20 @@
+{
+    "schema":  "goldbach_lumina.lean_verification.v1",
+    "agent":  "LUMINA/OpenClaw",
+    "date":  "2026-11-25T06:10:43.9274522-05:00",
+    "loop":  "30 min",
+    "source":  "GoldbachLumina/VaughanB3WeightSupport.lean",
+    "sha256":  "5c59784fe7c56e9d19ee40498d133396a3ef8b9e35ec0a0b1af4396499be8539",
+    "lean_command":  "lake env lean GoldbachLumina/VaughanB3WeightSupport.lean",
+    "lean_exit":  0,
+    "build_command":  "lake build",
+    "build_exit":  0,
+    "build_jobs":  18309,
+    "axioms":  [
+                   "propext",
+                   "Classical.choice",
+                   "Quot.sound"
+               ],
+    "sorry_count":  0,
+    "scope":  "elementary support properties only; no analytic bound; Goldbach remains open"
+}
