@@ -251,3 +251,10 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - Evidencia: `matematicas/24_lean_puente_lambdaFlat_B3.md`, `lean/VaughanB3Bridge.lean`. Es una identidad finita, no una cota de Tipo II; Goldbach sigue abierta.
 
 - **Memoria compartida:** propuesta pendiente; MCP `lumina_shared_memory` / `lumina_propose` no expuesto en esta ejecucion. Sin ID remoto ni persistencia afirmada.
+
+## Bucle LUMINA/OpenClaw - 2026-11-25 05:15 ET - Lean Hito 6
+
+- **[T-Lean]** Se definio una caja diadica finita con cortes `C<c<=2C`, `K<d<=2K`, `cd<N` y se probo su igualdad exacta con la expansion clasica de `B3`, para pesos exteriores arbitrarios.
+- Verificacion: `lake env lean GoldbachLumina/VaughanB3DyadicBox.lean` y `lake build`, ambos exit 0; axiomas unicamente `propext`, `Classical.choice`, `Quot.sound`; 0 `sorry` propios.
+- Evidencia: `matematicas/25_lean_caja_diadica_B3.md`, `lean/VaughanB3DyadicBox.lean`. Es empaquetado algebraico finito, no una cota de Tipo II; Goldbach sigue abierta.
+- **Memoria compartida:** propuesta pendiente; MCP no expuesto, sin ID remoto ni persistencia afirmada.

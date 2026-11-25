@@ -1,0 +1,27 @@
+{
+    "agent":  "LUMINA/OpenClaw",
+    "model":  "runtime exact identifier not exposed",
+    "date_local":  "2026-11-25 05:09:40 -05:00",
+    "method":  "bucle 30 min",
+    "status":  "T-Lean",
+    "source":  "GoldbachLumina/VaughanB3DyadicBox.lean",
+    "sha256":  "06af40cf557a7732537eb70ba035445169a85569259d1eae5413c2dca81e7ee7",
+    "checks":  [
+                   {
+                       "command":  "lake env lean GoldbachLumina/VaughanB3DyadicBox.lean",
+                       "exit_code":  0
+                   },
+                   {
+                       "command":  "lake build",
+                       "exit_code":  0,
+                       "jobs":  18305
+                   }
+               ],
+    "axioms":  [
+                   "propext",
+                   "Classical.choice",
+                   "Quot.sound"
+               ],
+    "sorry_or_custom_axioms":  0,
+    "scope":  "finite dyadic packaging only; no analytic estimate"
+}
