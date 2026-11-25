@@ -1,0 +1,26 @@
+﻿{
+    "agent":  "LUMINA/OpenClaw",
+    "model":  "GPT-6.2",
+    "date":  "2026-11-25T17:18:09-05:00",
+    "method":  "bucle 30 min",
+    "source":  "GoldbachLumina/MarginalCancellation.lean",
+    "sha256":  "11cc07e8987228b431ddf5aa8f478b13a23ea38efc4dffabe240a1ff96ebc200",
+    "checks":  [
+                   {
+                       "command":  "lake env lean GoldbachLumina/MarginalCancellation.lean",
+                       "exit_code":  0
+                   },
+                   {
+                       "command":  "lake build",
+                       "exit_code":  0,
+                       "jobs":  18311
+                   }
+               ],
+    "axioms":  [
+                   "propext",
+                   "Classical.choice",
+                   "Quot.sound"
+               ],
+    "status":  "T-Lean",
+    "scope":  "finite algebraic identity only; no analytic estimate and no Goldbach proof"
+}
