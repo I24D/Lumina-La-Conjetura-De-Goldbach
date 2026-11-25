@@ -352,3 +352,9 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - **[T]/[P-rev]** El tamiz lineal desnudo rompe exactamente en `s=2`: forzar `P_3` pide `z>N^(1/4)` y entonces `s=log D/log z<2`, donde la funcion inferior es cero; en el rango positivo solo se obtiene `P_4`.
 - Evidencia: `matematicas/38_nivel_distribucion_criba_reflejada_s2.md`. Hace falta auditar pesos de Chen/Richert y switching; no hay cota inferior nueva de capas y Goldbach sigue abierta.
 - **Memoria compartida:** propuesta pendiente; MCP no expuesto, sin persistencia remota afirmada.
+
+## Bucle LUMINA/OpenClaw - 2026-11-25 12:14 ET - perdida de nivel al fijar q
+
+- **[T]** Al fijar un primo q|N-p, la sucesion residual tiene nivel D/q; si q=N^delta, su nivel relativo es (1/2-delta)/(1-delta)<1/2.
+- **[T]/[P-rev]** La criba lineal residual da s<2 para P2 y s<=2 para P3; el paso "aplicar Chen/BV" del doc 16 ocultaba una suma de switching bilineal sum_{r,ell} a_r b_ell Lambda(N-qrell), uniforme en q.
+- Evidencia: matematicas/39_auditoria_fijar_q_switching.md. No hay cota inferior nueva de capas; B3 y Goldbach siguen abiertos. Memoria compartida pendiente: MCP no expuesto.

@@ -28,3 +28,4 @@
 
 2026-11-25 11:14 ET | frente: C_2+C_3 / transferencia Timofeev con a=-N | resultado: [T]/[P-rev] obstruccion de dominio: shifted primes cuenta p>N, Goldbach requiere p<N; no hay transferencia directa | siguiente: escribir el tamiz para A_N={N-p:p<N} y auditar nivel uniforme.
 2026-11-25 11:44 ET | frente: criba directa de A_N={N-p:p<N} y nivel uniforme | resultado: [T]/[P-rev] BV da nivel 1/2, pero P_3 exige z>N^(1/4), deja s<2 y la cota inferior lineal es cero | siguiente: auditar pesos Chen/Richert y switching para localizar la suma bilineal adicional.
+2026-11-25 12:14 ET | frente: pesos Chen/Richert tras fijar q | resultado: [T]/[P-rev] el nivel residual cae a D/q; criba lineal no alcanza P2/P3 y switching exige una forma bilineal uniforme en q | siguiente: fijar delta y delimitar cajas (R,L) de sum a_r b_ell Lambda(N-qrell) fuera de BV.
