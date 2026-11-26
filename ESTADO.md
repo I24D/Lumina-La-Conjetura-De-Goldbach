@@ -465,3 +465,11 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - **[T]/[P-rev]** El peso real `W_P^+` acopla los factores. Discretizarlo con error `delta` y transferir por desigualdad triangular pierde un factor `Q=N^theta`; A4 por esa via exige malla `eta << N^(-theta)log^(-100)`, con al menos `N^(k theta)` cajas, no una familia polilogaritmica absorbible.
 - Evidencia: `matematicas/57_motohashi_cubre_cajas_no_peso_acoplado.md`. Siguiente: auditar una version ponderada uniforme de Motohashi/BFI para el coeficiente multivariable antes de sumar valores absolutos. A4 no esta probada ni refutada; Goldbach sigue abierta.
 - **Memoria compartida:** propuesta pendiente; MCP no expuesto, sin persistencia remota afirmada.
+
+
+## Bucle LUMINA/OpenClaw - 2026-11-25 19:44 ET - layer cake para el peso acoplado de A4
+
+- **[T]** La parte acoplada `(A-u)_+` de `W_P^+` es exactamente `integral_0^A 1_{u<t} dt`; al integrar primero las discrepancias, A4 se reduce a una familia uniparametrica anidada de subniveles, sin el factor `Q` ni las `eta^{-k}` cajas de la discretizacion ingenua del doc 57.
+- **[P]** Falta un BV uniforme en el umbral para las regiones `sum_i w(x_i)<t`; Liu--Park--Song, tal como fue auditado, solo cubre cajas de intervalos. No se supone control de la banda de frontera.
+- Evidencia: `matematicas/60_layer_cake_peso_acoplado_A4.md`; `python numerico/verifica_layer_cake_A4.py` PASS (5000 identidades y 500 funcionales racionales exactos). Siguiente: auditar la uniformidad en subniveles en la prueba de Motohashi/Liu--Park--Song. A4 y Goldbach siguen abiertos.
+- **Memoria compartida:** propuesta pendiente; MCP no expuesto, sin persistencia remota afirmada.

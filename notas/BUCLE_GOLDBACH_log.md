@@ -47,3 +47,5 @@
 2026-11-25 18:44 ET | frente: instanciar b_{P,ell} para A_N y auditar A4-A5 | resultado: [T]/[P-rev] b_{P,ell}=E_P(N-ell), A5 se normaliza; A4 exige BV para convolucion de casi-primos, no BV primo; 252 checks PASS | siguiente: Buchstab + principio de induccion de Bombieri para nivel 0.267.
 
 2026-11-25 19:14 ET | frente: A4 switched / principio de induccion de Bombieri | resultado: [T-lit]/[T]/[P-rev] las cajas no ponderadas tienen nivel <1/2, pero la discretizacion trivial de W_P^+ pierde Q y requeriria N^(k theta) cajas | siguiente: version ponderada uniforme de Motohashi/BFI para el peso acoplado.
+
+2026-11-25 19:44 ET | frente: A4 switched / layer cake del peso acoplado | resultado: [T]/[P] reduccion exacta a BV uniforme en una familia uniparametrica; elimina la perdida Q de discretizacion, pero el BV de subniveles sigue abierto; 5500 checks Fraction PASS | siguiente: auditar uniformidad en umbral en Motohashi/Liu--Park--Song.
