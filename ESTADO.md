@@ -524,3 +524,10 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - **[P-rev]** Junto con los docs 62 y 66--68, esto elimina la incompatibilidad Lipschitz/indicador de la auditoria A4; no se declaran verificadas A1--A3/A5 ni Goldbach.
 - Evidencia: `matematicas/71_reparacion_lipschitz_kuhn.md`; `python numerico/71_bloques_alineados_kuhn.py` PASS (2000 particiones, 20000 estados).
 - **Memoria compartida:** propuesta pendiente; MCP no expuesto, sin persistencia remota afirmada.
+
+## Bucle LUMINA/OpenClaw - 2026-11-25 23:36 ET - auditoria A1--A3 y A5 de MZA
+
+- **[T]** Para `a_n=1_{N-n primo}`, Bombieri--Vinogradov mas el tratamiento elemental de `(d,N)>1` verifica A1 a nivel `0.267` con `g_N(p)=0` si `p|N` y `p/(p-1)` en otro caso.
+- **[T]** El peso Kuhn satisface A2 con `R=6`; A3 es `O(N^(19/20))=o(X_1/log^2 N)`.
+- **[P-rev]** A5 se normaliza en la reparacion por bloques alineados; queda A4 como unico supuesto aritmetico sustantivo de esta linea. Incluso cerrando A4, MZA produce `p+P_3`, no Goldbach fuerte.
+- Evidencia: `matematicas/73_auditoria_A1_A3_A5_goldbach.md`; `python numerico/73_auditoria_A1_A3_A5.py` PASS.
