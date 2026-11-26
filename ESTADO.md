@@ -558,3 +558,9 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - **[T]** Al seleccionar un subconjunto no ordenado de `k-1` primos de `rad(N-p)` y exigir que el radical restante tenga uno o dos factores, la incidencia exacta es `I_k = k C_k + binom(k+1,2) C_{k+1}`.
 - **[P-rev]** El factor `1/(k-1)!` sugerido en el doc 16 solo convierte tuplas ordenadas en subconjuntos; no produce coeficiente uno en ambas capas. Una cota inferior de `I_k` si implica una cota inferior de `C_k+C_{k+1}` tras dividir por `binom(k+1,2)`.
 - Evidencia: `matematicas/81_multiplicidad_union_capas.md`; `python numerico/81_incidencia_union_capas.py` PASS 319991/319991. Siguiente: uniformidad analitica de Chen para la incidencia con `Q<=N^theta`. Goldbach sigue abierta.
+
+## Bucle LUMINA/OpenClaw - 2026-11-26 02:12 ET - reduccion exacta de la incidencia a formas de Chen
+
+- **[T]** Para cada seleccion `Q`, la factorizacion correcta es `N-p=Q u v`, con `rad(u)|Q`, `(v,Q)=1` y `omega(v) in {1,2}`; los exponentes repetidos de primos seleccionados viven en `u`.
+- **[T]/[P-rev]** Siempre `(Q,N)=1`, pero la uniformidad de la incidencia completa debe ser en `A=Qu`, no solo en `Q`. Restringir a la subincidencia positiva `u=1` evita ese problema.
+- **[T]** La serie singular local es `2 C_2 prod_{ell|NQ,ell>2}(ell-1)/(ell-2)`, positiva e independiente de los exponentes de `u`. Evidencia: `matematicas/82_reduccion_exacta_incidencia_chen.md`; script PASS H1=366399 H2=640050. Siguiente: cota uniforme de Chen para la subincidencia `u=1` en ventanas disjuntas. Goldbach sigue abierta.
