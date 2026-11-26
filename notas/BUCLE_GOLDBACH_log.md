@@ -49,3 +49,5 @@
 2026-11-25 19:14 ET | frente: A4 switched / principio de induccion de Bombieri | resultado: [T-lit]/[T]/[P-rev] las cajas no ponderadas tienen nivel <1/2, pero la discretizacion trivial de W_P^+ pierde Q y requeriria N^(k theta) cajas | siguiente: version ponderada uniforme de Motohashi/BFI para el peso acoplado.
 
 2026-11-25 19:44 ET | frente: A4 switched / layer cake del peso acoplado | resultado: [T]/[P] reduccion exacta a BV uniforme en una familia uniparametrica; elimina la perdida Q de discretizacion, pero el BV de subniveles sigue abierto; 5500 checks Fraction PASS | siguiente: auditar uniformidad en umbral en Motohashi/Liu--Park--Song.
+
+2026-11-25 20:14 ET | frente: A4 switched / uniformidad LPS para el peso Kuhn concreto | resultado: [T-lit]/[T]/[P-rev] W_P^+ es estado finito y se atomiza en O(1) cajas; desaparece el subnivel curvo, quedan clases no reducidas, frontera Lipschitz y bloque degenerado; 20012 checks PASS | siguiente: cerrar (d,N)>1 y los bloques frontera.

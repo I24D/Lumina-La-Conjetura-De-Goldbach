@@ -473,3 +473,10 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - **[P]** Falta un BV uniforme en el umbral para las regiones `sum_i w(x_i)<t`; Liu--Park--Song, tal como fue auditado, solo cubre cajas de intervalos. No se supone control de la banda de frontera.
 - Evidencia: `matematicas/60_layer_cake_peso_acoplado_A4.md`; `python numerico/verifica_layer_cake_A4.py` PASS (5000 identidades y 500 funcionales racionales exactos). Siguiente: auditar la uniformidad en subniveles en la prueba de Motohashi/Liu--Park--Song. A4 y Goldbach siguen abiertos.
 - **Memoria compartida:** propuesta pendiente; MCP no expuesto, sin persistencia remota afirmada.
+
+## Bucle LUMINA/OpenClaw - 2026-11-25 20:14 ET - peso Kuhn de A4 como estado finito
+
+- **[T-lit]/[T]** El peso concreto del Teorema 3.2 de MZA es Kuhn: `w=(1/2)1_[1/20,1/6]`. Por ello `W_P^+` depende solo de `j+k` y se atomiza exactamente en un numero acotado de cajas (`k=0` o `k=1`); la familia curva del doc 60 no es necesaria en esta instancia. LPS Teor. 3.2 es uniforme en los extremos de los intervalos y cubre cada atomo a todo nivel `<1/2`, incluido `0.267`.
+- **[P-rev]** A4 aun no se declara cerrada: faltan las clases `(d,N)>1`, resolver explicitamente la incompatibilidad textual entre la hipotesis Lipschitz de MZA y su indicador Kuhn discontinuo en los bloques frontera, y convertir la cota absoluta de LPS a la normalizacion relativa en el ultimo bloque degenerado.
+- Evidencia: `matematicas/62_atomizacion_kuhn_A4.md`; `python numerico/62_atomizacion_kuhn_A4.py` PASS (12 estados + 20000 configuraciones). Siguiente: cerrar clases no reducidas y bloques frontera. Goldbach sigue abierta.
+- **Memoria compartida:** propuesta pendiente; MCP no expuesto, sin persistencia remota afirmada.
