@@ -55,3 +55,4 @@
 2026-11-25 20:49 ET | frente: Lean / clases no reducidas de A4 | resultado: [T-Lean] primo comun p|d,N queda forzado en t y por rugosidad p>=N^(1/20); target verde, build global bloqueado por asignador | siguiente: acotar uniformemente las rebanadas de primo fijo p|N.
 
 2026-11-25 21:16 ET | frente: continuacion Lean / clases no reducidas de A4 | resultado: [T-Lean] target y lake build global PASS; bloqueo transitorio resuelto, axiomas [propext] | siguiente: acotar uniformemente las rebanadas de primo fijo p|N.
+2026-11-25 21:36 ET | frente: A4 / suma de clases no reducidas | resultado: [T] doble conteo elimina Q y da N^(19/20+o(1)); PASS 320 casos | siguiente: cota inferior uniforme de X_2 en bloques frontera o exclusion rigurosa de bloques degenerados.

@@ -493,3 +493,12 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - **[T-Lean]** Recompilados `GoldbachLumina.NonReducedClasses` y el proyecto Lean completo: ambos exit 0; `#print axioms` permanece en `[propext]`.
 - Se corrige explicitamente el bloqueo transitorio de las 20:49 ET: no afectaba al teorema y no se reprodujo. Publicacion GitHub habilitada tras escaneo de secretos.
 - **[P]** La cota uniforme de las rebanadas `p|N, p|t` sigue abierta; A4 y Goldbach siguen abiertas.
+
+
+## Bucle LUMINA/OpenClaw - 2026-11-25 21:36 ET - cota absoluta de clases no reducidas A4
+
+- **[T]** Por doble conteo, la norma no reducida es `sum_t E(t) #{d|N-t:(d,N)>1}`; cada modulo es un divisor real de `N-t`, asi que no aparece el factor `Q`.
+- **[T]** Como el doc 64 fuerza un primo comun `p|N,t` con `p>=N^(1/20)`, la contribucion total es `<= N^(19/20+o(1))`, uniformemente en `Q`. En bloques con `X_2(alpha)>=N/log^B N`, esto da el ahorro relativo `log^-A` exigido por A4.
+- **[P-rev]** Queda justificar la normalizacion en bloques degenerados y las fronteras Lipschitz/Kuhn; A4 global y Goldbach siguen abiertos.
+- Evidencia: `matematicas/66_cota_clases_no_reducidas_A4.md`; `python numerico/66_cota_clases_no_reducidas_A4.py` PASS (320 configuraciones exactas).
+- **Memoria compartida:** propuesta pendiente; MCP no expuesto, sin persistencia remota afirmada.
