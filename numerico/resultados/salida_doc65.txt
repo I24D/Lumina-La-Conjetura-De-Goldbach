@@ -1,0 +1,42 @@
+== 1. Gran criba en la esquina: Q^2/N, Q ~ N^s ==
+  s=0.505 N=10^7: Q^2/N = 10^0.07 = 1.17
+  s=0.505 N=10^12: Q^2/N = 10^0.12 = 1.32
+  s=0.505 N=10^24: Q^2/N = 10^0.24 = 1.74
+  s=0.515 N=10^7: Q^2/N = 10^0.21 = 1.62
+  s=0.515 N=10^12: Q^2/N = 10^0.36 = 2.29
+  s=0.515 N=10^24: Q^2/N = 10^0.72 = 5.25
+  s=0.520 N=10^7: Q^2/N = 10^0.28 = 1.91
+  s=0.520 N=10^12: Q^2/N = 10^0.48 = 3.02
+  s=0.520 N=10^24: Q^2/N = 10^0.96 = 9.12
+  -> Q^2/N > 1 y crece con N en toda la esquina: sin ahorro.
+
+== 2. Umbral Teor. 1.1 vs esquina ==
+  cap Teor. 1.1: N^(0.097); esquina alpha en [0.100, 0.105]
+  hueco fondo: 0.0030 en exponente
+    N=10^7: N^hueco = 1.050
+    N=10^12: N^hueco = 1.086
+    N=10^24: N^hueco = 1.180
+  hueco tope: 0.0080 en exponente
+    N=10^7: N^hueco = 1.138
+    N=10^12: N^hueco = 1.247
+    N=10^24: N^hueco = 1.556
+  -> hueco pequeno a N accesible pero -> infinito: sin teorema.
+
+== 3. Masa de la esquina (re-verifica doc 64) ==
+  v=10 h=12 E=12: min_alpha=0.1308 M1slice/M1=0.0043 M1esquina/M1slice=0.0000 pares=0/9 M1esquina/M1=0.00e+00 [slice_win doc64: 0.0000, pares=0/9]
+  v=10 h=24 E=12: min_alpha=0.1160 M1slice/M1=0.0016 M1esquina/M1slice=0.0000 pares=0/18 M1esquina/M1=0.00e+00 [slice_win doc64: 0.0000, pares=0/18]
+  v=10 h=96 E=12: min_alpha=0.1041 M1slice/M1=0.0008 M1esquina/M1slice=0.0478 pares=2/219 M1esquina/M1=3.60e-05 [slice_win doc64: 0.0478, pares=2/219]
+  -> esquina = slice_win del doc 64 (4.78% del slice a h=96).
+
+== 4. Celda balanceada de Vaughan presente ==
+  2^19=524288 <= 10^6 < 2^20=1048576, en (10^4, 10^8]: M~K~x^(1/2) ocurre en el Tipo II de Vaughan.
+
+== 5. Congruencia con a=N (un solo entero) ==
+  N=1000000000000, q=1000003 primo, (N,q)=1: n1*N=n2*N (mod q) <=> n1=n2 (mod q) exacto en 3 casos.
+  Pero el desplazamiento es |a| = N ~ 10^12 (grande): el metodo espectral no lo admite (a fija); Zhang necesita modulos lisos (0).
+
+== 6. Signo: lo descartado en Teor. 1.3 vs Heath-Brown ==
+  mu en [2,200] toma +1, -1 y 0: los terminos de Heath-Brown son firmados, no se pueden descartar.
+  S_{2,3}, S_{2,5} del Teor. 1.3 cuentan rho(n/p1p2, p2) >= 0: descartables solo por ser minorante (cota inferior).
+
+PASS: gran criba sin ahorro en la esquina; umbral 1/10 violado por 0.003-0.008; esquina = 4.78% del slice (0.004% de M1); celda balanceada presente; congruencia a=N verificada; mu firmado.

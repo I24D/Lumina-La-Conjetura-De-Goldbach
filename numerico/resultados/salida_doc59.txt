@@ -1,0 +1,20 @@
+== checks exactos de las herramientas ==
+BFI: 5*(9/28)+2*(11/56)=2 (frontera), 9/28+11/56=29/56=29/56 OK
+Maynard: delta=1/100, ventana [x^(1/50), x^(0.086)] < x^(1/10) OK
+Reordenamiento: 7 muestras, identidad exacta OK (sum lambda_t = t, sum|lambda| <= ||c_t||_1)
+
+v h E t | M1 | M1_bfi/M1 | M1_bfi_L/M1_bfi | M1_may/M1 | M1_may_fou/M1_may | R_unc_BFI | R_unc_May | M1_L/M1 | sumc_L/t
+v=10 h=12 E=12 t=0.05: M1=2.890e-06 M1bfi/M1=0.0043 M1bfiL/M1bfi=0.1953 M1may/M1=0.0043 M1mayFou/M1may=0.3052 RuncBFI=0.0949 RuncMay=0.0826 M1L/M1=0.9867 sumcL/t=0.9174
+v=10 h=12 E=12 t=0.10: M1=3.465e-06 M1bfi/M1=0.0042 M1bfiL/M1bfi=0.2000 M1may/M1=0.0042 M1mayFou/M1may=0.2885 RuncBFI=0.0909 RuncMay=0.0814 M1L/M1=0.9871 sumcL/t=0.5552
+v=10 h=24 E=12 t=0.05: M1=3.825e-06 M1bfi/M1=0.0016 M1bfiL/M1bfi=0.1035 M1may/M1=0.0016 M1mayFou/M1may=0.2909 RuncBFI=0.0386 RuncMay=0.0308 M1L/M1=0.9865 sumcL/t=0.7116
+v=10 h=24 E=12 t=0.10: M1=4.663e-06 M1bfi/M1=0.0015 M1bfiL/M1bfi=0.1056 M1may/M1=0.0015 M1mayFou/M1may=0.2748 RuncBFI=0.0374 RuncMay=0.0306 M1L/M1=0.9868 sumcL/t=0.4467
+v=10 h=48 E=12 t=0.05: M1=4.553e-06 M1bfi/M1=0.0012 M1bfiL/M1bfi=0.0785 M1may/M1=0.0007 M1mayFou/M1may=0.3331 RuncBFI=0.0302 RuncMay=0.0120 M1L/M1=0.9874 sumcL/t=0.6626
+v=10 h=48 E=12 t=0.10: M1=5.537e-06 M1bfi/M1=0.0012 M1bfiL/M1bfi=0.0803 M1may/M1=0.0006 M1mayFou/M1may=0.3185 RuncBFI=0.0296 RuncMay=0.0121 M1L/M1=0.9874 sumcL/t=0.4219
+v=10 h=96 E=12 t=0.05: M1=5.540e-06 M1bfi/M1=0.0012 M1bfiL/M1bfi=0.0543 M1may/M1=0.0008 M1mayFou/M1may=0.3394 RuncBFI=0.0296 RuncMay=0.0137 M1L/M1=0.9896 sumcL/t=0.6446
+v=10 h=96 E=12 t=0.10: M1=6.693e-06 M1bfi/M1=0.0011 M1bfiL/M1bfi=0.0557 M1may/M1=0.0008 M1mayFou/M1may=0.3243 RuncBFI=0.0294 RuncMay=0.0139 M1L/M1=0.9896 sumcL/t=0.4143
+v=8 h=48 E=12 t=0.05: M1=2.186e-06 M1bfi/M1=0.0032 M1bfiL/M1bfi=0.0542 M1may/M1=0.0013 M1mayFou/M1may=0.3003 RuncBFI=0.0833 RuncMay=0.0241 M1L/M1=0.9784 sumcL/t=0.6144
+v=8 h=48 E=12 t=0.10: M1=2.460e-06 M1bfi/M1=0.0034 M1bfiL/M1bfi=0.0571 M1may/M1=0.0013 M1mayFou/M1may=0.2636 RuncBFI=0.0877 RuncMay=0.0269 M1L/M1=0.9767 sumcL/t=0.3753
+v=10 h=96 E=7 t=0.05: M1=1.340e-04 M1bfi/M1=0.0160 M1bfiL/M1bfi=0.0497 M1may/M1=0.0100 M1mayFou/M1may=0.3356 RuncBFI=0.2259 RuncMay=0.1017 M1L/M1=0.8954 sumcL/t=0.6446
+v=10 h=96 E=7 t=0.10: M1=1.703e-04 M1bfi/M1=0.0151 M1bfiL/M1bfi=0.0508 M1may/M1=0.0095 M1mayFou/M1may=0.3218 RuncBFI=0.2140 RuncMay=0.0984 M1L/M1=0.8980 sumcL/t=0.4143
+
+PASS: dispersion auditada; esquina BFI y ventana Maynard exactas; ventana Maynard vacia en la malla (0 pares); reordenamiento exacto; float==exacto a h<=24.

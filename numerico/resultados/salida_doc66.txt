@@ -1,0 +1,49 @@
+== 1. Buchstab omega (Lema 6.5) ==
+PASS omega(1)=1 | 1.0
+PASS omega(2)=1/2 | 0.5000000000000551
+PASS omega(3)=(1+ln2)/3 | 0.5643824143533563
+PASS omega(10)~e^-gamma | (0.5614594982030351, 0.5614594835668851)
+== 2. Integrales de perdida (Maynard III sec. 9) ==
+I_a: 0.1269 (1600) 0.1268 (3200) ; I_b: 0.4093 (1600) 0.4086 (3200)
+PASS I_a converge <1% | (0.1268570846141002, 0.1267846637991211)
+PASS I_b converge <1% | (0.40929776020370934, 0.408643866620501)
+L_S integral = I_a+I_b = 0.5354 ; c_rho = 1-L_S = 0.4646
+PASS L_S integral < 7/8 (consistente Teor. 1.3(2)) | 0.5354
+PASS c_rho integral > 1/8 | 0.4646
+cota cruda (omega<=1): I_a=0.2256 I_b=0.6134 suma=0.8390 ; 1-suma=0.1610
+PASS cota cruda 1-suma >= 1/8 (Teor. 1.3(2)) | 0.161
+== 3. Criba exacta X=2000000 ==
+pi(X) = 148933
+PASS pi(2e6)=148933 | 148933
+Lema 6.5 z=7 u=7.46 exacto=533334 pred=577066 rel=0.076
+PASS Lema 6.5 z=7 rel<0.15 | 0.076
+Lema 6.5 z=101 u=3.14 exacto=241331 pred=243614 rel=0.009
+PASS Lema 6.5 z=101 rel<0.15 | 0.009
+Lema 6.5 z=502 u=2.33 exacto=172315 pred=177482 rel=0.029
+PASS Lema 6.5 z=502 rel<0.15 | 0.029
+z1=7.95 z2=501.70 ; primos en [z1,z2): 91
+S_a=9874 (0.0663 pi) S_b=38515 (0.2586 pi) ; L_S criba = 0.3249 ; L_S integral = 0.5354
+PASS L_S criba en (0, 7/8) | 0.3249
+PASS L_S criba < L_S integral (efecto escala finita, signo esperado) | (0.3249, 0.5354)
+n<=X con S23+S25>=1 (rho<0): 0.0189
+PASS fraccion rho<0 > 0.01 | 0.0189
+PASS fraccion rho<0 < 0.50 | 0.0189
+primos en B: 81 ; n<=X con factor primo en B: 0.0431
+PASS masa B O(delta) < 0.05 | 0.0431
+== 4. Convergencia Buchstab por pares ==
+X=2e+06: L_S Buchstab-pares=0.4184 (integral=0.5354)
+X=1e+08: L_S Buchstab-pares=0.4617 (integral=0.5354)
+X=1e+10: L_S Buchstab-pares=0.4987 (integral=0.5354)
+X=1e+12: L_S Buchstab-pares=0.5125 (integral=0.5354)
+PASS L_S(1e12) a <10% del integral | (0.5125, 0.5354)
+PASS L_S crece con X hacia el integral | (0.5125, 0.3249)
+== 5. Densidad c_rho y constantes ==
+c_rho = 1 - L_S - O(delta) = 0.4646 - O(delta), delta<1/1000
+cota cruda del paper: O(delta) <= 0.0360 (pues 1-suma_cruda-O(delta)>=1/8)
+c_rho asintotico en [0.429, 0.465]
+defecto 1-c_rho asintotico = 0.5354 (+O(delta)) ; cota rigurosa <= 7/8
+constante unilateral c_rho en [0.429, 0.465] (doc 65 decia ~1/64=0.0156)
+constante rho*rho c_rho^2 (NO VALIDA: rho<0 en compuestos): [0.0156, 0.2158]
+PASS c_rho asintotico > 1/8 | 0.4646
+PASS c_rho asintotico < 1 | 0.4646
+== RESULTADO: PASS ==

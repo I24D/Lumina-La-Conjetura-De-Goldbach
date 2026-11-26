@@ -1,0 +1,55 @@
+== 0. Criba X=2000000 (docs 67/69) ==
+PASS pi(2e6)=148933 | 148933
+sum D^2=69521 (0.467 pi)
+PASS sum D^2 = 0.467 pi (doc 69) | 0.467
+== 1. Identidad exacta U(N) = R(N) - D(N) (Prop. 70.1) ==
+N=200000: R=2834 U=2293 D(N)=541 ; U+D-R=0 ; D/R=0.191
+PASS N=200000: U = R - D exacto | U=2293 R=2834 D=541
+PASS N=200000: D/R en (0.15, 0.6) (defecto de tamano comparable) | 0.191
+N=500000: R=6104 U=4595 D(N)=1509 ; U+D-R=0 ; D/R=0.247
+PASS N=500000: U = R - D exacto | U=4595 R=6104 D=1509
+PASS N=500000: D/R en (0.15, 0.6) (defecto de tamano comparable) | 0.247
+N=1000000: R=10804 U=7548 D(N)=3256 ; U+D-R=0 ; D/R=0.301
+PASS N=1000000: U = R - D exacto | U=7548 R=10804 D=3256
+PASS N=1000000: D/R en (0.15, 0.6) (defecto de tamano comparable) | 0.301
+N=1500000: R=30328 U=20285 D(N)=10043 ; U+D-R=0 ; D/R=0.331
+PASS N=1500000: U = R - D exacto | U=20285 R=30328 D=10043
+PASS N=1500000: D/R en (0.15, 0.6) (defecto de tamano comparable) | 0.331
+N=2000000: R=19440 U=12596 D(N)=6844 ; U+D-R=0 ; D/R=0.352
+PASS N=2000000: U = R - D exacto | U=12596 R=19440 D=6844
+PASS N=2000000: D/R en (0.15, 0.6) (defecto de tamano comparable) | 0.352
+== 2. Cota de Cauchy de |E_D| (el termino cruzado) ==
+||S1||_2 ||S_D||_2 = 101754 ; target N/log^2 N = 9501 ; cociente = 10.7
+PASS Cauchy de |E_D| >> target (>5x): el cruzado no es pequeno por Cauchy | 10.7
+N=1e12: cociente asintotico 0.683*log N = 18.9 -> infinito
+PASS N=1e12: cociente Cauchy/target crece con log N | 18.9
+N=1e24: cociente asintotico 0.683*log N = 37.7 -> infinito
+PASS N=1e24: cociente Cauchy/target crece con log N | 37.7
+== 3. Identidad de fase en la malla FFT (E_U = E_R - E_D) ==
+M=2097152 ; Q0=210 ; Q1=9501
+fraccion de malla en arcos mayores: 0.0267
+PASS arcos mayores son una fraccion pequena (<10%) | 0.0267
+circulo completo FFT: 12596.0 + 0.0i ; U(N) por criba: 12596 ; error abs: 0.000
+PASS FFT circulo completo = U(N) exacto (tolerancia 1e-3) | 2e-06
+|E_R|_malla=288.9 ; |E_D|_malla=75.6 ; |E_U|_malla=216.2 ; target=9501
+identidad malla: |E_U - (E_R - E_D)| = 1.42e-14
+PASS identidad de fase en la malla: E_U = E_R - E_D (tol 1e-6 relativa) | 1.4e-14
+== 4. Escala de la convolucion (gran criba del producto) ==
+N=200000: U por convolucion FFT=2293 ; U por criba=2293
+N=500000: U por convolucion FFT=4595 ; U por criba=4595
+N=1000000: U por convolucion FFT=7548 ; U por criba=7548
+N=1500000: U por convolucion FFT=20285 ; U por criba=20285
+N=2000000: U por convolucion FFT=12596 ; U por criba=12596
+PASS convolucion FFT = U(N) por criba en los 5 N
+sum U(n)^2 = 1.7e+14 ; X^3/log^4 X = 1.81e+14 ; cociente = 0.943
+sum U(n)^2 / (X^2/log^4 X) = 1.89e+06  (>>1: la masa es de orden X^3, no X^2)
+PASS sum U^2 es de orden X^3/log^4 X (cociente O(1), entre 0.01 y 10) | 0.943
+PASS sum U^2 / (X^2/log^4 X) >> 1000 (la gran criba no baja la escala) | 1.9e+06
+== 5. Aritmetica GRH-ideal (Prop. 69.2(b) extendida) ==
+N=1e12: sup-ideal x L^1 / target = (log N)^{3/2} = 145 ; cuarto momento ideal / necesario = (log N)^3 = 21096
+PASS N=1e12: ni el sup ideal salva sup x L^1 (>100x) | 145.0
+PASS N=1e12: ni el sup ideal salva el cuarto momento (>1000x) | 21096.0
+N=1e24: sup-ideal x L^1 / target = (log N)^{3/2} = 411 ; cuarto momento ideal / necesario = (log N)^3 = 168764
+PASS N=1e24: ni el sup ideal salva sup x L^1 (>100x) | 411.0
+PASS N=1e24: ni el sup ideal salva el cuarto momento (>1000x) | 168764.0
+== RESULTADO: PASS ==

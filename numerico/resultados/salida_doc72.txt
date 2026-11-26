@@ -1,0 +1,56 @@
+barrido: 248 cambios de signo, primer aprox 14.5175
+ceros refinados: 248 (barrido 248, fallback 0)
+huecos sospechosos: 12
+  hueco 3.8609 en [107.169, 111.030] (s_local=2.20)
+  hueco 3.4996 en [169.912, 173.412] (s_local=1.90)
+  hueco 3.2494 en [198.015, 201.265] (s_local=1.82)
+  hueco 4.9394 en [219.068, 224.007] (s_local=1.76)
+  hueco 3.0661 en [244.071, 247.137] (s_local=1.71)
+  hueco 3.2359 en [279.229, 282.465] (s_local=1.65)
+  hueco 2.8900 en [307.219, 310.109] (s_local=1.61)
+  hueco 3.0110 en [370.051, 373.062] (s_local=1.54)
+  hueco 2.6100 en [388.846, 391.456] (s_local=1.52)
+  hueco 5.1250 en [413.263, 418.388] (s_local=1.50)
+  hueco 2.5413 en [444.319, 446.861] (s_local=1.47)
+  hueco 2.5834 en [451.403, 453.987] (s_local=1.47)
+ceros recuperados por reparacion: 4
+total ceros: 252; gamma_100 = 236.524229666
+gamma_1 = 14.134725141 (conocido 14.134725142, err 2.8e-10) OK
+gamma_2 = 21.022039639 (conocido 21.022039639, err 2.1e-10) OK
+gamma_3 = 25.010857580 (conocido 25.010857580, err 2.1e-10) OK
+T = 473.8352, log T = 6.1609, N(T) = 251.47, contados = 252 OK
+gamma_100 = 236.524229666 (conocido 236.524229666, err 1.0e-11) OK
+factor finito-T log(T/2 pi e)/log T = 0.539
+
+F(alfa) [asintotica: alfa<1 -> alfa; alfa>=1 -> 1]:
+  alfa=0.00  F=1.9743  |imag|=0.00e+00
+  alfa=0.25  F=0.3050  |imag|=3.70e-18
+  alfa=0.50  F=0.4272  |imag|=4.66e-18
+  alfa=0.75  F=0.5821  |imag|=1.43e-18
+  alfa=1.00  F=0.5290  |imag|=9.56e-19
+  alfa=1.50  F=0.5057  |imag|=2.63e-18
+  alfa=2.00  F=0.5785  |imag|=3.82e-18
+  alfa=3.00  F=0.5253  |imag|=2.75e-18
+
+R2 (GUE), pares j>k, normalizacion local:
+  [0.0,1.0): n=140 esperado=138.2 rel=0.01 OK
+  [1.0,1.5): n=113 esperado=122.4 rel=0.08 OK
+  [1.5,2.0): n=121 esperado=123.6 rel=0.02 OK
+  [2.0,3.0): n=251 esperado=249.9 rel=0.00 OK
+  diagnostico [0,0.5): n=13 esperado=28.5 (deplecion altura finita, no es check)
+
+RESULTADO: PASS 13/13
+  [OK ] gamma_1 vs valor conocido -- err=2.84e-10
+  [OK ] gamma_2 vs valor conocido -- err=2.11e-10
+  [OK ] gamma_3 vs valor conocido -- err=2.12e-10
+  [OK ] conteo vs Riemann-von Mangoldt -- N=252.0 N(T)=251.5
+  [OK ] gamma_100 vs valor conocido -- err=1.01e-11
+  [OK ] F(0) ~ prediccion finita-T -- F(0)=1.974 pred=2.332 (asintotica logT=6.16)
+  [OK ] F(alfa) real para todo alfa -- max|imag| < 1e-6
+  [OK ] F(alfa) >= 0 -- min F=0.3050
+  [OK ] F(alfa) <= F(0) -- max F=1.9743 F(0)=1.9743
+  [OK ] R2 bin [0.0,1.0) -- n=140 esp=138.2 rel=0.01
+  [OK ] R2 bin [1.0,1.5) -- n=113 esp=122.4 rel=0.08
+  [OK ] R2 bin [1.5,2.0) -- n=121 esp=123.6 rel=0.02
+  [OK ] R2 bin [2.0,3.0) -- n=251 esp=249.9 rel=0.00
+PASS

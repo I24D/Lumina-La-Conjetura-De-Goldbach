@@ -1,0 +1,81 @@
+== 0. Criba exacta X=2000000 ==
+PASS pi(2e6)=148933 | 148933
+z1=7.95 z2=501.70 ; S_a=9874 (0.0663 pi) S_b=38515 (0.2586 pi)
+L_S criba = 0.3249 (doc 66: 0.325)
+PASS L_S reproduce doc 66 (0.325 +- 0.005) | 0.3249
+PASS Sa/pi = 0.066 +- 0.005 | 0.0663
+PASS Sb/pi = 0.259 +- 0.005 | 0.2586
+== 1. Estructura exacta de rho_tilde ==
+PASS rho_tilde(p)=1 en todo primo
+PASS rho_tilde(n)<=0 en todo compuesto
+max D(n) = 3 ; n con D>=1: 37832
+PASS D(n) acotado (max <= 6) | 3
+PASS lema soporte: S23=S25=0 si P^-(n)<z1 | 1542857
+PASS rho_tilde(n)=1_p(n) si P^-(n)<z1
+== 2. Densidad en clases reducidas (serie singular) ==
+sum rho_tilde = 100544 ; (1-L_S)*pi = 100544
+PASS sum rho_tilde = (1-L_S)*pi | 100544
+p=3: clase 0 = 1 (esperado 1) ; desv. max reducidas = 0.001
+PASS p=3 clase 0 = 1 exacto | 1.0
+PASS p=3 desv. reducidas < 0.15 | 0.001
+p=5: clase 0 = 1 (esperado 1) ; desv. max reducidas = 0.000
+PASS p=5 clase 0 = 1 exacto | 1.0
+PASS p=5 desv. reducidas < 0.15
+p=7: clase 0 = 1 (esperado 1) ; desv. max reducidas = 0.000
+PASS p=7 clase 0 = 1 exacto | 1.0
+PASS p=7 desv. reducidas < 0.15
+p=11 (p>z1, sin lema): clase 0 = -5339 ; desv. max reducidas = 0.006
+p=13 (p>z1, sin lema): clase 0 = -6081 ; desv. max reducidas = 0.005
+== 3. Conteo unilateral U(N) = sum_{p<N} rho_tilde(N-p) ==
+N        U(N)    R(N)    S(N)   U/R     1-L_S(N)  1-L_S*kappa  kappa  r/(1-L_S)
+ 200000    2293    2834  1.760  0.8091  0.8187    0.8058      1.0714  1.1851
+PASS N=200000: U<=R (rho_tilde<=1_p) | (2293, 2834)
+PASS N=200000: U>0 | 2293
+PASS N=200000: U/R ~ 1-L_S(N) (10%) | (0.8091, 0.8187)
+PASS N=200000: U/R ~ 1-L_S*kappa (5%) | (0.8091, 0.8058)
+ 500000    4595    6104  1.760  0.7528  0.7770    0.7614      1.0696  1.1570
+PASS N=500000: U<=R (rho_tilde<=1_p) | (4595, 6104)
+PASS N=500000: U>0 | 4595
+PASS N=500000: U/R ~ 1-L_S(N) (10%) | (0.7528, 0.777)
+PASS N=500000: U/R ~ 1-L_S*kappa (5%) | (0.7528, 0.7614)
+PASS N=500000: r decrece con N (L_S crece) | (0.9703, 0.8989)
+PASS N=500000: r/(1-L_S) decrece hacia 1 | (1.1851, 1.157)
+1000000    7548   10804  1.760  0.6986  0.7267    0.7092      1.0640  1.1262
+PASS N=1000000: U<=R (rho_tilde<=1_p) | (7548, 10804)
+PASS N=1000000: U>0 | 7548
+PASS N=1000000: U/R ~ 1-L_S(N) (10%) | (0.6986, 0.7267)
+PASS N=1000000: U/R ~ 1-L_S*kappa (5%) | (0.6986, 0.7092)
+PASS N=1000000: r decrece con N (L_S crece) | (0.8989, 0.8184)
+PASS N=1000000: r/(1-L_S) decrece hacia 1 | (1.157, 1.1262)
+1500000   20285   30328  3.521  0.6689  0.6961    0.6776      1.0609  1.1158
+PASS N=1500000: U<=R (rho_tilde<=1_p) | (20285, 30328)
+PASS N=1500000: U>0 | 20285
+PASS N=1500000: U/R ~ 1-L_S(N) (10%) | (0.6689, 0.6961)
+PASS N=1500000: U/R ~ 1-L_S*kappa (5%) | (0.6689, 0.6776)
+PASS N=1500000: r decrece con N (L_S crece) | (0.8184, 0.7768)
+PASS N=1500000: r/(1-L_S) decrece hacia 1 | (1.1262, 1.1158)
+2000000   12596   19440  1.760  0.6479  0.6751    0.6559      1.0590  1.1155
+PASS N=2000000: U<=R (rho_tilde<=1_p) | (12596, 19440)
+PASS N=2000000: U>0 | 12596
+PASS N=2000000: U/R ~ 1-L_S(N) (10%) | (0.6479, 0.6751)
+PASS N=2000000: U/R ~ 1-L_S*kappa (5%) | (0.6479, 0.6559)
+PASS N=2000000: r decrece con N (L_S crece) | (0.7768, 0.7531)
+PASS N=2000000: r/(1-L_S) decrece hacia 1 | (1.1158, 1.1155)
+== 4. Cuantificacion L^2 (Cauchy vs termino principal) ==
+sum rho_tilde^2 = 218454 ; /pi(X) = 1.467
+PASS sum rho^2 / pi(X) en (1, 2) | 1.467
+N=2e6: Cauchy=(pi*sum rho^2)^1/2=180375 ; main=11292 ; cociente=16.0 ; 2*ln N=29.0
+PASS Cauchy excede el termino principal >10x | 16.0
+== RESULTADO: PASS ==
+PASS N=2000000: U<=R (rho_tilde<=1_p) | (12596, 19440)
+PASS N=2000000: U>0 | 12596
+PASS N=2000000: U/R ~ 1-L_S(N) (10%) | (0.6479, 0.6751)
+PASS N=2000000: U/R ~ 1-L_S*kappa (5%) | (0.6479, 0.6559)
+PASS N=2000000: r decrece con N (L_S crece) | (0.7768, 0.7531)
+PASS N=2000000: r/(1-L_S) decrece hacia 1 | (1.1158, 1.1155)
+== 4. Cuantificacion L^2 (Cauchy vs termino principal) ==
+sum rho_tilde^2 = 218454 ; /pi(X) = 1.467
+PASS sum rho^2 / pi(X) en (1, 2) | 1.467
+N=2e6: Cauchy=(pi*sum rho^2)^1/2=180375 ; main=11292 ; cociente=16.0 ; 2*ln N=29.0
+PASS Cauchy excede el termino principal >10x | 16.0
+== RESULTADO: PASS ==

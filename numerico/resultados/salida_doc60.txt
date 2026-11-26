@@ -1,0 +1,24 @@
+== (A) Cantidades exactas sobre la malla (Fraction) ==
+v=10 h=12 t=0.05: sumc=5.0000e-02 diag=2.6621e-01 tri(i<j)=-1.0811e-01 cuna: n=12 sum=2.4718e-02 (sum/t=0.494) celdas i<j: +55 -11
+v=10 h=12 t=0.10: sumc=1.0000e-01 diag=2.5659e-01 tri(i<j)=-7.8293e-02 cuna: n=12 sum=2.7803e-02 (sum/t=0.278) celdas i<j: +55 -11
+v=10 h=24 t=0.05: sumc=5.0000e-02 diag=2.5169e-01 tri(i<j)=-1.0085e-01 cuna: n=49 sum=2.2526e-02 (sum/t=0.451) celdas i<j: +253 -23
+v=10 h=24 t=0.10: sumc=1.0000e-01 diag=2.4064e-01 tri(i<j)=-7.0320e-02 cuna: n=49 sum=2.5818e-02 (sum/t=0.258) celdas i<j: +253 -23
+v=10 h=48 t=0.05: sumc=5.0000e-02 diag=2.4468e-01 tri(i<j)=-9.7339e-02 cuna: n=196 sum=2.1079e-02 (sum/t=0.422) celdas i<j: +1081 -47
+v=10 h=48 t=0.10: sumc=1.0000e-01 diag=2.3290e-01 tri(i<j)=-6.6448e-02 cuna: n=196 sum=2.4447e-02 (sum/t=0.244) celdas i<j: +1081 -47
+v=10 h=96 t=0.05: sumc=5.0000e-02 diag=2.4123e-01 tri(i<j)=-9.5613e-02 cuna: n=784 sum=2.0395e-02 (sum/t=0.408) celdas i<j: +4465 -95
+v=10 h=96 t=0.10: sumc=1.0000e-01 diag=2.2908e-01 tri(i<j)=-6.4539e-02 cuna: n=784 sum=2.3799e-02 (sum/t=0.238) celdas i<j: +4465 -95
+PASS (A): sum c = t exacto; tri=(sum-diag)/2 exacto.
+
+== (B) N=10^7 exacto (primos reales) ==
+C2=0.660162 S(N)=1.7604 G=S(N)N/log^2N=6.7763e+04
+h=24 t=1/20: T=3.6017e+03 N*M1act=2.9379e+03 T/(N*M1act)=1.226 T/G=0.0532 E2=1.5874e+03 (n2=10928, E2esp=-7.6265e+02, E2/E2esp=-2.081) E3=-1.1750e+02 (n3=44679) Ege4=2.1318e+03 frac: E2/T=0.441 E3/T=-0.033 Ege4/T=0.592 E2/G=2.3425e-02
+h=24 t=1/10: T=5.1290e+03 N*M1act=4.4987e+03 T/(N*M1act)=1.140 T/G=0.0757 E2=1.5354e+03 (n2=10928, E2esp=-7.0654e+02, E2/E2esp=-2.173) E3=2.5459e+02 (n3=44679) Ege4=3.3389e+03 frac: E2/T=0.299 E3/T=0.050 Ege4/T=0.651 E2/G=2.2659e-02
+h=48 t=1/20: T=8.6996e+02 N*M1act=6.0387e+02 T/(N*M1act)=1.441 T/G=0.0128 E2=4.2649e+02 (n2=10928, E2esp=-2.1194e+02, E2/E2esp=-2.012) E3=3.1907e+01 (n3=44679) Ege4=4.1156e+02 frac: E2/T=0.490 E3/T=0.037 Ege4/T=0.473 E2/G=6.2939e-03
+== (C) Escala a N=10^12 (M1 doc 58) ==
+T(1e12)=5.5400e+06 G(1e12)=2.3058e+09 T/G=2.4026e-03 (ratio 1e7 -> 1e12: 5.34 vs (1e5)^(1/5)=10)
+== (D) Cuna de Chen con peso c_t (N=10^12, primos repr.) ==
+Chen (Liu Lema 4): sum f(a)/(a log(N/a)) <= 0.49254/log N = 0.017825; analogo c_t: sum_cuna c_t/(qr log(N/qr)).
+h=24 t=0.05: sum_cuna c_t/(qr log(N/qr))=7.7294e-10 ratio vs 0.017825: 4.3363e-08
+h=48 t=0.05: sum_cuna c_t/(qr log(N/qr))=7.8467e-10 ratio vs 0.017825: 4.4021e-08
+h=96 t=0.05: sum_cuna c_t/(qr log(N/qr))=8.2898e-10 ratio vs 0.017825: 4.6507e-08
+PASS: enumeracion N=10^7 completa; T>0; E2+E3+Ege4=T por construccion. NOTA: E2esp (modelo uniforme 1/log N) es INVALIDO como predictor: predice signo contrario porque los pares del extremo (p1p2~N) tienen N-p1p2 pequeno y casi nunca primo; el modelo ignora el tamano de N-p1p2. Se reporta solo como diagnostico.

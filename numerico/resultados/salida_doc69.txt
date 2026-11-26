@@ -1,0 +1,30 @@
+== 0. Criba X=2000000 (doc 67) ==
+PASS pi(2e6)=148933 | 148933
+== 1. Normas L^2 de las piezas (delgadas o gruesas) ==
+sum S23^2=10476 (0.070 pi) ; sum S25^2=58091 (0.390 pi) ; sum D^2=69521 ; sum rho~^2=218454 (1.467 pi)
+PASS piezas delgadas: sum S23^2, sum S25^2 < 1.5 pi | (0.07, 0.39)
+PASS sum rho~^2 = 1.467 pi (doc 67) | 1.467
+||S1||=385.9 ||S23||=102.4 ||S25||=241.0 ; suma=729.3 >= ||S_rho~||=467.4
+PASS triangulo L^2: suma ||T_j|| >= ||S_rho~|| | 1.56
+== 2. Barrera de Cauchy por piezas (Prop. 69.1) ==
+int|S1|^2<=pi=148933 ; C23=39500 ; C25=93014 ; total por piezas=281447
+target N/log^2 N=9501 ; Cauchy doc67=180375 ; cociente total/target=29.6 ; Cauchy67/target=19.0
+PASS Cauchy por piezas >= Cauchy doc 67 (no mejora) | 1.56
+PASS total por piezas >> target (>5x) | 29.6
+PASS termino int|S1|^2 solo ya es ~pi = 15.7 x target | 15.7
+== 3. Aritmetica sup x L^1 (Prop. 69.2) ==
+N=1e12: sup requerido=6.89e+03 ; Vinogradov A=3=4.74e+07 ; cociente=6.89e+03 ; ideal raiz x L^1 / target=145.2
+PASS N=1e12: Vinogradov A=3 esta >> por encima del sup requerido (>100x) | 6.9e+03
+PASS N=1e12: ni la cancelacion de raiz cuadrada ideal basta (>100x target) | 145.2
+N=1e24: sup requerido=2.43e+09 ; Vinogradov A=3=5.93e+18 ; cociente=2.43e+09 ; ideal raiz x L^1 / target=410.8
+PASS N=1e24: Vinogradov A=3 esta >> por encima del sup requerido (>100x) | 2.4e+09
+PASS N=1e24: ni la cancelacion de raiz cuadrada ideal basta (>100x target) | 410.8
+== 4. Diagonal del cuarto momento mixto (Prop. 69.3) ==
+diagonal S23: pi*sum S23^2=1.56e+09 ; diagonal S25: 8.65e+09 ; necesario o(N^2/log^4)=9.03e+07
+PASS diagonal S23 >> necesario (>10x) | 17.3
+PASS diagonal S25 >> necesario (>10x) | 95.8
+== RESULTADO: PASS ==
+
+== PC (2026-11-26 ~23:00 ET) ==
+PASS en el PC, numeros identicos a la corrida local (RUN_EXIT=0).
+sum S23^2=10476 (0.070 pi); sum S25^2=58091 (0.390 pi); total por piezas=281447 (29.6x target).

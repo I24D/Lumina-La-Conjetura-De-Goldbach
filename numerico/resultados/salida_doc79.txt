@@ -1,0 +1,47 @@
+PASS mu(6)=1, mu(30)=-1, mu(12)=0, phi(6)=2, phi(30)=8
+PASS sum Lambda(1e6) ~ 1e6 | 0.9996
+U=10: media conv completa=-0.9437 exacta=-0.9437 asintotica T=-1.0338 (s1=-0.0903 s2=-0.2134)
+PASS media conv = formula exacta, U=10 | dif=-4.55e-15
+U=10: media(S, a>V)=-0.7904 (parte a<=V: -0.1533)
+PASS |media(S)| < 1, U=10 | -0.7904
+U=30: media conv completa=0.2835 exacta=0.2835 asintotica T=0.3143 (s1=0.0307 s2=0.1095)
+PASS media conv = formula exacta, U=30 | dif=-2.28e-15
+U=30: media(S, a>V)=0.1972 (parte a<=V: 0.0863)
+PASS |media(S)| < 1, U=30 | 0.1972
+nu(U) = media de nu_U hasta 1e6:
+  U=10: nu=-0.0905
+  U=30: nu=0.0305
+  U=100: nu=-0.0311
+  U=300: nu=0.0105
+  U=1000: nu=-0.0044
+PASS |nu(1000)| < |nu(10)| | -0.0044 vs -0.0905
+K=1000: W min=0.2286 max=0.9995 media=0.6081 |sum mu log d|/K=0.0263 |sum mu log d W|/K=0.0230
+PASS W en (0,1] K=1000 | min=0.2286
+PASS media W -> 6/pi^2, K=1000 | 0.6081 vs 0.6079
+PASS |sum mu log d W|/K < 0.06, K=1000 | 0.0230
+K=10000: W min=0.2078 max=0.9999 media=0.6079 |sum mu log d|/K=0.0471 |sum mu log d W|/K=0.0184
+PASS W en (0,1] K=10000 | min=0.2078
+PASS media W -> 6/pi^2, K=10000 | 0.6079 vs 0.6079
+PASS |sum mu log d W|/K < 0.06, K=10000 | 0.0184
+K=100000: W min=0.1918 max=1.0000 media=0.6079 |sum mu log d|/K=0.0053 |sum mu log d W|/K=0.0000
+PASS W en (0,1] K=100000 | min=0.1918
+PASS media W -> 6/pi^2, K=100000 | 0.6079 vs 0.6079
+PASS |sum mu log d W|/K < 0.06, K=100000 | 0.0000
+PASS W(7)=6/7, W(30)=8/30, W(210)=48/210
+d=7: ratio Lambda=1.167 (esperado d/phi=1.167); ratio S=0.370 (teoria W=0.219; phi(d)/d=0.857)
+PASS ratio Lambda = d/phi(d), d=7 | 1.167 vs 1.167
+PASS ratio S = W(d) (cola Mertens), d=7 | 0.370 vs 0.219
+d=11: ratio Lambda=1.103 (esperado d/phi=1.100); ratio S=-0.404 (teoria W=-0.492; phi(d)/d=0.909)
+PASS ratio Lambda = d/phi(d), d=11 | 1.103 vs 1.100
+PASS ratio S = W(d) (cola Mertens), d=11 | -0.404 vs -0.492
+d=30: ratio Lambda=3.757 (esperado d/phi=3.750); ratio S=-16.661 (teoria W=-16.403; phi(d)/d=0.267)
+PASS ratio Lambda = d/phi(d), d=30 | 3.757 vs 3.750
+PASS ratio S = W(d) (cola Mertens), d=30 | -16.661 vs -16.403
+nu_U clase b=0 mod 7: 24762 de total 30476 (0.81)
+nu_U clase b=0 mod 11: 44092 de total 30476 (1.45)
+PASS nu_U concentrado en b=0 mod 7
+caja C=512 K=1024: B3/N=-0.0178  M_B3/N=-0.0073  M_ingenuo(phi(d)/d)/N=0.0001  |M|/|B3|=0.409
+PASS |M_B3| < 0.05 N | -0.0073
+PASS B3 caja es o(N) (|B3| < 0.1 N) | -0.0178
+
+26/26 PASS

@@ -1,0 +1,52 @@
+== 0. Criba exacta X=2000000 (misma que doc 67) ==
+PASS pi(2e6)=148933 | 148933
+L_S criba = 0.3249 (doc 66: 0.325)
+PASS L_S reproduce doc 66 | 0.3249
+== 1. Prop 76.3: L^2 forzada por los factores locales ==
+sum rho_tilde^2 = 218454 (doc 67: 218454)
+PASS sum rho^2 = 218454 | 218454
+piso Cauchy c*N/log N = 64100 ; objetivo N/log^2 N = 9501 ; cociente = 6.75 (= c*log N)
+PASS piso Cauchy = 6.75x el objetivo | 6.75
+Cauchy real = 180375 = 19.0x objetivo ; >= piso 64100
+PASS Cauchy real >= piso forzado | (180375, 64100)
+PASS Cauchy real ~19x objetivo (doc 67) | 19.0
+l=3: sum_clases (sum rho)^2/pi = 148932 ; pi(X) = 148933 (falta 1: el primo l en clase 0)
+PASS l=3: piso por clases = pi(X)-1 | 148932
+PASS l=3: piso por clases >> c^2*N/log N | 29806
+l=5: sum_clases (sum rho)^2/pi = 148932 ; pi(X) = 148933 (falta 1: el primo l en clase 0)
+PASS l=5: piso por clases = pi(X)-1 | 148932
+PASS l=5: piso por clases >> c^2*N/log N | 29806
+l=7: sum_clases (sum rho)^2/pi = 148932 ; pi(X) = 148933 (falta 1: el primo l en clase 0)
+PASS l=7: piso por clases = pi(X)-1 | 148932
+PASS l=7: piso por clases >> c^2*N/log N | 29806
+== 2. Prop 76.1/76.2: sup refutado; diagonal fuera de la densidad ==
+gamma_1 = 0.5000000000 + 14.1347251417i
+PASS beta(gamma_1) = 1/2 exacto (Theta<1/2 refutado) | 0.5
+PASS gamma_1 = 14.1347251417 | 14.1347251417
+N=1e12: hueco sup ideal (log N)^(3/2) = 145.2
+PASS N=1e12: hueco sup ideal en rango | 145.2
+N=1e24: hueco sup ideal (log N)^(3/2) = 410.8
+PASS N=1e24: hueco sup ideal en rango | 410.8
+ceros con gamma<=100: 29 ; N(T) Riemann-von Mangoldt = 29.0
+PASS ceros en linea hasta 100 ~ N(T) | (29, 29.0)
+== 3. Cuarto momento: escala diagonal y cotas de piezas no negativas ==
+diagonal rho (sum_p rho)^2 = 2.218e+10 ; necesario o(N^2/log^4 N) = 9.027e+07 ; cociente = 246 (ESCALA, no cota inf: rho firma)
+PASS diagonal rho ~245x lo necesario (escala) | 246
+diagonal S23 = 1.560e+09 (17.3x) ; diagonal S25 = 8.652e+09 (95.8x) ; necesario = 9.027e+07
+PASS diagonal S23 ~17.3x (doc 69.3) | 17.3
+PASS diagonal S25 ~95.8x (doc 69.3) | 95.8
+== 4. Escala de (74.4): sum U(N)^2 ~ X^3/log^4 X ==
+X0=1e5: sum U^2 = 2.553e+11 ; sum R^2 = 3.782e+11 ; X^3/log^4 X = 5.692e+10 ; cocientes 4.49 / 6.65
+PASS sum U^2 orden X^3/log^4 X (0.1-10x) | 4.49
+PASS sum R^2 orden X^3/log^4 X (0.1-10x) | 6.65
+PASS U(N)<=R(N) en todo N del rango
+== 5. D1/D2: el split de valores grandes es vacuo; el sup en q no baja ==
+N=1e12: V* = N^(1/2)/(log N)^(3/2) ; cota de medida del conjunto grande = (log N)^2 = 763.5 (>1: vacua)
+PASS N=1e12: medida de {|S1|>V*} vacua (>1) | 763.5
+N=1e12: piso del sup en q (N^(4/5)/N^(1/2) = N^(3/10)) = 3981
+PASS N=1e12: sup en q >= 10^3 x el ideal | 3981
+N=1e24: V* = N^(1/2)/(log N)^(3/2) ; cota de medida del conjunto grande = (log N)^2 = 3053.9 (>1: vacua)
+PASS N=1e24: medida de {|S1|>V*} vacua (>1) | 3053.9
+N=1e24: piso del sup en q (N^(4/5)/N^(1/2) = N^(3/10)) = 15848932
+PASS N=1e24: sup en q >= 10^3 x el ideal | 15848932
+== RESULTADO: PASS ==

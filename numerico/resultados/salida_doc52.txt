@@ -1,0 +1,369 @@
+== Chen/Richert v=10 u=3 h=12 b=7 (b/h=0.583) pares en cuna=12 ==
+  [Chen c=c1-(1/2)cOm] T=7/2  ||c||_1=125/2  T/||c||_1=0.0560
+  [Chen c=c1-(1/2)cOm] margenes no nulos: filas 11/12, columnas 5/12
+  [Chen c=c1-(1/2)cOm] D1=sum|R_i|/||c||_1 = 63/125 = 0.5040
+  [Chen c=c1-(1/2)cOm] D2=sum|C_j|/||c||_1 = 77/125 = 0.6160
+  [Chen c=c1-(1/2)cOm] |P1|=10014240147255436585358762023687583/53011748134275492371927969156129253  B2=125/3042  |P1|/B2 = 4.597
+  [Chen c=c1-(1/2)cOm] max|R_i|=11/2  max|C_j|=11
+  [Switching P3/Om cSW] T=-83/2  ||c||_1=83/2  T/||c||_1=-1.0000
+  [Switching P3/Om cSW] margenes no nulos: filas 6/12, columnas 3/12
+  [Switching P3/Om cSW] D1=sum|R_i|/||c||_1 = 1 = 1.0000
+  [Switching P3/Om cSW] D2=sum|C_j|/||c||_1 = 1 = 1.0000
+  [Switching P3/Om cSW] |P1|=1164511153560565689547/2788990409524263837255  B2=83/3042  |P1|/B2 = 15.303
+  [Switching P3/Om cSW] max|R_i|=21/2  max|C_j|=17
+  [Kuhn favorable c1] T=66  ||c||_1=66  T/||c||_1=1.0000
+  [Kuhn favorable c1] margenes no nulos: filas 11/12, columnas 5/12
+  [Kuhn favorable c1] D1=sum|R_i|/||c||_1 = 1 = 1.0000
+  [Kuhn favorable c1] D2=sum|C_j|/||c||_1 = 1 = 1.0000
+  [Kuhn favorable c1] |P1|=139984931906637981660884612503173112/265058740671377461859639845780646265  B2=22/507  |P1|/B2 = 12.171
+  [Kuhn favorable c1] max|R_i|=13  max|C_j|=21
+  [Richert favorable cR (lam=1)] T=10627/130  ||c||_1=893/10  T/||c||_1=0.9154
+  [Richert favorable cR (lam=1)] margenes no nulos: filas 11/12, columnas 11/12
+  [Richert favorable cR (lam=1)] D1=sum|R_i|/||c||_1 = 10627/11609 = 0.9154
+  [Richert favorable cR (lam=1)] D2=sum|C_j|/||c||_1 = 1 = 1.0000
+  [Richert favorable cR (lam=1)] |P1|=2387751533274345914697850543928912021/5742939381213178340292196658580669075  B2=893/15210  |P1|/B2 = 7.082
+  [Richert favorable cR (lam=1)] max|R_i|=405/26  max|C_j|=1044/65
+  [Chen] CRITERIO 46.4: FALLA (margenes no nulos, D1=0.5040, D2=0.6160)
+  [Switching] CRITERIO 46.4: FALLA (margenes no nulos, D1=1.0000, D2=1.0000)
+  [Kuhn-fav] CRITERIO 46.4: FALLA (margenes no nulos, D1=1.0000, D2=1.0000)
+  [Richert-fav] CRITERIO 46.4: FALLA (margenes no nulos, D1=0.9154, D2=1.0000)
+
+== [pi] Chen v=10 u=3 h=12 N2=10^7 pares en cuna=12 ==
+  [[pi] Chen c] T=-9571/2  ||c||_1=11513/2  T/||c||_1=-0.8313
+  [[pi] Chen c] margenes no nulos: filas 11/12, columnas 5/12
+  [[pi] Chen c] D1=sum|R_i|/||c||_1 = 9571/11513 = 0.8313
+  [[pi] Chen c] D2=sum|C_j|/||c||_1 = 11019/11513 = 0.9571
+  [[pi] Chen c] |P1|=514851163740417058/6959515841249895  B2=11513/162  |P1|/B2 = 1.041
+  [[pi] Chen c] max|R_i|=640  max|C_j|=2920
+  [[pi] Switching cSW] T=-9661/2  ||c||_1=11579/2  T/||c||_1=-0.8344
+  [[pi] Switching cSW] margenes no nulos: filas 11/12, columnas 5/12
+  [[pi] Switching cSW] D1=sum|R_i|/||c||_1 = 9661/11579 = 0.8344
+  [[pi] Switching cSW] D2=sum|C_j|/||c||_1 = 11081/11579 = 0.9570
+  [[pi] Switching cSW] |P1|=12086945077879616404/160068864348747585  B2=11579/162  |P1|/B2 = 1.056
+  [[pi] Switching cSW] max|R_i|=644  max|C_j|=2931
+  [[pi] Chen] CRITERIO 46.4: FALLA (margenes no nulos, D1=0.8313, D2=0.9571)
+  [[pi] Switching] CRITERIO 46.4: FALLA (margenes no nulos, D1=0.8344, D2=0.9570)
+
+== Chen/Richert v=10 u=3 h=24 b=14 (b/h=0.583) pares en cuna=49 ==
+  [Chen c=c1-(1/2)cOm] T=-263/2  ||c||_1=807/2  T/||c||_1=-0.3259
+  [Chen c=c1-(1/2)cOm] margenes no nulos: filas 23/24, columnas 10/24
+  [Chen c=c1-(1/2)cOm] D1=sum|R_i|/||c||_1 = 505/807 = 0.6258
+  [Chen c=c1-(1/2)cOm] D2=sum|C_j|/||c||_1 = 565/807 = 0.7001
+  [Chen c=c1-(1/2)cOm] |P1|=282684678060844389585312594333876088921578788148023707821450062/95632545699039142006931457242610130395025650149261031676015263  B2=269/486  |P1|/B2 = 5.340
+  [Chen c=c1-(1/2)cOm] max|R_i|=35  max|C_j|=95/2
+  [Switching P3/Om cSW] T=-633/2  ||c||_1=633/2  T/||c||_1=-1.0000
+  [Switching P3/Om cSW] margenes no nulos: filas 13/24, columnas 7/24
+  [Switching P3/Om cSW] D1=sum|R_i|/||c||_1 = 1 = 1.0000
+  [Switching P3/Om cSW] D2=sum|C_j|/||c||_1 = 1 = 1.0000
+  [Switching P3/Om cSW] |P1|=110894902093620483019348806430160016347846708/27363004876129338216106348270654317403805139  B2=211/486  |P1|/B2 = 9.335
+  [Switching P3/Om cSW] max|R_i|=45  max|C_j|=62
+  [Kuhn favorable c1] T=378  ||c||_1=378  T/||c||_1=1.0000
+  [Kuhn favorable c1] margenes no nulos: filas 23/24, columnas 10/24
+  [Kuhn favorable c1] D1=sum|R_i|/||c||_1 = 1 = 1.0000
+  [Kuhn favorable c1] D2=sum|C_j|/||c||_1 = 1 = 1.0000
+  [Kuhn favorable c1] |P1|=936936895826633144371919202267696024412566196212779665805277022/217346694770543504561207857369568478170512841248320526536398325  B2=14/27  |P1|/B2 = 8.314
+  [Kuhn favorable c1] max|R_i|=46  max|C_j|=86
+  [Richert favorable cR (lam=1)] T=123393/250  ||c||_1=151897/250  T/||c||_1=0.8123
+  [Richert favorable cR (lam=1)] margenes no nulos: filas 23/24, columnas 23/24
+  [Richert favorable cR (lam=1)] D1=sum|R_i|/||c||_1 = 124177/151897 = 0.8175
+  [Richert favorable cR (lam=1)] D2=sum|C_j|/||c||_1 = 150233/151897 = 0.9890
+  [Richert favorable cR (lam=1)] |P1|=182968271930081002866062243361967298148154899414766972661810007566/99617235103165772923886934627718885828151718905480241329182565625  B2=151897/182250  |P1|/B2 = 2.204
+  [Richert favorable cR (lam=1)] max|R_i|=6839/125  max|C_j|=7716/125
+  [Chen] CRITERIO 46.4: FALLA (margenes no nulos, D1=0.6258, D2=0.7001)
+  [Switching] CRITERIO 46.4: FALLA (margenes no nulos, D1=1.0000, D2=1.0000)
+  [Kuhn-fav] CRITERIO 46.4: FALLA (margenes no nulos, D1=1.0000, D2=1.0000)
+  [Richert-fav] CRITERIO 46.4: FALLA (margenes no nulos, D1=0.8175, D2=0.9890)
+
+== [pi] Chen v=10 u=3 h=24 N2=10^7 pares en cuna=49 ==
+  [[pi] Chen c] T=-22121  ||c||_1=26990  T/||c||_1=-0.8196
+  [[pi] Chen c] margenes no nulos: filas 23/24, columnas 10/24
+  [[pi] Chen c] D1=sum|R_i|/||c||_1 = 4547/5398 = 0.8423
+  [[pi] Chen c] D2=sum|C_j|/||c||_1 = 2557/2699 = 0.9474
+  [[pi] Chen c] |P1|=933634337670996052654834193/3139106011617112570531575  B2=5398/5  |P1|/B2 = 0.275
+  [[pi] Chen c] max|R_i|=1433  max|C_j|=7783
+  [[pi] Switching cSW] T=-22306  ||c||_1=27121  T/||c||_1=-0.8225
+  [[pi] Switching cSW] margenes no nulos: filas 23/24, columnas 10/24
+  [[pi] Switching cSW] D1=sum|R_i|/||c||_1 = 22900/27121 = 0.8444
+  [[pi] Switching cSW] D2=sum|C_j|/||c||_1 = 25665/27121 = 0.9463
+  [[pi] Switching cSW] |P1|=186534836805169816370475258383/612125672265336951253657125  B2=27121/25  |P1|/B2 = 0.281
+  [[pi] Switching cSW] max|R_i|=1442  max|C_j|=7806
+  [[pi] Chen] CRITERIO 46.4: FALLA (margenes no nulos, D1=0.8423, D2=0.9474)
+  [[pi] Switching] CRITERIO 46.4: FALLA (margenes no nulos, D1=0.8444, D2=0.9463)
+
+== Chen/Richert v=10 u=3 h=48 b=28 (b/h=0.583) pares en cuna=196 ==
+  [Chen c=c1-(1/2)cOm] T=-1679  ||c||_1=2787  T/||c||_1=-0.6024
+  [Chen c=c1-(1/2)cOm] margenes no nulos: filas 47/48, columnas 20/48
+  [Chen c=c1-(1/2)cOm] D1=sum|R_i|/||c||_1 = 2122/2787 = 0.7614
+  [Chen c=c1-(1/2)cOm] D2=sum|C_j|/||c||_1 = 751/929 = 0.8084
+  [Chen c=c1-(1/2)cOm] |P1|=44111656703612738583608640941010391624796918181656716313504723004268137676612342685023917121198615882240481/1524511373126723426784085822097269668030227993062178350413792053408904486256103518232934373807015339029075  B2=929/147  |P1|/B2 = 4.579
+  [Chen c=c1-(1/2)cOm] max|R_i|=303/2  max|C_j|=415/2
+  [Switching P3/Om cSW] T=-2429  ||c||_1=2429  T/||c||_1=-1.0000
+  [Switching P3/Om cSW] margenes no nulos: filas 27/48, columnas 14/48
+  [Switching P3/Om cSW] D1=sum|R_i|/||c||_1 = 1 = 1.0000
+  [Switching P3/Om cSW] D2=sum|C_j|/||c||_1 = 1 = 1.0000
+  [Switching P3/Om cSW] |P1|=304383481731672696260213377903758129488250324653953202407137021319102593821989928341/9031040217164758702037027121625947958560104976016305301230623794869874998240986475  B2=347/63  |P1|/B2 = 6.119
+  [Switching P3/Om cSW] max|R_i|=343/2  max|C_j|=475/2
+  [Kuhn favorable c1] T=2395  ||c||_1=2395  T/||c||_1=1.0000
+  [Kuhn favorable c1] margenes no nulos: filas 47/48, columnas 20/48
+  [Kuhn favorable c1] D1=sum|R_i|/||c||_1 = 1 = 1.0000
+  [Kuhn favorable c1] D2=sum|C_j|/||c||_1 = 1 = 1.0000
+  [Kuhn favorable c1] |P1|=52383083468053868339922478504403696442432857871815211529291332175859207458405694025223566612728057067880246/1524511373126723426784085822097269668030227993062178350413792053408904486256103518232934373807015339029075  B2=2395/441  |P1|/B2 = 6.327
+  [Kuhn favorable c1] max|R_i|=174  max|C_j|=351
+  [Richert favorable cR (lam=1)] T=1591579/490  ||c||_1=2163689/490  T/||c||_1=0.7356
+  [Richert favorable cR (lam=1)] margenes no nulos: filas 47/48, columnas 47/48
+  [Richert favorable cR (lam=1)] D1=sum|R_i|/||c||_1 = 1678223/2163689 = 0.7756
+  [Richert favorable cR (lam=1)] D2=sum|C_j|/||c||_1 = 193273/196699 = 0.9826
+  [Richert favorable cR (lam=1)] |P1|=15401818163245685019391552561658969170020205691133161862419568121219647585776461297946726253939286299819884/2766705825304053626385933528991341249388191542964694043343548541371715549131447125681992011723842652312025  B2=2163689/216090  |P1|/B2 = 0.556
+  [Richert favorable cR (lam=1)] max|R_i|=14239/70  max|C_j|=58896/245
+  [Chen] CRITERIO 46.4: FALLA (margenes no nulos, D1=0.7614, D2=0.8084)
+  [Switching] CRITERIO 46.4: FALLA (margenes no nulos, D1=1.0000, D2=1.0000)
+  [Kuhn-fav] CRITERIO 46.4: FALLA (margenes no nulos, D1=1.0000, D2=1.0000)
+  [Richert-fav] CRITERIO 46.4: FALLA (margenes no nulos, D1=0.7756, D2=0.9826)
+
+== [pi] Chen v=10 u=3 h=48 N2=10^7 pares en cuna=196 ==
+  [[pi] Chen c] T=-107217  ||c||_1=117474  T/||c||_1=-0.9127
+  [[pi] Chen c] margenes no nulos: filas 47/48, columnas 20/48
+  [[pi] Chen c] D1=sum|R_i|/||c||_1 = 107953/117474 = 0.9190
+  [[pi] Chen c] D2=sum|C_j|/||c||_1 = 112967/117474 = 0.9616
+  [[pi] Chen c] |P1|=376907038825995469669772523077716095335726580334/256713236166985335749720377150938722764523025  B2=117474/25  |P1|/B2 = 0.312
+  [[pi] Chen c] max|R_i|=3025  max|C_j|=18188
+  [[pi] Switching cSW] T=-107967  ||c||_1=118074  T/||c||_1=-0.9144
+  [[pi] Switching cSW] margenes no nulos: filas 47/48, columnas 20/48
+  [[pi] Switching cSW] D1=sum|R_i|/||c||_1 = 36221/39358 = 0.9203
+  [[pi] Switching cSW] D2=sum|C_j|/||c||_1 = 37827/39358 = 0.9611
+  [[pi] Switching cSW] |P1|=58461678116691314995355538349195491663172984983032/39277125133548756369707217704093624582972022825  B2=118074/25  |P1|/B2 = 0.315
+  [[pi] Switching cSW] max|R_i|=3043  max|C_j|=18235
+  [[pi] Chen] CRITERIO 46.4: FALLA (margenes no nulos, D1=0.9190, D2=0.9616)
+  [[pi] Switching] CRITERIO 46.4: FALLA (margenes no nulos, D1=0.9203, D2=0.9611)
+
+== Chen/Richert v=10 u=3 h=96 b=56 (b/h=0.583) pares en cuna=784 ==
+  [Chen c=c1-(1/2)cOm] T=-16010  ||c||_1=20482  T/||c||_1=-0.7817
+  [Chen c=c1-(1/2)cOm] margenes no nulos: filas 95/96, columnas 40/96
+  [Chen c=c1-(1/2)cOm] D1=sum|R_i|/||c||_1 = 17697/20482 = 0.8640
+  [Chen c=c1-(1/2)cOm] D2=sum|C_j|/||c||_1 = 480/539 = 0.8905
+  [Chen c=c1-(1/2)cOm] |P1|=500934025439369290466361772728326065033316941470532146674053346040675761641680172322213581292249590390263043411649863580601361473897726615854175523463179400543322825966425196682370010175459687448950499428/2024245455250610711178042290235369316622445412259463411720879020789698973291044187742402130534763279440317792057995231110410250199249726217220292681097341733539201913477499643571203777880483490145062275  B2=20482/289  |P1|/B2 = 3.492
+  [Chen c=c1-(1/2)cOm] max|R_i|=629  max|C_j|=1733/2
+  [Switching P3/Om cSW] T=-19030  ||c||_1=19030  T/||c||_1=-1.0000
+  [Switching P3/Om cSW] margenes no nulos: filas 55/96, columnas 28/96
+  [Switching P3/Om cSW] D1=sum|R_i|/||c||_1 = 1 = 1.0000
+  [Switching P3/Om cSW] D2=sum|C_j|/||c||_1 = 1 = 1.0000
+  [Switching P3/Om cSW] |P1|=10413642609257173488509721646167822598079821221772932067747916989328560257403899406987322603450634327789879852245372826747486871228489459160203985173048028906/39036635611933340752383845251519180692755050074982136602728978340170504881217009507476392856560030187866820878445611380615351800688946003364647154308640475  B2=19030/289  |P1|/B2 = 4.051
+  [Switching P3/Om cSW] max|R_i|=669  max|C_j|=1855/2
+  [Kuhn favorable c1] T=16578  ||c||_1=16578  T/||c||_1=1.0000
+  [Kuhn favorable c1] margenes no nulos: filas 95/96, columnas 40/96
+  [Kuhn favorable c1] D1=sum|R_i|/||c||_1 = 1 = 1.0000
+  [Kuhn favorable c1] D2=sum|C_j|/||c||_1 = 1 = 1.0000
+  [Kuhn favorable c1] |P1|=698788027466879261791006449002631215137347306189632701493035398557804545496067546809041297246534836119584638688429432053707878599661607994295662567496744126073182208076501217816951000684124341909787659148092/2641640319102046978087345188757156958192291262998599752295747122130557160144812665003834780347866079669614718635683776599085376510020892713472481948832030962268658497088137034860420930134030954639306268875  B2=16578/289  |P1|/B2 = 4.611
+  [Kuhn favorable c1] max|R_i|=676  max|C_j|=1421
+  [Richert favorable cR (lam=1)] T=11186453/485  ||c||_1=16262918/485  T/||c||_1=0.6879
+  [Richert favorable cR (lam=1)] margenes no nulos: filas 95/96, columnas 95/96
+  [Richert favorable cR (lam=1)] D1=sum|R_i|/||c||_1 = 12201687/16262918 = 0.7503
+  [Richert favorable cR (lam=1)] D2=sum|C_j|/||c||_1 = 15944853/16262918 = 0.9804
+  [Richert favorable cR (lam=1)] |P1|=81500360456777420544819239737780756256064695029272186294625622072567049437115198297770296349883679225388952044838825173834282991963043945799315177212502369046683015527560621283132102413554598241269051732982/28471012328099839652719164812160469438294694723429352885854163427407116059338536500596885965971445525328069745295702925567920169052447399245203416559634111482228874913061032486828981135889000288890300897875  B2=16262918/140165  |P1|/B2 = 0.025
+  [Richert favorable cR (lam=1)] max|R_i|=759853/970  max|C_j|=461279/485
+  [Chen] CRITERIO 46.4: FALLA (margenes no nulos, D1=0.8640, D2=0.8905)
+  [Switching] CRITERIO 46.4: FALLA (margenes no nulos, D1=1.0000, D2=1.0000)
+  [Kuhn-fav] CRITERIO 46.4: FALLA (margenes no nulos, D1=1.0000, D2=1.0000)
+  [Richert-fav] CRITERIO 46.4: FALLA (margenes no nulos, D1=0.7503, D2=0.9804)
+
+== [pi] Chen v=10 u=3 h=96 N2=10^7 pares en cuna=784 ==
+  [[pi] Chen c] T=-492642  ||c||_1=509683  T/||c||_1=-0.9666
+  [[pi] Chen c] margenes no nulos: filas 95/96, columnas 40/96
+  [[pi] Chen c] D1=sum|R_i|/||c||_1 = 493174/509683 = 0.9676
+  [[pi] Chen c] D2=sum|C_j|/||c||_1 = 492642/509683 = 0.9666
+  [[pi] Chen c] |P1|=154475782620941174968815477727042091342723182128598400313532556922984432480348974962965449635980354263/32691178908909806431973711803992024666326753111258402403579135491674887028974734521388370824125875  B2=509683/25  |P1|/B2 = 0.232
+  [[pi] Chen c] max|R_i|=6335  max|C_j|=39515
+  [[pi] Switching cSW] T=-495662  ||c||_1=512447  T/||c||_1=-0.9672
+  [[pi] Switching cSW] margenes no nulos: filas 95/96, columnas 40/96
+  [[pi] Switching cSW] D1=sum|R_i|/||c||_1 = 496114/512447 = 0.9681
+  [[pi] Switching cSW] D2=sum|C_j|/||c||_1 = 495662/512447 = 0.9672
+  [[pi] Switching cSW] |P1|=27688875471456789684856259981851521593268197903989317384772854120361314702665686434444219426695799300691/5798674960804926231452544616402434412983732188659249830114102882211992697347009042180605172030327375  B2=512447/25  |P1|/B2 = 0.233
+  [[pi] Switching cSW] max|R_i|=6375  max|C_j|=39610
+  [[pi] Chen] CRITERIO 46.4: FALLA (margenes no nulos, D1=0.9676, D2=0.9666)
+  [[pi] Switching] CRITERIO 46.4: FALLA (margenes no nulos, D1=0.9681, D2=0.9672)
+
+== Chen/Richert v=8 u=3 h=12 b=7 (b/h=0.583) pares en cuna=9 ==
+  [Chen c=c1-(1/2)cOm] T=13  ||c||_1=59  T/||c||_1=0.2203
+  [Chen c=c1-(1/2)cOm] margenes no nulos: filas 11/12, columnas 5/12
+  [Chen c=c1-(1/2)cOm] D1=sum|R_i|/||c||_1 = 32/59 = 0.5424
+  [Chen c=c1-(1/2)cOm] D2=sum|C_j|/||c||_1 = 37/59 = 0.6271
+  [Chen c=c1-(1/2)cOm] |P1|=2095951542782478223152826858353568/22716178336752369941382531882127425  B2=59/4761  |P1|/B2 = 7.445
+  [Chen c=c1-(1/2)cOm] max|R_i|=11/2  max|C_j|=11
+  [Switching P3/Om cSW] T=-32  ||c||_1=32  T/||c||_1=-1.0000
+  [Switching P3/Om cSW] margenes no nulos: filas 5/12, columnas 3/12
+  [Switching P3/Om cSW] D1=sum|R_i|/||c||_1 = 1 = 1.0000
+  [Switching P3/Om cSW] D2=sum|C_j|/||c||_1 = 1 = 1.0000
+  [Switching P3/Om cSW] |P1|=543440076879690075352/2427075133373829921385  B2=32/4761  |P1|/B2 = 33.313
+  [Switching P3/Om cSW] max|R_i|=21/2  max|C_j|=15
+  [Kuhn favorable c1] T=58  ||c||_1=58  T/||c||_1=1.0000
+  [Kuhn favorable c1] margenes no nulos: filas 11/12, columnas 5/12
+  [Kuhn favorable c1] D1=sum|R_i|/||c||_1 = 1 = 1.0000
+  [Kuhn favorable c1] D2=sum|C_j|/||c||_1 = 1 = 1.0000
+  [Kuhn favorable c1] |P1|=5727088352553486717252427447301342/22716178336752369941382531882127425  B2=58/4761  |P1|/B2 = 20.695
+  [Kuhn favorable c1] max|R_i|=11  max|C_j|=17
+  [Richert favorable cR (lam=1)] T=9749/104  ||c||_1=9927/104  T/||c||_1=0.9821
+  [Richert favorable cR (lam=1)] margenes no nulos: filas 11/12, columnas 11/12
+  [Richert favorable cR (lam=1)] D1=sum|R_i|/||c||_1 = 9749/9927 = 0.9821
+  [Richert favorable cR (lam=1)] D2=sum|C_j|/||c||_1 = 1 = 1.0000
+  [Richert favorable cR (lam=1)] |P1|=6509279981192593221472581722594835067/16242067510777944508088510295721108875  B2=1103/55016  |P1|/B2 = 19.990
+  [Richert favorable cR (lam=1)] max|R_i|=35/2  max|C_j|=1705/104
+  [Chen] CRITERIO 46.4: FALLA (margenes no nulos, D1=0.5424, D2=0.6271)
+  [Switching] CRITERIO 46.4: FALLA (margenes no nulos, D1=1.0000, D2=1.0000)
+  [Kuhn-fav] CRITERIO 46.4: FALLA (margenes no nulos, D1=1.0000, D2=1.0000)
+  [Richert-fav] CRITERIO 46.4: FALLA (margenes no nulos, D1=0.9821, D2=1.0000)
+
+== [pi] Chen v=8 u=3 h=12 N2=10^7 pares en cuna=9 ==
+  [[pi] Chen c] T=-5713  ||c||_1=6150  T/||c||_1=-0.9289
+  [[pi] Chen c] margenes no nulos: filas 11/12, columnas 5/12
+  [[pi] Chen c] D1=sum|R_i|/||c||_1 = 5713/6150 = 0.9289
+  [[pi] Chen c] D2=sum|C_j|/||c||_1 = 1193/1230 = 0.9699
+  [[pi] Chen c] |P1|=4426310820873899149/48362104292617115  B2=6150/121  |P1|/B2 = 1.801
+  [[pi] Chen c] max|R_i|=693  max|C_j|=3051
+  [[pi] Switching cSW] T=-5758  ||c||_1=6187  T/||c||_1=-0.9307
+  [[pi] Switching cSW] margenes no nulos: filas 11/12, columnas 5/12
+  [[pi] Switching cSW] D1=sum|R_i|/||c||_1 = 5758/6187 = 0.9307
+  [[pi] Switching cSW] D2=sum|C_j|/||c||_1 = 5996/6187 = 0.9691
+  [[pi] Switching cSW] |P1|=3202405219897858069/34544360209012225  B2=6187/121  |P1|/B2 = 1.813
+  [[pi] Switching cSW] max|R_i|=698  max|C_j|=3062
+  [[pi] Chen] CRITERIO 46.4: FALLA (margenes no nulos, D1=0.9289, D2=0.9699)
+  [[pi] Switching] CRITERIO 46.4: FALLA (margenes no nulos, D1=0.9307, D2=0.9691)
+
+== Chen/Richert v=8 u=3 h=24 b=13 (b/h=0.542) pares en cuna=49 ==
+  [Chen c=c1-(1/2)cOm] T=-91  ||c||_1=389  T/||c||_1=-0.2339
+  [Chen c=c1-(1/2)cOm] margenes no nulos: filas 23/24, columnas 11/24
+  [Chen c=c1-(1/2)cOm] D1=sum|R_i|/||c||_1 = 218/389 = 0.5604
+  [Chen c=c1-(1/2)cOm] D2=sum|C_j|/||c||_1 = 281/389 = 0.7224
+  [Chen c=c1-(1/2)cOm] |P1|=140288854517801742768151639803265952885199517628825000111807729993/105648872319656892521299736165200044147515038394699127021623595375  B2=389/2601  |P1|/B2 = 8.879
+  [Chen c=c1-(1/2)cOm] max|R_i|=29  max|C_j|=83/2
+  [Switching P3/Om cSW] T=-289  ||c||_1=289  T/||c||_1=-1.0000
+  [Switching P3/Om cSW] margenes no nulos: filas 13/24, columnas 7/24
+  [Switching P3/Om cSW] D1=sum|R_i|/||c||_1 = 1 = 1.0000
+  [Switching P3/Om cSW] D2=sum|C_j|/||c||_1 = 1 = 1.0000
+  [Switching P3/Om cSW] |P1|=11851815309661439795620486036995400637240877451/5938179399111433025203936806439247051936993625  B2=1/9  |P1|/B2 = 17.963
+  [Switching P3/Om cSW] max|R_i|=40  max|C_j|=111/2
+  [Kuhn favorable c1] T=397  ||c||_1=397  T/||c||_1=1.0000
+  [Kuhn favorable c1] margenes no nulos: filas 23/24, columnas 11/24
+  [Kuhn favorable c1] D1=sum|R_i|/||c||_1 = 1 = 1.0000
+  [Kuhn favorable c1] D2=sum|C_j|/||c||_1 = 1 = 1.0000
+  [Kuhn favorable c1] |P1|=25459123249728062776062657383494613087657539784239543340044332818/10105544308836746241167800850584352048892742802971220845546604775  B2=397/2601  |P1|/B2 = 16.506
+  [Kuhn favorable c1] max|R_i|=50  max|C_j|=88
+  [Richert favorable cR (lam=1)] T=11763/20  ||c||_1=62543/100  T/||c||_1=0.9404
+  [Richert favorable cR (lam=1)] margenes no nulos: filas 23/24, columnas 23/24
+  [Richert favorable cR (lam=1)] D1=sum|R_i|/||c||_1 = 58815/62543 = 0.9404
+  [Richert favorable cR (lam=1)] D2=sum|C_j|/||c||_1 = 62251/62543 = 0.9953
+  [Richert favorable cR (lam=1)] |P1|=78892775539805950481393592820783023301860748022523267792170872829761/29053439887905645443357427445430012140566635558542259930946488728125  B2=3679/15300  |P1|/B2 = 11.293
+  [Richert favorable cR (lam=1)] max|R_i|=3121/50  max|C_j|=6473/100
+  [Chen] CRITERIO 46.4: FALLA (margenes no nulos, D1=0.5604, D2=0.7224)
+  [Switching] CRITERIO 46.4: FALLA (margenes no nulos, D1=1.0000, D2=1.0000)
+  [Kuhn-fav] CRITERIO 46.4: FALLA (margenes no nulos, D1=1.0000, D2=1.0000)
+  [Richert-fav] CRITERIO 46.4: FALLA (margenes no nulos, D1=0.9404, D2=0.9953)
+
+== [pi] Chen v=8 u=3 h=24 N2=10^7 pares en cuna=49 ==
+  [[pi] Chen c] T=-25288  ||c||_1=29000  T/||c||_1=-0.8720
+  [[pi] Chen c] margenes no nulos: filas 23/24, columnas 11/24
+  [[pi] Chen c] D1=sum|R_i|/||c||_1 = 109/125 = 0.8720
+  [[pi] Chen c] D2=sum|C_j|/||c||_1 = 2797/2900 = 0.9645
+  [[pi] Chen c] |P1|=3944793918773238425912242837/10688631412580225895783465  B2=29000/81  |P1|/B2 = 1.031
+  [[pi] Chen c] max|R_i|=1537  max|C_j|=8014
+  [[pi] Switching cSW] T=-25486  ||c||_1=29143  T/||c||_1=-0.8745
+  [[pi] Switching cSW] margenes no nulos: filas 23/24, columnas 11/24
+  [[pi] Switching cSW] D1=sum|R_i|/||c||_1 = 25486/29143 = 0.8745
+  [[pi] Switching cSW] D2=sum|C_j|/||c||_1 = 28084/29143 = 0.9637
+  [[pi] Switching cSW] |P1|=778316688271096702471582939/2076865747782492291493869  B2=29143/81  |P1|/B2 = 1.042
+  [[pi] Switching cSW] max|R_i|=1547  max|C_j|=8037
+  [[pi] Chen] CRITERIO 46.4: FALLA (margenes no nulos, D1=0.8720, D2=0.9645)
+  [[pi] Switching] CRITERIO 46.4: FALLA (margenes no nulos, D1=0.8745, D2=0.9637)
+
+== Chen/Richert v=8 u=3 h=48 b=27 (b/h=0.562) pares en cuna=169 ==
+  [Chen c=c1-(1/2)cOm] T=-1235  ||c||_1=2451  T/||c||_1=-0.5039
+  [Chen c=c1-(1/2)cOm] margenes no nulos: filas 47/48, columnas 21/48
+  [Chen c=c1-(1/2)cOm] D1=sum|R_i|/||c||_1 = 1768/2451 = 0.7213
+  [Chen c=c1-(1/2)cOm] D2=sum|C_j|/||c||_1 = 1969/2451 = 0.8033
+  [Chen c=c1-(1/2)cOm] |P1|=370471889540578501620939132957060737782391512291650340763947530986732430261073151653849769702845119468043229/27714591734269668506540660409602605898456086391880516163496783608908284177881269909850130314734894401113515  B2=817/507  |P1|/B2 = 8.295
+  [Chen c=c1-(1/2)cOm] max|R_i|=127  max|C_j|=365/2
+  [Switching P3/Om cSW] T=-2012  ||c||_1=2012  T/||c||_1=-1.0000
+  [Switching P3/Om cSW] margenes no nulos: filas 25/48, columnas 13/48
+  [Switching P3/Om cSW] D1=sum|R_i|/||c||_1 = 1 = 1.0000
+  [Switching P3/Om cSW] D2=sum|C_j|/||c||_1 = 1 = 1.0000
+  [Switching P3/Om cSW] |P1|=165691334162142423066202564622531830837642923779117299326512424044925678401/10254163664843519246528120122882517355406101707080219722206414050125544675  B2=2012/1521  |P1|/B2 = 12.215
+  [Switching P3/Om cSW] max|R_i|=148  max|C_j|=423/2
+  [Kuhn favorable c1] T=2135  ||c||_1=2135  T/||c||_1=1.0000
+  [Kuhn favorable c1] margenes no nulos: filas 47/48, columnas 21/48
+  [Kuhn favorable c1] D1=sum|R_i|/||c||_1 = 1 = 1.0000
+  [Kuhn favorable c1] D2=sum|C_j|/||c||_1 = 1 = 1.0000
+  [Kuhn favorable c1] |P1|=2406327728590304999498058689327778768047522213596640116450727705114469647281879117280816060983648051381465502/138572958671348342532703302048013029492280431959402580817483918044541420889406349549250651573674472005567575  B2=2135/1521  |P1|/B2 = 12.371
+  [Kuhn favorable c1] max|R_i|=167  max|C_j|=317
+  [Richert favorable cR (lam=1)] T=1569291/392  ||c||_1=248571/56  T/||c||_1=0.9019
+  [Richert favorable cR (lam=1)] margenes no nulos: filas 47/48, columnas 47/48
+  [Richert favorable cR (lam=1)] D1=sum|R_i|/||c||_1 = 523097/579999 = 0.9019
+  [Richert favorable cR (lam=1)] D2=sum|C_j|/||c||_1 = 576337/579999 = 0.9937
+  [Richert favorable cR (lam=1)] |P1|=420430375842431440811306513713975323488698013544547266620491102927872699567762630468250611851700011879471/22359548351647166877617274948946991974597137140102844422751204971017799761031791626831102239832483482100  B2=27619/9464  |P1|/B2 = 6.443
+  [Richert favorable cR (lam=1)] max|R_i|=12993/56  max|C_j|=99161/392
+  [Chen] CRITERIO 46.4: FALLA (margenes no nulos, D1=0.7213, D2=0.8033)
+  [Switching] CRITERIO 46.4: FALLA (margenes no nulos, D1=1.0000, D2=1.0000)
+  [Kuhn-fav] CRITERIO 46.4: FALLA (margenes no nulos, D1=1.0000, D2=1.0000)
+  [Richert-fav] CRITERIO 46.4: FALLA (margenes no nulos, D1=0.9019, D2=0.9937)
+
+== [pi] Chen v=8 u=3 h=48 N2=10^7 pares en cuna=169 ==
+  [[pi] Chen c] T=-117153  ||c||_1=123751  T/||c||_1=-0.9467
+  [[pi] Chen c] margenes no nulos: filas 47/48, columnas 21/48
+  [[pi] Chen c] D1=sum|R_i|/||c||_1 = 117153/123751 = 0.9467
+  [[pi] Chen c] D2=sum|C_j|/||c||_1 = 120609/123751 = 0.9746
+  [[pi] Chen c] |P1|=114241428704102645932621931176144002651549523054261/69327195092837461590926910281113958267941879875  B2=123751/81  |P1|/B2 = 1.079
+  [[pi] Chen c] max|R_i|=3234  max|C_j|=18434
+  [[pi] Switching cSW] T=-117930  ||c||_1=124403  T/||c||_1=-0.9480
+  [[pi] Switching cSW] margenes no nulos: filas 47/48, columnas 21/48
+  [[pi] Switching cSW] D1=sum|R_i|/||c||_1 = 117930/124403 = 0.9480
+  [[pi] Switching cSW] D2=sum|C_j|/||c||_1 = 121218/124403 = 0.9744
+  [[pi] Switching cSW] |P1|=23083046426795381255461118741615266593725672485463/13865439018567492318185382056222791653588375975  B2=124403/81  |P1|/B2 = 1.084
+  [[pi] Switching cSW] max|R_i|=3253  max|C_j|=18481
+  [[pi] Chen] CRITERIO 46.4: FALLA (margenes no nulos, D1=0.9467, D2=0.9746)
+  [[pi] Switching] CRITERIO 46.4: FALLA (margenes no nulos, D1=0.9480, D2=0.9744)
+
+== Chen/Richert v=8 u=3 h=96 b=53 (b/h=0.552) pares en cuna=729 ==
+  [Chen c=c1-(1/2)cOm] T=-13335  ||c||_1=18241  T/||c||_1=-0.7310
+  [Chen c=c1-(1/2)cOm] margenes no nulos: filas 95/96, columnas 43/96
+  [Chen c=c1-(1/2)cOm] D1=sum|R_i|/||c||_1 = 15206/18241 = 0.8336
+  [Chen c=c1-(1/2)cOm] D2=sum|C_j|/||c||_1 = 16213/18241 = 0.8888
+  [Chen c=c1-(1/2)cOm] |P1|=15316146651676731739133114739134935704489921843530228947707223092613241748359602689441605237515272275076991574202044140865053687850315408720618408295607467789456774268888907175414972959858852389281905615785616/125250523601118895158245439376355325369370012343423789320388034002057146119139721516888039383065356686544523918152023652022905686058052585198069794893287508955071666815726498825537000646295615244221726063625  B2=18241/1225  |P1|/B2 = 8.212
+  [Chen c=c1-(1/2)cOm] max|R_i|=538  max|C_j|=1533/2
+  [Switching P3/Om cSW] T=-16517  ||c||_1=16517  T/||c||_1=-1.0000
+  [Switching P3/Om cSW] margenes no nulos: filas 53/96, columnas 27/96
+  [Switching P3/Om cSW] D1=sum|R_i|/||c||_1 = 1 = 1.0000
+  [Switching P3/Om cSW] D2=sum|C_j|/||c||_1 = 1 = 1.0000
+  [Switching P3/Om cSW] |P1|=708482182889031108148872375649685674127832564014583846964584740475114377909052195710046149113524091440587092199697945959990724178926026412271746468104/5277817987766612437979718430778363171297030761869398973006708435207382414363017821694463706209577715587667273715533625090246317140686404931817683875  B2=16517/1225  |P1|/B2 = 9.956
+  [Switching P3/Om cSW] max|R_i|=581  max|C_j|=825
+  [Kuhn favorable c1] T=15715  ||c||_1=15715  T/||c||_1=1.0000
+  [Kuhn favorable c1] margenes no nulos: filas 95/96, columnas 43/96
+  [Kuhn favorable c1] D1=sum|R_i|/||c||_1 = 1 = 1.0000
+  [Kuhn favorable c1] D2=sum|C_j|/||c||_1 = 1 = 1.0000
+  [Kuhn favorable c1] |P1|=184022708912434043281003916572680299218654994218553014179082221704570219404576385827689766672681709553076385380141131141079293368417026961624233046241664500455175998593622404907879256408497728822948878327758/1240104194070484110477677617587676488805643686568552369508792415861951941773660609078099399832330264223213108100515085663593125604535174110871978167260272365891798681343826721044920798478174408358630951125  B2=449/35  |P1|/B2 = 11.567
+  [Kuhn favorable c1] max|R_i|=690  max|C_j|=1376
+  [Richert favorable cR (lam=1)] T=11294611/388  ||c||_1=6445589/194  T/||c||_1=0.8762
+  [Richert favorable cR (lam=1)] margenes no nulos: filas 95/96, columnas 95/96
+  [Richert favorable cR (lam=1)] D1=sum|R_i|/||c||_1 = 11294611/12891178 = 0.8762
+  [Richert favorable cR (lam=1)] D2=sum|C_j|/||c||_1 = 12787555/12891178 = 0.9920
+  [Richert favorable cR (lam=1)] |P1|=1098948629297348561390158025093939652422333545490487007417294812918439516437723549103628833675869447270595651608264914480097694438678650465933409980728105176688759113218302327010744971837801488517571326947638907/8099533859539021886899871746337644373885927464874738376051759532133028782371035324758759880104893065729879213373830862830814567698420733842808513403099258912427967787416980257384726041793783119126338285447750  B2=6445589/237650  |P1|/B2 = 5.003
+  [Richert favorable cR (lam=1)] max|R_i|=86478/97  max|C_j|=97070/97
+  [Chen] CRITERIO 46.4: FALLA (margenes no nulos, D1=0.8336, D2=0.8888)
+  [Switching] CRITERIO 46.4: FALLA (margenes no nulos, D1=1.0000, D2=1.0000)
+  [Kuhn-fav] CRITERIO 46.4: FALLA (margenes no nulos, D1=1.0000, D2=1.0000)
+  [Richert-fav] CRITERIO 46.4: FALLA (margenes no nulos, D1=0.8762, D2=0.9920)
+
+== [pi] Chen v=8 u=3 h=96 N2=10^7 pares en cuna=729 ==
+  [[pi] Chen c] T=-525832  ||c||_1=538452  T/||c||_1=-0.9766
+  [[pi] Chen c] margenes no nulos: filas 95/96, columnas 43/96
+  [[pi] Chen c] D1=sum|R_i|/||c||_1 = 131458/134613 = 0.9766
+  [[pi] Chen c] D2=sum|C_j|/||c||_1 = 131458/134613 = 0.9766
+  [[pi] Chen c] |P1|=10922456645304076505959670615262634649689353223585630405880593824515648104821116811349886728/2188556830733274730109461632302537402609005703359058793989783823362714011313195090299125  B2=59828/9  |P1|/B2 = 0.751
+  [[pi] Chen c] max|R_i|=13523/2  max|C_j|=39900
+  [[pi] Switching cSW] T=-529014  ||c||_1=541392  T/||c||_1=-0.9771
+  [[pi] Switching cSW] margenes no nulos: filas 95/96, columnas 43/96
+  [[pi] Switching cSW] D1=sum|R_i|/||c||_1 = 88169/90232 = 0.9771
+  [[pi] Switching cSW] D2=sum|C_j|/||c||_1 = 88169/90232 = 0.9771
+  [[pi] Switching cSW] |P1|=723660968813086853238050165740103922521338903907326361322093394045599910443955057361290043018/143715231884818373943854647187866622771324707853911527471995804400818220076233144262975875  B2=180464/27  |P1|/B2 = 0.753
+  [[pi] Switching cSW] max|R_i|=13609/2  max|C_j|=39995
+  [[pi] Chen] CRITERIO 46.4: FALLA (margenes no nulos, D1=0.9766, D2=0.9766)
+  [[pi] Switching] CRITERIO 46.4: FALLA (margenes no nulos, D1=0.9771, D2=0.9771)
+
+PASS: matrices de Chen/Richert construidas y margenes medidos exactamente (Fraction) para v=10,8; u=3; h=12,24,48,96, en modelo unitario (malla) y con pesos pi (N2=10^7).

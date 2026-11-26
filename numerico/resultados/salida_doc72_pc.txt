@@ -1,0 +1,18 @@
+PC run (identical numbers to local run):
+barrido: 248 cambios de signo, primer aprox 14.5175
+ceros refinados: 248 (barrido 248, fallback 0)
+huecos sospechosos: 12
+ceros recuperados por reparacion: 4
+total ceros: 252; gamma_100 = 236.524229666
+gamma_1 = 14.134725141 (conocido 14.134725142, err 2.8e-10) OK
+gamma_2 = 21.022039639 (conocido 21.022039639, err 2.1e-10) OK
+gamma_3 = 25.010857580 (conocido 25.010857580, err 2.1e-10) OK
+T = 473.8352, log T = 6.1609, N(T) = 251.47, contados = 252 OK
+gamma_100 = 236.524229666 (conocido 236.524229666, err 1.0e-11) OK
+factor finito-T log(T/2 pi e)/log T = 0.539
+F(alfa): 0.00 -> 1.9743; 0.25 -> 0.3050; 0.50 -> 0.4272; 0.75 -> 0.5821;
+  1.00 -> 0.5290; 1.50 -> 0.5057; 2.00 -> 0.5785; 3.00 -> 0.5253
+R2 (GUE): [0.0,1.0): n=140 esp=138.2 rel=0.01 OK; [1.0,1.5): n=113 esp=122.4 rel=0.08 OK;
+  [1.5,2.0): n=121 esp=123.6 rel=0.02 OK; [2.0,3.0): n=251 esp=249.9 rel=0.00 OK
+  diagnostico [0,0.5): n=13 esperado=28.5 (deplecion altura finita, no es check)
+RESULTADO: PASS 13/13

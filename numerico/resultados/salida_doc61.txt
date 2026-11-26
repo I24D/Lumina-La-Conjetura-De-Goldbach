@@ -1,0 +1,120 @@
+== 1. Indicador rugoso: M_l == -A/(l-1) exacto ==
+  [rugoso z=5] L=0.000000 sum M_e/phi(e)=0.000000 ident=OK
+  l=2: M=-0.266667 -A/(l-1)=-0.266667 OK
+  l=3: M=-0.133333 -A/(l-1)=-0.133333 OK
+  l=5: M=-0.066667 -A/(l-1)=-0.066667 OK
+  W(n) en {0,1} para n<=300: OK
+  [rugoso z=7] L=0.000000 sum M_e/phi(e)=0.000000 ident=OK
+  l=2: M=-0.228571 -A/(l-1)=-0.228571 OK
+  l=3: M=-0.114286 -A/(l-1)=-0.114286 OK
+  l=5: M=-0.057143 -A/(l-1)=-0.057143 OK
+  l=7: M=-0.038095 -A/(l-1)=-0.038095 OK
+  W(n) en {0,1} para n<=300: OK
+  [rugoso z=11] L=0.000000 sum M_e/phi(e)=0.000000 ident=OK
+  l=2: M=-0.207792 -A/(l-1)=-0.207792 OK
+  l=3: M=-0.103896 -A/(l-1)=-0.103896 OK
+  l=5: M=-0.051948 -A/(l-1)=-0.051948 OK
+  l=7: M=-0.034632 -A/(l-1)=-0.034632 OK
+  l=11: M=-0.020779 -A/(l-1)=-0.020779 OK
+  W(n) en {0,1} para n<=300: OK
+== 2. Trivial W==1: margenes cero ==
+  [trivial] L=1.000000 sum M_e/phi(e)=1.000000 ident=OK
+  A=1 M_2=0 M_3=0 OK
+== 3. Familia W_t (sin truncar): M_l == -tA/(l-t) exacto ==
+  [W_t z=5 t=1/2] L=0.328125 sum M_e/phi(e)=0.328125 ident=OK
+  l=2: M=-0.187500 -tA/(l-t)=-0.187500 OK
+  l=3: M=-0.112500 -tA/(l-t)=-0.112500 OK
+  l=5: M=-0.062500 -tA/(l-t)=-0.062500 OK
+  [W_t z=7 t=1/2] L=0.300781 sum M_e/phi(e)=0.300781 ident=OK
+  l=2: M=-0.174107 -tA/(l-t)=-0.174107 OK
+  l=3: M=-0.104464 -tA/(l-t)=-0.104464 OK
+  l=5: M=-0.058036 -tA/(l-t)=-0.058036 OK
+  l=7: M=-0.040179 -tA/(l-t)=-0.040179 OK
+== 4. Familia K=2 (truncada w<=2): formulas, W>=0, trade-off delta~t ==
+  [K2 z=5 t=1/2] L=0.343750 sum M_e/phi(e)=0.343750 ident=OK
+  A=0.5667 formula=0.5667 OK
+  l=2: M=-0.1833 formula=-0.1833 OK delta=0.324
+  l=3: M=-0.1083 formula=-0.1083 OK delta=0.382
+  l=5: M=-0.0583 formula=-0.0583 OK delta=0.412
+  W>=0 [1,3000]: negativos=0 minW=0.2500 minW(p)=0.5000 OK
+  soporte max d=15 <= z^2=25 OK
+  [K2 z=7 t=1/2] L=0.333333 sum M_e/phi(e)=0.333333 ident=OK
+  A=0.5321 formula=0.5321 OK
+  l=2: M=-0.1655 formula=-0.1655 OK delta=0.311
+  l=3: M=-0.0964 formula=-0.0964 OK delta=0.362
+  l=5: M=-0.0512 formula=-0.0512 OK delta=0.385
+  l=7: M=-0.0345 formula=-0.0345 OK delta=0.389
+  W>=0 [1,3000]: negativos=0 minW=0.2500 minW(p)=0.5000 OK
+  soporte max d=35 <= z^2=49 OK
+  [K2 z=11 t=1/2] L=0.331250 sum M_e/phi(e)=0.331250 ident=OK
+  A=0.5134 formula=0.5134 OK
+  l=2: M=-0.1541 formula=-0.1541 OK delta=0.300
+  l=3: M=-0.0889 formula=-0.0889 OK delta=0.346
+  l=5: M=-0.0466 formula=-0.0466 OK delta=0.363
+  l=7: M=-0.0313 formula=-0.0313 OK delta=0.366
+  l=11: M=-0.0187 formula=-0.0187 OK delta=0.365
+  W>=0 [1,3000]: negativos=0 minW=0.2500 minW(p)=0.5000 OK
+  soporte max d=77 <= z^2=121 OK
+  [K2 z=7 t=1/10] L=0.820000 sum M_e/phi(e)=0.820000 ident=OK
+  A=0.8872 formula=0.8872 OK
+  l=2: M=-0.0466 formula=-0.0466 OK delta=0.053
+  l=3: M=-0.0305 formula=-0.0305 OK delta=0.069
+  l=5: M=-0.0180 formula=-0.0180 OK delta=0.081
+  l=7: M=-0.0128 formula=-0.0128 OK delta=0.087
+  W>=0 [1,3000]: negativos=0 minW=0.6600 minW(p)=0.9000 OK
+  soporte max d=35 <= z^2=49 OK
+  [K2 z=11 t=1/10] L=0.811917 sum M_e/phi(e)=0.811917 ident=OK
+  A=0.8792 formula=0.8792 OK
+  l=2: M=-0.0462 formula=-0.0462 OK delta=0.053
+  l=3: M=-0.0302 formula=-0.0302 OK delta=0.069
+  l=5: M=-0.0179 formula=-0.0179 OK delta=0.081
+  l=7: M=-0.0127 formula=-0.0127 OK delta=0.087
+  l=11: M=-0.0080 formula=-0.0080 OK delta=0.091
+  W>=0 [1,3000]: negativos=0 minW=0.6000 minW(p)=0.9000 OK
+  soporte max d=77 <= z^2=121 OK
+== 5. K=2 con t=1/Sz: M_l == -1/(l^2 Sz^2) exacto, delta grande ==
+  [K2 t=1/Sz z=7] L=0.213764 sum M_e/phi(e)=0.213764 ident=OK
+  l=2: M=-0.1807 -1/(l^2Sz^2)=-0.1807 OK delta=0.520
+  l=3: M=-0.0803 -1/(l^2Sz^2)=-0.0803 OK delta=0.462
+  l=5: M=-0.0289 -1/(l^2Sz^2)=-0.0289 OK delta=0.333
+  l=7: M=-0.0148 -1/(l^2Sz^2)=-0.0148 OK delta=0.255
+  [K2 t=1/Sz z=11] L=0.254467 sum M_e/phi(e)=0.254467 ident=OK
+  l=2: M=-0.1557 -1/(l^2Sz^2)=-0.1557 OK delta=0.425
+  l=3: M=-0.0692 -1/(l^2Sz^2)=-0.0692 OK delta=0.378
+  l=5: M=-0.0249 -1/(l^2Sz^2)=-0.0249 OK delta=0.272
+  l=7: M=-0.0127 -1/(l^2Sz^2)=-0.0127 OK delta=0.208
+  l=11: M=-0.0051 -1/(l^2Sz^2)=-0.0051 OK delta=0.141
+  [K2 t=1/Sz z=13] L=0.282517 sum M_e/phi(e)=0.282517 ident=OK
+  l=2: M=-0.1384 -1/(l^2Sz^2)=-0.1384 OK delta=0.365
+  l=3: M=-0.0615 -1/(l^2Sz^2)=-0.0615 OK delta=0.324
+  l=5: M=-0.0221 -1/(l^2Sz^2)=-0.0221 OK delta=0.233
+  l=7: M=-0.0113 -1/(l^2Sz^2)=-0.0113 OK delta=0.179
+  l=11: M=-0.0046 -1/(l^2Sz^2)=-0.0046 OK delta=0.121
+  l=13: M=-0.0033 -1/(l^2Sz^2)=-0.0033 OK delta=0.104
+== 6. Densidades rho_l por criba (X=2e6, numpy) ==
+  rugoso z=7: rho_2=0.0000 (esperado 0) rho_3=0.0000 (esperado 0) rho_5=0.0000 (esperado 0) rho_7=0.0000 (esperado 0)
+  Omega<=2:   rho_2=0.2508 (1/l=0.500) rho_3=0.1659 (1/l=0.333) rho_5=0.0985 (1/l=0.200) rho_7=0.0699 (1/l=0.143)
+  [K2 t=1/Sz z=7 (rho)] L=0.213764 sum M_e/phi(e)=0.213764 ident=OK
+  K2 z=7 t=1/Sz=0.8502 (A=0.3477):
+    rho_2 medido=0.2003 predicho=0.2401 dif=0.0398
+    rho_3 medido=0.1422 predicho=0.1793 dif=0.0371
+    rho_5 medido=0.1011 predicho=0.1335 dif=0.0324
+    rho_7 medido=0.0781 predicho=0.1065 dif=0.0284
+== 7. Termino principal fisico L_N (solo (d,N)=1) vs L ==
+  z=7 t=1/10 N con primos [2]: L=0.8200 L_N=0.9108 correccion=+0.0908
+  z=7 t=1/10 N con primos [2, 5]: L=0.8200 L_N=0.9342 correccion=+0.1142
+  z=7 t=1/10 N con primos [2, 3, 5, 7]: L=0.8200 L_N=1.0000 correccion=+0.1800
+  z=7 t=1/10 N con primos [3, 5]: L=0.8200 L_N=0.8850 correccion=+0.0650
+  rugoso z=7: L=0.0000 L_N(N par)=0.3125
+  z=7 t=1/2 N con primos [2]: L=0.3333 L_N=0.6042 correccion=+0.2708
+  z=7 t=1/2 N con primos [2, 5]: L=0.3333 L_N=0.6875 correccion=+0.3542
+  z=7 t=1/2 N con primos [2, 3, 5, 7]: L=0.3333 L_N=1.0000 correccion=+0.6667
+  z=7 t=1/2 N con primos [3, 5]: L=0.3333 L_N=0.4583 correccion=+0.1250
+  rugoso z=7: L=0.0000 L_N(N par)=0.3125
+  z=11 t=1/10 N con primos [2]: L=0.8119 L_N=0.9018 correccion=+0.0898
+  z=11 t=1/10 N con primos [2, 5]: L=0.8119 L_N=0.9248 correccion=+0.1129
+  z=11 t=1/10 N con primos [2, 3, 5, 7]: L=0.8119 L_N=0.9900 correccion=+0.1781
+  z=11 t=1/10 N con primos [3, 5]: L=0.8119 L_N=0.8762 correccion=+0.0643
+  rugoso z=11: L=0.0000 L_N(N par)=0.2812
+
+RESULTADO: PASS

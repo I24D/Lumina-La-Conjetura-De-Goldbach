@@ -1,0 +1,71 @@
+== 0. Criba hasta 2000000 ==
+PASS pi(2e6)=148933 | 148933
+== 1. Segundos momentos de los errores (FFT) ==
+X       ratio_R   ratio_U   ratio_U(c_rho) ratio_D   bad_R bad_U bad_D  a_sec  LS
+PASS X=200000: e_U = e_R - e_D (identidad) | 9.094947017729282e-13
+ 200000  0.1676    0.1194    0.7673         0.0150      0     2    10   2.400  0.2847
+        residuo tras 2 terminos: rR=0.0006 rU=0.0084 rD=0.0079 ; (aR,bR)=(2.25,1.93) (aU,bU)=(-11.52,170.27) ; mean S^2=4.60 pred_sec=0.1819
+PASS X=200000: ratio_R < 0.25 (escala del termino secundario) | 0.1676
+PASS X=200000: ratio_U < 0.2 | 0.1194
+PASS X=200000: ratio_D < 0.05 | 0.015
+PASS X=200000: ratio_U(c_rho) < 1 | 0.7673
+PASS X=200000: bad_R = 0
+PASS X=200000: bad_U <= 0.02% del intervalo | 2
+PASS X=200000: bad_D <= 0.02% del intervalo | 10
+PASS X=200000: residuo_R < ratio_R/3 | (0.0006, 0.1676)
+PASS X=200000: residuo_U < ratio_U/3 | (0.0084, 0.1194)
+PASS X=200000: sU <= 2*sR + 2*sD (E_U = E_R - E_D) | 0.327
+PASS X=200000: sum rho^2 / pi(S) en (1, 2) | 1.404
+PASS X=200000: sum D^2 / pi(S) en (0.3, 0.6) | 0.404
+PASS X=200000: a_sec en (2.0, 3.0) | 2.4
+PASS X=200000: aR en (1.5, 2.5) (coef. secundario ~2) | 2.247
+PASS X=500000: e_U = e_R - e_D (identidad) | 1.8189894035458565e-12
+ 500000  0.1445    0.0994    0.6371         0.0142      0     1     2   2.379  0.3080
+        residuo tras 2 terminos: rR=0.0003 rU=0.0072 rD=0.0070 ; (aR,bR)=(2.07,4.16) (aU,bU)=(-13.76,212.25) ; mean S^2=4.60 pred_sec=0.1339
+PASS X=500000: ratio_R < 0.25 (escala del termino secundario) | 0.1445
+PASS X=500000: ratio_U < 0.2 | 0.0994
+PASS X=500000: ratio_D < 0.05 | 0.0142
+PASS X=500000: ratio_U(c_rho) < 1 | 0.6371
+PASS X=500000: bad_R = 0
+PASS X=500000: bad_U <= 0.02% del intervalo | 1
+PASS X=500000: bad_D <= 0.02% del intervalo | 2
+PASS X=500000: residuo_R < ratio_R/3 | (0.0003, 0.1445)
+PASS X=500000: residuo_U < ratio_U/3 | (0.0072, 0.0994)
+PASS X=500000: sU <= 2*sR + 2*sD (E_U = E_R - E_D) | 0.313
+PASS X=500000: sum rho^2 / pi(S) en (1, 2) | 1.442
+PASS X=500000: sum D^2 / pi(S) en (0.3, 0.6) | 0.442
+PASS X=500000: ratio_R decrece con X | (0.1676, 0.1445)
+PASS X=500000: ratio_U decrece con X | (0.1194, 0.0994)
+PASS X=500000: ratio_D decrece con X | (0.015, 0.0142)
+PASS X=500000: ratio_U(c_rho) decrece con X | (0.7673, 0.6371)
+PASS X=500000: residuo_U decrece con X | (0.0084, 0.0072)
+PASS X=500000: a_sec en (2.0, 3.0) | 2.379
+PASS X=500000: aR en (1.5, 2.5) (coef. secundario ~2) | 2.073
+PASS X=1000000: e_U = e_R - e_D (identidad) | 3.637978807091713e-12
+1000000  0.1296    0.0858    0.5508         0.0123      0     0     0   2.362  0.3249
+        residuo tras 2 terminos: rR=0.0002 rU=0.0052 rD=0.0051 ; (aR,bR)=(2.05,4.44) (aU,bU)=(-15.28,244.29) ; mean S^2=4.60 pred_sec=0.1183
+PASS X=1000000: ratio_R < 0.25 (escala del termino secundario) | 0.1296
+PASS X=1000000: ratio_U < 0.2 | 0.0858
+PASS X=1000000: ratio_D < 0.05 | 0.0123
+PASS X=1000000: ratio_U(c_rho) < 1 | 0.5508
+PASS X=1000000: bad_R = 0
+PASS X=1000000: bad_U <= 0.02% del intervalo
+PASS X=1000000: bad_D <= 0.02% del intervalo
+PASS X=1000000: residuo_R < ratio_R/3 | (0.0002, 0.1296)
+PASS X=1000000: residuo_U < ratio_U/3 | (0.0052, 0.0858)
+PASS X=1000000: sU <= 2*sR + 2*sD (E_U = E_R - E_D) | 0.302
+PASS X=1000000: sum rho^2 / pi(S) en (1, 2) | 1.467
+PASS X=1000000: sum D^2 / pi(S) en (0.3, 0.6) | 0.467
+PASS X=1000000: ratio_R decrece con X | (0.1445, 0.1296)
+PASS X=1000000: ratio_U decrece con X | (0.0994, 0.0858)
+PASS X=1000000: ratio_D decrece con X | (0.0142, 0.0123)
+PASS X=1000000: ratio_U(c_rho) decrece con X | (0.6371, 0.5508)
+PASS X=1000000: residuo_U decrece con X | (0.0072, 0.0052)
+PASS X=1000000: a_sec en (2.0, 3.0) | 2.362
+PASS X=1000000: aR en (1.5, 2.5) (coef. secundario ~2) | 2.051
+== 2. Escala teorica vs medida (X=1e6) ==
+X=1e6: X^3/log^4 X = 2.745e+13 ; X^3/log^5 X (A=2) = 1.987e+12 ; X^3/log^7 X (A=3) = 1.041e+10
+El segundo momento medido (sec. 1, ratio_U * X^3/log^4 X) debe ser
+<< X^3/log^5 X: ratio_U medido ~ 0.0858 ; residuo_U ~ 0.0052 ; 1/log X = 0.0724
+PASS residuo_U(1e6) < 1/log X (el error fluctuante esta muy por debajo) | (0.0052, 0.0724)
+== RESULTADO: PASS ==

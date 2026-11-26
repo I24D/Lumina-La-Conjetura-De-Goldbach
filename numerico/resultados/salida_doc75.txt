@@ -1,0 +1,34 @@
+PASS umbral 1/10-3d
+PASS exponente 0 en el umbral
+  gamma fondo-izq (0.405,0.100) = 0.0375  (hueco x^3/80)
+PASS hueco>0 fondo-izq (0.405,0.100)
+  gamma fondo (0.41,0.100) = 0.0750  (hueco x^3/40)
+PASS hueco>0 fondo (0.41,0.100)
+  gamma centro (0.4075,0.1025) = 0.0813  (hueco x^13/160)
+PASS hueco>0 centro (0.4075,0.1025)
+  gamma tope (0.41,0.105) = 0.1250  (hueco x^1/8)
+PASS hueco>0 tope (0.41,0.105)
+  gamma tope-izq (0.405,0.105) = 0.0875  (hueco x^7/80)
+PASS hueco>0 tope-izq (0.405,0.105)
+PASS gamma fondo-izq 3/80
+PASS gamma centro 13/160
+PASS th_Rmax(0.4075)=0.094375
+PASS th_Rmax(0.41)=0.0925
+PASS th_Rmax(0.405)=0.09625
+PASS hueco th_R centro 0.008125
+  exp T2 centro Nmax = -0.05250
+PASS T2<1 centro Nmax
+  exp T2 centro Nmin = -0.01000
+PASS T2<1 centro Nmin
+PASS R1''~R en regimen 11.8
+  (N/Q)^(2/3) exponente = 0.0417 < th_R = 0.1025
+PASS Q^3R^4 equiv 1/10-3d
+PASS R^5Q^6 es R>=x^6d
+PASS gamma para th_R=0.1
+  gamma necesario para th_R=0.1: 0.0563
+PASS gamma para th_R=0.1025
+  gamma necesario para th_R=0.1025: 0.0813
+PASS gamma para th_R=0.105
+  gamma necesario para th_R=0.105: 0.1062
+
+PASS 21/21 - 75_umbral_un_decimo_agudo.py
