@@ -509,3 +509,10 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - **[T]** Su masa es <= M N eta+O(MN^(3/4)); si eta<=log^-4 N, es o(N/log^2 N) y puede pelarse antes de la criba. El caso de masa arbitrariamente pequena ya no exige una estimacion A4 relativa.
 - **[P-rev]** Para eta>log^-4 N falta una cota inferior uniforme de X_2; tambien sigue abierta la incompatibilidad textual Lipschitz/Kuhn. Goldbach sigue abierta.
 - Evidencia: matematicas/67_pelado_bloque_final_A4.md; python numerico/67_pelado_bloque_final_A4.py PASS (400 valores).
+
+## Bucle LUMINA/OpenClaw - 2026-11-25 22:54 ET - masa del bloque final A4
+
+- **[T]** Si el ancho relativo final satisface `eta>log^-4 N`, cuatro ventanas disjuntas de primos dentro de `(P_*,N^(1/4))` dan `X_2(P_*) >> N eta^4/log^4 N >= N/log^20 N`.
+- Combinado con el pelado del doc 67 para `eta<=log^-4 N` y la cota no reducida del doc 66, queda cerrada la obstruccion de normalizacion del ultimo bloque.
+- **[P-rev]** A4 global aun requiere resolver/citar la incompatibilidad textual Lipschitz/indicador Kuhn; Goldbach sigue abierta.
+- Evidencia: `matematicas/68_masa_bloque_final_A4.md`; `python numerico/68_masa_bloque_final_A4.py` PASS (1000 configuraciones racionales).
