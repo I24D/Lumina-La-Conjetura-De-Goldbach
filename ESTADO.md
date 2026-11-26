@@ -516,3 +516,11 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - Combinado con el pelado del doc 67 para `eta<=log^-4 N` y la cota no reducida del doc 66, queda cerrada la obstruccion de normalizacion del ultimo bloque.
 - **[P-rev]** A4 global aun requiere resolver/citar la incompatibilidad textual Lipschitz/indicador Kuhn; Goldbach sigue abierta.
 - Evidencia: `matematicas/68_masa_bloque_final_A4.md`; `python numerico/68_masa_bloque_final_A4.py` PASS (1000 configuraciones racionales).
+
+## Bucle LUMINA/OpenClaw - 2026-11-25 23:06 ET - reparacion Lipschitz/Kuhn
+
+- **[T-lit]** Assumption 3.1 de MZA exige `w` Lipschitz, mientras su Teorema 3.2 fija el indicador discontinuo de Kuhn; el antecedente publicado es literalmente inconsistente y no se corrige en silencio.
+- **[T]** Refinar los bloques diadicos insertando `x^(1/6)` hace `w` constante por celda y da `W(p_1m)=W_I(m)` exactamente, sin `C_w/log x`; la suma de Sigma_1 se trata directamente en `[x^(1/20),x^(1/6))` y la evaluacion Kuhn usa (5.24), no el paso Lipschitz (5.22).
+- **[P-rev]** Junto con los docs 62 y 66--68, esto elimina la incompatibilidad Lipschitz/indicador de la auditoria A4; no se declaran verificadas A1--A3/A5 ni Goldbach.
+- Evidencia: `matematicas/71_reparacion_lipschitz_kuhn.md`; `python numerico/71_bloques_alineados_kuhn.py` PASS (2000 particiones, 20000 estados).
+- **Memoria compartida:** propuesta pendiente; MCP no expuesto, sin persistencia remota afirmada.
