@@ -544,3 +544,10 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - **[P-rev]/[FALSO como prueba]** La Prop. 77.1 usa `sum rho^2 << X/log X`, pero el valor `1.467*pi(2X)` fue medido solo para el proxy `rho_tilde`, no para el minorante verdadero con la parte `rho_B`; una cota de masa `O(delta)` no controla cuadrados.
 - **[T]** Un contraejemplo finito preserva la minoracion y la masa L1 pero cambia L2 de `P+M` a `P+M^2`. Parseval se repara si se demuestra el sublema `sum rho^2 << X(log X)^K` para algun K fijo.
 - Evidencia: `matematicas/78_revision_adversarial_segundo_momento_rho.md`; `python numerico/78_gap_L2_rho.py` PASS 6/6. Goldbach sigue abierta.
+
+
+## Bucle LUMINA/OpenClaw - 2026-11-26 01:11 ET - cierre L2 del minorante de Harman
+
+- **[T]** Desde la definicion exacta del Lema 6.8 de Maynard III, `rho_B(n) <= tau_4(n)`; todas las piezas restantes del minorante son sumas sobre a lo sumo seis slots multiplicativos, asi que `|rho(n)| <= (9+C) tau_6(n)`.
+- **[T]** Por el momento clasico de la funcion divisor, `sum_{n~X}|rho(n)|^2 << X(log X)^35`. Esto cierra el sublema `L2-rho` del doc 78 y restaura la Prop. 77.1 / (74.4) para el minorante verdadero tras reajustar el ahorro de Vinogradov.
+- **[N]** La constante experimental `1.467*pi(2X)` sigue siendo solo del proxy; el puente casi-todo-N a todo-N permanece abierto. Evidencia: `matematicas/80_cota_divisores_rho.md`; `python numerico/80_cota_divisores_rho.py` PASS 5501/5501. Goldbach sigue abierta.
