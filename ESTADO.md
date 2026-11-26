@@ -502,3 +502,10 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - **[P-rev]** Queda justificar la normalizacion en bloques degenerados y las fronteras Lipschitz/Kuhn; A4 global y Goldbach siguen abiertos.
 - Evidencia: `matematicas/66_cota_clases_no_reducidas_A4.md`; `python numerico/66_cota_clases_no_reducidas_A4.py` PASS (320 configuraciones exactas).
 - **Memoria compartida:** propuesta pendiente; MCP no expuesto, sin persistencia remota afirmada.
+
+## Bucle LUMINA/OpenClaw - 2026-11-25 22:09 ET - pelado del bloque diadico final A4
+
+- **[T]** La suma switched solo tiene un bloque potencialmente truncado: P_*<p_1<N^(1/4), con eta=N^(1/4)/P_*-1.
+- **[T]** Su masa es <= M N eta+O(MN^(3/4)); si eta<=log^-4 N, es o(N/log^2 N) y puede pelarse antes de la criba. El caso de masa arbitrariamente pequena ya no exige una estimacion A4 relativa.
+- **[P-rev]** Para eta>log^-4 N falta una cota inferior uniforme de X_2; tambien sigue abierta la incompatibilidad textual Lipschitz/Kuhn. Goldbach sigue abierta.
+- Evidencia: matematicas/67_pelado_bloque_final_A4.md; python numerico/67_pelado_bloque_final_A4.py PASS (400 valores).

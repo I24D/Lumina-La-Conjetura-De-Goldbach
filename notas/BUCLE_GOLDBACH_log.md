@@ -56,3 +56,4 @@
 
 2026-11-25 21:16 ET | frente: continuacion Lean / clases no reducidas de A4 | resultado: [T-Lean] target y lake build global PASS; bloqueo transitorio resuelto, axiomas [propext] | siguiente: acotar uniformemente las rebanadas de primo fijo p|N.
 2026-11-25 21:36 ET | frente: A4 / suma de clases no reducidas | resultado: [T] doble conteo elimina Q y da N^(19/20+o(1)); PASS 320 casos | siguiente: cota inferior uniforme de X_2 en bloques frontera o exclusion rigurosa de bloques degenerados.
+2026-11-25 22:09 ET | frente: A4 / bloque diadico final degenerado | resultado: [T] hay a lo sumo un bloque frontera; masa <= M N eta + O(MN^(3/4)); si eta<=log^-4 N se pela con o(N/log^2 N); PASS 400 casos | siguiente: cota inferior uniforme de X_2 para eta>log^-4 N y auditoria Lipschitz/Kuhn.
