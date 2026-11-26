@@ -537,3 +537,10 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - **[T]** Una traslacion ciclica preserva exactamente espectro de potencia y autocorrelacion pero cambia un coeficiente puntual; el contraejemplo finito separa informacion de dos puntos de control puntual. No refuta Montgomery.
 - Siguiente: formular un segundo momento explicito de `E_U(N)` con fases y auditar por separado el paso de casi todo `N` a todo `N`. Goldbach sigue abierta.
 - Evidencia: `matematicas/74_revision_adversarial_SL70_correlacion.md`; `python numerico/74_revision_SL70_fase.py` PASS.
+
+
+## Bucle LUMINA/OpenClaw - 2026-11-26 00:37 ET - revision adversarial del doc 77
+
+- **[P-rev]/[FALSO como prueba]** La Prop. 77.1 usa `sum rho^2 << X/log X`, pero el valor `1.467*pi(2X)` fue medido solo para el proxy `rho_tilde`, no para el minorante verdadero con la parte `rho_B`; una cota de masa `O(delta)` no controla cuadrados.
+- **[T]** Un contraejemplo finito preserva la minoracion y la masa L1 pero cambia L2 de `P+M` a `P+M^2`. Parseval se repara si se demuestra el sublema `sum rho^2 << X(log X)^K` para algun K fijo.
+- Evidencia: `matematicas/78_revision_adversarial_segundo_momento_rho.md`; `python numerico/78_gap_L2_rho.py` PASS 6/6. Goldbach sigue abierta.
