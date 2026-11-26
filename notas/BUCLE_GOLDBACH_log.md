@@ -51,3 +51,7 @@
 2026-11-25 19:44 ET | frente: A4 switched / layer cake del peso acoplado | resultado: [T]/[P] reduccion exacta a BV uniforme en una familia uniparametrica; elimina la perdida Q de discretizacion, pero el BV de subniveles sigue abierto; 5500 checks Fraction PASS | siguiente: auditar uniformidad en umbral en Motohashi/Liu--Park--Song.
 
 2026-11-25 20:14 ET | frente: A4 switched / uniformidad LPS para el peso Kuhn concreto | resultado: [T-lit]/[T]/[P-rev] W_P^+ es estado finito y se atomiza en O(1) cajas; desaparece el subnivel curvo, quedan clases no reducidas, frontera Lipschitz y bloque degenerado; 20012 checks PASS | siguiente: cerrar (d,N)>1 y los bloques frontera.
+
+2026-11-25 20:49 ET | frente: Lean / clases no reducidas de A4 | resultado: [T-Lean] primo comun p|d,N queda forzado en t y por rugosidad p>=N^(1/20); target verde, build global bloqueado por asignador | siguiente: acotar uniformemente las rebanadas de primo fijo p|N.
+
+2026-11-25 21:16 ET | frente: continuacion Lean / clases no reducidas de A4 | resultado: [T-Lean] target y lake build global PASS; bloqueo transitorio resuelto, axiomas [propext] | siguiente: acotar uniformemente las rebanadas de primo fijo p|N.

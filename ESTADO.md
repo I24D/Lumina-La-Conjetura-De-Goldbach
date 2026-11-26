@@ -480,3 +480,16 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - **[P-rev]** A4 aun no se declara cerrada: faltan las clases `(d,N)>1`, resolver explicitamente la incompatibilidad textual entre la hipotesis Lipschitz de MZA y su indicador Kuhn discontinuo en los bloques frontera, y convertir la cota absoluta de LPS a la normalizacion relativa en el ultimo bloque degenerado.
 - Evidencia: `matematicas/62_atomizacion_kuhn_A4.md`; `python numerico/62_atomizacion_kuhn_A4.py` PASS (12 estados + 20000 configuraciones). Siguiente: cerrar clases no reducidas y bloques frontera. Goldbach sigue abierta.
 - **Memoria compartida:** propuesta pendiente; MCP no expuesto, sin persistencia remota afirmada.
+
+## Bucle LUMINA/OpenClaw - 2026-11-25 20:49 ET - clases no reducidas de A4 en Lean
+
+- **[T-Lean]** Si `g|N` y `g|(N-t)` con `t<=N`, entonces `g|t`; en particular, todo primo comun a `d,N` en la clase `d|(N-t)` divide al termino switched `t`.
+- **[T-Lean]** Como los factores admisibles de `t` son >= `N^(1/20)`, las clases `(d,N)>1` solo proceden de primos grandes `p|N` que ya aparecen en `t`. Target Lean verde; axiomas: `[propext]`.
+- **[P]** Falta sumar uniformemente las rebanadas con primo fijo `p|N` y probar ahorro `log^-100`; A4 sigue abierta. El build global fallo por el asignador al abrir un `.olean.private`, asi que no hubo publicacion GitHub.
+- Evidencia: `matematicas/64_clases_no_reducidas_Lean.md`, `lean/NonReducedClasses.lean`. Goldbach sigue abierta.
+
+## Reanudacion del bucle LUMINA/OpenClaw - 2026-11-25 21:16 ET
+
+- **[T-Lean]** Recompilados `GoldbachLumina.NonReducedClasses` y el proyecto Lean completo: ambos exit 0; `#print axioms` permanece en `[propext]`.
+- Se corrige explicitamente el bloqueo transitorio de las 20:49 ET: no afectaba al teorema y no se reprodujo. Publicacion GitHub habilitada tras escaneo de secretos.
+- **[P]** La cota uniforme de las rebanadas `p|N, p|t` sigue abierta; A4 y Goldbach siguen abiertas.
