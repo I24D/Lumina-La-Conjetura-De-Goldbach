@@ -458,3 +458,10 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - **[T]/[P-rev]** Con `X_1=pi(N)`, A5 se normaliza (cociente exactamente 1, salvo el extremo `t=N`); A4 no sale de BV para primos: exige un BV uniforme para la convolucion restringida `E_P`. El switching quita el modulo externo `qrd` pero conserva la dificultad en los coeficientes.
 - Evidencia: `matematicas/53_instanciacion_bPell_goldbach.md`; `python numerico/verifica_bPell_goldbach.py` PASS en 252 configuraciones; `goldbach.py selftest` OK. Siguiente: descomponer `E_P` por Buchstab y auditar un principio de induccion de Bombieri al nivel 0.267. No hay cota nueva de capas y Goldbach sigue abierta.
 - **Memoria compartida:** propuesta pendiente; MCP no expuesto, sin persistencia remota afirmada.
+
+## Bucle LUMINA/OpenClaw - 2026-11-25 19:14 ET - induccion de Bombieri para el peso switched
+
+- **[T-lit]/[T]** El principio de Motohashi y su version moderna para productos de primos en intervalos dan nivel `<1/2` para cada caja no ponderada de `E_P`; por tanto `0.267` no es la barrera de una caja fija.
+- **[T]/[P-rev]** El peso real `W_P^+` acopla los factores. Discretizarlo con error `delta` y transferir por desigualdad triangular pierde un factor `Q=N^theta`; A4 por esa via exige malla `eta << N^(-theta)log^(-100)`, con al menos `N^(k theta)` cajas, no una familia polilogaritmica absorbible.
+- Evidencia: `matematicas/57_motohashi_cubre_cajas_no_peso_acoplado.md`. Siguiente: auditar una version ponderada uniforme de Motohashi/BFI para el coeficiente multivariable antes de sumar valores absolutos. A4 no esta probada ni refutada; Goldbach sigue abierta.
+- **Memoria compartida:** propuesta pendiente; MCP no expuesto, sin persistencia remota afirmada.
