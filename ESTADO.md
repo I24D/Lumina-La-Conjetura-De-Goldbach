@@ -551,3 +551,10 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - **[T]** Desde la definicion exacta del Lema 6.8 de Maynard III, `rho_B(n) <= tau_4(n)`; todas las piezas restantes del minorante son sumas sobre a lo sumo seis slots multiplicativos, asi que `|rho(n)| <= (9+C) tau_6(n)`.
 - **[T]** Por el momento clasico de la funcion divisor, `sum_{n~X}|rho(n)|^2 << X(log X)^35`. Esto cierra el sublema `L2-rho` del doc 78 y restaura la Prop. 77.1 / (74.4) para el minorante verdadero tras reajustar el ahorro de Vinogradov.
 - **[N]** La constante experimental `1.467*pi(2X)` sigue siendo solo del proxy; el puente casi-todo-N a todo-N permanece abierto. Evidencia: `matematicas/80_cota_divisores_rho.md`; `python numerico/80_cota_divisores_rho.py` PASS 5501/5501. Goldbach sigue abierta.
+
+
+## Bucle LUMINA/OpenClaw - 2026-11-26 01:37 ET - multiplicidad exacta de las uniones de capas
+
+- **[T]** Al seleccionar un subconjunto no ordenado de `k-1` primos de `rad(N-p)` y exigir que el radical restante tenga uno o dos factores, la incidencia exacta es `I_k = k C_k + binom(k+1,2) C_{k+1}`.
+- **[P-rev]** El factor `1/(k-1)!` sugerido en el doc 16 solo convierte tuplas ordenadas en subconjuntos; no produce coeficiente uno en ambas capas. Una cota inferior de `I_k` si implica una cota inferior de `C_k+C_{k+1}` tras dividir por `binom(k+1,2)`.
+- Evidencia: `matematicas/81_multiplicidad_union_capas.md`; `python numerico/81_incidencia_union_capas.py` PASS 319991/319991. Siguiente: uniformidad analitica de Chen para la incidencia con `Q<=N^theta`. Goldbach sigue abierta.
