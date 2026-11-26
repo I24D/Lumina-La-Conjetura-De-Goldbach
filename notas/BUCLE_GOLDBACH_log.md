@@ -67,3 +67,5 @@
 2026-11-26 01:37 ET | frente: uniones C_k+C_{k+1} / multiplicidad de la seleccion de k-1 factores | resultado: [T]/[P-rev] I_k = k C_k + binom(k+1,2) C_{k+1}; dividir por (k-1)! solo desordena tuplas y no iguala multiplicidades; PASS 319991/319991 | siguiente: formular la cota de Chen uniforme para I_k con Q<=N^theta y factores locales.
 
 2026-11-26 02:12 ET | frente: C_k+C_{k+1} / reduccion exacta de I_k a formas de Chen | resultado: [T]/[P-rev] N-p=Quv, (Q,N)=1 automatico; la uniformidad completa es en A=Qu; serie singular local exacta, PASS H1=366399 H2=640050 | siguiente: cota uniforme de Chen para la subincidencia positiva u=1 en ventanas disjuntas.
+
+2026-11-26 02:37 ET | frente: C_k+C_{k+1} / selector polilogaritmico y Chen uniforme | resultado: [T]/[P] Q_N<<log^(k-1)N y BV en Qd; H2 finita [FALSO] para k=3,4, H1 PASS | siguiente: auditar switching de Chen y modulo excepcional para Q<=log^B N.

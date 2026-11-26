@@ -564,3 +564,9 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - **[T]** Para cada seleccion `Q`, la factorizacion correcta es `N-p=Q u v`, con `rad(u)|Q`, `(v,Q)=1` y `omega(v) in {1,2}`; los exponentes repetidos de primos seleccionados viven en `u`.
 - **[T]/[P-rev]** Siempre `(Q,N)=1`, pero la uniformidad de la incidencia completa debe ser en `A=Qu`, no solo en `Q`. Restringir a la subincidencia positiva `u=1` evita ese problema.
 - **[T]** La serie singular local es `2 C_2 prod_{ell|NQ,ell>2}(ell-1)/(ell-2)`, positiva e independiente de los exponentes de `u`. Evidencia: `matematicas/82_reduccion_exacta_incidencia_chen.md`; script PASS H1=366399 H2=640050. Siguiente: cota uniforme de Chen para la subincidencia `u=1` en ventanas disjuntas. Goldbach sigue abierta.
+## Bucle LUMINA/OpenClaw - 2026-11-26 02:37 ET - selector polilogaritmico para C_k+C_{k+1}
+
+- **[T]** Para k fijo, elegir los k-1 primeros primos impares que no dividen N da un selector Q_N <<_k (log N)^(k-1); una sola subincidencia u=1 basta para positividad de C_k+C_{k+1}.
+- **[T]** El input de distribucion para a_Q(v)=Lambda(N-Qv) es un subconjunto de Bombieri--Vinogradov sobre modulos Qd y conserva nivel 1/2 salvo perdidas polilogaritmicas.
+- **[P]** Falta auditar el switching completo de Chen uniformemente para Q<=log^B N; no basta citar BV. **[N]/[FALSO]** la hipotesis finita H2 fallo en 11 casos para k=3 y 1895 para k=4 hasta 50000 (H1 exacta PASS).
+- Evidencia: `matematicas/83_selector_polilog_y_objetivo_chen.md`; `python numerico/83_selector_polilog_chen.py` exit 0. Siguiente: auditar Chen con modulo exterior polilogaritmico y el posible modulo excepcional. Goldbach sigue abierta.
