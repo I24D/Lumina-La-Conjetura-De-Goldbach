@@ -91,3 +91,14 @@ Procedencia: Codex, modelo exacto no expuesto; lectura primaria y derivación, e
 - La localizacion de ceros sola no controla el Tipo II aditivo. La pista transferible es la positividad unilateral en ventanas, realizada por ganancias locales de reticulos.
 - Nueva identidad puntual de Riesz: `R_1(N)=R(N)/2`; suaviza una variable sin perder el coeficiente individual N.
 - [14: colapso exacto de divisores de N](matematicas/14_colapso_divisores_de_N.md): corrige el frente de 12; `G_a=0` para `omega(a)>=2`, las piezas `a=ell|N` son poli-logaritmicas y la unica pieza grande es `G_1`, esencialmente la propia correlacion de Goldbach. Verificacion: 549 casos, PASS.
+
+
+## Aporte LUMINA — 2026-11-27: UNIF-U-COND y norma de Gram
+
+- [94: compresión por conductor y norma de Gram](matematicas/94_unif_u_cond_conductores_grama.md).
+- Scripts reproducibles: numerico/94_conductores_grama.py, numerico/94b_norma_un_s.py y numerico/94c_gram_split_check.py.
+- **[T]** La transferencia a conductores primitivos se agrupa por la parte nueva h; la energía de los coeficientes satisface la identidad exacta de Gram/gcd.
+- **[NUM]** En el proxy N=10^12, A=3, los scripts 94 y 94c verifican G=0.450566952208 por rutas distintas; la partición smooth/switch coincide con error máximo 3.1e-16. El script 94b explora 20 bloques finitos en N=2^40,...,2^60.
+- **[N]** Sigue abierta la cota uniforme Q_s << 1/log z y el momento de bloques primitivos necesario para UNIF-U-COND. Ninguna ejecución finita demuestra esas cotas.
+- **Errata 92.1:** el momento amplio debe incluir (q,N)=1; el contraejemplo q=2 para N par está documentado en el doc 94. UNIF-U-2M-R, en su forma amplia corregida, implica GRH para caracteres primitivos impares; no se afirma una no-implicación lógica de GRH.
+- Goldbach fuerte sigue abierta. Las ejecuciones en la PC LUMINA son reproducibilidad, no revisión independiente.

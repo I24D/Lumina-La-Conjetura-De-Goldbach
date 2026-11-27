@@ -570,3 +570,16 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - **[T]** El input de distribucion para a_Q(v)=Lambda(N-Qv) es un subconjunto de Bombieri--Vinogradov sobre modulos Qd y conserva nivel 1/2 salvo perdidas polilogaritmicas.
 - **[P]** Falta auditar el switching completo de Chen uniformemente para Q<=log^B N; no basta citar BV. **[N]/[FALSO]** la hipotesis finita H2 fallo en 11 casos para k=3 y 1895 para k=4 hasta 50000 (H1 exacta PASS).
 - Evidencia: `matematicas/83_selector_polilog_y_objetivo_chen.md`; `python numerico/83_selector_polilog_chen.py` exit 0. Siguiente: auditar Chen con modulo exterior polilogaritmico y el posible modulo excepcional. Goldbach sigue abierta.
+
+
+## Bucle LUMINA — 2026-11-27 — UNIF-U-COND: compresión por conductor y norma de Gram
+
+- **[T]** Para q=Am, con (A,m)=1 y soporte m=sd, la contribución de un carácter primitivo de conductor admisible r=ah se agrupa por su parte nueva h; el coeficiente exacto es K_A(h)=1/phi(A) sum_{m:h|m} b_A(m)/phi(m).
+- **[T]** La energía satisface la identidad exacta
+  G_A = 1/phi(A)^2 sum_{m,n} b_A(m)b_A(n)(m,n)/(phi(m)phi(n)).
+- **[T]** Se separan exactamente los conductores h=h0 (solo primos menores que z) y h=s h0 (un primo de switching). La reducción es a la norma de un bloque Q_s; la cota uniforme Q_s << 1/log z sigue **[N]**, no demostrada.
+- **[NUM]** Scripts 94, 94b y 94c: PASS. Para N=10^12,A=3, G=0.450566952208; la partición G_smooth=0.228419312130, G_switch=0.222147640078 coincide con error máximo 3.1e-16. El experimento 94b mide 20 casos finitos, no establece uniformidad asintótica.
+- **[T] Errata 92.1:** debe incluir (q,N)=1. Para N=10^6,q=2, E=-999573.427699... y E^2/[N(log N)^5]=1.98516; H1/H2 ya excluían esos módulos.
+- **[T]** El momento amplio UNIF-U-2M-R corregido implica GRH para caracteres primitivos no principales de conductor impar. No se ha probado que GRH por sí sola no implique esa estimación; la distinción lógica queda explícita.
+- **[N]** UNIF-U-COND sigue abierto: faltan la cota uniforme de Gram y el momento de bloques primitivos. No se demuestra Goldbach.
+- Evidencia: matematicas/94_unif_u_cond_conductores_grama.md; numerico/94_conductores_grama.py, 94b_norma_un_s.py, 94c_gram_split_check.py. La revisión independiente de Dal queda pendiente; las ejecuciones de esta PC no cuentan como revisión independiente según el contrato del repositorio.
