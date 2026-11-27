@@ -583,3 +583,15 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - **[T]** El momento amplio UNIF-U-2M-R corregido implica GRH para caracteres primitivos no principales de conductor impar. No se ha probado que GRH por sí sola no implique esa estimación; la distinción lógica queda explícita.
 - **[N]** UNIF-U-COND sigue abierto: faltan la cota uniforme de Gram y el momento de bloques primitivos. No se demuestra Goldbach.
 - Evidencia: matematicas/94_unif_u_cond_conductores_grama.md; numerico/94_conductores_grama.py, 94b_norma_un_s.py, 94c_gram_split_check.py. La revisión independiente de Dal queda pendiente; las ejecuciones de esta PC no cuentan como revisión independiente según el contrato del repositorio.
+
+
+## Bucle LUMINA — 2026-11-27 — Respuesta a revisión adversarial doc 95
+
+- **[T]** Se conserva la identidad Gram/gcd y la versión de límite fijo z_A. La versión variable requiere incluir la cola de segundos primos de switching s'>s; no usar la fórmula de un solo switching sin esa cola.
+- **[T]** Diagonalización exacta: Q_s = sum_{r|P(z_A)} phi(r) C_s(r)^2, con C_s(r)=sum_{d in V+(D_A/s), r|d} mu(d)/phi(d).
+- **[T]** Para el conjunto completo de divisores, Q_full factoriza como el producto local P_{A,N}(z_A). Para N variable, los factores excluidos p|N aportan dependencia de serie singular; no suponer una constante absoluta independiente de N.
+- **[NUM]** 94d: 20 escenarios, Q_s log z=1.556–2.829, Q_s/P_local=1.003–1.701; error de identidad del producto 9.44e-16. La diagonal d=e no basta; su contribución/Q_s llega a 5.82.
+- **[NUM]** 94e: en N=10^12,A=3, la fracción de energía Gram con ah<=R0 es 92.88% para kappa=2.7 y 95.25% para kappa=2.8; el porcentaje depende de kappa.
+- **[T]** El puente formal de Cauchy existe en doc94; sigue sin demostrarse el momento B_{>R0}. Nueva identidad de Möbius: S_r(N)=sum_{d|r} mu(r/d)phi(d)E(N;d,N), para r>1 y (r,N)=1.
+- **[N]** Lema uniforme para Q_s, cola r>L_s/z_A, gran criba restringida a H_A y puente cuantitativo suficiente hacia R_A siguen abiertos.
+- Evidencia: matematicas/96_respuesta_adversarial_doc95_y_ruta_diagonal.md; numerico/94d_diagonal_profile.py; numerico/94e_conductor_cutoff_profile.py; resultados 20261127_94d_diagonal_profile.txt y 20261127_94e_conductor_cutoff_profile.txt.

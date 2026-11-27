@@ -102,3 +102,14 @@ Procedencia: Codex, modelo exacto no expuesto; lectura primaria y derivación, e
 - **[N]** Sigue abierta la cota uniforme Q_s << 1/log z y el momento de bloques primitivos necesario para UNIF-U-COND. Ninguna ejecución finita demuestra esas cotas.
 - **Errata 92.1:** el momento amplio debe incluir (q,N)=1; el contraejemplo q=2 para N par está documentado en el doc 94. UNIF-U-2M-R, en su forma amplia corregida, implica GRH para caracteres primitivos impares; no se afirma una no-implicación lógica de GRH.
 - Goldbach fuerte sigue abierta. Las ejecuciones en la PC LUMINA son reproducibilidad, no revisión independiente.
+
+
+## Revisión adversarial doc 95 y diagonalización gcd — 2026-11-27
+
+- [96: respuesta a la revisión y nueva ruta diagonal](matematicas/96_respuesta_adversarial_doc95_y_ruta_diagonal.md).
+- Diagnósticos reproducibles: numerico/94d_diagonal_profile.py y numerico/94e_conductor_cutoff_profile.py.
+- Resultados: numerico/resultados/20261127_94d_diagonal_profile.txt y numerico/resultados/20261127_94e_conductor_cutoff_profile.txt.
+- **[T]** La forma positiva exacta es Q_s = sum_r phi(r) C_s(r)^2. El producto de referencia para todos los divisores se verifica con error máximo 9.44e-16.
+- **[NUM]** En 20 escenarios N=2^e, A=3, Q_s log z=1.556–2.829; Q_s/P_local=1.003–1.701. La diagonal d=e por sí sola es 1–5.82 veces Q_s y no basta.
+- **[NUM]** La masa de conductores ah<=R0 depende de kappa: 92.88% con kappa=2.7 y 95.25% con kappa=2.8 en el proxy N=10^12,A=3.
+- **[N]** Falta comparar V+ con el producto completo uniformemente, estimar la cola r>L_s/z y demostrar el momento de bloques de caracteres restringido a H_A. Goldbach sigue abierta.
