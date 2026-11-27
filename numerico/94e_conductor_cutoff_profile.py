@@ -5,8 +5,9 @@ Control finito del proxy N=10^12, A=3; no prueba uniformidad asintotica.
 """
 import math
 import runpy
+from pathlib import Path
 
-DOC94 = r"C:\Users\dal_n\OneDrive\conjetura de golbach Lumina\numerico\94_conductores_grama.py"
+DOC94 = str(Path(__file__).resolve().with_name("94_conductores_grama.py"))
 d = runpy.run_path(DOC94)
 K, phi, A, N = d["K"], d["phi"], d["A"], d["N"]
 
