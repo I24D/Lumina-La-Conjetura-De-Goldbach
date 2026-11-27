@@ -69,7 +69,7 @@ f(p)^{-1}=
 \quad
 f(p)=1-\frac2{p-1}+\frac{p}{(p-1)^2}.
 \]
-El producto de los segundos factores converge a una constante positiva; el producto de (p-1)/(p-2) sobre p|N es comparable al factor local de la serie singular de Goldbach. En N=2^e, A=3, esa dependencia local queda fija y no se prueba uniformidad para todos los N pares.
+El producto de los segundos factores converge a una constante positiva; el producto de (p-1)/(p-2) sobre p|N es comparable al factor local de la serie singular de Goldbach. En la sucesión de N primoriales, con A coprimo elegido fuera de sus factores, el producto de referencia puede crecer como (log log N)/log z_A. Esto no demuestra que Q_s tenga ese crecimiento, pero significa que Q_s<<1/log z_A no se deduce de la referencia completa y requeriría una cancelación adicional de V+. Los controles N=2^e, A=3 mantienen fijo ese factor local y no prueban uniformidad para todos los N pares.
 
 ## 3. Controles nuevos 94d: perfil de la diagonalización
 
