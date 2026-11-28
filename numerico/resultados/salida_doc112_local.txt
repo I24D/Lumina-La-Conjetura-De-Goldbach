@@ -1,0 +1,75 @@
+== DOC 112: masa positiva del exceso por bloques ==
+Solo stdlib. Modo fijo; nivel L = D//s; R0 = z^2.
+
+K0 validacion cruzada contra el doc 111 y particion de P:
+  [A] z=17: max P/Q_c=1.248 (doc 111: 1.248, dif=0.0004) | err particion P=(i)+(ii)+(iii): 1.39e-17 | max t(r) sobre invisibles: 0.00e+00 (<= 0 [T])
+  [A] z=29: max P/Q_c=1.073 (doc 111: 1.073, dif=0.0005) | err particion P=(i)+(ii)+(iii): 2.78e-17 | max t(r) sobre invisibles: 0.00e+00 (<= 0 [T])
+  [A] z=37: max P/Q_c=0.862 (doc 111: 0.862, dif=0.0002) | err particion P=(i)+(ii)+(iii): 5.55e-17 | max t(r) sobre invisibles: 0.00e+00 (<= 0 [T])
+  [B] z=29: max P/Q_c=0.159 (doc 111: 0.159, dif=0.0005) | err particion P=(i)+(ii)+(iii): 2.78e-17 | max t(r) sobre invisibles: 0.00e+00 (<= 0 [T])
+  => P^(L) se parte exactamente en (i)+(ii)+(iii); los invisibles nunca aportan. PASS
+
+K1 masas de bloque (R0 = z^2; entre parentesis R0 = z):
+  [A] z=17, nivel de max P (L=112, P/Q_c=1.248): (i)=1.248 (ii)=0.000 [0 r] (iii)=0.000 [0 r] | con R0=z: (ii)=0.000 (iii)=0.000
+        maximos sobre los 60 niveles (R0=z^2): (i)=1.248 (ii)=0.224 (iii)=0.001 (en unidades de Q_c)
+  [A] z=29, nivel de max P (L=273, P/Q_c=1.073): (i)=0.743 (ii)=0.330 [1 r] (iii)=0.000 [0 r] | con R0=z: (ii)=0.330 (iii)=0.000
+        maximos sobre los 60 niveles (R0=z^2): (i)=0.743 (ii)=0.330 (iii)=0.004 (en unidades de Q_c)
+  [A] z=37, nivel de max P (L=410, P/Q_c=0.862): (i)=0.481 (ii)=0.381 [3 r] (iii)=0.000 [0 r] | con R0=z: (ii)=0.381 (iii)=0.000
+        maximos sobre los 60 niveles (R0=z^2): (i)=0.481 (ii)=0.381 (iii)=0.007 (en unidades de Q_c)
+  [B] z=29, nivel de max P (L=24399, P/Q_c=0.159): (i)=0.028 (ii)=0.129 [26 r] (iii)=0.002 [1 r] | con R0=z: (ii)=0.000 (iii)=0.130
+        maximos sobre los 60 niveles (R0=z^2): (i)=0.028 (ii)=0.129 (iii)=0.011 (en unidades de Q_c)
+  => PASS
+
+K2 bloque (i) r=1: la desviacion del lema fundamental
+  z=17: Pi_full=0.515625 <= 1 <= M_full=1.140458 | Pi_full^2=0.265869 <= Q_c=0.588048 (cociente 0.4521)
+  z=29: Pi_full=0.435791 <= 1 <= M_full=1.151439 | Pi_full^2=0.189914 <= Q_c=0.501787 (cociente 0.3785)
+  z=37: Pi_full=0.406219 <= 1 <= M_full=1.154287 | Pi_full^2=0.165014 <= Q_c=0.468894 (cociente 0.3519)
+  rho_1(u) = delta(1)/Pi_full y t(1) por bandas de u = ln L/ln z (todos los marcos):
+    u en [0.0, 2.0): 112 niveles | |rho_1| en [0.395, 0.939] | max t(1)^+/Q_c = 1.248
+    u en [2.0, 3.0):  62 niveles | |rho_1| en [0.021, 0.455] | max t(1)^+/Q_c = 0.504
+    u en [3.0, 4.0):  60 niveles | |rho_1| en [0.001, 0.037] | max t(1)^+/Q_c = 0.028
+    u en [4.0, 9.0):   6 niveles | |rho_1| en [0.000, 0.002] | max t(1)^+/Q_c = 0.001
+  identidad t(1) = rho(2+rho)*Pi_full^2: err max = 1.11e-16
+  => t(1) = rho(2+rho)*Pi_full^2 con Pi_full^2 <= Q_c: basta |rho| <= 1 (u >= u_0) para t(1) <= 3*Q_c. PASS
+
+K3 bloque (iii): la ruta absoluta con productos tipo M
+  z=17: max r con omega<=2: 143 < z^2=289 [T] | sum_{r>=z^2} g(r)=0.0195 <= sum_{omega>=3} g(r)=0.0195 (formula: 0.0195) | e3=0.0189 <= G1^3/6=0.0663 | err Pi(r)/phi(r)=Pi_full*g(r): 6.94e-18
+        mayorante |Lambda_3|/Q_c <= 2*P^+*sum_{r>=z^2}g(r)/M_full = 0.060  (P^+=1.738, M_full=1.1405)
+  z=29: max r con omega<=2: 437 < z^2=841 [T] | sum_{r>=z^2} g(r)=0.0361 <= sum_{omega>=3} g(r)=0.0645 (formula: 0.0645) | e3=0.0583 <= G1^3/6=0.1250 | err Pi(r)/phi(r)=Pi_full*g(r): 2.78e-17
+        mayorante |Lambda_3|/Q_c <= 2*P^+*sum_{r>=z^2}g(r)/M_full = 0.128  (P^+=2.038, M_full=1.1514)
+  z=37: max r con omega<=2: 899 < z^2=1369 [T] | sum_{r>=z^2} g(r)=0.0469 <= sum_{omega>=3} g(r)=0.0938 (formula: 0.0938) | e3=0.0824 <= G1^3/6=0.1569 | err Pi(r)/phi(r)=Pi_full*g(r): 2.78e-17
+        mayorante |Lambda_3|/Q_c <= 2*P^+*sum_{r>=z^2}g(r)/M_full = 0.177  (P^+=2.181, M_full=1.1543)
+  crecimiento del mayorante (cantidades de primos):
+    z= 53: G1=1.081 (log log z=1.379) | sum_{omega>=3} g(r)=0.1481 | P^+=2.403 | mayorante Lambda_3/Q_c <= 0.615
+    z= 71: G1=1.150 (log log z=1.450) | sum_{omega>=3} g(r)=0.1956 | P^+=2.572 | mayorante Lambda_3/Q_c <= 0.868
+    z=101: G1=1.226 (log log z=1.529) | sum_{omega>=3} g(r)=0.2583 | P^+=2.770 | mayorante Lambda_3/Q_c <= 1.234
+  cota |delta(r)| <= D^-(r) <= P^+ y |delta|/Pi medido:
+    [A] z=17 L=112: |delta| - D^-(r) <= 0.00e+00 en todo r (D^- <= P^+=1.738) | max |delta|/Pi sobre visibles r>=z^2: 0.000 [M]
+    [A] z=29 L=273: |delta| - D^-(r) <= 0.00e+00 en todo r (D^- <= P^+=2.038) | max |delta|/Pi sobre visibles r>=z^2: 0.000 [M]
+    [A] z=37 L=410: |delta| - D^-(r) <= 0.00e+00 en todo r (D^- <= P^+=2.181) | max |delta|/Pi sobre visibles r>=z^2: 0.000 [M]
+    [B] z=29 L=24399: |delta| - D^-(r) <= 0.00e+00 en todo r (D^- <= P^+=2.038) | max |delta|/Pi sobre visibles r>=z^2: 0.452 [M]
+  => la ruta absoluta acota Lambda_3 con un factor que en ventana es < 1 pero NO es constante absoluta: P^+ ~ e^gamma ln z y sum_{omega>=3} g(r) >= e3 ~ G1^3/6 -> infinito (G1 ~ log log z). Pierde (ln z)(log log z)^3. PASS
+
+K4 bloque (ii): censo y el residuo (H2'''')
+  [A] z=17 maxP L=112: visibles 1<r<z^2 por omega: {1: 0, 2: 0, >=3: 0} | max t(r) en (ii): 0.0000 (0.000 Q_c) | residuo R = P - t(1)^+ = 0.000 Q_c
+  [A] z=17 maxL L=83521: visibles 1<r<z^2 por omega: {1: 4, 2: 6, >=3: 0} | max t(r) en (ii): 0.0000 (0.000 Q_c) | residuo R = P - t(1)^+ = 0.000 Q_c
+        max_L R^(L)/Q_c = 0.224  (contra max P/Q_c = 1.248)
+  [A] z=29 maxP L=273: visibles 1<r<z^2 por omega: {1: 1, 2: 0, >=3: 0} | max t(r) en (ii): 0.1656 (0.330 Q_c) | residuo R = P - t(1)^+ = 0.330 Q_c
+  [A] z=29 maxL L=707281: visibles 1<r<z^2 por omega: {1: 7, 2: 21, >=3: 6} | max t(r) en (ii): 0.0003 (0.001 Q_c) | residuo R = P - t(1)^+ = 0.008 Q_c
+        max_L R^(L)/Q_c = 0.330  (contra max P/Q_c = 1.073)
+  [A] z=37 maxP L=410: visibles 1<r<z^2 por omega: {1: 2, 2: 1, >=3: 0} | max t(r) en (ii): 0.1003 (0.214 Q_c) | residuo R = P - t(1)^+ = 0.381 Q_c
+  [A] z=37 maxL L=1874161: visibles 1<r<z^2 por omega: {1: 9, 2: 36, >=3: 15} | max t(r) en (ii): 0.0004 (0.001 Q_c) | residuo R = P - t(1)^+ = 0.015 Q_c
+        max_L R^(L)/Q_c = 0.381  (contra max P/Q_c = 0.862)
+  [B] z=29 maxP L=24399: visibles 1<r<z^2 por omega: {1: 7, 2: 21, >=3: 6} | max t(r) en (ii): 0.0044 (0.009 Q_c) | residuo R = P - t(1)^+ = 0.130 Q_c
+  [B] z=29 maxL L=20511149: visibles 1<r<z^2 por omega: {1: 7, 2: 21, >=3: 6} | max t(r) en (ii): 0.0000 (0.000 Q_c) | residuo R = P - t(1)^+ = 0.000 Q_c
+        max_L R^(L)/Q_c = 0.130  (contra max P/Q_c = 0.159)
+  => la familia (ii) crece con z (contiene todos los primos de P): no es finita uniformemente; su cota no sale de un analisis finito. El residuo R^(L) es el objeto de (H2''''). PASS
+
+K5 libro mayor: cuota de r=1 en el maximo de P
+  [A] z=17 L=112: P/Q_c=1.248 = t(1)^+ 1.248 (100%) + (ii) 0.000 + (iii) 0.000
+  [A] z=29 L=273: P/Q_c=1.073 = t(1)^+ 0.743 (69%) + (ii) 0.330 + (iii) 0.000
+  [A] z=37 L=410: P/Q_c=0.862 = t(1)^+ 0.481 (56%) + (ii) 0.381 + (iii) 0.000
+  [B] z=29 L=24399: P/Q_c=0.159 = t(1)^+ 0.028 (18%) + (ii) 0.129 + (iii) 0.002
+  => PASS
+
+Tiempo total: 0.8 s
+PASS

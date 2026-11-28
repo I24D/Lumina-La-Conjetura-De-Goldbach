@@ -1,0 +1,85 @@
+== DOC 113: (FL-DESP+), lema fundamental desplazado positivo ==
+Solo stdlib. Modo fijo; nivel L = D//s; u_r = ln(L/r)/ln z; rho_0(u) = u^{-u/2}.
+
+K0 validacion cruzada (doc 112) y soporte modelo en r=1:
+  [A] z=17: max_L R^(L)/Q_c = 0.224 (doc 112: 0.224, dif 0.0002)
+  [A] z=29: max_L R^(L)/Q_c = 0.330 (doc 112: 0.330, dif 0.0000)
+  [A] z=37: max_L R^(L)/Q_c = 0.381 (doc 112: 0.381, dif 0.0004)
+  [B] z=29: max_L R^(L)/Q_c = 0.130 (doc 112: 0.130, dif 0.0003)
+  Shat(1) = S(1) en 12 niveles: err max = 0.00e+00
+  => PASS
+
+K1 algebra de la implicacion (FL-DESP+) => (H2'''') [T]:
+  z=17: sum_{r>1} Pi^2/phi = Q_c - Pi_full^2 (err 0.00e+00) | sum_r h(r) = M_full/Pi_full = 2.2118 (err 0.00e+00) | Pi^2/phi = Pi_full^2 h(r) (err 3.47e-18)
+  z=29: sum_{r>1} Pi^2/phi = Q_c - Pi_full^2 (err 0.00e+00) | sum_r h(r) = M_full/Pi_full = 2.6422 (err 4.44e-16) | Pi^2/phi = Pi_full^2 h(r) (err 2.78e-17)
+  z=37: sum_{r>1} Pi^2/phi = Q_c - Pi_full^2 (err 0.00e+00) | sum_r h(r) = M_full/Pi_full = 2.8415 (err 0.00e+00) | Pi^2/phi = Pi_full^2 h(r) (err 2.78e-17)
+  monotonia t <= rho(2+rho)Pi^2/phi en las 2892 instancias con 0<=delta<=rho_0*Pi: violacion max = 0.00e+00
+  => con rho <= 1: P_{>1} <= rho(2+rho)(Q_c - Pi_full^2) <= 3 Q_c. PASS
+
+K2 MEDICION DECISIVA: ratio = delta^+/(Pi * rho_0(u_r)) sobre r visible > 1:
+  instancias visibles r>1: 4113 | con delta>0: 3085 | canal delta<-2Pi (S<-Pi): 0
+  A_min = max ratio = 1.4273 | restringido a sumas genuinas (S(r)<1): 0.8844
+  cuantiles del ratio (delta>0): mediana 0.4516 | p90 0.7898 | p99 1.3160 | max 1.4273
+  histograma: [0.00,0.10): 289 | [0.10,0.25): 391 | [0.25,0.50): 1132 | [0.50,0.75): 921 | [0.75,1.00): 150 | [1.00,1.50): 202 | [1.50,9.99): 0
+  A_min por marco: [A] z=17: 0.8293, [A] z=29: 1.2523, [A] z=37: 1.4273, [B] z=29: 1.3809
+  bandas por u_r (solo delta>0):
+    u_r en [0.0, 0.5):     0 instancias | max delta/Pi = 0.0000 | max ratio = 0.0000
+    u_r en [0.5, 1.0):   349 instancias | max delta/Pi = 1.1797 | max ratio = 1.1718
+    u_r en [1.0, 2.0):  2459 instancias | max delta/Pi = 1.2947 | max ratio = 1.4273
+    u_r en [2.0, 3.0):   223 instancias | max delta/Pi = 0.3003 | max ratio = 0.6640
+    u_r en [3.0, 5.0):    54 instancias | max delta/Pi = 0.0099 | max ratio = 0.0524
+    u_r en [5.0, 99.0):     0 instancias | max delta/Pi = 0.0000 | max ratio = 0.0000
+  top-10 instancias por ratio (S(r) incluido):
+    [A] z=37 L=39557 r=323: u_r=1.331 delta/Pi=1.1797 S(r)=1.000000 ratio=1.4273
+    [A] z=37 L=39557 r=391: u_r=1.279 delta/Pi=1.2030 S(r)=1.000000 ratio=1.4076
+    [A] z=37 L=39557 r=437: u_r=1.248 delta/Pi=1.2193 S(r)=1.000000 ratio=1.3998
+    [A] z=37 L=39557 r=377: u_r=1.289 delta/Pi=1.1760 S(r)=1.000000 ratio=1.3847
+    [B] z=29 L=54060 r=437: u_r=1.431 delta/Pi=1.0687 S(r)=1.000000 ratio=1.3809
+    [A] z=37 L=39557 r=493: u_r=1.214 delta/Pi=1.2254 S(r)=1.000000 ratio=1.3788
+    [A] z=37 L=39557 r=319: u_r=1.335 delta/Pi=1.1364 S(r)=1.000000 ratio=1.3781
+    [A] z=37 L=39557 r=403: u_r=1.270 delta/Pi=1.1814 S(r)=1.000000 ratio=1.3751
+    [A] z=37 L=39557 r=551: u_r=1.184 delta/Pi=1.2419 S(r)=1.000000 ratio=1.3722
+    [B] z=29 L=51963 r=437: u_r=1.419 delta/Pi=1.0687 S(r)=1.000000 ratio=1.3699
+  => la cota puntual positiva al nivel propio se sostiene en ventana con A = 1.427 (con A=1: NO); el canal delta<-2Pi esta vacio: SI.
+
+K3 los ofensores del doc 109 (|delta|/Pi hasta 1,295):
+  [A] z=17: argmax |delta|/Pi sobre todo r: 1.000 (doc 109: 1.000) en L=112, r=5, signo -, visible=False, u_r=1.097
+        argmax delta/Pi sobre visibles r>1: 0.600 en L=2370, r=143, u_r=0.991, rho_0(u_r)=1.004, ratio=0.597 | argmax |delta|/Pi visible: 0.600 (signo +)
+  [A] z=29: argmax |delta|/Pi sobre todo r: 1.069 (doc 109: 1.069) en L=12378, r=437, signo +, visible=True, u_r=0.993
+        argmax delta/Pi sobre visibles r>1: 1.069 en L=12378, r=437, u_r=0.993, rho_0(u_r)=1.003, ratio=1.065 | argmax |delta|/Pi visible: 1.069 (signo +)
+  [A] z=37: argmax |delta|/Pi sobre todo r: 1.295 (doc 109: 1.295) en L=39557, r=899, signo +, visible=True, u_r=1.048
+        argmax delta/Pi sobre visibles r>1: 1.295 en L=39557, r=899, u_r=1.048, rho_0(u_r)=0.976, ratio=1.327 | argmax |delta|/Pi visible: 1.295 (signo +)
+  [B] z=29: argmax |delta|/Pi sobre todo r: 1.069 (doc 109:   -  ) en L=24399, r=437, signo +, visible=True, u_r=1.195
+        argmax delta/Pi sobre visibles r>1: 1.069 en L=24399, r=437, u_r=1.195, rho_0(u_r)=0.899, ratio=1.188 | argmax |delta|/Pi visible: 1.069 (signo +)
+  => el 1,000 de z=17 es un invisible (delta=-Pi estructural, no cuenta); los visibles positivos grandes tienen u_r ~ 1, donde rho_0(u_r) ~ 1. PASS
+
+K4 modelo Vhat^(r) y error de desplazamiento E(r) = S(r) - Shat(r), sobre TODAS las instancias:
+K6 diferencia simetrica V^(r) △ Vhat^(r) (conteos):
+K7 soportes degenerados V^(r) = {1} (S(r) = 1 exacto):
+  instancias (nivel, r visible>1): 4113
+  FL clasica sobre el MODELO al nivel propio: constante empirica dos caras C_model = 1.4729 | una cara (positiva) C_model^+ = 1.4729
+  E(r): max E/Pi = +0.000000 | min E/Pi = -0.9231 | fraccion E>0: 0.0207 | max E^+/(Pi*rho_0(u_r)) = 0.0000
+  [K6] diferencia simetrica: total d' en V\Vhat: 6509 | en Vhat\V: 1049 | max masa absoluta/Pi = 0.923
+    ejemplo [A] z=17 L=344 r=5: d'=7 en V\Vhat
+    ejemplo [A] z=17 L=344 r=7: d'=5 en V\Vhat
+    ejemplo [A] z=17 L=363 r=5: d'=7 en V\Vhat
+    ejemplo [A] z=17 L=363 r=7: d'=5 en V\Vhat
+    ejemplo [A] z=17 L=5239 r=11: d'=35 en Vhat\V
+    ejemplo [A] z=17 L=5239 r=13: d'=35 en Vhat\V
+  [K7] instancias con V^(r) = {1}: 1348 (de 4113) | con delta>0: 1347
+    max ratio entre degenerados: 1.4273 | top-5:
+    [A] z=37 L=39557 r=323 (omega=2): u_r=1.331 (umbral 3 ln5/ln z = 1.337) delta/Pi=1.1797 ratio=1.4273
+    [A] z=37 L=39557 r=391 (omega=2): u_r=1.279 (umbral 3 ln5/ln z = 1.337) delta/Pi=1.2030 ratio=1.4076
+    [A] z=37 L=39557 r=437 (omega=2): u_r=1.248 (umbral 3 ln5/ln z = 1.337) delta/Pi=1.2193 ratio=1.3998
+    [A] z=37 L=39557 r=377 (omega=2): u_r=1.289 (umbral 3 ln5/ln z = 1.337) delta/Pi=1.1760 ratio=1.3847
+    [B] z=29 L=54060 r=437 (omega=2): u_r=1.431 (umbral 3 ln5/ln z = 1.434) delta/Pi=1.0687 ratio=1.3809
+    de los top-10 ratios de K2, 10 son soportes degenerados V^(r) = {1}.
+  => E es <= 0 en ventana salvo excepciones <= 0.0000 relativas: el desplazamiento no aporta masa positiva; la diferencia simetrica es bilateral en conteo pero su masa con signo es una cara. La constante de (FL-DESP+) en ventana es la de la FL clasica sobre el modelo. PASS
+
+K5 nivel a nivel: P_{>1}(L) contra la cota implicada B_A(L) = sum_{r>1 vis} rho_A(u_r)(2+rho_A(u_r)) Pi^2/phi:
+  A=1.000: max_L B_A(L)/Q_c = 0.852 | niveles con P_{>1} > B_A: 0/240 | max P_{>1}/B_A = 0.786
+  A=1.427: max_L B_A(L)/Q_c = 1.360 | niveles con P_{>1} > B_A: 0/240 | max P_{>1}/B_A = 0.487
+  => con A = A_min la implicacion nivel a nivel se verifica en los 240 niveles; con A=1 la SUMA tambien pasa en ventana (los ofensores puntuales pesan poco). PASS
+
+Tiempo total: 0.2 s
+PASS

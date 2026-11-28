@@ -1,0 +1,72 @@
+== J0/J1: maquinaria y definiciones ==
+  z=11 gen |H_N|=798 (tabla doc 106: 798)  |Hcal|=793
+  z=13 gen |H_N|=1621 (tabla doc 106: 1621)  |Hcal|=1616
+  z=17 gen |H_N|=5017 (tabla doc 106: 5017)  |Hcal|=5012
+  z=19 gen |H_N|=8219 (tabla doc 106: 8219)  |Hcal|=8214
+  z=23 gen |H_N|=17955 (tabla doc 106: 17955)  |Hcal|=17950
+  J0: PASS
+  J1 (Omega^P=1/(q-1); H sin pares ni multiplos de 3; q en H_P => (q,AN)=1): PASS
+== J2: primo en V+(L) <=> p^3 < L ==
+  J2: PASS
+== J3: P-DOM en ventana finita (enumeracion, sin psi) ==
+  z    N         |Hp|      min     minI    minII      med    LBmin
+  11   999982     419    0.000        -    0.000    0.000    0.000
+  11   1048576    420    0.000        -    0.000    0.000    0.000
+  13   999982     680    0.000        -    0.000    0.750    0.000
+  13   1048576    681    0.000        -    0.000    0.750    0.000
+  17   999982    1500    0.000        -    0.000    0.750    0.000
+  17   1048576   1502    0.000        -    0.000    0.750    0.000
+  19   999982    2089    0.750    8.475    0.750    0.750    0.000
+  19   1048576   2091    0.750    8.584    0.750    0.750    0.000
+  23   999982    3687    0.750    9.836    0.750    1.542    0.000
+  23   1048576   3689    0.750    9.958    0.750    1.542    0.000
+  29   999982    7382    0.750   11.600    0.750    1.542    0.750
+  29   1048576   7384    0.750   11.740    0.750    1.542    0.750
+  31   999982    9030    0.750   11.573    0.750    1.542    0.750
+  31   1048576   9032    0.750   11.721    0.750    1.542    0.750
+  37   999982   15389    1.542   13.290    1.542    1.542    0.750
+  37   1048576  15391    1.542   13.453    1.542    1.542    0.750
+  (LB = cota inferior de la construccion de P-DOM, verificada
+   termino a termino: cada r construido pertenece a Hcal_C,
+   y LB <= razon real en todos los casos: PASS)
+  J3b: caracterizacion de los ceros (A=3, primo permitido
+       minimo p0=5): razon(q)=0 <=> D/q <= 125 <=> V+(D/q)={1}
+    z=11: 220 ceros; predichos por D/q<=125: 220; coinciden: True
+    z=13: 263 ceros; predichos por D/q<=125: 263; coinciden: True
+    z=17: 146 ceros; predichos por D/q<=125: 146; coinciden: True
+    z=19: 0 ceros; predichos por D/q<=125: 0; coinciden: True
+    z=23: 0 ceros; predichos por D/q<=125: 0; coinciden: True
+    z=29: 0 ceros; predichos por D/q<=125: 0; coinciden: True
+    z=37: 0 ceros; predichos por D/q<=125: 0; coinciden: True
+  Sumas de Mertens de la construccion (sin soporte):
+  z               S_I      3*S_I       S_II     3*S_II
+  11           0.6471     1.9412     1.5000     4.5000
+  17           0.6262     1.8786     1.7500     5.2500
+  23           0.6084     1.8252     1.7500     5.2500
+  29           0.6331     1.8994     1.7500     5.2500
+  37           0.6324     1.8973     0.9167     2.7500
+  100          0.6310     1.8930     1.0167     3.0500
+  1000         0.6382     1.9145     0.8326     2.4977
+  10000        0.6406     1.9219     0.8341     2.5024
+  limites: log(1.9)=0.6419, 3log(1.9)=1.9256; log(2.5)=0.9163, 3log(2.5)=2.7489
+== J4: identidad Theta sobre modulos conmutados d = q*m ==
+  formula corregida (2 tau(h) - 1): PASS
+  discrepancia maxima de la formula transmitida 2(tau(h)-1): 0.046115 (es (1/(q-1)) * sum_{h} 1/phi(h) > 0: subestima Omega)
+== J5: cola de M_full ==
+  prod_{3<p<=10^5} (1 + 1/((p-1)(p-2))) = 1.1618160091
+  factor de cola <= exp(1/(X-1)) = 1.0000100002
+  M_full(inf) en [1.1618160091, 1.1618276274]
+  el enunciado del doc 110 'M_full(inf) <= 1,1618' es falso tal cual: el producto truncado es cota INFERIOR
+  M_full(z=17): p<z -> 1.1405 ; p<=z -> 1.1452 (doc 110: 1,1405)
+  M_full(z=29): p<z -> 1.1514 ; p<=z -> 1.1530 (doc 110: 1,1514)
+  M_full(z=37): p<z -> 1.1543 ; p<=z -> 1.1552 (doc 110: 1,1543)
+== J6: los niveles medidos (docs 110-113) ==
+  marco A z=17: 60 niveles medidos, todos en L_A (|L_A| = 730)
+  marco A z=29: 60 niveles medidos, todos en L_A (|L_A| = 2655)
+  marco A z=37: 60 niveles medidos, todos en L_A (|L_A| = 4773)
+  marco B z=29: 60 niveles medidos, todos en L_A (|L_A| = 2698)
+  total niveles medidos: 240
+  J6: PASS
+
+Tiempo total: 21.3 s
+PASS

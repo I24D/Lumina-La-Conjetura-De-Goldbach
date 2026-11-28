@@ -1,0 +1,106 @@
+== DOC 111: exceso de Gram via diagonalizacion y Euler ==
+Solo stdlib. Modo fijo; nivel L = D//s.
+
+K0 validacion cruzada contra el doc 110 (Level110):
+  z=17 L=112: Q=1.000000000000 Def2=0.556798442323 |Def2-forma2|=1.11e-16 PASS
+  z=29 L=273: Q=0.812500000000 Def2=0.370072867228 |Def2-forma2|=2.22e-16 PASS
+  z=37 L=410: Q=0.699652777778 Def2=0.259066451851 |Def2-forma2|=3.89e-16 PASS
+
+K1 expresion del exceso por la diagonalizacion:
+  [A] z=17 L=    112: E=Q-Q_c=+0.411951558 | sum_r t(r)-E=0.00e+00 | err factorizacion/r=0.00e+00 | E-(Def2-2Pi_full*M_cola)=1.67e-16
+  [A] z=17 L=  83521: E=Q-Q_c=+0.000000000 | sum_r t(r)-E=1.91e-16 | err factorizacion/r=3.47e-18 | E-(Def2-2Pi_full*M_cola)=3.33e-16
+  [A] z=29 L=    273: E=Q-Q_c=+0.310713266 | sum_r t(r)-E=0.00e+00 | err factorizacion/r=2.78e-17 | E-(Def2-2Pi_full*M_cola)=2.22e-16
+  [A] z=29 L= 707281: E=Q-Q_c=+0.000935113 | sum_r t(r)-E=9.45e-17 | err factorizacion/r=6.29e-18 | E-(Def2-2Pi_full*M_cola)=8.29e-16
+  [A] z=37 L=    410: E=Q-Q_c=+0.230758818 | sum_r t(r)-E=2.78e-17 | err factorizacion/r=1.39e-17 | E-(Def2-2Pi_full*M_cola)=3.89e-16
+  [A] z=37 L=1874161: E=Q-Q_c=+0.001639037 | sum_r t(r)-E=1.18e-16 | err factorizacion/r=8.13e-18 | E-(Def2-2Pi_full*M_cola)=6.47e-16
+  [B] z=29 L=  24399: E=Q-Q_c=+0.027410668 | sum_r t(r)-E=1.73e-17 | err factorizacion/r=8.67e-18 | E-(Def2-2Pi_full*M_cola)=7.15e-16
+  [B] z=29 L=20511149: E=Q-Q_c=+0.000012772 | sum_r t(r)-E=1.01e-16 | err factorizacion/r=6.40e-18 | E-(Def2-2Pi_full*M_cola)=4.32e-17
+  => E^(L) = sum_r phi(r)[C^(L)(r)^2 - C^full(r)^2] = sum_r delta(2Pi+delta)/phi, exacto; y por (110.2) E = Def2 - 2*Pi_full*M_cola: diferencia de dos terminos >= 0. PASS
+
+K2 estructura de signos del exceso:
+  [A] z=17 L=    112: E/Q_c=+0.701 | P/Q_c=1.248 (1 r) | N/Q_c=0.548 (15 r) | bloque invisible: -0.548 Q_c (err=0.0e+00) | r con S(r)<0: 0
+  [A] z=17 L=  83521: E/Q_c=+0.000 | P/Q_c=0.000 (4 r) | N/Q_c=0.000 (3 r) | bloque invisible: +0.000 Q_c (err=0.0e+00) | r con S(r)<0: 0
+  [A] z=29 L=    273: E/Q_c=+0.619 | P/Q_c=1.073 (2 r) | N/Q_c=0.453 (126 r) | bloque invisible: -0.453 Q_c (err=0.0e+00) | r con S(r)<0: 0
+  [A] z=29 L= 707281: E/Q_c=+0.002 | P/Q_c=0.009 (56 r) | N/Q_c=0.008 (72 r) | bloque invisible: -0.001 Q_c (err=0.0e+00) | r con S(r)<0: 0
+  [A] z=37 L=    410: E/Q_c=+0.492 | P/Q_c=0.862 (4 r) | N/Q_c=0.370 (508 r) | bloque invisible: -0.370 Q_c (err=0.0e+00) | r con S(r)<0: 0
+  [A] z=37 L=1874161: E/Q_c=+0.003 | P/Q_c=0.017 (141 r) | N/Q_c=0.013 (371 r) | bloque invisible: -0.002 Q_c (err=0.0e+00) | r con S(r)<0: 0
+  [B] z=29 L=  24399: E/Q_c=+0.055 | P/Q_c=0.159 (28 r) | N/Q_c=0.104 (100 r) | bloque invisible: -0.019 Q_c (err=0.0e+00) | r con S(r)<0: 0
+  [B] z=29 L=20511149: E/Q_c=+0.000 | P/Q_c=0.000 (64 r) | N/Q_c=0.000 (64 r) | bloque invisible: -0.000 Q_c (err=0.0e+00) | r con S(r)<0: 0
+  => el exceso NO tiene signo definido por r: hay masa positiva y negativa de orden Q_c, con cancelacion entre conductores; el bloque invisible es exacto y <= 0 (solo ayuda). PASS
+
+K2b clasificacion de S(r) sobre TODOS los niveles muestreados:
+  [A] z=17 (60 niveles): min S(r)=-0.0000 | conteos {'S=0': 753, '0<S<Pi': 16, 'S=Pi': 16, 'S>Pi': 175, 'S<0': 0}
+  [A] z=29 (60 niveles): min S(r)=-0.0000 | conteos {'S=0': 7244, '0<S<Pi': 52, 'S=Pi': 0, 'S>Pi': 384, 'S<0': 0}
+  [A] z=37 (60 niveles): min S(r)=-0.0000 | conteos {'S=0': 30073, '0<S<Pi': 90, 'S=Pi': 0, 'S>Pi': 557, 'S<0': 0}
+  [B] z=29 (60 niveles): min S(r)=-0.0000 | conteos {'S=0': 4617, '0<S<Pi': 858, 'S=Pi': 0, 'S>Pi': 2205, 'S<0': 0}
+  => [M] en ventana S(r) >= 0 siempre: t(r)>0 equivale a delta(r)>0. En el marco A los defectos visibles negativos (0<S<Pi) son raros o nulos en los niveles que deciden; en el marco B existen. PASS
+
+K3 bloques por primo mayor P^+(r) (niveles de maximo exceso):
+  [A] z=17 L=112 (E/Q_c=+0.701): neto de t por P^+(r)=p, en unidades de Q_c:
+    p=  1: t neto=+1.248 (pos +1.248, neg +0.000) | Def2 neto=0.399
+    p=  5: t neto=-0.201 (pos +0.000, neg -0.201) | Def2 neto=0.201
+    p=  7: t neto=-0.157 (pos +0.000, neg -0.157) | Def2 neto=0.157
+    p= 11: t neto=-0.100 (pos +0.000, neg -0.100) | Def2 neto=0.100
+    p= 13: t neto=-0.090 (pos +0.000, neg -0.090) | Def2 neto=0.090
+  [A] z=29 L=273 (E/Q_c=+0.619): neto de t por P^+(r)=p, en unidades de Q_c:
+    p=  1: t neto=+0.743 (pos +0.743, neg +0.000) | Def2 neto=0.197
+    p=  5: t neto=+0.330 (pos +0.330, neg +0.000) | Def2 neto=0.087
+    p=  7: t neto=-0.131 (pos +0.000, neg -0.131) | Def2 neto=0.131
+    p= 11: t neto=-0.084 (pos +0.000, neg -0.084) | Def2 neto=0.084
+    p= 13: t neto=-0.076 (pos +0.000, neg -0.076) | Def2 neto=0.076
+    p= 17: t neto=-0.060 (pos +0.000, neg -0.060) | Def2 neto=0.060
+    p= 19: t neto=-0.056 (pos +0.000, neg -0.056) | Def2 neto=0.056
+    p= 23: t neto=-0.048 (pos +0.000, neg -0.048) | Def2 neto=0.048
+  [A] z=37 L=410 (E/Q_c=+0.492): neto de t por P^+(r)=p, en unidades de Q_c:
+    p=  1: t neto=+0.481 (pos +0.481, neg +0.000) | Def2 neto=0.102
+    p=  5: t neto=+0.214 (pos +0.214, neg +0.000) | Def2 neto=0.045
+    p=  7: t neto=+0.167 (pos +0.167, neg +0.000) | Def2 neto=0.035
+    p= 11: t neto=-0.078 (pos +0.000, neg -0.078) | Def2 neto=0.078
+    p= 13: t neto=-0.070 (pos +0.000, neg -0.070) | Def2 neto=0.070
+    p= 17: t neto=-0.055 (pos +0.000, neg -0.055) | Def2 neto=0.055
+    p= 19: t neto=-0.052 (pos +0.000, neg -0.052) | Def2 neto=0.052
+    p= 23: t neto=-0.044 (pos +0.000, neg -0.044) | Def2 neto=0.044
+    p= 29: t neto=-0.036 (pos +0.000, neg -0.036) | Def2 neto=0.036
+    p= 31: t neto=-0.034 (pos +0.000, neg -0.034) | Def2 neto=0.034
+  [B] z=29 L=24399 (E/Q_c=+0.055): neto de t por P^+(r)=p, en unidades de Q_c:
+    p=  1: t neto=+0.028 (pos +0.028, neg +0.000) | Def2 neto=0.001
+    p=  5: t neto=-0.013 (pos +0.000, neg -0.013) | Def2 neto=0.000
+    p=  7: t neto=-0.016 (pos +0.000, neg -0.016) | Def2 neto=0.001
+    p= 11: t neto=+0.001 (pos +0.014, neg -0.012) | Def2 neto=0.002
+    p= 13: t neto=+0.008 (pos +0.022, neg -0.014) | Def2 neto=0.006
+    p= 17: t neto=+0.011 (pos +0.025, neg -0.014) | Def2 neto=0.010
+    p= 19: t neto=+0.018 (pos +0.036, neg -0.018) | Def2 neto=0.018
+    p= 23: t neto=+0.017 (pos +0.034, neg -0.016) | Def2 neto=0.018
+  => en los niveles que deciden el marco A la masa positiva se concentra en r=1 y en los pocos r visibles del soporte minusculo (el bloque P^+=1 iguala o excede el exceso neto); en el marco B se reparte. La masa negativa es, bloque a bloque, el Def2 de los r invisibles. PASS
+
+K4 bloques por omega(r) (niveles de maximo exceso):
+  [A] z=17 L=112: t neto por omega = {0: +1.248, 1: -0.410, 2: -0.123, >=3: -0.015} Q_c | Def2 por omega = {0: 0.399, 1: 0.410, 2: 0.123, >=3: 0.015} Q_c
+  [A] z=29 L=273: t neto por omega = {0: +0.743, 1: +0.086, 2: -0.170, >=3: -0.039} Q_c | Def2 por omega = {0: 0.197, 1: 0.332, 2: 0.170, >=3: 0.039} Q_c
+  [A] z=37 L=410: t neto por omega = {0: +0.481, 1: +0.160, 2: -0.098, >=3: -0.051} Q_c | Def2 por omega = {0: 0.102, 1: 0.239, 2: 0.160, >=3: 0.051} Q_c
+  [B] z=29 L=24399: t neto por omega = {0: +0.028, 1: -0.080, 2: +0.109, >=3: -0.003} Q_c | Def2 por omega = {0: 0.001, 1: 0.008, 2: 0.025, >=3: 0.022} Q_c
+  => PASS
+
+K5 cola de Euler (A=3):
+  z=17 w=4.1: Q_c=0.5880 = Q_c^{<=w}(1.0000) * Q_c^{>w}(0.5880) | cuota de log de la cola: 100.0% | M_full^{>w}=1.1405 <= exp(1/(floor(w)-1))=1.3956 [T]
+  z=29 w=5.4: Q_c=0.5018 = Q_c^{<=w}(0.8125) * Q_c^{>w}(0.6176) | cuota de log de la cola: 69.9% | M_full^{>w}=1.0629 <= exp(1/(floor(w)-1))=1.2840 [T]
+  z=37 w=6.1: Q_c=0.4689 = Q_c^{<=w}(0.8125) * Q_c^{>w}(0.5771) | cuota de log de la cola: 72.6% | M_full^{>w}=1.0655 <= exp(1/(floor(w)-1))=1.2214 [T]
+  M_cola y M_V por P^+(d)=p (z=29, L=273; M_full=1.1514, 2*Pi_full*M_cola/Q_c=0.118):
+    p=  1: M_cola=0.0000 | M_V=1.0000
+    p=  5: M_cola=0.0000 | M_V=0.0833
+    p=  7: M_cola=0.0361 | M_V=0.0000
+    p= 11: M_cola=0.0124 | M_V=0.0000
+    p= 13: M_cola=0.0086 | M_V=0.0000
+    p= 17: M_cola=0.0048 | M_V=0.0000
+    p= 19: M_cola=0.0037 | M_V=0.0000
+    p= 23: M_cola=0.0025 | M_V=0.0000
+  => el producto Q_c es tipo Mertens (su 'cola' sobre primos grandes lleva una fraccion O(1) del log: NO converge absolutamente); la unica cola de Euler absolutamente convergente es la de M, y su resto M_cola ya esta cerrado [T, doc 110]. Ninguna parte ABIERTA del exceso es una cola de Euler. PASS
+
+K6 intento de cota: libro mayor y la pieza que se resiste
+  [A] z=17 (60 niveles): max E/Q_c=+0.701 | max P/Q_c=1.248 (L=112) | en ese nivel: N/Q_c=0.548, invisible/Q_c=-0.548, P por delta>0: 1.248 Q_c, por delta<-2Pi: 0.000 Q_c
+  [A] z=29 (60 niveles): max E/Q_c=+0.619 | max P/Q_c=1.073 (L=273) | en ese nivel: N/Q_c=0.453, invisible/Q_c=-0.453, P por delta>0: 1.073 Q_c, por delta<-2Pi: 0.000 Q_c
+  [A] z=37 (60 niveles): max E/Q_c=+0.492 | max P/Q_c=0.862 (L=410) | en ese nivel: N/Q_c=0.370, invisible/Q_c=-0.370, P por delta>0: 0.862 Q_c, por delta<-2Pi: 0.000 Q_c
+  [B] z=29 (60 niveles): max E/Q_c=+0.055 | max P/Q_c=0.159 (L=24399) | en ese nivel: N/Q_c=0.104, invisible/Q_c=-0.019, P por delta>0: 0.159 Q_c, por delta<-2Pi: 0.000 Q_c
+  => piezas cerradas [T]: invisible <= 0; 0 <= N <= Q_c; 0 <= 2*Pi_full*M_cola <= 2*Q_c. Como E = P - N con 0 <= N <= Q_c, (H2'') equivale a acotar P: la pieza que se resiste es P^(L) = sum_{t(r)>0} t(r), la masa positiva del exceso. PASS
+
+Tiempo total: 2.3 s
+PASS

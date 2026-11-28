@@ -1,0 +1,42 @@
+== DOC 114: (DESP-SIGN) por apareamiento + banda ==
+Solo stdlib. Definiciones de los docs 109-113 por import.
+
+K0 cruce doc 113 y K1 descomposicion/caracterizacion:
+  |Add| total = 6509 (doc 113: 6509) | |Rem| total = 1049 (doc 113: 1049)
+  E = sum_Add a - sum_Rem a: err max = 5.32e-16 | max E/Pi = +0.00e+00 | instancias con E>0: 0
+  Add por mecanismo: {'A2': 3958, 'A1': 2527, 'A1+A2': 24} | sin fallo del modelo: 0
+  Rem por mecanismo: {'R1': 707, 'R2': 342} | fallos R1 en posicion propia par: 707/707 [T]
+  fallos A2 sin primo de r bajo el primo que falla: 0 [T: la holgura exige uno]
+  => PASS
+
+K2 Lema 2 [M]: V^+(L) cerrado por divisores:
+  d en V, p|d, d/p fuera de V: 0 violaciones sobre 4353 elementos (todos sus primos)
+  => la prueba del doc (desplazamiento de posiciones) concuerda con la enumeracion. PASS
+
+K3 apareamiento Add: phi(x) = x/q_min(x):
+  socios comprobados: 1640 | fuera de Add^- : 0 | identidad de flujo E_Add = -sum |a(y)|(1-R_A(y)): err max = 5.55e-17
+  max R_A(y) = 0.6000 en ('B', 29, 2261685, 323, 23)
+  Mertens exacto: sum_{5<=p<=67} 1/(p-1) = 0.99917 < 1 | con p=71: 1.01346 > 1
+  => (DESP-SIGN) en el lado Add queda reducido a R_A(y)<=1; probado si z_A<=71 (Mertens) y si min(y)<=67. PASS
+
+K4 apareamiento Rem: psi(x) = x/q_min(x):
+  socios comprobados: 39 | fuera de Rem^+ : 0 | con omega=1: 0 | sin fallo fusionado en primo > q_min: 0
+  identidad de flujo E_Rem = -sum a(y)(1-R_R(y)): err max = 3.47e-18 | max R_R(y) = 0.2500
+  => el lado Rem queda reducido a la persistencia en primos <= q_min (vacia en ventana) y a R_R<=1. PASS
+
+K5 S(r) <= 1 y delta(r) <= 1 - Pi(r):
+  max S(r) = 1.000000 sobre las 4113 instancias | violaciones de delta <= 1-Pi: 0
+  => [M] en ventana; [T] si z_A<=71 por el flujo de K3 sobre V^{(r)} (cerrado por divisores, Lema 2). PASS
+
+K6 banda u_r < u0: cota cruda (1-Pi^2)/phi por nivel:
+  u0=1.5: max_L sum_banda cota/Q_c = 0.6991 (de la cual Pi<1/2: 0.4408) | max_L masa real t^+/Q_c = 0.3806 | max r en banda por nivel = 77
+  u0=2.0: max_L sum_banda cota/Q_c = 1.1345 (de la cual Pi<1/2: 0.5971) | max_L masa real t^+/Q_c = 0.3806 | max r en banda por nivel = 136
+  u_r<1: instancias con delta>0: 349 | con S(r) != 1 (no degeneradas): 0
+  => en ventana la banda suma O(Q_c) con la cota cruda [M]; la sub-banda Pi>=1/2 cierra [T] (<= 4 Q_c por sum Pi^2/phi <= Q_c); el residuo de marco es (BAND) sobre Pi<1/2. PASS
+
+K7 estres z=53 (marco A, muestra de niveles/conductores):
+  instancias: 185 | peor E = +1.11e-16 | socios fuera: Add 0, Rem 0 | max R_A = 0.6625 | max R_R = 0.4167
+  => el apareamiento y los flujos se sostienen fuera de los marcos del doc 113. PASS
+
+Tiempo total: 4.1 s
+PASS

@@ -1,0 +1,47 @@
+== DOC 110: segundo momento de los defectos, expandido ==
+Solo stdlib. Modo fijo; nivel L = D//s.
+
+K0 validacion cruzada contra LevelData del doc 109:
+  z=17 L=250: |Q110-Q109|=0.00e+00 |Def2_110-Def2_109|=0.00e+00 PASS
+  z=29 L=1096: |Q110-Q109|=0.00e+00 |Def2_110-Def2_109|=0.00e+00 PASS
+  z=37 L=613: |Q110-Q109|=0.00e+00 |Def2_110-Def2_109|=0.00e+00 PASS
+
+K1/K2/K3/K5/K6 identidades y conteo, marcos A (z=17,29,37) y B (z=29):
+  [A] z=17: 60 niveles | err particion (K1, 2 niveles)=2.22e-16 | err formas (110.1)/(110.2) rel. a Q+Q_c = 2.8e-16 | max Def2/Q_c=0.947 (L=112) | max 2Pi_full*M_cola/Q_c=0.246 | M_full=1.1405 Pi_full=0.5156 Q_c=0.5880
+  [A] z=29: 60 niveles | err particion (K1, 2 niveles)=5.00e-16 | err formas (110.1)/(110.2) rel. a Q+Q_c = 8.8e-16 | max Def2/Q_c=0.738 (L=273) | max 2Pi_full*M_cola/Q_c=0.118 | M_full=1.1514 Pi_full=0.4358 Q_c=0.5018
+  [A] z=37: 60 niveles | err particion (K1, 2 niveles)=1.11e-15 | err formas (110.1)/(110.2) rel. a Q+Q_c = 6.9e-16 | max Def2/Q_c=0.553 (L=410) | max 2Pi_full*M_cola/Q_c=0.060 | M_full=1.1543 Pi_full=0.4062 Q_c=0.4689
+  [B] z=29: 60 niveles | err particion (K1, 2 niveles)=5.00e-16 | err formas (110.1)/(110.2) rel. a Q+Q_c = 1.3e-15 | max Def2/Q_c=0.055 (L=24399) | max 2Pi_full*M_cola/Q_c=0.000 | M_full=1.1514 Pi_full=0.4358 Q_c=0.5018
+  => (110.1) y (110.2) exactas en todos los niveles; el termino de conteo 2*Pi_full*M_cola esta en [0, 2*Q_c] siempre. PASS
+
+K4 descomposicion diagonal/cruzada de la cola (soportes desplazados explicitos):
+  [A] z=17 maxDef2 L=      112: Def2=0.556798 (err abs vs ruta C 1.1e-16) | D_cola=0.8973 (1.53 Q_c) | X_cola=-0.3405 (-0.58 Q_c) | (Q-Q_c)/Q_c=+0.701 | 2Pi_full*M_cola/Q_c=0.246
+  [A] z=17 maxL    L=    83521: Def2=0.000000 (err abs vs ruta C 1.9e-32) | D_cola=0.0000 (0.00 Q_c) | X_cola=+0.0000 (+0.00 Q_c) | (Q-Q_c)/Q_c=+0.000 | 2Pi_full*M_cola/Q_c=0.000
+  [A] z=29 maxDef2 L=      273: Def2=0.370073 (err abs vs ruta C 0.0e+00) | D_cola=0.9312 (1.86 Q_c) | X_cola=-0.5611 (-1.12 Q_c) | (Q-Q_c)/Q_c=+0.619 | 2Pi_full*M_cola/Q_c=0.118
+  [A] z=29 maxL    L=   707281: Def2=0.000935 (err abs vs ruta C 2.2e-19) | D_cola=0.0021 (0.00 Q_c) | X_cola=-0.0011 (-0.00 Q_c) | (Q-Q_c)/Q_c=+0.002 | 2Pi_full*M_cola/Q_c=0.000
+  [A] z=37 maxDef2 L=      410: Def2=0.259066 (err abs vs ruta C 5.0e-16) | D_cola=0.8391 (1.79 Q_c) | X_cola=-0.5800 (-1.24 Q_c) | (Q-Q_c)/Q_c=+0.492 | 2Pi_full*M_cola/Q_c=0.060
+  [A] z=37 maxL    L=  1874161: Def2=0.001639 (err abs vs ruta C 0.0e+00) | D_cola=0.0029 (0.01 Q_c) | X_cola=-0.0013 (-0.00 Q_c) | (Q-Q_c)/Q_c=+0.003 | 2Pi_full*M_cola/Q_c=0.000
+  [B] z=29 maxDef2 L=    24399: Def2=0.027433 (err abs vs ruta C 3.5e-18) | D_cola=0.0317 (0.06 Q_c) | X_cola=-0.0043 (-0.01 Q_c) | (Q-Q_c)/Q_c=+0.055 | 2Pi_full*M_cola/Q_c=0.000
+  [B] z=29 maxL    L= 20511149: Def2=0.000013 (err abs vs ruta C 3.4e-21) | D_cola=0.0000 (0.00 Q_c) | X_cola=-0.0000 (-0.00 Q_c) | (Q-Q_c)/Q_c=+0.000 | 2Pi_full*M_cola/Q_c=0.000
+  => la diagonal de la cola NO basta: D_cola >> Q_c y la cruzada cancela; tras reindexar, el contenido no-contable es (Q-Q_c). PASS
+
+K5b cotas de conteo puras:
+  M_full(z->inf, A=3) <= prod_{3<p<=1e5}(1+1/((p-1)(p-2))) = 1.1618 (producto convergente, cota absoluta)
+  z=17: cota conteo D_cola <= P^+*prod(1+1/(p-1)^2) = 1.930 = 3.3 * Q_c  (pierde ~(ln z)^2 contra el objetivo O(Q_c))
+  z=29: cota conteo D_cola <= P^+*prod(1+1/(p-1)^2) = 2.284 = 4.6 * Q_c  (pierde ~(ln z)^2 contra el objetivo O(Q_c))
+  z=37: cota conteo D_cola <= P^+*prod(1+1/(p-1)^2) = 2.450 = 5.2 * Q_c  (pierde ~(ln z)^2 contra el objetivo O(Q_c))
+  => el conteo cierra M_cola por completo y NO cierra D_cola. PASS
+
+K7 independencia de datos delta vs Delta_r (sec. 4):
+  delta^{(L)}(35) a Pi(35)=0.825000 FIJO (no depende de L):
+    L=     112: delta=-0.825000 | 35 divide a algun d en V: False | delta = -Pi exacto
+    L=     138: delta=-0.825000 | 35 divide a algun d en V: False | delta = -Pi exacto
+    L=     179: delta=-0.825000 | 35 divide a algun d en V: False | delta = -Pi exacto
+    L=     250: delta=-0.825000 | 35 divide a algun d en V: False | delta = -Pi exacto
+    L=     404: delta=+0.175000 | 35 divide a algun d en V: True
+    L=     954: delta=+0.175000 | 35 divide a algun d en V: True
+    Delta_5(N=1000000) = (log 5)*floor(log_5 N) = 12.88 (crece con N; delta_5 en el marco es O(Pi) ~ 0.688, sin N)
+    Delta_5(N=1000000000000) = (log 5)*floor(log_5 N) = 27.36 (crece con N; delta_5 en el marco es O(Pi) ~ 0.688, sin N)
+  => delta vive en los datos (z, A, excl, L); Delta_r vive en (r, N, caracteres). Datos disjuntos. PASS
+
+Tiempo total: 0.9 s
+PASS
