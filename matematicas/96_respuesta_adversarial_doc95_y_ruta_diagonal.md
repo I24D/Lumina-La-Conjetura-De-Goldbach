@@ -165,3 +165,23 @@ Esta transformación ofrece el puente para una gran criba restringida a H_A. No 
 5. Combinar ambas piezas y volver a auditar las constantes contra el balance de Chen.
 
 Estado final: identidad Gram [T]; diagonalización gcd [T]; comparación uniforme V^+ con el producto completo [N]; momento restringido de bloques [N]; puente cuantitativo suficiente hacia R_A [N]. Goldbach fuerte sigue abierta.
+
+
+## 7. Errata posterior — 2026-11-27 (doc 97 / doc 98)
+
+La identidad de la sección 5 que omitía la corrección de inducción no es exacta. **Queda retirada**:
+\[
+S_r(N)\ne\sum_{d\mid r}\mu(r/d)\varphi(d)E(N;d,N)
+\quad\text{en general}.
+\]
+La forma exacta es
+\[
+S_r(N)=\sum_{d\mid r}\mu(r/d)\varphi(d)E(N;d,N)+\Delta_r(N),
+\]
+con \(\Delta_r\) dado por las ecuaciones (98.2)–(98.3) de matematicas/98_correccion_imprimitiva_delta_y_auditoria_94d_94e.md. La corrección recoge las potencias primas \(p^j\le N\) que desaparecen al inducir caracteres desde conductores \(c\) a módulos divisibles por \(p\nmid c\), además del término principal cuando \(r\) es primo.
+
+El segundo factor de Cauchy de la sección 4 debe formarse con \(S_{a,h}\) corregido. No usar la versión de la sección 5 sin \(\Delta_{ah}\). La diagonalización Gram y el producto completo de la sección 2 no cambian.
+
+La verificación independiente local está en numerico/97_imprimitive_correction_check.py y su salida en numerico/resultados/20261127_97_imprimitive_correction_check.txt. La prueba algebraica y la auditoría de las reglas de masa 94d/94e están en el doc 98.
+
+**Estado corregido:** diagonalización [T]; producto completo [T]; identidad de Möbius con \(\Delta_r\) [T]; momento restringido corregido [N]. Goldbach fuerte sigue abierta.

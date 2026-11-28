@@ -113,3 +113,17 @@ Procedencia: Codex, modelo exacto no expuesto; lectura primaria y derivación, e
 - **[NUM]** En 20 escenarios N=2^e, A=3, Q_s log z=1.556–2.829; Q_s/P_local=1.003–1.701. La diagonal d=e por sí sola es 1–5.82 veces Q_s y no basta.
 - **[NUM]** La masa de conductores ah<=R0 depende de kappa: 92.88% con kappa=2.7 y 95.25% con kappa=2.8 en el proxy N=10^12,A=3.
 - **[N]** Falta comparar V+ con el producto completo uniformemente, estimar la cola r>L_s/z y demostrar el momento de bloques de caracteres restringido a H_A. Goldbach sigue abierta.
+
+
+## Corrección imprimitiva y segundo factor — 2026-11-27
+
+- Doc 96, sección 5, retirada por omitir la corrección de inducción. Errata añadida al final del propio doc 96.
+- [98: derivación exacta de Delta_r, fórmula reducida, auditoría de 94d/94e y nueva prioridad analítica](matematicas/98_correccion_imprimitiva_delta_y_auditoria_94d_94e.md).
+- Prueba independiente: numerico/97_imprimitive_correction_check.py; salida numerico/resultados/20261127_97_imprimitive_correction_check.txt.
+- [T] Identidad corregida: S_r = sum_{d|r} mu(r/d) phi(d) E(N;d,N) + Delta_r.
+- [T] Delta_r solo recibe correcciones de inducción de primos p||r; el término principal adicional aparece cuando r es primo.
+- [NUM] 16 conductores impares, N=999983: error absoluto máximo 6.5627e-9; relativo máximo 9.7032e-12; max |Delta_r|/|S_r| 2.5886%.
+- 94d: L_s=floor(D/s), D=floor(sqrt X) en el proxy; la masa alta se atribuye por el índice divisor r de Q_s= sum phi(r) C_s(r)^2.
+- 94e: masa completa del conductor r=ah, con peso phi(ah)|K_A(h)|^2; en kappa=2.7, 92.878861% bajo R0 y 7.121139% arriba.
+- La mejora 14.04 es del factor de energía/cuadrado; la mejora en amplitud tras Cauchy es sqrt(14.04)=3.75.
+- [N] Prioridad: estimar el segundo factor B_{>R0} con Delta incluido. Goldbach sigue abierta.

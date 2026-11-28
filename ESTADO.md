@@ -595,3 +595,16 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - **[T]** El puente formal de Cauchy existe en doc94; sigue sin demostrarse el momento B_{>R0}. Nueva identidad de Möbius: S_r(N)=sum_{d|r} mu(r/d)phi(d)E(N;d,N), para r>1 y (r,N)=1.
 - **[N]** Lema uniforme para Q_s, cola r>L_s/z_A, gran criba restringida a H_A y puente cuantitativo suficiente hacia R_A siguen abiertos.
 - Evidencia: matematicas/96_respuesta_adversarial_doc95_y_ruta_diagonal.md; numerico/94d_diagonal_profile.py; numerico/94e_conductor_cutoff_profile.py; resultados 20261127_94d_diagonal_profile.txt y 20261127_94e_conductor_cutoff_profile.txt.
+
+
+## Bucle LUMINA — 2026-11-27 — Corrección imprimitiva doc 96 / revisión doc 97
+
+- Corrección: la fórmula S_r = sum_{d|r} mu(r/d) phi(d) E(N;d,N) del doc 96, sec. 5, era incompleta. Añadida errata al doc 96; no usar sin Delta_r.
+- [T] Definición exacta: Delta_r = sum_{d|r} mu(r/d)[sum_{c|d,c>1} I_{d,c} + Theta(d)], donde I_{d,c} contiene potencias p^j para p|d, p∤c, ponderadas por caracteres primitivos de conductor c.
+- [T] Forma reducida: Delta_r = 1_{r primo} Theta_r + sum_{p||r,r/p>1} sum_{chi* mod r/p} conj(chi*(N)) sum_{p^j<=N} chi*(p)^j log p.
+- [NUM] Nueva prueba independiente con caracteres explícitos y psi de potencias primas: 16 conductores impares, N=999983; error absoluto max 6.5627e-9, relativo max 9.7032e-12, max Delta/S 2.5886%.
+- [T/NUM] 94d asigna la masa por el índice divisor r de la diagonalización positiva; L_s=floor(D/s), D=floor(sqrt X) en el proxy, sin pérdida logarítmica.
+- [T/NUM] 94e asigna masa al conductor completo ah con peso phi(ah)|K_A(h)|²; kappa=2.7: masa baja 92.878861%, alta 7.121139%. Cociente de energía 14.04; mejora de amplitud por Cauchy 3.75.
+- [N] El peso de corrección 1.24e-4 informado por Dal en doc 97 no está reproducido con su conjunto exacto de diez conductores.
+- Prioridad: estimar el segundo factor B_{>R0} corregido, separando M_r, 2 Re(M_r conjugate Delta_r), y |Delta_r|². No crear otra identidad para el primer factor.
+- Evidencia: matematicas/98_correccion_imprimitiva_delta_y_auditoria_94d_94e.md; numerico/97_imprimitive_correction_check.py; numerico/resultados/20261127_97_imprimitive_correction_check.txt.
