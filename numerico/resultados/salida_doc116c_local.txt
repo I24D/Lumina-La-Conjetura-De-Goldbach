@@ -1,0 +1,69 @@
+== DOC 116c: el residuo (BAND) por conteo ==
+Solo stdlib; maquinaria de los docs 109/110 importada.
+
+J0/J1 caracterizacion de Pi(r) y umbrales:
+  z=17: Pi_full=0.515625 | err Pi(r)*prod - Pi_full = 0.0e+00 | min Pi(r) >= Pi_full: True | err Pi(p) = 0.0e+00
+  z=29: Pi_full=0.435791 | err Pi(r)*prod - Pi_full = 1.1e-16 | min Pi(r) >= Pi_full: True | err Pi(p) = 1.1e-16
+  z=37: Pi_full=0.406219 | err Pi(r)*prod - Pi_full = 1.7e-16 | min Pi(r) >= Pi_full: True | err Pi(p) = 1.1e-16
+  Pi_full(17)=0.5156 > 1/2 > Pi_full(19)=0.4834: la banda {Pi<1/2} es VACIA a z=17 y no vacia desde z=19.
+  => Pi(r) = Pi_full/prod_{p|r}(1-1/(p-1)) >= Pi_full [T]; Pi(r)<1/2 <=> prod_{p|r}(1+1/(p-2)) < 1/(2 Pi_full). PASS
+
+J2 descomposicion de la banda cruda por omega(r) (u0=1.5):
+  [A] z=17 u_L=1.67 L=112: crudo/Q_c=0.0000 (real 0.0000) | 
+  [A] z=17 u_L=2.00 L=289: crudo/Q_c=0.0000 (real 0.0000) | 
+  [A] z=17 u_L=3.00 L=4913: crudo/Q_c=0.0000 (real 0.0000) | 
+  [A] z=17 u_L=4.00 L=83521: crudo/Q_c=0.0000 (real 0.0000) | 
+  [A] z=29 u_L=1.67 L=273: crudo/Q_c=0.0000 (real 0.0000) | 
+  [A] z=29 u_L=2.00 L=841: crudo/Q_c=0.0000 (real 0.0000) | 
+  [A] z=29 u_L=3.00 L=24389: crudo/Q_c=0.0191 (real 0.0191) | w2:0.0191
+  [A] z=29 u_L=4.00 L=707281: crudo/Q_c=0.0000 (real 0.0000) | 
+  [A] z=37 u_L=1.67 L=410: crudo/Q_c=0.2710 (real 0.1155) | w1:0.2710
+  [A] z=37 u_L=2.00 L=1369: crudo/Q_c=0.4408 (real 0.0948) | w1:0.4408
+  [A] z=37 u_L=3.00 L=50653: crudo/Q_c=0.0791 (real 0.0493) | w2:0.0791
+  [A] z=37 u_L=4.00 L=1874161: crudo/Q_c=0.0006 (real 0.0000) | w3:0.0006
+  [B] z=29 u_L=3.00 L=24389: crudo/Q_c=0.0191 (real 0.0191) | w2:0.0191
+  [B] z=29 u_L=4.00 L=707281: crudo/Q_c=0.0000 (real 0.0000) | 
+  [B] z=29 u_L=5.00 L=20511149: crudo/Q_c=0.0000 (real 0.0000) | 
+  Maximo sobre niveles muestreados del doc 114 (L=D//s):
+    z=17: max crudo_banda/Q_c = 0.0000 (doc 114: total 0,6991, parte Pi<1/2 = 0,4408; aqui global)
+    z=29: max crudo_banda/Q_c = 0.1526 (doc 114: total 0,6991, parte Pi<1/2 = 0,4408; aqui global)
+    z=37: max crudo_banda/Q_c = 0.4408 (doc 114: total 0,6991, parte Pi<1/2 = 0,4408; aqui global)
+  => en ventana la banda cruda es <= 0,70 Q_c [M], dominada por omega=1 en niveles de u_L bajo. PASS
+
+J4 familia omega=1 a z=37, L=37^2 (u_L=2): crudo vs real:
+    p=7: Pi=0.4875 S(p)=0.6500 delta=+0.1625 | crudo=0.1271 real t+=0.0308 (factor 4.1x)
+    p=11: Pi=0.4514 S(p)=0.5833 delta=+0.1320 | crudo=0.0796 real t+=0.0137 (factor 5.8x)
+  => S(p) esta cerca de Pi(p), no de 1: la cota cruda pierde el factor (1-Pi)/delta por termino. PASS
+
+J3 limites de Mertens y constantes:
+    Z=1e+08 [u_L=2]: sum_{Z^a<p<Z^b} 1/(p-1) = 0.2866 (limite log=0.2877, err 0.0011)
+    Z=1e+12 [u_L=5/3]: sum_{Z^a<p<Z^b} 1/(p-1) = 1.1917 (limite log=1.2040, err 0.0123)
+    cofactor m0=35: limite predicho log(4/3)/phi(35) = 0.0120; suma/24 = 0.0119
+    B(u_L) = liminf de la suma cruda de la banda (u0=1.5):
+      u_L=1.67: B1=1.2040 B2>=0.00e+00 B3>=0.00e+00 -> B>=1.20e+00 > 0
+      u_L=2.00: B1=0.2877 B2>=0.00e+00 B3>=0.00e+00 -> B>=2.88e-01 > 0
+      u_L=2.50: B1=0.0000 B2>=4.00e-03 B3>=0.00e+00 -> B>=4.00e-03 > 0
+      u_L=3.00: B1=0.0000 B2>=2.42e-03 B3>=0.00e+00 -> B>=2.42e-03 > 0
+      u_L=3.50: B1=0.0000 B2>=0.00e+00 B3>=2.49e-05 -> B>=2.49e-05 > 0
+      u_L=4.00: B1=0.0000 B2>=0.00e+00 B3>=1.26e-05 -> B>=1.26e-05 > 0
+    Estabilizacion de Pi_full*ln z y Q_c*ln z:
+      z=    37: Pi_full=0.40622 (x ln z = 1.4668) | Q_c=0.46889 (x ln z = 1.6931)
+      z=    53: Pi_full=0.36772 (x ln z = 1.4600) | Q_c=0.42552 (x ln z = 1.6894)
+      z=   101: Pi_full=0.31830 (x ln z = 1.4690) | Q_c=0.36912 (x ln z = 1.7035)
+      z=  1009: Pi_full=0.21383 (x ln z = 1.4790) | Q_c=0.24840 (x ln z = 1.7181)
+      z= 10007: Pi_full=0.16078 (x ln z = 1.4809) | Q_c=0.18679 (x ln z = 1.7205)
+  => la suma cruda de la banda tiende a B(u_L) > 0 mientras Q_c -> 0 como K/ln z: (BAND) cruda es FALSA en el marco asintotico. PASS
+
+J5 sub-banda {Pi >= 1/2} con u_r<1.5: suma cruda <= 4 Q_c [T]:
+    z=29 u_L=1.67: suma_{Pi>=1/2} crudo = 0.3300 Q_c (<= 4 Q_c)
+    z=29 u_L=2.00: suma_{Pi>=1/2} crudo = 0.2840 Q_c (<= 4 Q_c)
+    z=29 u_L=3.00: suma_{Pi>=1/2} crudo = 0.0653 Q_c (<= 4 Q_c)
+    z=29 u_L=4.00: suma_{Pi>=1/2} crudo = 0.0026 Q_c (<= 4 Q_c)
+    z=37 u_L=1.67: suma_{Pi>=1/2} crudo = 0.4281 Q_c (<= 4 Q_c)
+    z=37 u_L=2.00: suma_{Pi>=1/2} crudo = 0.1104 Q_c (<= 4 Q_c)
+    z=37 u_L=3.00: suma_{Pi>=1/2} crudo = 0.0396 Q_c (<= 4 Q_c)
+    z=37 u_L=4.00: suma_{Pi>=1/2} crudo = 0.0052 Q_c (<= 4 Q_c)
+  => cerrada por (1-Pi^2)/phi <= (Pi^2/phi)/c0^2 y sum Pi^2/phi = Q_c. PASS
+
+Tiempo total: 0.7 s
+PASS

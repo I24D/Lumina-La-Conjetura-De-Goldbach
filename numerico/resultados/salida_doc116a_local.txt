@@ -1,0 +1,23 @@
+== DOC 116a: residuo (REM-PERS-small) — familia vacia ==
+Solo stdlib. Maquinaria de los docs 113/114 por import.
+
+J0-J5 marcos A/B (instancias del doc 114):
+  [marcos] instancias=4113 | x en Vhat^-: 5568 | fallos fusionados totales: 39
+       r fuera de V^+(L): 0 | violaciones de (II) r*qmin^2*x<L: 0
+       fallos en primo <= qmin: 0 (en qmin: 0, R2 bajo: 0) | ejemplos: []
+       Lema B: pares (x, p|r, p<qmin) = 2423 | violaciones: 0 | max [p^2*x*r/rad]/L = 0.7581
+       Rem^-: 39 | sin fallos: 0 | residuales (todos los fallos <= qmin): 0 | primos en Rem: 0
+       psi(x) en Rem^+: 39 | fuera: 0
+  => marcos: PASS
+
+J0-J5 estres z=53 (construccion del K7 del doc 114):
+  [estres] instancias=185 | x en Vhat^-: 498 | fallos fusionados totales: 36
+       r fuera de V^+(L): 0 | violaciones de (II) r*qmin^2*x<L: 0
+       fallos en primo <= qmin: 0 (en qmin: 0, R2 bajo: 0) | ejemplos: []
+       Lema B: pares (x, p|r, p<qmin) = 221 | violaciones: 0 | max [p^2*x*r/rad]/L = 0.4916
+       Rem^-: 36 | sin fallos: 0 | residuales (todos los fallos <= qmin): 0 | primos en Rem: 0
+       psi(x) en Rem^+: 36 | fuera: 0
+  => estres: PASS (Rem^- en estres: 36; el doc 114 conto 36 socios)
+
+Tiempo total: 2.4 s
+PASS

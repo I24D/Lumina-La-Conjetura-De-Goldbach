@@ -1,0 +1,58 @@
+== DOC 116b: (R-FLOW-71+), cotas afiladas y contraejemplo ==
+Solo stdlib. Predicados de los docs 109/113/114 por import.
+
+J0 sumas de Mertens exactas (fracciones):
+  sum_{5<=p<=67} 1/(p-1) = 160107799/160240080 = 0.99917  (< 1: True)
+  sum_{5<=p<=71} 1/(p-1) = 1.01346  (> 1: True)
+  Mertens(199) = 1.22144 | Mertens(251) = 1.25620
+  => reproduce el umbral del doc 114. PASS
+
+J1 cotas afiladas (*)/(**)/(***) en las instancias del doc 114 (0 violaciones esperadas):
+  pares (y,q) admisibles verificados: 1640 | violaciones: 0 | max R_A en ventana = 0.6000 (doc 114: 0,6000)
+  => las tres cotas son necesarias en cada instancia. PASS
+
+J2 contraejemplo R_A en marco (r=5, y=Y primo, z=331):
+  Y=73: s=2042687 L=1945083 R_A(y)=0.76346
+  Y=101: s=771269 L=5151504 R_A(y)=0.82415
+  Y=151: s=230807 L=17214364 R_A(y)=0.90856
+  Y=211: s=84629 L=46948396 R_A(y)=0.97144
+  Y=251: s=50261 L=79051268 R_A(y)=1.00220
+  Y=257: s=46817 L=84866518 R_A(y)=1.00620
+  Y=263: s=43691 L=90938541 R_A(y)=1.01010
+  Y=269: s=40829 L=97313081 R_A(y)=1.01392
+  Y=271: s=39929 L=99506519 R_A(y)=1.01765
+  Y=277: s=37397 L=106243704 R_A(y)=1.02135
+  Y=281: s=35831 L=110887103 R_A(y)=1.02498
+  Y=283: s=35069 L=113296524 R_A(y)=1.02855
+  Y=293: s=31601 L=125730065 R_A(y)=1.03210
+  Y=307: s=27479 L=144590262 R_A(y)=1.03552
+  PRIMER CRUCE: Y=251, s=50261, L=79051268, R_A(y) = 22633668515439323928857875/22584054598420241438576064 = 1.00220 > 1 | #q admisibles=50 (todos los de (5, Y))
+  r=5 visible en el nivel (5*Y en V^+(L)): True
+  => R_A(y) <= 1 es FALSO como enunciado puntual, en marco. PASS
+
+J3 contraejemplo R_R en marco (r=rho, y=Y1*Y2):
+  z=6052 s=5 L=1623770295721736806 | y=20531891 en Rem | rho visible: True
+  R_R(y) = 3546252297929758156782024407/2823006824802530179822008000 = 1.25620 | #q admisibles=52, max q=251
+  => R_R(y) <= 1 tambien es FALSO como enunciado puntual, en marco. PASS
+
+J4 medicion extendida [M]: z=71 (global, DFS) y z=101 (min(y) >= 71 completo sobre la muestra):
+  [z=101, min(y)>=71, 10 niveles] instancias Add^-: 1542, Rem^+: 242
+    z=101 min(y)=71: max RA = 0.8982 (L=104060401, r=437, y=71)
+    z=101 min(y)=71: max RR = 0.4167 (L=104060401, r=29, y=5183)
+    z=101 min(y)=73: max RA = 0.9125 (L=104060401, r=437, y=73)
+    z=101 min(y)=73: max RR = 0.4167 (L=104060401, r=29, y=5767)
+    z=101 min(y)=79: max RA = 0.9263 (L=104060401, r=437, y=79)
+    z=101 min(y)=79: max RR = 0.4167 (L=104060401, r=29, y=6557)
+    z=101 min(y)=83: max RA = 0.9392 (L=104060401, r=437, y=83)
+    z=101 min(y)=83: max RR = 0.4167 (L=104060401, r=29, y=7387)
+    z=101 min(y)=89: max RA = 0.9514 (L=104060401, r=437, y=89)
+    z=101 min(y)=89: max RR = 0.4167 (L=104060401, r=23, y=8633)
+    z=101 min(y)=97: max RA = 0.9514 (L=104060401, r=437, y=97)
+    z=101: maximo global en la muestra = 0.9514 (< 1: la Mertens disponible, Mertens(97)-1/4 = 0.8241, no alcanza)
+  [z=71] instancias Add^-: 3610 | nodos DFS restantes: 1094642
+    z=71: max RA = 0.8493 (L=25411681, r=323, y=61)
+    z=71: max RR = 0.4167 (L=25411681, r=23, y=2183)
+  => en z<=101 los maximos medidos quedan < 1 [M]; la violacion es de escala mayor (J2/J3). PASS
+
+Tiempo total: 1.1 s
+PASS
