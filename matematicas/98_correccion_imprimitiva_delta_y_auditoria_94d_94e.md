@@ -205,3 +205,12 @@ Secuencia concreta:
 5. Reproducir el peso \(1.24\cdot10^{-4}\) del doc 97 con sus diez conductores y su regla de ponderación, cuando el conjunto exacto esté disponible.
 
 Estado: diagonalización Gram [T]; producto completo [T]; corrección \(\Delta_r\) [T]; comprobación directa finita [NUM]; atribución de masa 94d/94e [NUM y definición exacta]; cota útil del segundo factor corregido [N]. Goldbach fuerte sigue abierta.
+
+
+## 7. Seguimiento del segundo factor — doc 99
+
+Se ejecutó un proxy adicional con \(N=1000000\) par, \(A=3\), soporte real enumerado y suma directa sobre los caracteres primitivos de los 33 conductores completos. La identidad corregida \(S_r=M_r+\Delta_r\) se verificó con error absoluto máximo \(1.3741\cdot10^{-8}\) y relativo máximo \(4.19\cdot10^{-11}\).
+
+Para \(\kappa=1\), el cambio relativo del segundo momento al incluir \(\Delta_r\) fue \(7.78\cdot10^{-4}\); la energía aislada \(B_\Delta/B_M\) fue \(1.40\cdot10^{-5}\), mientras que el término cruzado dominó. El signo del término cruzado cambió al variar \(\kappa\). El proxy usa \(z=3\) y \(D=\sqrt X\) sin pérdida logarítmica, así que no es evidencia asintótica.
+
+Detalles, soporte, tabla por \(\kappa\) y limitaciones: matematicas/99_segundo_factor_proxy_corregido.md; código y salida: numerico/99_second_factor_support_proxy.py y numerico/resultados/20261127_99_second_factor_support_proxy.txt. El momento \(B_M\) sigue sin cota útil.

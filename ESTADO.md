@@ -608,3 +608,13 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - [N] El peso de corrección 1.24e-4 informado por Dal en doc 97 no está reproducido con su conjunto exacto de diez conductores.
 - Prioridad: estimar el segundo factor B_{>R0} corregido, separando M_r, 2 Re(M_r conjugate Delta_r), y |Delta_r|². No crear otra identidad para el primer factor.
 - Evidencia: matematicas/98_correccion_imprimitiva_delta_y_auditoria_94d_94e.md; numerico/97_imprimitive_correction_check.py; numerico/resultados/20261127_97_imprimitive_correction_check.txt.
+
+
+## Bucle LUMINA — 2026-11-27 — Primer proxy del segundo factor corregido
+
+- [NUM] Se enumeró el soporte del doc 94 con N=1,000,000 par y A=3: 16 pares (s,d), 17 partes nuevas h, 33 conductores completos r=ah.
+- [NUM] Para los 33 conductores, la suma directa de caracteres primitivos coincide con M_r+Delta_r: error absoluto max 1.3741e-8, relativo max 4.19e-11.
+- [NUM] kappa=1: BM=1.9819922e7; Bcross=1.5136e4; Bdelta=278.44; cambio neto 7.7770e-4. Bdelta/BM=1.4048e-5; Bcross domina. El signo del término cruzado cambia con kappa.
+- Limitación explícita: z=3 y D=sqrt(X) sin pérdida logarítmica; el proxy solo comprueba aritmética finita y sensibilidad al corte.
+- [N] No se obtuvo una cota útil de BM. Próximo objetivo: estimar el momento restringido a R_A, conservando la estructura de los divisores y sin sustituirlo por el momento amplio de doc 92.
+- Evidencia: matematicas/99_segundo_factor_proxy_corregido.md; numerico/99_second_factor_support_proxy.py; numerico/resultados/20261127_99_second_factor_support_proxy.txt.

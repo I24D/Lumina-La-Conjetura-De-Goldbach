@@ -127,3 +127,14 @@ Procedencia: Codex, modelo exacto no expuesto; lectura primaria y derivación, e
 - 94e: masa completa del conductor r=ah, con peso phi(ah)|K_A(h)|^2; en kappa=2.7, 92.878861% bajo R0 y 7.121139% arriba.
 - La mejora 14.04 es del factor de energía/cuadrado; la mejora en amplitud tras Cauchy es sqrt(14.04)=3.75.
 - [N] Prioridad: estimar el segundo factor B_{>R0} con Delta incluido. Goldbach sigue abierta.
+
+
+## Segundo factor corregido — primer proxy finito, 2026-11-27
+
+- [99: diagnóstico del segundo factor corregido en el soporte de conductores](matematicas/99_segundo_factor_proxy_corregido.md).
+- Script: numerico/99_second_factor_support_proxy.py; salida: numerico/resultados/20261127_99_second_factor_support_proxy.txt.
+- [NUM] N=1,000,000 par, A=3, D=577, z=3, y=69; 16 pares de switching, 17 partes nuevas, 33 conductores completos.
+- [NUM] S_r directo por caracteres primitivos vs M_r+Delta_r: error absoluto máximo 1.3741e-8; relativo máximo 4.19e-11.
+- [NUM] Para kappa=1, Bcross/BM=7.6365e-4, Bdelta/BM=1.4048e-5 y cambio relativo total 7.7770e-4. El término cruzado domina y puede cambiar de signo.
+- Limitación: z=3 y D=sqrt(X) sin pérdida logarítmica; proxy finito, no evidencia asintótica.
+- [N] B_M sigue sin cota útil; siguiente tarea es el momento restringido sobre R_A.
