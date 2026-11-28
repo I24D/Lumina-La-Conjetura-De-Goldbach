@@ -1,0 +1,47 @@
+Python 3.14.10
+
+=== Doc 121b: reducción CRT de D-NP ===
+  (N,m,q)=(200,3,7): |S − fórmula con ψ̄(N)| máx = 3.6e-15; sin conjugar = 4.25e-15; CS: Σ|S|² ≤ (1/φ(m))ΣΣ|Ψ|² ✓; λ = 2.40
+  (N,m,q)=(200,21,13): |S − fórmula con ψ̄(N)| máx = 5.3e-15; sin conjugar = 1.74e+01; CS: Σ|S|² ≤ (1/φ(m))ΣΣ|Ψ|² ✓; λ = 11.64
+  (N,m,q)=(300,7,11): |S − fórmula con ψ̄(N)| máx = 8.0e-15; sin conjugar = 1.25e-14; CS: Σ|S|² ≤ (1/φ(m))ΣΣ|Ψ|² ✓; λ = 4.06
+  (N,m,q)=(100,11,7): |S − fórmula con ψ̄(N)| máx = 1.1e-14; sin conjugar = 1.11e-14; CS: Σ|S|² ≤ (1/φ(m))ΣΣ|Ψ|² ✓; λ = 7.21
+  (N,m,q)=(300,13,17): |S − fórmula con ψ̄(N)| máx = 2.5e-14; sin conjugar = 2.45e-14; CS: Σ|S|² ≤ (1/φ(m))ΣΣ|Ψ|² ✓; λ = 14.52
+[PASS] W1 Ortogonalidad S_{m,q}(χ) = (1/φ(m))Σ_ψ ψ̄(N)Ψ_N(ψχ) exacta en los 5 casos; la variante sin conjugar falla en (200,21,13) | sin conjugar en (200,21,13): 17.39
+[PASS] W2 Pérdida de Cauchy–Schwarz λ = 2,40 (m=3), 4,06 (m=7), 11,64 (m=21), 14,52 (m=13) | m=11: 7.21
+[PASS] W3 Conteo CRT: φ(m)(q−2) pares (ψ,χ≠χ0) = #{η mod qm : η_q ≠ χ0}
+[PASS] W4 (m,N) = 5 en (200,35,11): S = log5·χ(3) ≠ 0 mientras ψ̄(200) = 0 para todo ψ mod 35 (la fórmula daría 0) | S = 0.4973-1.5307j
+
+=== Doc 115 §7 y doc 121b §3: identidad puntual y el peso W_d = Ω_d^C·φ(d) ===
+[PASS] P1 Identidad puntual Ω_{qm}^C = Θ̃_m(q)/(q−1) para todo (q, m) en S11, S13, S17 (doc 115 §7) | máx err rel 3.9e-16
+  (q,m)=(17,7): término real / forma Ω/φ = 1622; φ(d)²/λ = 1622; término ≤ forma corregida Ω·φ·ΣΨ²: ✓
+  (q,m)=(17,11): término real / forma Ω/φ = 2346; φ(d)²/λ = 2346; término ≤ forma corregida Ω·φ·ΣΨ²: ✓
+  (q,m)=(17,13): término real / forma Ω/φ = 2548; φ(d)²/λ = 2548; término ≤ forma corregida Ω·φ·ΣΨ²: ✓
+  (q,m)=(19,7): término real / forma Ω/φ = 2105; φ(d)²/λ = 2105; término ≤ forma corregida Ω·φ·ΣΨ²: ✓
+  (q,m)=(19,11): término real / forma Ω/φ = 2988; φ(d)²/λ = 2988; término ≤ forma corregida Ω·φ·ΣΨ²: ✓
+  (q,m)=(19,13): término real / forma Ω/φ = 3214; φ(d)²/λ = 3214; término ≤ forma corregida Ω·φ·ΣΨ²: ✓
+  (q,m)=(23,7): término real / forma Ω/φ = 3288; φ(d)²/λ = 3288; término ≤ forma corregida Ω·φ·ΣΨ²: ✓
+  (q,m)=(23,11): término real / forma Ω/φ = 4426; φ(d)²/λ = 4426; término ≤ forma corregida Ω·φ·ΣΨ²: ✓
+  (q,m)=(23,13): término real / forma Ω/φ = 4768; φ(d)²/λ = 4768; término ≤ forma corregida Ω·φ·ΣΨ²: ✓
+[PASS] P2 El término real de D_NP cumple la cota con peso Ω_d^C·φ(d) en todas las parejas, y supera la forma con Ω_d^C/φ(d) por 1622×–4768× (= φ(d)²/λ) | 9 parejas, rango [1622, 4768]
+
+=== Doc 120b: (A1), (A2), (A7) y (A6) ===
+  (N,m,q)=(100,3,7): E(N;qm,N) = 0.836404; (A2) corregida = 0.836404; (A2) escrita − real = -1.313565 = ((q−2)/(q−1))E_m = -1.313565
+  (N,m,q)=(100,4,7): E(N;qm,N) = -7.143962; (A2) corregida = -7.143962; (A2) escrita − real = -36.297433 = ((q−2)/(q−1))E_m = -36.297433
+  (N,m,q)=(200,5,7): E(N;qm,N) = -6.979973; (A2) corregida = -6.979973; (A2) escrita − real = -38.923459 = ((q−2)/(q−1))E_m = -38.923459
+  (N,m,q)=(200,6,11): E(N;qm,N) = -9.614146; (A2) corregida = -9.614146; (A2) escrita − real = -90.270306 = ((q−2)/(q−1))E_m = -90.270306
+  (N,m,q)=(500,3,7): E(N;qm,N) = -1.480849; (A2) corregida = -1.480849; (A2) escrita − real = -3.035147 = ((q−2)/(q−1))E_m = -3.035147
+  (N,m,q)=(500,9,13): E(N;qm,N) = 4.677738; (A2) corregida = 4.677738; (A2) escrita − real = 1.664822 = ((q−2)/(q−1))E_m = 1.664822
+  (N,m,q)=(500,4,11): E(N;qm,N) = -24.389459; (A2) corregida = -24.389459; (A2) escrita − real = -221.376625 = ((q−2)/(q−1))E_m = -221.376625
+  (N,m,q)=(300,7,13): E(N;qm,N) = -3.057392; (A2) corregida = -3.057392; (A2) escrita − real = -0.025823 = ((q−2)/(q−1))E_m = -0.025823
+[PASS] A1 Σ_{a∈(ℤ/q)*} B_{m,q}(a) = A_m − L_{m,q} en los 8 casos
+[PASS] A2 (A2) escrita (Δ + E_m − L/(q−1)) es falsa y su error es exactamente ((q−2)/(q−1))·E_m; la corregida E(N;qm,N) = Δ_{q,m} + (E_m − L_{m,q})/(q−1) es exacta [T]
+[PASS] A7 Parseval Σ_χ|S(χ)|² = (q−1)Σ_{a≠0}B(a)² en los 8 casos
+  S11: unicidad de rama (≤ 1 primo ≥ z por r) = True; m lisos con Ω_m^C>0: 3; violaciones de α̃_m ≤ Ω_m^C: 0; violaciones con el α_m auditado: 3 (cociente máx 7.79e+04)
+  S13: unicidad de rama (≤ 1 primo ≥ z por r) = True; m lisos con Ω_m^C>0: 7; violaciones de α̃_m ≤ Ω_m^C: 0; violaciones con el α_m auditado: 7 (cociente máx 3.08e+05)
+  S17: unicidad de rama (≤ 1 primo ≥ z por r) = True; m lisos con Ω_m^C>0: 15; violaciones de α̃_m ≤ Ω_m^C: 0; violaciones con el α_m auditado: 15 (cociente máx 3.05e+06)
+[PASS] A6 Con la unicidad de rama [T], α̃_m = Σ_q Ω_{qm}^C ≤ Ω_m^C sin violaciones (S11–S17); el α_m auditado (factor (q−1) invertido) viola la cota
+[PASS] A6b Contraejemplo de 120b (ℛ = {105}, m = 3): Σ_{q∈{5,7}} Ω_{qm} = 0,2917 > Ω_m = 0,1458 — necesita dos primos de conmutación en un mismo r, imposible en ℋ
+  S11, m = 5: Σ_q Ω_(5q)^C = 1.091744 (doc 121a: 1,091744); intercambio con τ(r)⁻¹/φ(r) = 0.072937 (doc 121a: 0,072937)
+[PASS] A6c Doc 121a (d): Σ_q Ω_{5q}^C = 1,091744 en S11 y el intercambio con τ⁻¹/φ da 0,072937 (factor ~15) | factor 15.0
+
+RESUMEN: 12/12 PASS, 0 FAIL. Tiempo 0.5 s
