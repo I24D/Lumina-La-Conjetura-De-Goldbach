@@ -1,0 +1,29 @@
+== DOC 119b: (SLAB-V) por reindexacion divisor-cofactor ==
+K0/K1/K2/K3 reindexacion, cobertura, intercambio y constantes por estrato:
+  [A] z=17: viol phi=0 cof=0 sin-cobertura=0 | N(r): max=0 media=0.00 | err intercambio=1.1e-16
+    q0= 5: verdadera=0.0000 pares=0.0000 W=10.3544 (c=1: 1.7005) Q_c | #c=10 | top U_c/Q_c: c=5:1.984(pred 3.522) c=1:1.701(pred 4.622) c=7:1.701(pred 3.870) c=35:1.701(pred 2.948)
+    q0= 7: verdadera=0.0000 pares=0.0000 W=1.8210 (c=1: 0.4676) Q_c | #c=7 | top U_c/Q_c: c=1:0.468(pred 5.588) c=7:0.468(pred 4.679) c=91:0.468(pred 4.291) c=77:0.461(pred 4.215)
+    q0=11: verdadera=0.0000 pares=0.0000 W=0.2244 (c=1: 0.0709) Q_c | #c=4 | top U_c/Q_c: c=11:0.077(pred 6.204) c=1:0.071(pred 6.886) c=13:0.071(pred 6.316) c=143:0.071(pred 5.690)
+    estratos >=13/None: verdadera max = 0.0000 Q_c
+  [A] z=29: viol phi=0 cof=0 sin-cobertura=0 | N(r): max=3 media=1.20 | err intercambio=3.6e-15
+    q0= 5: verdadera=0.1993 pares=0.5979 W=16.2565 (c=1: 0.3321) Q_c | #c=17 | top U_c/Q_c: c=5:2.325(pred 3.518) c=11:2.325(pred 4.160) c=7:1.993(pred 3.866) c=35:1.993(pred 2.945)
+           pares por cofactor (max/nivel): c=1:0.1993 c=5:0.1993 c=7:0.1993
+    q0= 7: verdadera=0.0000 pares=0.0000 W=5.9945 (c=1: 0.5480) Q_c | #c=20 | top U_c/Q_c: c=1:0.548(pred 5.583) c=17:0.548(pred 5.235) c=19:0.548(pred 5.273) c=7:0.498(pred 4.674)
+    q0=11: verdadera=0.0000 pares=0.0000 W=1.1769 (c=1: 0.1035) Q_c | #c=16 | top U_c/Q_c: c=1:0.104(pred 6.879) c=23:0.100(pred 6.567) c=19:0.099(pred 6.498) c=17:0.098(pred 6.451)
+    estratos >=13/None: verdadera max = 0.0000 Q_c
+  [A] z=37: viol phi=0 cof=0 sin-cobertura=0 | N(r): max=3 media=1.41 | err intercambio=2.7e-15
+    q0= 5: verdadera=0.3554 pares=0.7109 W=16.0891 (c=1: 0.3554) Q_c | #c=19 | top U_c/Q_c: c=5:2.488(pred 3.517) c=11:2.488(pred 4.159) c=7:2.133(pred 3.865) c=35:2.133(pred 2.945)
+           pares por cofactor (max/nivel): c=1:0.3554 c=5:0.3554 c=7:0.2133
+    q0= 7: verdadera=0.0000 pares=0.0000 W=9.3750 (c=1: 0.5865) Q_c | #c=26 | top U_c/Q_c: c=7:0.631(pred 4.673) c=1:0.586(pred 5.582) c=13:0.586(pred 5.119) c=11:0.578(pred 5.029)
+    q0=11: verdadera=0.0000 pares=0.0000 W=2.0381 (c=1: 0.1169) Q_c | #c=29 | top U_c/Q_c: c=1:0.117(pred 6.878) c=11:0.089(pred 6.197) c=13:0.089(pred 6.309) c=17:0.089(pred 6.450)
+    estratos >=13/None: verdadera max = 0.0000 Q_c
+  [B] z=29: viol phi=0 cof=0 sin-cobertura=0 | N(r): max=1 media=1.00 | err intercambio=2.7e-15
+    q0= 5: verdadera=0.0252 pares=0.0252 W=5.4621 (c=1: 0.0649) Q_c | #c=17 | top U_c/Q_c: c=115:0.966(pred 3.358) c=95:0.946(pred 3.323) c=85:0.932(pred 3.299) c=65:0.891(pred 3.227)
+           pares por cofactor (max/nivel): c=1:0.0252
+    q0= 7: verdadera=0.0000 pares=0.0000 W=7.9723 (c=1: 0.0941) Q_c | #c=20 | top U_c/Q_c: c=161:0.648(pred 4.462) c=133:0.643(pred 4.415) c=119:0.640(pred 4.383) c=91:0.630(pred 4.287)
+    q0=11: verdadera=0.0000 pares=0.0000 W=1.3499 (c=1: 0.1035) Q_c | #c=16 | top U_c/Q_c: c=1:0.104(pred 6.879) c=11:0.104(pred 6.198) c=23:0.100(pred 6.567) c=19:0.099(pred 6.498)
+    estratos >=13/None: verdadera max = 0.0000 Q_c
+  => PASS
+
+Tiempo total: 0.5 s
+PASS

@@ -1,0 +1,49 @@
+== DOC 119a: (BAND-MOD-HI) directo sobre Shat ==
+Solo stdlib. Banda: u_r<1.5, Pi<1/2, r visible>1.
+
+K0 identidad Shat + That = Pi (maquinaria 117b):
+  14 r visibles, z=29: max |Shat+That-Pi| = 2.22e-16 PASS
+
+K1 suma real de la banda por rebanada de u_r (max sobre niveles, / Q_c):
+  [A] z=17, 60 niveles: banda total=0.0000 | capa u_r>=1.00: 0.0000 | >=1.25: 0.0000 | >=1.40: 0.0000
+      rebanadas u_r: [0.00,0.50)=0.0000 [0.50,1.00)=0.0000 [1.00,1.25)=0.0000 [1.25,1.40)=0.0000 [1.40,1.45)=0.0000 [1.45,1.50)=0.0000
+      omega: 1:0.0000 2:0.0000 3:0.0000 >=4:0.0000 | mayorante Pi/phi=0.0000 | L2: sum d^2/phi=0.0000, sum d^2/(Pi phi)=0.0000
+      familia F (pq, x_p en (0.55,0.6)): real=0.0000 | su masa Pi=0.0000 | cociente=nan
+  [A] z=29, 60 niveles: banda total=0.1028 | capa u_r>=1.00: 0.1028 | >=1.25: 0.1028 | >=1.40: 0.1028
+      rebanadas u_r: [0.00,0.50)=0.0000 [0.50,1.00)=0.0035 [1.00,1.25)=0.0102 [1.25,1.40)=0.0102 [1.40,1.45)=0.1028 [1.45,1.50)=0.0530
+      omega: 1:0.1028 2:0.0128 3:0.0000 >=4:0.0000 | mayorante Pi/phi=0.0965 | L2: sum d^2/phi=0.0530, sum d^2/(Pi phi)=0.1095
+      familia F (pq, x_p en (0.55,0.6)): real=0.0000 | su masa Pi=0.0000 | cociente=nan
+      perfil (Shat-Pi)/Pi en [0.50,1.00): media ponderada=1.0687 max=1.0687
+      perfil (Shat-Pi)/Pi en [1.00,1.25): media ponderada=1.0687 max=1.0687
+      perfil (Shat-Pi)/Pi en [1.25,1.40): media ponderada=1.0287 max=1.0535
+      perfil (Shat-Pi)/Pi en [1.40,1.45): media ponderada=1.0652 max=1.0652
+      perfil (Shat-Pi)/Pi en [1.45,1.50): media ponderada=0.5489 max=0.5489
+  [A] z=37, 60 niveles: banda total=0.2103 | capa u_r>=1.00: 0.2103 | >=1.25: 0.2103 | >=1.40: 0.1182
+      rebanadas u_r: [0.00,0.50)=0.0000 [0.50,1.00)=0.0218 [1.00,1.25)=0.1822 [1.25,1.40)=0.1822 [1.40,1.45)=0.0933 [1.45,1.50)=0.0933
+      omega: 1:0.2103 2:0.0572 3:0.0002 >=4:0.0000 | mayorante Pi/phi=0.2695 | L2: sum d^2/phi=0.0934, sum d^2/(Pi phi)=0.1925
+      familia F (pq, x_p en (0.55,0.6)): real=0.0000 | su masa Pi=0.0000 | cociente=nan
+      perfil (Shat-Pi)/Pi en [0.50,1.00): media ponderada=1.1797 max=1.1797
+      perfil (Shat-Pi)/Pi en [1.00,1.25): media ponderada=1.2444 max=1.2947
+      perfil (Shat-Pi)/Pi en [1.25,1.40): media ponderada=1.2156 max=1.2156
+      perfil (Shat-Pi)/Pi en [1.40,1.45): media ponderada=0.6924 max=0.6924
+      perfil (Shat-Pi)/Pi en [1.45,1.50): media ponderada=0.6924 max=0.6924
+  [B] z=29, 60 niveles: banda total=0.0128 | capa u_r>=1.00: 0.0128 | >=1.25: 0.0128 | >=1.40: 0.0073
+      rebanadas u_r: [0.00,0.50)=0.0000 [0.50,1.00)=0.0000 [1.00,1.25)=0.0055 [1.25,1.40)=0.0128 [1.40,1.45)=0.0073 [1.45,1.50)=0.0037
+      omega: 1:0.0000 2:0.0128 3:0.0000 >=4:0.0000 | mayorante Pi/phi=0.0124 | L2: sum d^2/phi=0.0065, sum d^2/(Pi phi)=0.0133
+      familia F (pq, x_p en (0.55,0.6)): real=0.0000 | su masa Pi=0.0000 | cociente=nan
+      perfil (Shat-Pi)/Pi en [1.00,1.25): media ponderada=1.0687 max=1.0687
+      perfil (Shat-Pi)/Pi en [1.25,1.40): media ponderada=1.0687 max=1.0687
+      perfil (Shat-Pi)/Pi en [1.40,1.45): media ponderada=1.0687 max=1.0687
+      perfil (Shat-Pi)/Pi en [1.45,1.50): media ponderada=0.5515 max=0.5515
+  [A-estres] z=53, 4 niveles: banda total=0.3172 | capa u_r>=1.00: 0.2695 | >=1.25: 0.2695 | >=1.40: 0.1209
+      rebanadas u_r: [0.00,0.50)=0.0000 [0.50,1.00)=0.0477 [1.00,1.25)=0.0000 [1.25,1.40)=0.1486 [1.40,1.45)=0.0802 [1.45,1.50)=0.1209
+      omega: 1:0.2695 2:0.0477 3:0.0000 >=4:0.0000 | mayorante Pi/phi=0.3911 | L2: sum d^2/phi=0.1135, sum d^2/(Pi phi)=0.2636
+      familia F (pq, x_p en (0.55,0.6)): real=0.0000 | su masa Pi=0.0000 | cociente=nan
+      perfil (Shat-Pi)/Pi en [0.50,1.00): media ponderada=1.0940 max=1.2435
+      perfil (Shat-Pi)/Pi en [1.25,1.40): media ponderada=0.8696 max=0.8696
+      perfil (Shat-Pi)/Pi en [1.40,1.45): media ponderada=0.8356 max=0.8356
+      perfil (Shat-Pi)/Pi en [1.45,1.50): media ponderada=0.6997 max=0.6997
+  => tablas completas y finitas. PASS
+
+Tiempo total: 0.7 s
+PASS
