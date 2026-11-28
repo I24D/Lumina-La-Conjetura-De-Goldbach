@@ -1,0 +1,129 @@
+Python 3.14.10
+
+=== PARTE A — doc 96 §3 / script 94d: Q_s exacto por la diagonal y por Gram ===
+e=40 u0=1.667 u=1.679 z=14 s=7151 L=84 |V+|=1 Qlogz=2.63906 (Lumina 2.63906) Q/P=1.70054 (Lumina 1.70054) P*logz=1.55189 r>L/z=0.0000 r>sqrt(L)=0.0000 r>L=0.0000 |Gram-diag|=0.0e+00 excl=[2, 3]
+e=40 u0=2.000 u=1.998 z=14 s=3089 L=195 |V+|=2 Qlogz=2.14423 (Lumina 2.14423) Q/P=1.38169 (Lumina 1.38169) P*logz=1.55189 r>L/z=0.0000 r>sqrt(L)=0.0000 r>L=0.0000 |Gram-diag|=0.0e+00 excl=[2, 3]
+e=40 u0=3.000 u=2.996 z=14 s=223 L=2714 |V+|=11 Qlogz=1.60213 (Lumina 1.60213) Q/P=1.03237 (Lumina 1.03237) P*logz=1.55189 r>L/z=0.0000 r>sqrt(L)=0.1396 r>L=0.0000 |Gram-diag|=0.0e+00 excl=[2, 3]
+e=40 u0=4.000 u=3.971 z=14 s=17 L=35611 |V+|=14 Qlogz=1.55603 (Lumina 1.55603) Q/P=1.00266 (Lumina 1.00266) P*logz=1.55189 r>L/z=0.0000 r>sqrt(L)=0.0165 r>L=0.0000 |Gram-diag|=0.0e+00 excl=[2, 3]
+e=45 u0=1.667 u=1.673 z=20 s=22717 L=150 |V+|=2 Qlogz=2.43403 (Lumina 2.43403) Q/P=1.54896 (Lumina 1.54896) P*logz=1.57140 r>L/z=0.0000 r>sqrt(L)=0.0000 r>L=0.0000 |Gram-diag|=0.0e+00 excl=[2, 3]
+e=45 u0=2.000 u=1.999 z=20 s=8563 L=399 |V+|=4 Qlogz=2.09597 (Lumina 2.09597) Q/P=1.33383 (Lumina 1.33383) P*logz=1.57140 r>L/z=0.0596 r>sqrt(L)=0.0596 r>L=0.0000 |Gram-diag|=0.0e+00 excl=[2, 3]
+e=45 u0=3.000 u=2.998 z=20 s=431 L=7945 |V+|=22 Qlogz=1.72964 (Lumina 1.72964) Q/P=1.10070 (Lumina 1.10070) P*logz=1.57140 r>L/z=0.0000 r>sqrt(L)=0.1401 r>L=0.0000 |Gram-diag|=0.0e+00 excl=[2, 3]
+e=45 u0=4.000 u=3.976 z=20 s=23 L=148897 |V+|=44 Qlogz=1.57595 (Lumina 1.57595) Q/P=1.00290 (Lumina 1.00290) P*logz=1.57140 r>L/z=0.0011 r>sqrt(L)=0.0291 r>L=0.0000 |Gram-diag|=0.0e+00 excl=[2, 3]
+e=50 u0=1.667 u=1.678 z=28 s=72109 L=268 |V+|=2 Qlogz=2.70742 (Lumina 2.70742) Q/P=1.61921 (Lumina 1.61921) P*logz=1.67206 r>L/z=0.0000 r>sqrt(L)=0.0000 r>L=0.0000 |Gram-diag|=0.0e+00 excl=[2, 3]
+e=50 u0=2.000 u=2.000 z=28 s=24709 L=784 |V+|=4 Qlogz=2.33139 (Lumina 2.33139) Q/P=1.39432 (Lumina 1.39432) P*logz=1.67206 r>L/z=0.0596 r>sqrt(L)=0.0596 r>L=0.0000 |Gram-diag|=0.0e+00 excl=[2, 3]
+e=50 u0=3.000 u=3.000 z=28 s=883 L=21939 |V+|=35 Qlogz=1.77395 (Lumina 1.77395) Q/P=1.06094 (Lumina 1.06094) P*logz=1.67206 r>L/z=0.0036 r>sqrt(L)=0.1120 r>L=0.0000 |Gram-diag|=0.0e+00 excl=[2, 3]
+e=50 u0=4.000 u=4.005 z=28 s=31 L=624924 |V+|=82 Qlogz=1.67517 (Lumina 1.67517) Q/P=1.00186 (Lumina 1.00186) P*logz=1.67206 r>L/z=0.0005 r>sqrt(L)=0.0243 r>L=0.0000 |Gram-diag|=0.0e+00 excl=[2, 3]
+e=55 u0=1.667 u=1.672 z=40 s=228989 L=478 |V+|=4 Qlogz=2.58093 (Lumina 2.58093) Q/P=1.53355 (Lumina 1.53355) P*logz=1.68298 r>L/z=0.0596 r>sqrt(L)=0.0596 r>L=0.0000 |Gram-diag|=0.0e+00 excl=[2, 3]
+e=55 u0=2.000 u=2.000 z=40 s=68491 L=1600 |V+|=7 Qlogz=2.37318 (Lumina 2.37318) Q/P=1.41010 (Lumina 1.41010) P*logz=1.68298 r>L/z=0.0648 r>sqrt(L)=0.0648 r>L=0.0000 |Gram-diag|=0.0e+00 excl=[2, 3]
+e=55 u0=3.000 u=3.001 z=40 s=1709 L=64124 |V+|=83 Qlogz=1.81175 (Lumina 1.81175) Q/P=1.07651 (Lumina 1.07651) P*logz=1.68298 r>L/z=0.0136 r>sqrt(L)=0.1468 r>L=0.0000 |Gram-diag|=0.0e+00 excl=[2, 3]
+e=55 u0=4.000 u=3.999 z=40 s=43 L=2548565 |V+|=278 Qlogz=1.69068 (Lumina 1.69068) Q/P=1.00457 (Lumina 1.00457) P*logz=1.68298 r>L/z=0.0010 r>sqrt(L)=0.0308 r>L=0.0000 |Gram-diag|=5.6e-17 excl=[2, 3]
+e=60 u0=1.667 u=1.669 z=57 s=727021 L=852 |V+|=4 Qlogz=2.82873 (Lumina 2.82873) Q/P=1.67584 (Lumina 1.67584) P*logz=1.68795 r>L/z=0.0596 r>sqrt(L)=0.0596 r>L=0.0000 |Gram-diag|=0.0e+00 excl=[2, 3]
+e=60 u0=2.000 u=2.000 z=57 s=190807 L=3248 |V+|=11 Qlogz=2.45448 (Lumina 2.45448) Q/P=1.45412 (Lumina 1.45412) P*logz=1.68795 r>L/z=0.0984 r>sqrt(L)=0.0984 r>L=0.0000 |Gram-diag|=0.0e+00 excl=[2, 3]
+e=60 u0=3.000 u=3.000 z=57 s=3347 L=185218 |V+|=216 Qlogz=1.82346 (Lumina 1.82346) Q/P=1.08028 (Lumina 1.08028) P*logz=1.68795 r>L/z=0.0267 r>sqrt(L)=0.1815 r>L=0.0000 |Gram-diag|=5.6e-17 excl=[2, 3]
+e=60 u0=4.000 u=3.999 z=57 s=59 L=10507205 |V+|=995 Qlogz=1.69998 (Lumina 1.69998) Q/P=1.00713 (Lumina 1.00713) P*logz=1.68795 r>L/z=0.0021 r>sqrt(L)=0.0374 r>L=0.0000 |Gram-diag|=5.6e-17 excl=[2, 3]
+[PASS] A1 94d: Qlogz y Q/P de los 20 escenarios coinciden con la salida de Lumina | max desviación 4.76e-06 (redondeo a 5 decimales)
+[PASS] A2 94d: porciones r>L_s/z y r>sqrt(L_s) coinciden escenario a escenario | max desviación 4.67e-05
+[PASS] A3 Identidad diagonal Q_s = sum phi(r)C_s(r)^2 = forma de Gram (doble suma) | max |diag exacta - Gram float| = 5.6e-17
+[PASS] A4 z, y por raíz entera coinciden con int(X**0.1), int(X**(1/3))
+RANGO Qlogz = [1.55603, 2.82873]
+RANGO Q/P = [1.00186 (e=50, u0=4.000), 1.70054 (e=40, u0=1.667)]
+[PASS] A5 Mínimo real de Q/P en 94d es 1.00186 (e=50,u0=4), NO 1.00266 como dice doc 96 §3
+RANGO P*logz (parte del producto local completo) = [1.55189, 1.68795]
+[PASS] A6 Factor local fijo en 94d: los primos excluidos son {2,3} en los 20 escenarios | conjuntos excluidos: {(2, 3)}
+  u0=1.667: Q/P en [1.5335, 1.7005], Qlogz en [2.4340, 2.8287]
+  u0=2.000: Q/P en [1.3338, 1.4541], Qlogz en [2.0960, 2.4545]
+  u0=3.000: Q/P en [1.0324, 1.1007], Qlogz en [1.6021, 1.8235]
+  u0=4.000: Q/P en [1.0019, 1.0071], Qlogz en [1.5560, 1.7000]
+[PASS] A7 El extremo superior 2.82873 aparece en u0=5/3 (máxima truncación V+), con N=2^60 | Q/P=1.67584, P*logz=1.68795
+[PASS] A8 La porción r>L_s es exactamente 0 en los 20 escenarios (r|d<L_s obliga r<L_s)
+MAX r>L/z = 9.8375% (e=60, u0=2.000); MAX r>sqrt(L) = 18.1459% (e=60, u0=3.000)
+RANGO D_diag/Q_s = [1.000, 5.815]
+
+=== PARTE B — doc 96 §4 / doc 98 §5 / script 94e: masa Gram por corte ah <= R0 ===
+PARAMS N=10^12 A=3 X=333333333333 D=577350 z=14 y=6933 small=[7, 11, 13] filas(s,d)=1444 |H|=1451
+G_A = 0.450566952208  A*G_A = 1.351700856625
+[PASS] B1 Soporte y G_A reproducen doc 94 §5 (1444 filas, 1451 h, G_A=0.450566952208)
+kappa=1.0 R0=27.6  regla exacta 94e: bajo=49.169430% alto=50.8306% (energía x1.97, amplitud x1.40) | lectura 'h<=R0': alto=46.0504% (amplitud x1.47) | lectura 'A*h<=R0': alto=53.2207% (amplitud x1.37)
+kappa=2.0 R0=763.5  regla exacta 94e: bajo=73.278523% alto=26.7215% (energía x3.74, amplitud x1.93) | lectura 'h<=R0': alto=20.5904% (amplitud x2.20) | lectura 'A*h<=R0': alto=29.7870% (amplitud x1.83)
+kappa=2.5 R0=4013.2  regla exacta 94e: bajo=87.245823% alto=12.7542% (energía x7.84, amplitud x2.80) | lectura 'h<=R0': alto=5.9354% (amplitud x4.10) | lectura 'A*h<=R0': alto=16.1636% (amplitud x2.49)
+kappa=2.7 R0=7794.2  regla exacta 94e: bajo=92.878861% alto=7.1211% (energía x14.04, amplitud x3.75) | lectura 'h<=R0': alto=1.0599% (amplitud x9.71) | lectura 'A*h<=R0': alto=10.1518% (amplitud x3.14)
+kappa=2.8 R0=10862.0  regla exacta 94e: bajo=95.249831% alto=4.7502% (energía x21.05, amplitud x4.59) | lectura 'h<=R0': alto=0.5031% (amplitud x14.10) | lectura 'A*h<=R0': alto=6.8737% (amplitud x3.81)
+kappa=2.9 R0=15137.4  regla exacta 94e: bajo=97.320588% alto=2.6794% (energía x37.32, amplitud x6.11) | lectura 'h<=R0': alto=0.2648% (amplitud x19.43) | lectura 'A*h<=R0': alto=3.8867% (amplitud x5.07)
+kappa=3.0 R0=21095.5  regla exacta 94e: bajo=99.111943% alto=0.8881% (energía x112.61, amplitud x10.61) | lectura 'h<=R0': alto=0.1349% (amplitud x27.23) | lectura 'A*h<=R0': alto=1.2646% (amplitud x8.89)
+[PASS] B2 Tabla kappa del 94e reproducida con la regla m(a,h)=phi(a)phi(h)K(h)^2, corte ah<=R0 | max desviación 4.9e-07 puntos porcentuales
+[PASS] B3 La regla exacta es la mezcla (phi(1)*[corte h] + phi(3)*[corte 3h])/3, identidad exacta
+[PASS] B4 K_A(h) coincide con los ejemplos del doc 94 (K(7), K(11), K(13), K(17))
+
+=== PARTE C — doc 98 §2-3 / script 97: Delta_r con psi reales, N=999983 ===
+psi(N) = 999586.5975  (doc 97: 999586.5975)
+[PASS] C0 psi(999983) coincide con doc 97
+ r  #chi*  S_r(ruta1 sin caract.)  |S1-S2(caract.)|  M_r(Möbius sin Delta)  Delta(98.3)  |S-(M+Delta)|  |Delta|/|S|
+   3     1          -715.003847         6.13e-11          -728.187195    13.183347       2.05e-12  1.843815%
+   5     3          1046.823979         1.94e-10          1033.948475    12.875503       5.23e-11  1.229959%
+   6     0             0.000000              nan            -0.693147     0.693147       4.20e-11       nan%
+   7     5           526.208023         4.83e-10           512.586652    13.621371       6.82e-12  2.588591%
+   9     4           674.884659         5.81e-10           674.884659     0.000000       5.82e-11  0.000000%
+  11     9          2537.955621         1.93e-09          2525.966144    11.989476       6.05e-11  0.472407%
+  13    11          2934.550799         1.79e-09          2921.726052    12.824747       6.82e-12  0.437026%
+  15     3          1563.020033         2.22e-10          1563.020033    -0.000000       2.91e-11  0.000000%
+  21     5          1540.424940         6.70e-11          1554.046311   -13.621371       2.14e-11  0.884261%
+  25    16           357.544851         1.92e-09           357.544851     0.000000       0.00e+00  0.000000%
+  27    12           791.984605         7.20e-10           791.984605     0.000000       8.73e-11  0.000000%
+  35    15          2382.883582         4.84e-10          2374.499920     8.383662       1.36e-11  0.351828%
+  45    12          6417.800557         1.06e-09          6421.019433    -3.218876       1.82e-12  0.050155%
+  49    36         16933.570240         8.48e-10         16933.570240     0.000000       1.53e-10  0.000000%
+  55    27         -4682.463054         1.46e-09         -4657.598074   -24.864980       1.05e-10  0.531024%
+  63    20           739.715066         9.72e-10           739.715066     0.000000       6.55e-11  0.000000%
+  75    16          8415.115075         1.06e-09          8406.326177     8.788898       8.91e-11  0.104442%
+  99    36          3832.732623         7.86e-10          3832.732623     0.000000       1.38e-10  0.000000%
+ 105    15          4229.265967         3.31e-10          4198.715275    30.550692       1.91e-11  0.722364%
+ 225    64         -1409.821306         1.21e-09         -1409.821306     0.000000       1.82e-10  0.000000%
+ 315    60         -5594.440379         9.61e-10         -5559.032745   -35.407634       4.18e-11  0.632908%
+ 385   135          5198.822311         1.16e-09          5136.839192    61.983119       1.00e-10  1.192253%
+[PASS] C1 S_r: ruta sin caracteres = ruta con caracteres primitivos propios | max error relativo 5.4e-12 en 21 conductores impares
+[PASS] C2 Número de primitivos (test directo) = fórmula multiplicativa
+[PASS] C3 S_r es real (parte imaginaria de la ruta por caracteres) | max |Im| 1.6e-09
+[PASS] C4 Identidad corregida S_r = M_r + Delta_r (98.3), con S_r por ruta sin caracteres | max error relativo 4.2e-11 en 22 conductores
+[PASS] C5 Delta_r (98.3): evaluación con caracteres = evaluación sin caracteres | max |dif| 2.8e-13
+[PASS] C6 |Delta|/|S| de los 16 conductores del script 97 de Lumina reproducidos | max desviación 4.9e-07 puntos porcentuales
+  conjunto Lumina (doc 98): max |Delta|/|S| = 2.588591% en r=7
+  conjunto doc 100: max |Delta|/|S| = 2.588591% en r=7
+  conductores comunes a ambos conjuntos (11): [3, 5, 7, 9, 11, 15, 21, 25, 35, 45, 75]
+  solo Lumina: [55, 105, 225, 315, 385]; solo doc 100: [13, 27, 49, 63, 99]
+[PASS] C7 Tabla del doc 97 §3.2 (S_r y RHS sin Delta, 10 conductores, incluye r=6) reproducida | max desviación 4.9e-05
+[PASS] C8 r=6: no hay primitivos mod 6, S_6=0 y Delta_6 = log 2
+  r=9: 'espurio' doc 100 = log p * floor(log_p N) * sum*_(chi mod r/p) conj chi(N) = -13.1833 (doc 100: -13.1833); término real con chi*(p)=0: 0
+  r=25: 'espurio' doc 100 = log p * floor(log_p N) * sum*_(chi mod r/p) conj chi(N) = -12.8755 (doc 100: -12.8755); término real con chi*(p)=0: 0
+  r=45: 'espurio' doc 100 = log p * floor(log_p N) * sum*_(chi mod r/p) conj chi(N) = +13.1833 (doc 100: +13.1833); término real con chi*(p)=0: 0
+  r=49: 'espurio' doc 100 = log p * floor(log_p N) * sum*_(chi mod r/p) conj chi(N) = -13.6214 (doc 100: -13.6214); término real con chi*(p)=0: 0
+  r=63: 'espurio' doc 100 = log p * floor(log_p N) * sum*_(chi mod r/p) conj chi(N) = +13.1833 (doc 100: +13.1833); término real con chi*(p)=0: 0
+  r=75: 'espurio' doc 100 = log p * floor(log_p N) * sum*_(chi mod r/p) conj chi(N) = +12.8755 (doc 100: +12.8755); término real con chi*(p)=0: 0
+  r=99: 'espurio' doc 100 = log p * floor(log_p N) * sum*_(chi mod r/p) conj chi(N) = +13.1833 (doc 100: +13.1833); término real con chi*(p)=0: 0
+  r=121: 'espurio' doc 100 = log p * floor(log_p N) * sum*_(chi mod r/p) conj chi(N) = -11.9895 (doc 100: -11.9895); término real con chi*(p)=0: 0
+[PASS] C9 El 'espurio' del doc 100 se reproduce SOLO si se da a chi*(p) el valor 1 con p | r/p
+  r=9: forma ortogonal del doc 100 sin p||r = -13.1833 (columna 'espurio' del doc 100: -13.1833)
+  r=25: forma ortogonal del doc 100 sin p||r = -12.8755 (columna 'espurio' del doc 100: -12.8755)
+  r=45: forma ortogonal del doc 100 sin p||r = +0.0000 (columna 'espurio' del doc 100: +13.1833)
+  r=49: forma ortogonal del doc 100 sin p||r = -13.6214 (columna 'espurio' del doc 100: -13.6214)
+  r=63: forma ortogonal del doc 100 sin p||r = -0.0000 (columna 'espurio' del doc 100: +13.1833)
+  r=75: forma ortogonal del doc 100 sin p||r = +0.0000 (columna 'espurio' del doc 100: +12.8755)
+  r=99: forma ortogonal del doc 100 sin p||r = +13.1833 (columna 'espurio' del doc 100: +13.1833)
+  r=121: forma ortogonal del doc 100 sin p||r = -11.9895 (columna 'espurio' del doc 100: -11.9895)
+[PASS] C10 La forma ortogonal del doc 100 sin p||r NO reproduce su columna 'espurio' en todos los r (fuera de su hipótesis (p,r/p)=1 da valores sin significado) | difiere en r=[45, 63, 75]
+
+=== PARTE D — doc 99 / script 99: segundo factor corregido ===
+N=1000000: X=333333 D=577 z=3 y=69 primos pequeños=[] filas(s,d)=16 |H|=17 conductores=33
+  identidad S=M+Delta(98.3) en el soporte: max error relativo 8.1e-13
+  kappa=1.0: altos=29 B_M=1.981992172e+07 B_cross=1.513555593e+04 B_Delta=2.784367244e+02 cambio rel=7.777020e-04 |B_corr-B_directo|=0.0e+00
+  kappa=1.5: altos=16 B_M=1.073276864e+07 B_cross=-1.393005151e+04 B_Delta=9.808629169e+01 cambio rel=-1.288760e-03 |B_corr-B_directo|=0.0e+00
+  kappa=2.0: altos=1 B_M=1.295385198e+05 B_cross=-3.566649987e+01 B_Delta=2.455059728e-03 cambio rel=-2.753161e-04 |B_corr-B_directo|=0.0e+00
+N=999983: X=333327 D=577 z=3 y=69 primos pequeños=[2] filas(s,d)=33 |H|=35 conductores=69
+  identidad S=M+Delta(98.3) en el soporte: max error relativo 1.9e-10
+  kappa=1.0: altos=61 B_M=3.922249373e+07 B_cross=5.402291816e+03 B_Delta=4.676642386e+02 cambio rel=1.496579e-04 |B_corr-B_directo|=0.0e+00
+  kappa=1.5: altos=39 B_M=2.008461320e+07 B_cross=9.861162787e+03 B_Delta=3.117164947e+02 cambio rel=5.065011e-04 |B_corr-B_directo|=0.0e+00
+  kappa=2.0: altos=8 B_M=2.390575971e+06 B_cross=6.919262841e+03 B_Delta=1.708943217e+01 cambio rel=2.901540e-03 |B_corr-B_directo|=4.7e-10
+[PASS] D1 Tabla del doc 99 (N=10^6, 33 conductores) reproducida por ruta sin caracteres | max desviación relativa 3.3e-10
+[PASS] D2 Las cifras del chat que audita el doc 100 (69 conductores, B_M=3.9222e7, B_cross=5.4023e3, cambio 1.4966e-4) salen del MISMO modelo con N=999983 | B_M=3.922249e+07 B_cross=5.402292e+03 B_Delta=467.6642 cambio=1.496579e-04 altos=61
+[PASS] D3 B_Delta real con N=999983 es 467.66, no 466.7 (doc 100 lo transcribe 466,7) | B_cross/B_Delta = 11.552
+
+RESUMEN: 26/26 PASS, 0 FAIL. Tiempo 0.8 s
