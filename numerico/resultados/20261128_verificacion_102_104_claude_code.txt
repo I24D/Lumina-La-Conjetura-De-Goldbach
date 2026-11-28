@@ -1,0 +1,87 @@
+Python 3.14.10
+Soportes |H|: {'R1': 54, 'R3': 68, 'R2': 880, 'S11': 802, 'S13': 1628, 'S17': 5033}
+[PASS] S0 |H| = R1 54, R3 68, R2 880, S11 802, S13 1628, S17 5033 (doc 101)
+  gen/R1: |H_N|=54 W_max=68.26 S_BV=1.2078e+08 B_M(M)=8.2437e+07 B_M(S)=8.2420e+07 slack=100.0 S_C=3.953 S_cut=1.010 S_max=25.0 B^C/B=0.932 excC=0.999 Diag^C/B^C=1.705 (0.0 s)
+  gen/R3: |H_N|=67 W_max=68.29 S_BV=1.9289e+08 B_M(M)=1.8984e+08 B_M(S)=1.8985e+08 slack=69.4 S_C=1.006 S_cut=1.018 S_max=67.8 B^C/B=0.000 excC=0.000 Diag^C/B^C=nan (0.0 s)
+  gen/R2: |H_N|=876 W_max=1006.34 S_BV=4.1393e+09 B_M(M)=3.7771e+09 B_M(S)=3.7772e+09 slack=1102.9 S_C=2.316 S_cut=1.000 S_max=476.0 B^C/B=0.482 excC=0.999 Diag^C/B^C=1.480 (0.1 s)
+  gen/S11: |H_N|=798 W_max=907.85 S_BV=3.6662e+09 B_M(M)=3.3657e+09 B_M(S)=3.3658e+09 slack=988.9 S_C=2.200 S_cut=1.000 S_max=449.4 B^C/B=0.424 excC=0.999 Diag^C/B^C=1.495 (0.1 s)
+  gen/S13: |H_N|=1621 W_max=1889.27 S_BV=8.5149e+09 B_M(M)=7.6437e+09 B_M(S)=7.6433e+09 slack=2104.6 S_C=2.625 S_cut=1.000 S_max=801.6 B^C/B=0.555 excC=1.000 Diag^C/B^C=1.488 (0.1 s)
+  gen/S17: |H_N|=5017 W_max=5995.20 S_BV=3.2743e+10 B_M(M)=2.7876e+10 B_M(S)=2.7875e+10 slack=7041.8 S_C=3.236 S_cut=1.000 S_max=2175.8 B^C/B=0.689 excC=1.000 Diag^C/B^C=1.533 (0.3 s)
+  2e/R2: |H_N|=880 W_max=1011.28 S_BV=4.8134e+09 B_M(M)=4.0780e+09 B_M(S)=4.0784e+09 slack=1193.6 S_C=2.334 S_cut=1.000 S_max=511.3 B^C/B=0.474 excC=0.999 Diag^C/B^C=1.663 (0.1 s)
+  2e/S11: |H_N|=802 W_max=912.79 S_BV=4.3522e+09 B_M(M)=3.7102e+09 B_M(S)=3.7105e+09 slack=1070.7 S_C=2.200 S_cut=1.000 S_max=486.6 B^C/B=0.432 excC=0.999 Diag^C/B^C=1.674 (0.1 s)
+  2e/S13: |H_N|=1628 W_max=1898.02 S_BV=9.8086e+09 B_M(M)=8.3328e+09 B_M(S)=8.3332e+09 slack=2234.2 S_C=2.684 S_cut=1.000 S_max=832.2 B^C/B=0.541 excC=1.000 Diag^C/B^C=1.616 (0.1 s)
+  2e/S17: |H_N|=5033 W_max=6015.88 S_BV=3.5710e+10 B_M(M)=2.9760e+10 B_M(S)=2.9761e+10 slack=7218.7 S_C=3.353 S_cut=1.000 S_max=2153.0 B^C/B=0.693 excC=1.000 Diag^C/B^C=1.576 (0.3 s)
+  col/R2: |H_N|=425 W_max=426.02 S_BV=1.4860e+09 B_M(M)=1.4860e+09 B_M(S)=1.4859e+09 slack=426.0 S_C=1.001 S_cut=1.000 S_max=425.5 B^C/B=0.000 excC=0.000 Diag^C/B^C=nan (0.0 s)
+  col/S11: |H_N|=421 W_max=422.02 S_BV=1.4686e+09 B_M(M)=1.4686e+09 B_M(S)=1.4686e+09 slack=422.0 S_C=1.001 S_cut=1.000 S_max=421.5 B^C/B=0.000 excC=0.000 Diag^C/B^C=nan (0.0 s)
+  col/S13: |H_N|=682 W_max=683.08 S_BV=2.5838e+09 B_M(M)=2.5838e+09 B_M(S)=2.5838e+09 slack=683.1 S_C=1.001 S_cut=1.000 S_max=682.5 B^C/B=0.000 excC=0.000 Diag^C/B^C=nan (0.0 s)
+  col/S17: |H_N|=1503 W_max=1504.18 S_BV=6.6054e+09 B_M(M)=6.6054e+09 B_M(S)=6.6055e+09 slack=1504.2 S_C=1.000 S_cut=1.000 S_max=1503.6 B^C/B=0.000 excC=0.000 Diag^C/B^C=nan (0.1 s)
+
+=== Doc 102, E101.1 ===
+[PASS] D102.1 Tablas §2.2 del doc 102 (|H_N|, W_max, slack, S_Cauchy, S_max, B^C/B, Diag^C/B^C) en 10 puntos
+  θ(genérica) = 0.988 ± 0.053 (SE), IC95% ±0.147, LOO [0.927, 1.071]  (doc 102: 0,988 ± 0,053, ±0,147, [0,927, 1,071])
+  θ(2^e) = 1.036 ± 0.005 (SE), IC95% ±0.020, LOO [1.032, 1.039]  (doc 102: 1,036 ± 0,005, ±0,020, [1,032, 1,039])
+[PASS] D102.2 θ de la holgura contra |H_N| (familias genérica y 2^e)
+  colapso N=720720 R2: |H_N|=425 W_max=426.02 B_M^C=0.0 B_M/S_BV=1.000000000000
+  colapso N=720720 S11: |H_N|=421 W_max=422.02 B_M^C=0.0 B_M/S_BV=1.000000000000
+  colapso N=720720 S13: |H_N|=682 W_max=683.08 B_M^C=0.0 B_M/S_BV=1.000000000000
+  colapso N=720720 S17: |H_N|=1503 W_max=1504.18 B_M^C=0.0 B_M/S_BV=1.000000000000
+[PASS] D102.3 Familia colapso: B_M^C = 0, B_M = S_BV y slack = W_max exactos en R2/S11/S13/S17
+
+=== Doc 103: B̂₁ (criba grande restringida) y B̂₂ ===
+  Λ₂(999982) = 1.280280e+07 (doc: 1,280280e7); Λ₂(2^20) = 1.347870e+07 (doc: 1,347870e7)
+[PASS] D103.1 Λ₂(N) reproducido
+  ('gen', 'S11'): Q=16345 r2=2933 B̂_lo/B_M=2.018e+04 B̂_hi/B_M=1.020e+06 (doc: 2.02e+04, 1.02e+06)
+  ('gen', 'S13'): Q=37415 r2=10703 B̂_lo/B_M=9.763e+04 B̂_hi/B_M=2.347e+06 (doc: 9.76e+04, 2.35e+06)
+  ('gen', 'S17'): Q=144445 r2=81653 B̂_lo/B_M=1.532e+06 B̂_hi/B_M=9.583e+06 (doc: 1.53e+06, 9.58e+06)
+  ('2e', 'S11'): Q=16345 r2=2933 B̂_lo/B_M=1.944e+04 B̂_hi/B_M=9.743e+05 (doc: 1.94e+04, 9.74e+05)
+  ('2e', 'S13'): Q=37415 r2=10703 B̂_lo/B_M=9.436e+04 B̂_hi/B_M=2.266e+06 (doc: 9.44e+04, 2.27e+06)
+  ('2e', 'S17'): Q=144445 r2=81653 B̂_lo/B_M=1.510e+06 B̂_hi/B_M=9.450e+06 (doc: 1.51e+06, 9.45e+06)
+[PASS] D103.2 Q_ℋ, r₂ y cocientes B̂_lo/B_M, B̂_hi/B_M del doc 103 §2
+  pendiente B̂_lo/B_M: 2.3701 ± 0.0322, IC95% ±0.0895, LOO [2.3518, 2.3950] (doc: 2,3701 ± 0,0322, ±0,0895, [2,3518, 2,3950])
+[PASS] D103.3 C2 de B̂₁: pendiente 2,3701
+  δ_ℋ exacto gen/R1: #fracciones=12644 δ=9.1370e-06 δ⁻¹=1.0945e+05 cociente B̂₁/B_M=1.723e+05
+  δ_ℋ exacto gen/R3: #fracciones=10388 δ=8.5515e-06 δ⁻¹=1.1694e+05 cociente B̂₁/B_M=7.532e+04
+  B̂₂ (r>ln N): cocientes gen/S11=1.709, gen/S13=1.920, gen/S17=2.231, 2e/S11=1.826, 2e/S13=2.053, 2e/S17=2.318 | R1=2.934 R3=1.001 | pendiente 0.1358 ± 0.0201, LOO [0.1198, 0.1484]
+  B̂₂ (todo r∈ℋ): cocientes gen/S11=1.710, gen/S13=1.921, gen/S17=2.231, 2e/S11=1.827, 2e/S13=2.053, 2e/S17=2.318 | R1=2.972 R3=1.017 | pendiente 0.1356 ± 0.0200, LOO [0.1196, 0.1482]
+[PASS] D103.4 V103.1: cocientes B̂₂/B_M (1,709…2,318) y pendiente 0,1358 (C1 pasa, C2 falla)
+
+=== Doc 104: B̂₃ (lectura L2: clase = parte lisa en z) ===
+  B̂₃ (r>ln N): gen/S11=1.679, gen/S13=1.876, gen/S17=2.181, 2e/S11=1.798, 2e/S13=2.000, 2e/S17=2.262 | R1=2.620 | pendiente 0.1326 ± 0.0195 (IC ±0.0542), LOO [0.1168, 0.1441] | pendiente B̂₂/B̂₃ 0.0032 ± 0.0018
+  B̂₃ (todo r∈ℋ): gen/S11=1.679, gen/S13=1.877, gen/S17=2.181, 2e/S11=1.799, 2e/S13=2.000, 2e/S17=2.262 | R1=2.657 | pendiente 0.1324 ± 0.0195 (IC ±0.0541), LOO [0.1167, 0.1439] | pendiente B̂₂/B̂₃ 0.0032 ± 0.0018
+[PASS] D104.1 Cocientes B̂₃/B_M del doc 104 §2 y pendiente 0,1326 ± 0,0195 (C1 pasa, C2 falla)
+[PASS] D104.2 Descomposición exacta de pendientes: pend(B̂₂/B_M) = pend(B̂₂/B̂₃) + pend(B̂₃/B_M)
+  ρ_intra: gen/S11=0.989, gen/S13=0.987, gen/S17=0.989, 2e/S11=0.992, 2e/S13=0.987, 2e/S17=0.988  (doc 104: 0,987–0,992)
+  clases por conductor: gen/S11=1.69, gen/S13=1.96, gen/S17=2.29, 2e/S11=1.69, 2e/S13=1.96, 2e/S17=2.30
+[PASS] D104.3 ρ_intra ∈ [0,987, 0,992] en los seis puntos
+[PASS] D104.4 Lectura L1 (nueva(d) = d/(d,3)): todo r ∈ ℋ es coprimo con 3 ⇒ B̂₃ = B̂₂ idénticamente
+
+=== Extras: [P-rev] resolubles por cómputo ===
+  ('gen', 'S11'): B̂_lo^P/B_M^P=3.253e+04 B̂_lo^C/B_M^C=4.757e+04 Diag^C/B_M^C(S)=1.495  (doc 103 §3: 3.25e+04, 4.76e+04, 1.495)
+  ('gen', 'S13'): B̂_lo^P/B_M^P=5.269e+04 B̂_lo^C/B_M^C=1.760e+05 Diag^C/B_M^C(S)=1.488  (doc 103 §3: 5.27e+04, 1.76e+05, 1.488)
+  ('gen', 'S17'): B̂_lo^P/B_M^P=1.188e+05 B̂_lo^C/B_M^C=2.224e+06 Diag^C/B_M^C(S)=1.533  (doc 103 §3: 1.19e+05, 2.22e+06, 1.533)
+  ('2e', 'S11'): B̂_lo^P/B_M^P=3.182e+04 B̂_lo^C/B_M^C=4.499e+04 Diag^C/B_M^C(S)=1.674  (doc 103 §3: 3.18e+04, 4.50e+04, 1.674)
+  ('2e', 'S13'): B̂_lo^P/B_M^P=4.954e+04 B̂_lo^C/B_M^C=1.744e+05 Diag^C/B_M^C(S)=1.615  (doc 103 §3: 4.95e+04, 1.74e+05, 1.615)
+  ('2e', 'S17'): B̂_lo^P/B_M^P=1.188e+05 B̂_lo^C/B_M^C=2.180e+06 Diag^C/B_M^C(S)=1.576  (doc 103 §3: 1.19e+05, 2.18e+06, 1.576)
+[PASS] D103.5 Desglose primo/compuesto del doc 103 §3 (exhibidos por pieza) y Diag^C/B_M^C con S_r
+  max_(d>=2) W_d ('gen', 'R1'): 37.92 (W_1 = 68.26, cociente 0.5556)
+  max_(d>=2) W_d ('gen', 'R3'): 1.25 (W_1 = 68.29, cociente 0.0183)
+  max_(d>=2) W_d ('gen', 'S11'): 382.08 (W_1 = 907.85, cociente 0.4209)
+  max_(d>=2) W_d ('gen', 'R2'): 459.03 (W_1 = 1006.34, cociente 0.4561)
+  max_(d>=2) W_d ('gen', 'S13'): 870.37 (W_1 = 1889.27, cociente 0.4607)
+  max_(d>=2) W_d ('gen', 'S17'): 3021.51 (W_1 = 5995.20, cociente 0.5040)
+  max_(d>=2) W_d ('2e', 'S11'): 384.82 (W_1 = 912.79, cociente 0.4216)
+  max_(d>=2) W_d ('2e', 'R2'): 461.78 (W_1 = 1011.28, cociente 0.4566)
+  max_(d>=2) W_d ('2e', 'S13'): 874.50 (W_1 = 1898.02, cociente 0.4607)
+  max_(d>=2) W_d ('2e', 'S17'): 3033.00 (W_1 = 6015.88, cociente 0.5042)
+  δ_ℋ exacto gen/S11: #fracciones=1638434 δ⁻¹=4.8332e+07 ⇒ B̂₁/B_M = 1.876e+05 (sándwich [2.018e+04, 1.020e+06]; B̂₁/B̂_lo = 9.301) (0.5 s)
+  δ_ℋ exacto gen/S13: #fracciones=7427324 δ⁻¹=3.1343e+08 ⇒ B̂₁/B_M = 5.267e+05 (sándwich [9.763e+04, 2.347e+06]; B̂₁/B̂_lo = 5.394) (2.6 s)
+  gen/S19: |H_N|=8219 B̂₂/B_M=2.373 B̂₃/B_M=2.321 B^C/B=0.733 (0.5 s)
+  2e/S19: |H_N|=8245 B̂₂/B_M=2.429 B̂₃/B_M=2.368 B^C/B=0.734 (0.5 s)
+  gen/S23: |H_N|=17955 B̂₂/B_M=2.527 B̂₃/B_M=2.470 B^C/B=0.778 (1.3 s)
+  2e/S23: |H_N|=17999 B̂₂/B_M=2.573 B̂₃/B_M=2.512 B^C/B=0.783 (1.3 s)
+  pendiente B̂₃/B_M familia gen, S11..S23 (5 puntos): 0.1261 ± 0.0079, IC95% ±0.0251, LOO [0.1162, 0.1381]
+  pendiente B̂₃/B_M familia 2e, S11..S23 (5 puntos): 0.1073 ± 0.0075, IC95% ±0.0238, LOO [0.0957, 0.1170]
+  pendiente B̂₃/B_M, diez puntos (S11..S23 × 2 familias): 0.1168 ± 0.0087, LOO [0.1074, 0.1214]
+[PASS] D104.5 Con soportes mayores (S19, S23) la pendiente de B̂₃/B_M sigue sobre 0,1 (C2 sigue fallando) | 0.1168
+
+RESUMEN: 14/14 PASS, 0 FAIL. Tiempo 8.3 s
