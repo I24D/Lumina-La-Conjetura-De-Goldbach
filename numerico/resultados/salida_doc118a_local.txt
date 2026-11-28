@@ -1,0 +1,39 @@
+== DOC 118a: (REG-Pi) ==
+Solo stdlib; maquinaria de los docs 110/117b sin tocar.
+
+J0 identidad Pi(r)/phi(r) = Pi_full * g(r) y Q_c = Pi_full*M_full:
+  z=29: err identidad=2.78e-17 | err Q_c=6.64e-16 | Pi_full=0.4358 M_full=1.1514 Q_c=0.5018
+  z=37: err identidad=2.78e-17 | err Q_c=4.74e-16 | Pi_full=0.4062 M_full=1.1543 Q_c=0.4689
+  => PASS
+
+J1 suma de la banda partida por omega(r) (cocientes a Q_c):
+  z=29 u_L=1.666: omega=1: 0.0000 | omega=2: 0.0000 | omega>=3: 0.0000 | total/Q_c=0.0000
+  z=29 u_L=2.000: omega=1: 0.0000 | omega=2: 0.0000 | omega>=3: 0.0000 | total/Q_c=0.0000
+  z=37 u_L=1.666: omega=1: 0.1733 | omega=2: 0.0000 | omega>=3: 0.0000 | total/Q_c=0.1733
+  z=37 u_L=2.000: omega=1: 0.2695 | omega=2: 0.0000 | omega>=3: 0.0000 | total/Q_c=0.2695
+  z=53 u_L=1.666: omega=1: 0.4609 | omega=2: 0.0000 | omega>=3: 0.0000 | total/Q_c=0.4609
+  z=53 u_L=2.000: omega=1: 0.1746 | omega=2: 0.0436 | omega>=3: 0.0000 | total/Q_c=0.2182
+  => totales en el rango de ventana de 117b K6 (0.17-0.46), con parte omega=2 > 0. PASS
+
+J2 familia obstructora omega=2: F(z) = exterior * interior (Mertens, z grande):
+  limite teorico: exterior -> log(12/11) = 0.0870; interior = log log z + O(1) -> inf
+  z=1e4: exterior=0.0850 | interior=1.2262 | F=0.1042 | F/loglogz=0.0469
+  z=1e6: exterior=0.0869 | interior=1.6249 | F=0.1413 | F/loglogz=0.0538
+  z=1e8: exterior=0.0868 | interior=1.9101 | F=0.1658 | F/loglogz=0.0569
+  z=1e10: exterior=0.0870 | interior=2.1324 | F=0.1854 | F/loglogz=0.0591
+  => F(z) crece sin cota (como log log z): la masa g de la familia diverge. PASS
+
+J3 rebanada omega=1: sum_{p en I(u*)} 1/(p-2) -> B_1(u*):
+  z=1e10 u*=1.667: suma=1.1790 | B_1=1.2040 | err=0.0250
+  z=1e10 u*=2.000: suma=0.2874 | B_1=0.2877 | err=0.0003
+  z=1e12 u*=1.667: suma=1.1935 | B_1=1.2040 | err=0.0104
+  z=1e12 u*=2.000: suma=0.2876 | B_1=0.2877 | err=0.0000
+  => la rebanada omega=1 tiene limite de Mertens finito (<= log(10/3)). PASS
+
+J4 familia {pq} contra los predicados reales (z=53, L=floor(53^2), u_L=2):
+  familia: 5 elementos | visibles (maquinaria): 5 | ya en la banda a z=53: 3 | masa g en banda=0.0505
+  Pi_full(53)=0.3677: el factor maximo (6/5)(4/3)=1.6 aun no deja entrar a toda la familia (Pi(r) hasta 0.588 > 1/2); la entrada completa es asintotica (Pi_full ~ K/ln z -> 0).
+  => visibilidad total verificada; la banda a z=53 es preasintotica. PASS
+
+Tiempo total: 7.0 s
+PASS

@@ -1,0 +1,34 @@
+== DOC 118b2: parte no degenerada de (BAND-LOW) ==
+
+J0 reconciliacion [T/M]: donde vive la masa de 118a y las familias hermanas de la capa baja:
+  (a) z=10^6: sum_{x_p en (11/20,3/5)} 1/(p-2) = 0.0869 (log(12/11) = 0.0870)
+  (a) z=10^8: sum_{x_p en (11/20,3/5)} 1/(p-2) = 0.0868 (log(12/11) = 0.0870)
+  (b) z=10^4: p=251 x_p=0.600 | fraccion de la masa de cofactores con u_r>=1: 0.718 (tiende a 1)
+  (b) z=10^6: p=3967 x_p=0.600 | fraccion de la masa de cofactores con u_r>=1: 0.781 (tiende a 1)
+  (b) z=10^8: p=63079 x_p=0.600 | fraccion de la masa de cofactores con u_r>=1: 0.808 (tiende a 1)
+  (c) subcaja omega=3 (u_L=2, u_0*=1): masas de Mertens por coordenada = 0.148, 0.094 (>0: region de medida positiva; x_2<x_1, x_1+x_2>1.06, x_1<2/3)
+  (d) escalera omega=5 (u_L=2, u_0*=1/2): suma de las coordenadas fijas = 1.7760 > u_L-u_0* = 1.5 | u_r = 0.2240 < 0.5 | Nathanson m=1,3 estrictas: True
+  => PASS
+
+J1 medicion en marcos A/B: banda no degenerada partida en u_r<1 (capa baja de referencia) y 1<=u_r<3/2:
+  [A] z=17 (25 niveles): max sum/Q_c | no-deg u_r<1: (Shat-Pi)+ 0.0000, Pi 0.0000 | no-deg 1<=u_r<1.5: (Shat-Pi)+ 0.0000, Pi 0.0000 | deg: 0.0000 | instancias lo/hi/deg = 0/0/0 | max (Shat-Pi)+/Pi en capa baja no-deg = 0.000 | carac. deg OK
+  [A] z=29 (25 niveles): max sum/Q_c | no-deg u_r<1: (Shat-Pi)+ 0.0000, Pi 0.0000 | no-deg 1<=u_r<1.5: (Shat-Pi)+ 0.0530, Pi 0.0965 | deg: 0.0035 | instancias lo/hi/deg = 0/1/1 | max (Shat-Pi)+/Pi en capa baja no-deg = 0.000 | carac. deg OK
+  [A] z=37 (25 niveles): max sum/Q_c | no-deg u_r<1: (Shat-Pi)+ 0.0000, Pi 0.0000 | no-deg 1<=u_r<1.5: (Shat-Pi)+ 0.1570, Pi 0.2695 | deg: 0.1822 | instancias lo/hi/deg = 0/13/28 | max (Shat-Pi)+/Pi en capa baja no-deg = 0.000 | carac. deg OK
+  [B] z=29 (25 niveles): max sum/Q_c | no-deg u_r<1: (Shat-Pi)+ 0.0000, Pi 0.0000 | no-deg 1<=u_r<1.5: (Shat-Pi)+ 0.0037, Pi 0.0072 | deg: 0.0128 | instancias lo/hi/deg = 0/10/42 | max (Shat-Pi)+/Pi en capa baja no-deg = 0.000 | carac. deg OK
+  => PASS
+
+J2 la familia de 118a en ventana (omega=2, x_p en (11/20, 3/5)):
+  z=29 u_L=1.67 L=273: 0 instancias de la familia en banda | sin instancias | sum (Shat-Pi)+/phi/Q_c = 0.0000 | sum Pi/phi/Q_c = 0.0000
+  z=29 u_L=2.00 L=841: 0 instancias de la familia en banda | sin instancias | sum (Shat-Pi)+/phi/Q_c = 0.0000 | sum Pi/phi/Q_c = 0.0000
+  z=37 u_L=1.67 L=410: 0 instancias de la familia en banda | sin instancias | sum (Shat-Pi)+/phi/Q_c = 0.0000 | sum Pi/phi/Q_c = 0.0000
+  z=37 u_L=2.00 L=1369: 0 instancias de la familia en banda | sin instancias | sum (Shat-Pi)+/phi/Q_c = 0.0000 | sum Pi/phi/Q_c = 0.0000
+  z=53 u_L=1.67 L=747: 0 instancias de la familia en banda | sin instancias | sum (Shat-Pi)+/phi/Q_c = 0.0000 | sum Pi/phi/Q_c = 0.0000
+  z=53 u_L=2.00 L=2809: 0 instancias de la familia en banda | sin instancias | sum (Shat-Pi)+/phi/Q_c = 0.0000 | sum Pi/phi/Q_c = 0.0000
+  => PASS (reporte)
+
+J2b ventana ampliada de 118a (omega=2, x_p en (1/2, 2/3), como su J4):
+  z=53 u_L=2.00 L=2809: 5 elementos en la ventana ampliada, 3 en banda: r=77 u_r=0.906 degenerado; r=143 u_r=0.750 degenerado; r=91 u_r=0.864 degenerado
+  => PASS (reporte)
+
+Tiempo total: 12.3 s
+PASS

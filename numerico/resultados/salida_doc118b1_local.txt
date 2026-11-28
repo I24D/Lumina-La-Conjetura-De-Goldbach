@@ -1,0 +1,23 @@
+== DOC 118b1: subcapa degenerada de (BAND-LOW) ==
+J0/J1/J2 caracterizacion, Teorema A (condicional) y sumas:
+  [A] z=17: banda=0 deg=0 hist-omega={} | max sum_deg/Q_c=0.0000 | estratos:  | viol char=0 agudeza=0 p1=0
+  [A] z=29: banda=12 deg=10 hist-omega={1: 1, 2: 9} | max sum_deg/Q_c=0.1993 | estratos: q0=5:0.199 | viol char=0 agudeza=0 p1=0
+  [A] z=37: banda=110 deg=78 hist-omega={1: 31, 2: 47} | max sum_deg/Q_c=0.3554 | estratos: q0=5:0.355 | viol char=0 agudeza=0 p1=0
+  [B] z=29: banda=124 deg=100 hist-omega={2: 100} | max sum_deg/Q_c=0.0252 | estratos: q0=5:0.025 | viol char=0 agudeza=0 p1=0
+  => PASS
+
+J3 constantes de Euler y cola q0 >= q0-daga:
+  z=17: E(z)=1.8465 E/log z=0.6517 kappa0=0.8926 q0-daga=11 cola<=0.16238
+  z=29: E(z)=2.1104 E/log z=0.6267 kappa0=0.8869 q0-daga=13 cola<=0.11055
+  z=37: E(z)=2.2413 E/log z=0.6207 kappa0=0.8852 q0-daga=13 cola<=0.09521
+  z=53: E(z)=2.4494 E/log z=0.6169 kappa0=0.8834 q0-daga=13 cola<=0.07828
+  => PASS
+
+J4 obstruccion de ruta: total sin visibilidad y cota Euler del estrato q0=5:
+  [A] z=29: max sum_ALLdeg/Q_c=0.7164 | cota Euler q0=5 = 3.25 Q_c (la ruta pierde (log z)^2)
+  [A] z=37: max sum_ALLdeg/Q_c=1.4045 | cota Euler q0=5 = 3.72 Q_c (la ruta pierde (log z)^2)
+  [B] z=29: max sum_ALLdeg/Q_c=0.0252 | cota Euler q0=5 = 3.25 Q_c (la ruta pierde (log z)^2)
+  => PASS
+
+Tiempo total: 0.7 s
+PASS
