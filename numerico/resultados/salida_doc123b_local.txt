@@ -1,0 +1,186 @@
+== DOC 123b: (OUT-MASS) estructura, signo, medicion extendida, cota ==
+K0 identidades [T] sobre la capa y sobre enum completo:
+  [A] z=29 L=273: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -3.841e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=278: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -3.841e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=284: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -3.841e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=289: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -3.841e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=295: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -3.841e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=301: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -3.841e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=308: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -3.841e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=314: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -3.841e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=321: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -3.841e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=328: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -3.841e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=336: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -3.841e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=344: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -2.973e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=352: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -2.973e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=360: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -2.973e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=368: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -2.973e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=378: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -2.973e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=388: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -2.973e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=398: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -2.973e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=409: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -2.973e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=420: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -2.973e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=432: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -2.973e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=445: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -2.973e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=459: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -2.973e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=474: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -2.973e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=488: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -2.973e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=503: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -2.973e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=521: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -2.973e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=540: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -2.973e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=559: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -2.973e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=580: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -2.973e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=603: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -2.973e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=626: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -2.973e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=651: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -2.973e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=680: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -2.973e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=712: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -2.973e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=743: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -2.973e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=780: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -2.973e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=820: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -2.973e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=865: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -2.973e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=913: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -2.973e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=966: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -2.973e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=1025: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -2.973e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=1096: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -2.973e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=1173: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -2.973e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=1263: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -2.973e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=1360: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = 8.910e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=1481: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = 8.910e-17 | capa n=1
+      |delta-(E_Rem+M-P)| max = 2.78e-17 | M_far forma cerrada err = 1.53e-16 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=1621: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = 8.910e-17 | capa n=1
+      |delta-(E_Rem+M-P)| max = 2.78e-17 | M_far forma cerrada err = 1.53e-16 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=1784: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = 8.910e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=1996: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = 8.910e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=2238: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = 1.027e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=2551: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = 1.027e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=2979: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = 1.027e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=3535: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = 1.027e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=4361: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = 1.027e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=5630: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -1.716e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=7713: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -6.855e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=12378: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -4.892e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=26952: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -3.879e-17 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A] z=29 L=707281: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = -1.778e-16 | capa n=0
+      |delta-(E_Rem+M-P)| max = 0.00e+00 | M_far forma cerrada err = 0.00e+00 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A-estres] z=53 L=2585: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = 3.347e-17 | capa n=3
+      |delta-(E_Rem+M-P)| max = 2.39e-15 | M_far forma cerrada err = 3.75e-16 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A-estres] z=53 L=2745: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = 3.347e-17 | capa n=2
+      |delta-(E_Rem+M-P)| max = 2.39e-15 | M_far forma cerrada err = 1.80e-16 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A-estres] z=53 L=2922: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = 3.347e-17 | capa n=2
+      |delta-(E_Rem+M-P)| max = 2.39e-15 | M_far forma cerrada err = 3.47e-16 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  [A-estres] z=53 L=3122: sum S/phi = 1.000000000000 | sum Pi/phi = 1.000000000000 | sum delta/phi = 3.347e-17 | capa n=2
+      |delta-(E_Rem+M-P)| max = 2.39e-15 | M_far forma cerrada err = 3.47e-16 | Vhat=V^+(L/r) discrepancias = 0 | cota puntual violada = 0
+  => PASS
+
+K1 marcos estandar (doc 120a): max sobre niveles de SM/Q_c, SP/Q_c, Snet/Q_c; cancelacion pooled SP/SM:
+  [A] z=17: max SM = 0.0000 | max SP = 0.0000 | max Snet = 0.0000 | pooled SM = 0.0000 SP = 0.0000 Snet = 0.0000 | SP/SM pooled = 0.000 | sum 1/phi/Q_c en nivel de max SM = 0.0000 | err split = 0.00e+00
+  [A] z=29: max SM = 0.0533 | max SP = 0.0335 | max Snet = 0.0198 | pooled SM = 0.1066 SP = 0.0671 Snet = 0.0395 | SP/SM pooled = 0.629 | sum 1/phi/Q_c en nivel de max SM = 0.1993 | err split = 1.73e-18
+      ancla doc 122a: 0.0533 -> OK
+  [A] z=37: max SM = 0.1956 | max SP = 0.1097 | max Snet = 0.0933 | pooled SM = 2.4837 SP = 1.2266 Snet = 1.2571 | SP/SM pooled = 0.494 | sum 1/phi/Q_c en nivel de max SM = 0.5687 | err split = 9.19e-17
+      ancla doc 122a: 0.1956 -> OK
+  [B] z=29: max SM = 0.0059 | max SP = 0.0022 | max Snet = 0.0037 | pooled SM = 0.0640 SP = 0.0240 Snet = 0.0400 | SP/SM pooled = 0.376 | sum 1/phi/Q_c en nivel de max SM = 0.0145 | err split = 2.17e-19
+      ancla doc 122a: 0.0059 -> OK
+  [A-estres] z=53: max SM = 0.3152 | max SP = 0.2285 | max Snet = 0.0867 | pooled SM = 0.8191 SP = 0.6196 Snet = 0.1994 | SP/SM pooled = 0.757 | sum 1/phi/Q_c en nivel de max SM = 0.8225 | err split = 4.51e-16
+      ancla doc 122a: 0.3152 -> OK
+  => PASS
+
+K2 marcos consistentes extendidos (D = z^5, y = z^(10/3), cap=4, near_u=2.0) y niveles grandes L = z^5//5:
+  z=29: max SM = 0.0000 (en L=4102229) | max SP = 0.0000 | max Snet = 0.0000 | pooled SP/SM = 0.000 | M_far/M pooled = 0.000 | max sum 1/phi/Q_c = 0.0000
+  z=37: max SM = 0.1956 (en L=1529) | max SP = 0.1097 | max Snet = 0.0933 | pooled SP/SM = 0.517 | M_far/M pooled = 0.074 | max sum 1/phi/Q_c = 0.5687
+  z=53: max SM = 0.3152 (en L=2585) | max SP = 0.2285 | max Snet = 0.0867 | pooled SP/SM = 0.756 | M_far/M pooled = 0.145 | max sum 1/phi/Q_c = 0.8225
+  z=61: max SM = 0.1955 (en L=4214) | max SP = 0.1500 | max Snet = 0.0557 | pooled SP/SM = 0.741 | M_far/M pooled = 0.160 | max sum 1/phi/Q_c = 0.4467
+  z=67: max SM = 0.2089 (en L=4911) | max SP = 0.1493 | max Snet = 0.0681 | pooled SP/SM = 0.694 | M_far/M pooled = 0.165 | max sum 1/phi/Q_c = 0.4541
+  z=71: max SM = 0.2598 (en L=5402) | max SP = 0.2114 | max Snet = 0.0719 | pooled SP/SM = 0.759 | M_far/M pooled = 0.181 | max sum 1/phi/Q_c = 0.6182
+  tendencia de la constante C(z) = max SM/Q_c (z=29: capa vacia en los niveles capados; el marco estandar da 0.0533 — se excluye de las pendientes):
+    z= 37: C = 0.1956 | C/log z = 0.0542 | C/(log z)^2 = 0.0150
+    z= 53: C = 0.3152 | C/log z = 0.0794 | C/(log z)^2 = 0.0200 | pendiente en log-log(z) vs z prev: 5.03
+    z= 61: C = 0.1955 | C/log z = 0.0476 | C/(log z)^2 = 0.0116 | pendiente en log-log(z) vs z prev: -13.73
+    z= 67: C = 0.2089 | C/log z = 0.0497 | C/(log z)^2 = 0.0118 | pendiente en log-log(z) vs z prev: 2.93
+    z= 71: C = 0.2598 | C/log z = 0.0609 | C/(log z)^2 = 0.0143 | pendiente en log-log(z) vs z prev: 15.93
+  => PASS
+
+K3 concentracion de M (instancias de los marcos K2):
+  instancias pooled: 2127 | SM pooled = 4.0720 | top-5 cargan 16.4% | top-20 cargan 56.3%
+    z=37 L=1286 r=7 (omega=1, u_r=1.444): M/phi/Q_c = 0.1567 | M = 0.4409 | cerca/total = 0.943 | n_aus- = 127 (cerca 7)
+    z=53 L=2585 r=7 (omega=1, u_r=1.489): M/phi/Q_c = 0.1473 | M = 0.3760 | cerca/total = 0.880 | n_aus- = 2045 (cerca 9)
+    z=37 L=1358 r=7 (omega=1, u_r=1.459): M/phi/Q_c = 0.1212 | M = 0.3409 | cerca/total = 0.927 | n_aus- = 126 (cerca 6)
+    z=37 L=1437 r=7 (omega=1, u_r=1.475): M/phi/Q_c = 0.1212 | M = 0.3409 | cerca/total = 0.927 | n_aus- = 126 (cerca 6)
+    z=37 L=1529 r=7 (omega=1, u_r=1.492): M/phi/Q_c = 0.1212 | M = 0.3409 | cerca/total = 0.927 | n_aus- = 126 (cerca 6)
+    z=71 L=4421 r=11 (omega=1, u_r=1.407): M/phi/Q_c = 0.1202 | M = 0.4782 | cerca/total = 0.835 | n_aus- = 32765 (cerca 13)
+    z=71 L=4707 r=11 (omega=1, u_r=1.421): M/phi/Q_c = 0.1202 | M = 0.4782 | cerca/total = 0.835 | n_aus- = 32765 (cerca 13)
+    z=67 L=4024 r=11 (omega=1, u_r=1.404): M/phi/Q_c = 0.1134 | M = 0.4578 | cerca/total = 0.839 | n_aus- = 16381 (cerca 12)
+    z=67 L=4279 r=11 (omega=1, u_r=1.418): M/phi/Q_c = 0.1134 | M = 0.4578 | cerca/total = 0.839 | n_aus- = 16381 (cerca 12)
+    z=67 L=4573 r=11 (omega=1, u_r=1.434): M/phi/Q_c = 0.1134 | M = 0.4578 | cerca/total = 0.839 | n_aus- = 16381 (cerca 12)
+    z=67 L=4911 r=11 (omega=1, u_r=1.451): M/phi/Q_c = 0.1134 | M = 0.4578 | cerca/total = 0.839 | n_aus- = 16381 (cerca 12)
+    z=61 L=3450 r=11 (omega=1, u_r=1.398): M/phi/Q_c = 0.1061 | M = 0.4357 | cerca/total = 0.843 | n_aus- = 8189 (cerca 11)
+  SM por banda de u_r (redondeada a 0.1): 1.1: 0.0000 | 1.2: 0.0005 | 1.3: 0.2961 | 1.4: 3.0458 | 1.5: 0.7296
+  SM por omega(r): 1: 4.0679 | 4: 0.0041 | 5: 0.0000
+
+K4 estructura fina en las instancias top (r primo): reparto de M por omega(d') y criterio exacto de los ausentes cercanos con d' primo:
+  z=37 L=1286 r=7: M_cerca(omega=1) = 0.4159 | M_cerca(omega>=3) = 0.0000 | M_lejos(omega=1) = 0.0000 | M_lejos(omega>=3) = 0.0250 | conjunto de primos cercanos ausentes = 7, criterio exacto: OK
+  z=53 L=2585 r=7: M_cerca(omega=1) = 0.3309 | M_cerca(omega>=3) = 0.0000 | M_lejos(omega=1) = 0.0000 | M_lejos(omega>=3) = 0.0451 | conjunto de primos cercanos ausentes = 9, criterio exacto: OK
+  z=61 L=3450 r=11: M_cerca(omega=1) = 0.3674 | M_cerca(omega>=3) = 0.0000 | M_lejos(omega=1) = 0.0000 | M_lejos(omega>=3) = 0.0683 | conjunto de primos cercanos ausentes = 11, criterio exacto: OK
+  z=67 L=4024 r=11: M_cerca(omega=1) = 0.3840 | M_cerca(omega>=3) = 0.0000 | M_lejos(omega=1) = 0.0000 | M_lejos(omega>=3) = 0.0738 | conjunto de primos cercanos ausentes = 12, criterio exacto: OK
+  z=71 L=4421 r=11: M_cerca(omega=1) = 0.3992 | M_cerca(omega>=3) = 0.0000 | M_lejos(omega=1) = 0.0000 | M_lejos(omega>=3) = 0.0790 | conjunto de primos cercanos ausentes = 13, criterio exacto: OK
+  => PASS
+
+Tiempo total: 91.1 s
+PASS

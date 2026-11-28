@@ -1,0 +1,40 @@
+== DOC 123a: (WIT) — intento de prueba y busqueda adversarial ==
+K0 [A z=17] c: {5: [], 7: [], 11: []} | Nmax=0 | coincide con 122b: True
+K0 [A z=29] c: {5: [1, 5, 7], 7: [], 11: []} | Nmax=3 | coincide con 122b: True
+K0 [A z=37] c: {5: [1, 5, 7], 7: [], 11: []} | Nmax=3 | coincide con 122b: True
+K0 [B z=29] c: {5: [1], 7: [], 11: []} | Nmax=1 | coincide con 122b: True
+K0 [A z=53] c: {5: [1, 5, 7], 7: [1, 7, 11], 11: []} | Nmax=3 | coincide con 122b: True
+K0 => OK
+K1 validacion: err Pi=4.8e-16 | ligero z=53 c={5: [1, 5, 7], 7: [1, 7, 11], 11: []} | coincide con real: True
+K1 [A z=61] q0=5: c=[1, 5, 7] Nmax=3 viol=[]
+K1 [A z=61] q0=7: c=[1, 7, 11, 13] Nmax=4 viol=[(39179, 115, 13), (39179, 115, 'N=4')]
+K1 [A z=61] q0=11: sin degenerados en banda
+K1 [A z=67] q0=5: c=[1, 5, 7] Nmax=3 viol=[]
+K1 [A z=67] q0=7: c=[1, 7, 11, 13] Nmax=4 viol=[(28942, 85, 13), (28942, 85, 'N=4')]
+K1 [A z=67] q0=11: sin degenerados en banda
+K1 [B z=61] q0=5: c=[1, 5, 7] Nmax=3 viol=[]
+K1 [B z=61] q0=7: c=[1, 7, 11] Nmax=3 viol=[]
+K1 [B z=61] q0=11: sin degenerados en banda
+K1 => OK
+K2 CONTRAEJEMPLO z=127 marco A: D=33038369407 s=127 L=260144641
+   r = 364105, primos(r) = (5, 7, 101, 103)
+   q0(r) = 11 (allow[0..]=[5, 7, 11, 13]...), q0+ = 13
+   degenerado: q0^3*r = 484623755 >= L = 260144641 : True
+   banda: Pi(r) = 0.495342 < 1/2 : True ; u_r = 1.3566 < 3/2 : True
+   visible: r en V+(L) : True ; margenes Nathanson de r: [(1, 1092727, 'True<L'), (3, 3568229, 'True<L')]
+   testigos de r: c en [1, 11, 13, 17, 19, 23] ; N(r) = 6
+   c = 17 (primos (17,)) FUERA de {1, q0, q0+}: d = c*r = 6189785 en V+(L): True
+      margenes Nathanson de d: [(1, 103, 1092727, True), (3, 17, 51109939, True), (5, 5, 154744625, True)]
+   c = 19 (primos (19,)) FUERA de {1, q0, q0+}: d = c*r = 6917995 en V+(L): True
+      margenes Nathanson de d: [(1, 103, 1092727, True), (3, 19, 71354177, True), (5, 5, 172949875, True)]
+   c = 23 (primos (23,)) FUERA de {1, q0, q0+}: d = c*r = 8374415 en V+(L): True
+      margenes Nathanson de d: [(1, 103, 1092727, True), (3, 23, 126573301, True), (5, 5, 209360375, True)]
+K2 estrato 5: sin contraejemplo en el barrido dirigido
+K2 estrato 7: sin contraejemplo en el barrido dirigido
+K2 estrato 11: contraejemplo registrado (z=127, marco A)
+K2 => CONTRAEJEMPLO
+K3 robustez (z=127, r=364105, marco A): 17 niveles con violacion de (WIT) entre s en [127, 8000]; ejemplos: [(127, [1, 11, 13, 17, 19, 23]), (131, [1, 11, 13, 17, 19, 23]), (137, [1, 11, 13, 17, 19, 23]), (139, [1, 11, 13, 17, 19, 23]), (149, [1, 11, 13, 17, 19, 23])]
+K3 => OK
+
+Tiempo total: 10.4 s
+PASS
