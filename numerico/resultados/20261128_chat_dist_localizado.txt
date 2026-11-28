@@ -1,0 +1,4 @@
+﻿N=200002 A=3 z=11 y=37 D=6000 rows=16 H=20 R=-101.899210914 rebuilt=-101.899210914 err=9.663e-13 max_module_err=9.095e-13 EA=220.875383 I=1.931572 B_local=2.583929e+06 G_local=3.121650e-01
+N=200002 A=9 z=11 y=37 D=6000 rows=16 H=20 R=96.359830925 rebuilt=96.359830925 err=9.805e-13 max_module_err=2.274e-13 EA=149.502640 I=0.337900 B_local=9.773076e+05 G_local=3.121650e-01
+N=200002 A=27 z=11 y=37 D=6000 rows=16 H=20 R=80.231493795 rebuilt=80.231493795 err=1.137e-13 max_module_err=1.421e-14 EA=-87.296482 I=0.213746 B_local=7.826191e+05 G_local=3.121650e-01
+PASS 3 proxy selectors; exact local regrouping and Cauchy checked; no asymptotic claim

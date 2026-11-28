@@ -1,0 +1,19 @@
+﻿r=   3 |S|=7.150038472e+02 |Delta|/|S|=1.843815% abs_error=3.262e-09 rel_error=4.563e-12
+r=   5 |S|=1.046823979e+03 |Delta|/|S|=1.229959% abs_error=1.066e-09 rel_error=1.019e-12
+r=   7 |S|=5.262080232e+02 |Delta|/|S|=2.588591% abs_error=6.997e-10 rel_error=1.330e-12
+r=  11 |S|=2.537955621e+03 |Delta|/|S|=0.472407% abs_error=1.564e-09 rel_error=6.163e-13
+r=  15 |S|=1.563020033e+03 |Delta|/|S|=0.000000% abs_error=6.563e-09 rel_error=4.199e-12
+r=  21 |S|=1.540424940e+03 |Delta|/|S|=0.884261% abs_error=2.245e-10 rel_error=1.457e-13
+r=  35 |S|=2.382883582e+03 |Delta|/|S|=0.351828% abs_error=1.648e-09 rel_error=6.914e-13
+r=  55 |S|=4.682463054e+03 |Delta|/|S|=0.531024% abs_error=4.472e-09 rel_error=9.551e-13
+r= 105 |S|=4.229265967e+03 |Delta|/|S|=0.722364% abs_error=2.479e-09 rel_error=5.862e-13
+r= 385 |S|=5.198822311e+03 |Delta|/|S|=1.192253% abs_error=5.921e-10 rel_error=1.139e-13
+r=   9 |S|=6.748846593e+02 |Delta|/|S|=0.000000% abs_error=6.549e-09 rel_error=9.703e-12
+r=  25 |S|=3.575448510e+02 |Delta|/|S|=0.000000% abs_error=2.859e-09 rel_error=7.995e-12
+r=  45 |S|=6.417800557e+03 |Delta|/|S|=0.050155% abs_error=4.436e-09 rel_error=6.911e-13
+r=  75 |S|=8.415115075e+03 |Delta|/|S|=0.104442% abs_error=3.938e-09 rel_error=4.680e-13
+r= 225 |S|=1.409821306e+03 |Delta|/|S|=0.000000% abs_error=5.280e-10 rel_error=3.745e-13
+r= 315 |S|=5.594440379e+03 |Delta|/|S|=0.632908% abs_error=3.606e-09 rel_error=6.446e-13
+MAX_ABSOLUTE_ERROR 6.562686401404856e-09
+MAX_RELATIVE_ERROR 9.703162928051567e-12
+DELTA_RATIO_RANGE 0.0 0.02588590527312552

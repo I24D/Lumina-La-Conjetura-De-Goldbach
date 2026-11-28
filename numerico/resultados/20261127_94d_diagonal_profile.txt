@@ -1,0 +1,24 @@
+﻿e=40 u0=1.667 u=1.679 z=14 s=7151 Qlog=2.63906 Q/P=1.70054 d=e/Q=1.000e+00 r>L/z share=0.0000 r>sqrt(L) share=0.0000 max|C/Cfull|=1.9394
+e=40 u0=2.000 u=1.998 z=14 s=3089 Qlog=2.14423 Q/P=1.38169 d=e/Q=1.538e+00 r>L/z share=0.0000 r>sqrt(L) share=0.0000 max|C/Cfull|=1.4545
+e=40 u0=3.000 u=2.996 z=14 s=223 Qlog=1.60213 Q/P=1.03237 d=e/Q=2.844e+00 r>L/z share=0.0000 r>sqrt(L) share=0.1396 max|C/Cfull|=1.6000
+e=40 u0=4.000 u=3.971 z=14 s=17 Qlog=1.55603 Q/P=1.00266 d=e/Q=2.944e+00 r>L/z share=0.0000 r>sqrt(L) share=0.0165 max|C/Cfull|=1.2000
+e=45 u0=1.667 u=1.673 z=20 s=22717 Qlog=2.43403 Q/P=1.54896 d=e/Q=1.538e+00 r>L/z share=0.0000 r>sqrt(L) share=0.0000 max|C/Cfull|=1.6428
+e=45 u0=2.000 u=1.999 z=20 s=8563 Qlog=2.09597 Q/P=1.33383 d=e/Q=2.084e+00 r>L/z share=0.0596 r>sqrt(L) share=0.0596 max|C/Cfull|=1.3690
+e=45 u0=3.000 u=2.998 z=20 s=431 Qlog=1.72964 Q/P=1.10070 d=e/Q=3.323e+00 r>L/z share=0.0000 r>sqrt(L) share=0.1401 max|C/Cfull|=1.9394
+e=45 u0=4.000 u=3.976 z=20 s=23 Qlog=1.57595 Q/P=1.00290 d=e/Q=3.700e+00 r>L/z share=0.0011 r>sqrt(L) share=0.0291 max|C/Cfull|=1.2121
+e=50 u0=1.667 u=1.678 z=28 s=72109 Qlog=2.70742 Q/P=1.61921 d=e/Q=1.538e+00 r>L/z share=0.0000 r>sqrt(L) share=0.0000 max|C/Cfull|=1.7210
+e=50 u0=2.000 u=2.000 z=28 s=24709 Qlog=2.33139 Q/P=1.39432 d=e/Q=2.084e+00 r>L/z share=0.0596 r>sqrt(L) share=0.0596 max|C/Cfull|=1.4342
+e=50 u0=3.000 u=3.000 z=28 s=883 Qlog=1.77395 Q/P=1.06094 d=e/Q=3.782e+00 r>L/z share=0.0036 r>sqrt(L) share=0.1120 max|C/Cfull|=2.0687
+e=50 u0=4.000 u=4.005 z=28 s=31 Qlog=1.67517 Q/P=1.00186 d=e/Q=4.050e+00 r>L/z share=0.0005 r>sqrt(L) share=0.0243 max|C/Cfull|=1.5515
+e=55 u0=1.667 u=1.672 z=40 s=228989 Qlog=2.58093 Q/P=1.53355 d=e/Q=2.084e+00 r>L/z share=0.0596 r>sqrt(L) share=0.0596 max|C/Cfull|=1.5825
+e=55 u0=2.000 u=2.000 z=40 s=68491 Qlog=2.37318 Q/P=1.41010 d=e/Q=2.487e+00 r>L/z share=0.0648 r>sqrt(L) share=0.0648 max|C/Cfull|=1.8990
+e=55 u0=3.000 u=3.001 z=40 s=1709 Qlog=1.81175 Q/P=1.07651 d=e/Q=4.495e+00 r>L/z share=0.0136 r>sqrt(L) share=0.1468 max|C/Cfull|=2.3797
+e=55 u0=4.000 u=3.999 z=40 s=43 Qlog=1.69068 Q/P=1.00457 d=e/Q=4.884e+00 r>L/z share=0.0010 r>sqrt(L) share=0.0308 max|C/Cfull|=1.9632
+e=60 u0=1.667 u=1.669 z=57 s=727021 Qlog=2.82873 Q/P=1.67584 d=e/Q=2.084e+00 r>L/z share=0.0596 r>sqrt(L) share=0.0596 max|C/Cfull|=1.7330
+e=60 u0=2.000 u=2.000 z=57 s=190807 Qlog=2.45448 Q/P=1.45412 d=e/Q=2.844e+00 r>L/z share=0.0984 r>sqrt(L) share=0.0984 max|C/Cfull|=2.2875
+e=60 u0=3.000 u=3.000 z=57 s=3347 Qlog=1.82346 Q/P=1.08028 d=e/Q=5.342e+00 r>L/z share=0.0267 r>sqrt(L) share=0.1815 max|C/Cfull|=2.6603
+e=60 u0=4.000 u=3.999 z=57 s=59 Qlog=1.69998 Q/P=1.00713 d=e/Q=5.815e+00 r>L/z share=0.0021 r>sqrt(L) share=0.0374 max|C/Cfull|=2.3272
+FULL_PRODUCT_IDENTITY_MAX_ERROR 9.43689570931383e-16
+QLOG_RANGE 1.5560256696390462 2.8287320502384095
+HIGH_R_SHARE_RANGE 0.0 0.09837534515574506
+DIAGONAL_d_equals_e_OVER_Q_RANGE 1.0 5.815461841245057

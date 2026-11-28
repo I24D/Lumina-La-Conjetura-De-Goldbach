@@ -1,0 +1,14 @@
+﻿PARAMS N=1000000000000 A=3 X=333333333333 z=14 y=6933 D=577350 small_primes=[7, 11, 13]
+SUPPORT rows=1444 distinct_h=1451 bad_support=0
+K_A(r) examples: K(3)=0.427962281933 K(7)=-0.067848416650 K(11)=-0.028330369695 K(13)=-0.020169817129 K(21)=-0.067848416650 K(17)=0.021527777778
+GRAM norm=0.450566952208 direct_gram=0.450566952208 abs_majorant=1.172357731746 signed/abs=0.384325
+CAUCHY exponents: c=0.039884: exponent=-0.220087; c=0.117647: exponent=-0.161765; c=0.300000: exponent=-0.025000; c=0.333333: exponent=0.000000
+PASS
+PARAMS N=1000000000000 A=3 G=0.450566952208 total_conductor_mass=1.351700856625
+kappa=1.0 R0=27.631 low_mass=0.664623599939 low_share=49.169430% high_mass=0.687077256686 high_share=50.830570% low_pairs=9 high_pairs=2893
+kappa=2.0 R0=763.473 low_mass=0.990506428062 low_share=73.278523% high_mass=0.361194428563 high_share=26.721477% low_pairs=247 high_pairs=2655
+kappa=2.5 R0=4013.214 low_mass=1.179302538707 low_share=87.245823% high_mass=0.172398317918 high_share=12.754177% low_pairs=1089 high_pairs=1813
+kappa=2.7 R0=7794.203 low_mass=1.255444359865 low_share=92.878861% high_mass=0.096256496760 high_share=7.121139% low_pairs=1785 high_pairs=1117
+kappa=2.8 R0=10862.040 low_mass=1.287492782975 low_share=95.249831% high_mass=0.064208073650 high_share=4.750169% low_pairs=2048 high_pairs=854
+kappa=2.9 R0=15137.394 low_mass=1.315483224294 low_share=97.320588% high_mass=0.036217632331 high_share=2.679412% low_pairs=2318 high_pairs=584
+kappa=3.0 R0=21095.548 low_mass=1.339696982163 low_share=99.111943% high_mass=0.012003874462 high_share=0.888057% low_pairs=2621 high_pairs=281

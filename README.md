@@ -91,3 +91,50 @@ Procedencia: Codex, modelo exacto no expuesto; lectura primaria y derivación, e
 - La localizacion de ceros sola no controla el Tipo II aditivo. La pista transferible es la positividad unilateral en ventanas, realizada por ganancias locales de reticulos.
 - Nueva identidad puntual de Riesz: `R_1(N)=R(N)/2`; suaviza una variable sin perder el coeficiente individual N.
 - [14: colapso exacto de divisores de N](matematicas/14_colapso_divisores_de_N.md): corrige el frente de 12; `G_a=0` para `omega(a)>=2`, las piezas `a=ell|N` son poli-logaritmicas y la unica pieza grande es `G_1`, esencialmente la propia correlacion de Goldbach. Verificacion: 549 casos, PASS.
+
+
+## Aporte LUMINA — 2026-11-27: UNIF-U-COND y norma de Gram
+
+- [94: compresión por conductor y norma de Gram](matematicas/94_unif_u_cond_conductores_grama.md).
+- Scripts reproducibles: numerico/94_conductores_grama.py, numerico/94b_norma_un_s.py y numerico/94c_gram_split_check.py.
+- **[T]** La transferencia a conductores primitivos se agrupa por la parte nueva h; la energía de los coeficientes satisface la identidad exacta de Gram/gcd.
+- **[NUM]** En el proxy N=10^12, A=3, los scripts 94 y 94c verifican G=0.450566952208 por rutas distintas; la partición smooth/switch coincide con error máximo 3.1e-16. El script 94b explora 20 bloques finitos en N=2^40,...,2^60.
+- **[N]** Sigue abierta la cota uniforme Q_s << 1/log z y el momento de bloques primitivos necesario para UNIF-U-COND. Ninguna ejecución finita demuestra esas cotas.
+- **Errata 92.1:** el momento amplio debe incluir (q,N)=1; el contraejemplo q=2 para N par está documentado en el doc 94. UNIF-U-2M-R, en su forma amplia corregida, implica GRH para caracteres primitivos impares; no se afirma una no-implicación lógica de GRH.
+- Goldbach fuerte sigue abierta. Las ejecuciones en la PC LUMINA son reproducibilidad, no revisión independiente.
+
+
+## Revisión adversarial doc 95 y diagonalización gcd — 2026-11-27
+
+- [96: respuesta a la revisión y nueva ruta diagonal](matematicas/96_respuesta_adversarial_doc95_y_ruta_diagonal.md).
+- Diagnósticos reproducibles: numerico/94d_diagonal_profile.py y numerico/94e_conductor_cutoff_profile.py.
+- Resultados: numerico/resultados/20261127_94d_diagonal_profile.txt y numerico/resultados/20261127_94e_conductor_cutoff_profile.txt.
+- **[T]** La forma positiva exacta es Q_s = sum_r phi(r) C_s(r)^2. El producto de referencia para todos los divisores se verifica con error máximo 9.44e-16.
+- **[NUM]** En 20 escenarios N=2^e, A=3, Q_s log z=1.556–2.829; Q_s/P_local=1.003–1.701. La diagonal d=e por sí sola es 1–5.82 veces Q_s y no basta.
+- **[NUM]** La masa de conductores ah<=R0 depende de kappa: 92.88% con kappa=2.7 y 95.25% con kappa=2.8 en el proxy N=10^12,A=3.
+- **[N]** Falta comparar V+ con el producto completo uniformemente, estimar la cola r>L_s/z y demostrar el momento de bloques de caracteres restringido a H_A. Goldbach sigue abierta.
+
+
+## Corrección imprimitiva y segundo factor — 2026-11-27
+
+- Doc 96, sección 5, retirada por omitir la corrección de inducción. Errata añadida al final del propio doc 96.
+- [98: derivación exacta de Delta_r, fórmula reducida, auditoría de 94d/94e y nueva prioridad analítica](matematicas/98_correccion_imprimitiva_delta_y_auditoria_94d_94e.md).
+- Prueba independiente: numerico/97_imprimitive_correction_check.py; salida numerico/resultados/20261127_97_imprimitive_correction_check.txt.
+- [T] Identidad corregida: S_r = sum_{d|r} mu(r/d) phi(d) E(N;d,N) + Delta_r.
+- [T] Delta_r solo recibe correcciones de inducción de primos p||r; el término principal adicional aparece cuando r es primo.
+- [NUM] 16 conductores impares, N=999983: error absoluto máximo 6.5627e-9; relativo máximo 9.7032e-12; max |Delta_r|/|S_r| 2.5886%.
+- 94d: L_s=floor(D/s), D=floor(sqrt X) en el proxy; la masa alta se atribuye por el índice divisor r de Q_s= sum phi(r) C_s(r)^2.
+- 94e: masa completa del conductor r=ah, con peso phi(ah)|K_A(h)|^2; en kappa=2.7, 92.878861% bajo R0 y 7.121139% arriba.
+- La mejora 14.04 es del factor de energía/cuadrado; la mejora en amplitud tras Cauchy es sqrt(14.04)=3.75.
+- [N] Prioridad: estimar el segundo factor B_{>R0} con Delta incluido. Goldbach sigue abierta.
+
+
+## Segundo factor corregido — primer proxy finito, 2026-11-27
+
+- [99: diagnóstico del segundo factor corregido en el soporte de conductores](matematicas/99_segundo_factor_proxy_corregido.md).
+- Script: numerico/99_second_factor_support_proxy.py; salida: numerico/resultados/20261127_99_second_factor_support_proxy.txt.
+- [NUM] N=1,000,000 par, A=3, D=577, z=3, y=69; 16 pares de switching, 17 partes nuevas, 33 conductores completos.
+- [NUM] S_r directo por caracteres primitivos vs M_r+Delta_r: error absoluto máximo 1.3741e-8; relativo máximo 4.19e-11.
+- [NUM] Para kappa=1, Bcross/BM=7.6365e-4, Bdelta/BM=1.4048e-5 y cambio relativo total 7.7770e-4. El término cruzado domina y puede cambiar de signo.
+- Limitación: z=3 y D=sqrt(X) sin pérdida logarítmica; proxy finito, no evidencia asintótica.
+- [N] B_M sigue sin cota útil; siguiente tarea es el momento restringido sobre R_A.

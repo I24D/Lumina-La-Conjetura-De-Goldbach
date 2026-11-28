@@ -570,3 +570,51 @@ umerico/deficit_unilateral.py; esultados/20261124_224341_...json y 20261124_224
 - **[T]** El input de distribucion para a_Q(v)=Lambda(N-Qv) es un subconjunto de Bombieri--Vinogradov sobre modulos Qd y conserva nivel 1/2 salvo perdidas polilogaritmicas.
 - **[P]** Falta auditar el switching completo de Chen uniformemente para Q<=log^B N; no basta citar BV. **[N]/[FALSO]** la hipotesis finita H2 fallo en 11 casos para k=3 y 1895 para k=4 hasta 50000 (H1 exacta PASS).
 - Evidencia: `matematicas/83_selector_polilog_y_objetivo_chen.md`; `python numerico/83_selector_polilog_chen.py` exit 0. Siguiente: auditar Chen con modulo exterior polilogaritmico y el posible modulo excepcional. Goldbach sigue abierta.
+
+
+## Bucle LUMINA — 2026-11-27 — UNIF-U-COND: compresión por conductor y norma de Gram
+
+- **[T]** Para q=Am, con (A,m)=1 y soporte m=sd, la contribución de un carácter primitivo de conductor admisible r=ah se agrupa por su parte nueva h; el coeficiente exacto es K_A(h)=1/phi(A) sum_{m:h|m} b_A(m)/phi(m).
+- **[T]** La energía satisface la identidad exacta
+  G_A = 1/phi(A)^2 sum_{m,n} b_A(m)b_A(n)(m,n)/(phi(m)phi(n)).
+- **[T]** Se separan exactamente los conductores h=h0 (solo primos menores que z) y h=s h0 (un primo de switching). La reducción es a la norma de un bloque Q_s; la cota uniforme Q_s << 1/log z sigue **[N]**, no demostrada.
+- **[NUM]** Scripts 94, 94b y 94c: PASS. Para N=10^12,A=3, G=0.450566952208; la partición G_smooth=0.228419312130, G_switch=0.222147640078 coincide con error máximo 3.1e-16. El experimento 94b mide 20 casos finitos, no establece uniformidad asintótica.
+- **[T] Errata 92.1:** debe incluir (q,N)=1. Para N=10^6,q=2, E=-999573.427699... y E^2/[N(log N)^5]=1.98516; H1/H2 ya excluían esos módulos.
+- **[T]** El momento amplio UNIF-U-2M-R corregido implica GRH para caracteres primitivos no principales de conductor impar. No se ha probado que GRH por sí sola no implique esa estimación; la distinción lógica queda explícita.
+- **[N]** UNIF-U-COND sigue abierto: faltan la cota uniforme de Gram y el momento de bloques primitivos. No se demuestra Goldbach.
+- Evidencia: matematicas/94_unif_u_cond_conductores_grama.md; numerico/94_conductores_grama.py, 94b_norma_un_s.py, 94c_gram_split_check.py. La revisión independiente de Dal queda pendiente; las ejecuciones de esta PC no cuentan como revisión independiente según el contrato del repositorio.
+
+
+## Bucle LUMINA — 2026-11-27 — Respuesta a revisión adversarial doc 95
+
+- **[T]** Se conserva la identidad Gram/gcd y la versión de límite fijo z_A. La versión variable requiere incluir la cola de segundos primos de switching s'>s; no usar la fórmula de un solo switching sin esa cola.
+- **[T]** Diagonalización exacta: Q_s = sum_{r|P(z_A)} phi(r) C_s(r)^2, con C_s(r)=sum_{d in V+(D_A/s), r|d} mu(d)/phi(d).
+- **[T]** Para el conjunto completo de divisores, Q_full factoriza como el producto local P_{A,N}(z_A). Para N variable, los factores excluidos p|N aportan dependencia de serie singular; no suponer una constante absoluta independiente de N.
+- **[NUM]** 94d: 20 escenarios, Q_s log z=1.556–2.829, Q_s/P_local=1.003–1.701; error de identidad del producto 9.44e-16. La diagonal d=e no basta; su contribución/Q_s llega a 5.82.
+- **[NUM]** 94e: en N=10^12,A=3, la fracción de energía Gram con ah<=R0 es 92.88% para kappa=2.7 y 95.25% para kappa=2.8; el porcentaje depende de kappa.
+- **[T]** El puente formal de Cauchy existe en doc94; sigue sin demostrarse el momento B_{>R0}. Nueva identidad de Möbius: S_r(N)=sum_{d|r} mu(r/d)phi(d)E(N;d,N), para r>1 y (r,N)=1.
+- **[N]** Lema uniforme para Q_s, cola r>L_s/z_A, gran criba restringida a H_A y puente cuantitativo suficiente hacia R_A siguen abiertos.
+- Evidencia: matematicas/96_respuesta_adversarial_doc95_y_ruta_diagonal.md; numerico/94d_diagonal_profile.py; numerico/94e_conductor_cutoff_profile.py; resultados 20261127_94d_diagonal_profile.txt y 20261127_94e_conductor_cutoff_profile.txt.
+
+
+## Bucle LUMINA — 2026-11-27 — Corrección imprimitiva doc 96 / revisión doc 97
+
+- Corrección: la fórmula S_r = sum_{d|r} mu(r/d) phi(d) E(N;d,N) del doc 96, sec. 5, era incompleta. Añadida errata al doc 96; no usar sin Delta_r.
+- [T] Definición exacta: Delta_r = sum_{d|r} mu(r/d)[sum_{c|d,c>1} I_{d,c} + Theta(d)], donde I_{d,c} contiene potencias p^j para p|d, p∤c, ponderadas por caracteres primitivos de conductor c.
+- [T] Forma reducida: Delta_r = 1_{r primo} Theta_r + sum_{p||r,r/p>1} sum_{chi* mod r/p} conj(chi*(N)) sum_{p^j<=N} chi*(p)^j log p.
+- [NUM] Nueva prueba independiente con caracteres explícitos y psi de potencias primas: 16 conductores impares, N=999983; error absoluto max 6.5627e-9, relativo max 9.7032e-12, max Delta/S 2.5886%.
+- [T/NUM] 94d asigna la masa por el índice divisor r de la diagonalización positiva; L_s=floor(D/s), D=floor(sqrt X) en el proxy, sin pérdida logarítmica.
+- [T/NUM] 94e asigna masa al conductor completo ah con peso phi(ah)|K_A(h)|²; kappa=2.7: masa baja 92.878861%, alta 7.121139%. Cociente de energía 14.04; mejora de amplitud por Cauchy 3.75.
+- [N] El peso de corrección 1.24e-4 informado por Dal en doc 97 no está reproducido con su conjunto exacto de diez conductores.
+- Prioridad: estimar el segundo factor B_{>R0} corregido, separando M_r, 2 Re(M_r conjugate Delta_r), y |Delta_r|². No crear otra identidad para el primer factor.
+- Evidencia: matematicas/98_correccion_imprimitiva_delta_y_auditoria_94d_94e.md; numerico/97_imprimitive_correction_check.py; numerico/resultados/20261127_97_imprimitive_correction_check.txt.
+
+
+## Bucle LUMINA — 2026-11-27 — Primer proxy del segundo factor corregido
+
+- [NUM] Se enumeró el soporte del doc 94 con N=1,000,000 par y A=3: 16 pares (s,d), 17 partes nuevas h, 33 conductores completos r=ah.
+- [NUM] Para los 33 conductores, la suma directa de caracteres primitivos coincide con M_r+Delta_r: error absoluto max 1.3741e-8, relativo max 4.19e-11.
+- [NUM] kappa=1: BM=1.9819922e7; Bcross=1.5136e4; Bdelta=278.44; cambio neto 7.7770e-4. Bdelta/BM=1.4048e-5; Bcross domina. El signo del término cruzado cambia con kappa.
+- Limitación explícita: z=3 y D=sqrt(X) sin pérdida logarítmica; el proxy solo comprueba aritmética finita y sensibilidad al corte.
+- [N] No se obtuvo una cota útil de BM. Próximo objetivo: estimar el momento restringido a R_A, conservando la estructura de los divisores y sin sustituirlo por el momento amplio de doc 92.
+- Evidencia: matematicas/99_segundo_factor_proxy_corregido.md; numerico/99_second_factor_support_proxy.py; numerico/resultados/20261127_99_second_factor_support_proxy.txt.

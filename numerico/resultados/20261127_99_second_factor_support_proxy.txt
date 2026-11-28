@@ -1,0 +1,8 @@
+﻿PARAMS N=1000000 A=3 X=333333 D=577 z=3 y=69 small=[]
+SUPPORT rows=16 H=17 conductors=33
+PRIMITIVE_SUMS nonzero=33
+IDENTITY max_abs_error=1.374088e-08 max_rel_error=4.186868e-11
+kappa=1.0 R0=13.816 high=29 BM=1.981992172e+07 Bcross=1.513555593e+04 Bdelta=2.784367244e+02 Bcorr=1.983533571e+07 Bdirect=1.983533571e+07 cross_over_BM=7.636537e-04 delta_over_BM=1.404833e-05 net_rel_change=7.777020e-04 delta_energy_share=1.403741e-05 direct_error=9.999e-06
+kappa=1.5 R0=51.351 high=16 BM=1.073276864e+07 Bcross=-1.393005151e+04 Bdelta=9.808629168e+01 Bcorr=1.071893667e+07 Bdirect=1.071893667e+07 cross_over_BM=-1.297899e-03 delta_over_BM=9.138955e-06 net_rel_change=-1.288760e-03 delta_energy_share=9.150748e-06 direct_error=1.600e-06
+kappa=2.0 R0=190.868 high=1 BM=1.295385198e+05 Bcross=-3.566649987e+01 Bdelta=2.455059728e-03 Bcorr=1.295028558e+05 Bdirect=1.295028558e+05 cross_over_BM=-2.753351e-04 delta_over_BM=1.895235e-08 net_rel_change=-2.753161e-04 delta_energy_share=1.895757e-08 direct_error=1.256e-08
+HIGH_CONDUCTORS_kappa1 17,19,21,23,29,31,33,37,39,41,43,47,51,53,57,59,61,67,69,87,93,111,123,129,141,159,177,183,201
