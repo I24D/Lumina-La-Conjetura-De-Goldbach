@@ -1,0 +1,39 @@
+== DOC 121a: lema de unicidad de rama sobre el soporte real ==
+OK    S11 (a) max #{q en S : q|r} <= 1  max=1 sobre |H_C|=377
+OK    S11 (a) max #{q en S : qm|r} <= 1  max=1
+OK    S11 (b) alpha~_m <= Omega_m^C para todo m en D  |D|=581, violaciones=[]
+OK    S11 (c) intercambio con peso (tau-1)/phi: identidad exacta  fallos=[]
+
+OK    S13 (a) max #{q en S : q|r} <= 1  max=1 sobre |H_C|=942
+OK    S13 (a) max #{q en S : qm|r} <= 1  max=1
+OK    S13 (b) alpha~_m <= Omega_m^C para todo m en D  |D|=1364, violaciones=[]
+OK    S13 (c) intercambio con peso (tau-1)/phi: identidad exacta  fallos=[]
+
+OK    S17 (a) max #{q en S : q|r} <= 1  max=1 sobre |H_C|=3526
+OK    S17 (a) max #{q en S : qm|r} <= 1  max=1
+OK    S17 (b) alpha~_m <= Omega_m^C para todo m en D  |D|=4886, violaciones=[]
+OK    S17 (c) intercambio con peso (tau-1)/phi: identidad exacta  fallos=[]
+
+OK    S19 (a) max #{q en S : q|r} <= 1  max=1 sobre |H_C|=6149
+OK    S19 (a) max #{q en S : qm|r} <= 1  max=1
+OK    S19 (b) alpha~_m <= Omega_m^C para todo m en D  |D|=8244, violaciones=[]
+OK    S19 (c) intercambio con peso (tau-1)/phi: identidad exacta  fallos=[]
+
+OK    S23 (a) max #{q en S : q|r} <= 1  max=1 sobre |H_C|=14305
+OK    S23 (a) max #{q en S : qm|r} <= 1  max=1
+OK    S23 (b) alpha~_m <= Omega_m^C para todo m en D  |D|=17998, violaciones=[]
+OK    S23 (c) intercambio con peso (tau-1)/phi: identidad exacta  fallos=[]
+
+OK    S11 (d) su peso tau(r)^{-1}/phi(r) NO da la identidad  m=5: sum_q Omega_{qm}=1.091744 vs su intercambio=0.072937
+
+OK    K2 105 no pertenece a H en S11 (marco real)
+OK    K2 ningun r de H en S11 es divisible por 3 (3 | A=3)
+OK    HIP(A=1,z=5) (a) max #{q en S : q|r} <= 1  max=1 sobre |H_C|=27
+OK    HIP(A=1,z=5) (a) max #{q en S : qm|r} <= 1  max=1
+OK    HIP(A=1,z=5) (b) alpha~_m <= Omega_m^C para todo m en D  |D|=55, violaciones=[]
+OK    HIP(A=1,z=5) (c) intercambio con peso (tau-1)/phi: identidad exacta  fallos=[]
+OK    K2 105 tampoco pertenece a H en el marco hipotetico A=1, z=5  105 = 3*5*7 exigiria dos primos >= z (5 y 7) en un solo r
+OK    K2 en el marco hipotetico, los r que aportan a Omega_15 y a Omega_21 son disjuntos  |R15|=1, |R21|=1, interseccion=0
+
+Tiempo total: 57.7 s
+RESULTADO: PASS

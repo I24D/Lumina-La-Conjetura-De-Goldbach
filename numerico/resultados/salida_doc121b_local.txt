@@ -1,0 +1,37 @@
+== DOC 121b: reduccion CRT de D_NP ==
+K1 ortogonalidad: S = (1/phi(m)) sum_psi psibar(N) Psi_N(psi chi)
+  N=200 m=3 q=7: err=3.56e-15 | con psi(N) sin conjugar: 4.44e-15
+  N=200 m=21 q=13: err=7.51e-15 | con psi(N) sin conjugar: 1.74e+01
+  N=300 m=7 q=11: err=9.30e-15 | con psi(N) sin conjugar: 2.65e-14
+  N=100 m=11 q=7: err=6.17e-15 | con psi(N) sin conjugar: 6.17e-15
+  N=300 m=13 q=17: err=2.67e-14 | con psi(N) sin conjugar: 2.67e-14
+  => PASS
+
+K2 Cauchy-Schwarz + conteo CRT + factor de perdida lambda:
+  N=200 m=3 q=7: sum|S|^2=306.8578 <= (1/phi)doble=736.4611 | lambda=2.400 | pares=10 eta=10 | CS por chi: OK
+  N=200 m=21 q=13: sum|S|^2=582.5408 <= (1/phi)doble=6777.8942 | lambda=11.635 | pares=132 eta=132 | CS por chi: OK
+  N=300 m=7 q=11: sum|S|^2=1300.6851 <= (1/phi)doble=5282.8753 | lambda=4.062 | pares=54 eta=54 | CS por chi: OK
+  N=300 m=13 q=17: sum|S|^2=991.1376 <= (1/phi)doble=14387.4389 | lambda=14.516 | pares=180 eta=180 | CS por chi: OK
+  => PASS
+
+K3 pesos: termino D_NP vs forma final suya (Omega/phi(d)) y la derivada (Omega*phi(d)):
+  q=17 m=7: Theta~=1.1517 term=51854.9830 | suya=31.9605 (term/suya=1622.5) | derivada=294547.7929 (term<=deriv: True) | lambda=5.68 phi(d)^2=9216
+  q=17 m=11: Theta~=0.7753 term=67991.9488 | suya=28.9877 (term/suya=2345.5) | derivada=742085.5990 (term<=deriv: True) | lambda=10.91 phi(d)^2=25600
+  q=17 m=13: Theta~=0.6663 term=66623.3157 | suya=26.1469 (term/suya=2548.0) | derivada=963880.7494 (term<=deriv: True) | lambda=14.47 phi(d)^2=36864
+  q=17 m=77: Theta~=0.2108 term=0.0000 | suya=10.1379 (term/suya=0.0) | derivada=9343130.8251 (term<=deriv: True) | lambda=inf phi(d)^2=921600  [vacio: S=0 en esta ventana]
+  q=19 m=7: Theta~=1.1517 term=66423.6700 | suya=31.5619 (term/suya=2104.6) | derivada=368137.4996 (term<=deriv: True) | lambda=5.54 phi(d)^2=11664
+  q=19 m=11: Theta~=0.7753 term=79411.9901 | suya=26.5783 (term/suya=2987.8) | derivada=861138.3842 (term<=deriv: True) | lambda=10.84 phi(d)^2=32400
+  q=19 m=13: Theta~=0.6663 term=77353.8754 | suya=24.0666 (term/suya=3214.2) | derivada=1122853.0989 (term<=deriv: True) | lambda=14.52 phi(d)^2=46656
+  q=19 m=77: Theta~=0.2108 term=0.0000 | suya=9.1081 (term/suya=0.0) | derivada=10623728.4341 (term<=deriv: True) | lambda=inf phi(d)^2=1166400  [vacio: S=0 en esta ventana]
+  q=23 m=7: Theta~=1.1517 term=96173.3800 | suya=29.2469 (term/suya=3288.3) | derivada=509598.5220 (term<=deriv: True) | lambda=5.30 phi(d)^2=17424
+  q=23 m=11: Theta~=0.7753 term=102252.0726 | suya=23.1016 (term/suya=4426.2) | derivada=1118117.7116 (term<=deriv: True) | lambda=10.93 phi(d)^2=48400
+  q=23 m=13: Theta~=0.6663 term=98814.9950 | suya=20.7252 (term/suya=4767.9) | derivada=1444463.7446 (term<=deriv: True) | lambda=14.62 phi(d)^2=69696
+  q=23 m=77: Theta~=0.2108 term=0.0000 | suya=7.5252 (term/suya=0.0) | derivada=13111965.0677 (term<=deriv: True) | lambda=inf phi(d)^2=1742400  [vacio: S=0 en esta ventana]
+  => PASS
+
+K4 la hipotesis (m, N) = 1 es necesaria: (N, m, q) = (200, 35, 11), (m, N) = 5:
+  max_chi |S| = 1.6094 (log 5 = 1.6094) | max_chi |formula| = 0.00e+00 (psi(200) = 0 para todo psi mod 35)
+  => PASS
+
+Tiempo total: 0.5 s
+PASS
