@@ -1,0 +1,73 @@
+K0 valores K4 del doc 123b (M_near exacto):
+  z=37 L=1286 p0=7: M_near = 0.415891 (doc 123b: 0.4159) OK
+  z=53 L=2585 p0=7: M_near = 0.330884 (doc 123b: 0.3309) OK
+  z=61 L=3450 p0=11: M_near = 0.367356 (doc 123b: 0.3674) OK
+  z=67 L=4024 p0=11: M_near = 0.384023 (doc 123b: 0.3840) OK
+  z=71 L=4421 p0=11: M_near = 0.399174 (doc 123b: 0.3992) OK
+  => PASS
+
+K1 lema de ventana sobre las instancias primas de capa:
+  z=37: E(z) = S(z)-loglog z = -0.4514 | Q_c = 0.4689 | Q_c*log z = 1.6931
+  z=53: E(z) = S(z)-loglog z = -0.4480 | Q_c = 0.4255 | Q_c*log z = 1.6894
+  z=61: E(z) = S(z)-loglog z = -0.4463 | Q_c = 0.4104 | Q_c*log z = 1.6872
+  z=67: E(z) = S(z)-loglog z = -0.4522 | Q_c = 0.4037 | Q_c*log z = 1.6974
+  z=71: E(z) = S(z)-loglog z = -0.4507 | Q_c = 0.3977 | Q_c*log z = 1.6951
+  identidad |M_near - (S(z)-S(L^1/3))| max = 5.55e-17 | dispersion en p0 max = 0.00e+00
+  DeltaE = M_near - log(3/u_L): min = -0.0907, max = 0.0017
+  => PASS
+
+K2 PW por nivel contra Q_c y SM (marcos extendidos):
+  z=37 L=1286 (u_L=1.983): PW = 0.0693 | PW/Q_c = 0.1478 | SM/Q_c = 0.1567 | PW/SM = 0.943 | PW135/PW = 1.000 | Mertens pred = 0.1301
+  z=37 L=1358 (u_L=1.998): PW = 0.0526 | PW/Q_c = 0.1123 | SM/Q_c = 0.1212 | PW/SM = 0.927 | PW135/PW = 1.000 | Mertens pred = 0.1183
+  z=37 L=1437 (u_L=2.013): PW = 0.0842 | PW/Q_c = 0.1797 | SM/Q_c = 0.1956 | PW/SM = 0.919 | PW135/PW = 0.625 | Mertens pred = 0.1068
+  z=37 L=1529 (u_L=2.031): PW = 0.0842 | PW/Q_c = 0.1797 | SM/Q_c = 0.1956 | PW/SM = 0.919 | PW135/PW = 1.000 | Mertens pred = 0.0950
+  z=37 L=13868791 (u_L=4.554): PW = 0.0000 | PW/Q_c = 0.0000 | SM/Q_c = 0.0000 | PW/SM = nan | PW135/PW = nan | Mertens pred = nan
+  z=37: max PW/Q_c = 0.1797 en L=1437 (C(z) doc 123b = 0.1956; PW = 91.8% del maximo) | PW/SM en ese nivel = 0.919 | pooled PW/SM = 0.926
+  z=53 L=2585 (u_L=1.979): PW = 0.1158 | PW/Q_c = 0.2722 | SM/Q_c = 0.3152 | PW/SM = 0.863 | PW135/PW = 0.762 | Mertens pred = 0.1331
+  z=53 L=2745 (u_L=1.994): PW = 0.0607 | PW/Q_c = 0.1426 | SM/Q_c = 0.1680 | PW/SM = 0.849 | PW135/PW = 0.545 | Mertens pred = 0.1211
+  z=53 L=2922 (u_L=2.010): PW = 0.0607 | PW/Q_c = 0.1426 | SM/Q_c = 0.1680 | PW/SM = 0.849 | PW135/PW = 1.000 | Mertens pred = 0.1093
+  z=53 L=3122 (u_L=2.027): PW = 0.0607 | PW/Q_c = 0.1426 | SM/Q_c = 0.1680 | PW/SM = 0.849 | PW135/PW = 1.000 | Mertens pred = 0.0977
+  z=53 L=83639098 (u_L=4.595): PW = 0.0000 | PW/Q_c = 0.0000 | SM/Q_c = 0.0008 | PW/SM = 0.000 | PW135/PW = nan | Mertens pred = nan
+  z=53: max PW/Q_c = 0.2722 en L=2585 (C(z) doc 123b = 0.3152; PW = 86.3% del maximo) | PW/SM en ese nivel = 0.863 | pooled PW/SM = 0.854
+  z=61 L=3450 (u_L=1.982): PW = 0.0673 | PW/Q_c = 0.1641 | SM/Q_c = 0.1955 | PW/SM = 0.839 | PW135/PW = 1.000 | Mertens pred = 0.1310
+  z=61 L=3675 (u_L=1.997): PW = 0.0673 | PW/Q_c = 0.1641 | SM/Q_c = 0.1955 | PW/SM = 0.839 | PW135/PW = 1.000 | Mertens pred = 0.1189
+  z=61 L=3926 (u_L=2.013): PW = 0.0673 | PW/Q_c = 0.1641 | SM/Q_c = 0.1955 | PW/SM = 0.839 | PW135/PW = 1.000 | Mertens pred = 0.1071
+  z=61 L=4214 (u_L=2.030): PW = 0.0673 | PW/Q_c = 0.1641 | SM/Q_c = 0.1955 | PW/SM = 0.839 | PW135/PW = 1.000 | Mertens pred = 0.0952
+  z=61 L=168919260 (u_L=4.608): PW = 0.0000 | PW/Q_c = 0.0000 | SM/Q_c = 0.0010 | PW/SM = 0.000 | PW135/PW = nan | Mertens pred = nan
+  z=61: max PW/Q_c = 0.1641 en L=3450 (C(z) doc 123b = 0.1955; PW = 83.9% del maximo) | PW/SM en ese nivel = 0.839 | pooled PW/SM = 0.838
+  z=67 L=4024 (u_L=1.974): PW = 0.0704 | PW/Q_c = 0.1744 | SM/Q_c = 0.2089 | PW/SM = 0.835 | PW135/PW = 1.000 | Mertens pred = 0.1373
+  z=67 L=4279 (u_L=1.989): PW = 0.0704 | PW/Q_c = 0.1744 | SM/Q_c = 0.2089 | PW/SM = 0.835 | PW135/PW = 1.000 | Mertens pred = 0.1254
+  z=67 L=4573 (u_L=2.004): PW = 0.0704 | PW/Q_c = 0.1744 | SM/Q_c = 0.2089 | PW/SM = 0.835 | PW135/PW = 1.000 | Mertens pred = 0.1134
+  z=67 L=4911 (u_L=2.021): PW = 0.0704 | PW/Q_c = 0.1744 | SM/Q_c = 0.2089 | PW/SM = 0.835 | PW135/PW = 1.000 | Mertens pred = 0.1013
+  z=67 L=270025021 (u_L=4.617): PW = 0.0000 | PW/Q_c = 0.0000 | SM/Q_c = 0.0011 | PW/SM = 0.000 | PW135/PW = nan | Mertens pred = nan
+  z=67: max PW/Q_c = 0.1744 en L=4024 (C(z) doc 123b = 0.2089; PW = 83.5% del maximo) | PW/SM en ese nivel = 0.835 | pooled PW/SM = 0.834
+  z=71 L=4421 (u_L=1.969): PW = 0.0732 | PW/Q_c = 0.1840 | SM/Q_c = 0.2215 | PW/SM = 0.831 | PW135/PW = 1.000 | Mertens pred = 0.1413
+  z=71 L=4707 (u_L=1.984): PW = 0.0732 | PW/Q_c = 0.1840 | SM/Q_c = 0.2215 | PW/SM = 0.831 | PW135/PW = 1.000 | Mertens pred = 0.1291
+  z=71 L=5035 (u_L=2.000): PW = 0.0828 | PW/Q_c = 0.2081 | SM/Q_c = 0.2598 | PW/SM = 0.801 | PW135/PW = 0.746 | Mertens pred = 0.1169
+  z=71 L=5402 (u_L=2.016): PW = 0.0828 | PW/Q_c = 0.2081 | SM/Q_c = 0.2598 | PW/SM = 0.801 | PW135/PW = 1.000 | Mertens pred = 0.1048
+  z=71 L=360845870 (u_L=4.622): PW = 0.0000 | PW/Q_c = 0.0000 | SM/Q_c = 0.0012 | PW/SM = 0.000 | PW135/PW = nan | Mertens pred = nan
+  z=71: max PW/Q_c = 0.2081 en L=5035 (C(z) doc 123b = 0.2598; PW = 80.1% del maximo) | PW/SM en ese nivel = 0.801 | pooled PW/SM = 0.814
+  => PASS (medicion; sin criterio de corte)
+
+K3 Q_c(z)*log z y cociente predicho vs medido:
+  z=  37: Q_c = 0.46889 | Q_c*log z = 1.6931
+  z=  53: Q_c = 0.42552 | Q_c*log z = 1.6894
+  z=  61: Q_c = 0.41042 | Q_c*log z = 1.6872
+  z=  67: Q_c = 0.40369 | Q_c*log z = 1.6974
+  z=  71: Q_c = 0.39767 | Q_c*log z = 1.6951
+  z= 101: Q_c = 0.36912 | Q_c*log z = 1.7035
+  z= 151: Q_c = 0.33937 | Q_c*log z = 1.7027
+  z= 211: Q_c = 0.31874 | Q_c*log z = 1.7059
+  z= 307: Q_c = 0.29900 | Q_c*log z = 1.7123
+  z= 503: Q_c = 0.27492 | Q_c*log z = 1.7102
+  z=1009: Q_c = 0.24840 | Q_c*log z = 1.7181
+  con c_Q ~ 1.718 (z=1009): predicho max PW/Q_c ~ (0.1167/c_Q)*log z:
+  z=37: predicho = 0.2453 | medido = 0.1797
+  z=53: predicho = 0.2697 | medido = 0.2722
+  z=61: predicho = 0.2792 | medido = 0.1641
+  z=67: predicho = 0.2856 | medido = 0.1744
+  z=71: predicho = 0.2895 | medido = 0.2081
+  => PASS (medicion; sin criterio de corte)
+
+Tiempo total: 271.4 s
+PASS

@@ -1,0 +1,42 @@
+K0 reproduccion docs 120a/122a (marcos estandar):
+  instancias no degeneradas de capa: 67 | viol E_Rem!=0: 0 | con Rem!=vacio: 0 | max|E_Rem| = 0.00e+00
+  split L/r<=343: 66 | L/r>343: 1 | degeneradas probadas: 58 (con Rem: 0) | cruces nhat/q0 malos: 0
+  => PASS
+K1 caza extendida (residuo L/r > 343):
+  z=53: residuo probadas 3 (con Rem 0, E_Rem>0: 0, max|E_Rem|=0.0e+00) | cubiertas probadas 40 (viol 0, con Rem 0)
+    elementos Rem en residuo: 0 | d' distintos: [] | formas no predichas: []
+  z=61: residuo probadas 11 (con Rem 1, E_Rem>0: 0, max|E_Rem|=4.2e-02) | cubiertas probadas 48 (viol 0, con Rem 0)
+    Rem realizado: z=61 L=3926 r=11 d'=35 fallo=(3, 2, 5)
+    elementos Rem en residuo: 1 | d' distintos: [35] | formas no predichas: []
+  z=67: residuo probadas 23 (con Rem 5, E_Rem>0: 0, max|E_Rem|=4.2e-02) | cubiertas probadas 49 (viol 0, con Rem 0)
+    Rem realizado: z=67 L=4279 r=11 d'=35 fallo=(3, 2, 5)
+    Rem realizado: z=67 L=4573 r=11 d'=35 fallo=(3, 2, 5)
+    Rem realizado: z=67 L=4573 r=13 d'=35 fallo=(3, 2, 5)
+    Rem realizado: z=67 L=4911 r=11 d'=35 fallo=(3, 2, 5)
+    Rem realizado: z=67 L=4911 r=13 d'=35 fallo=(3, 2, 5)
+    elementos Rem en residuo: 5 | d' distintos: [35] | formas no predichas: []
+  z=71: residuo probadas 33 (con Rem 6, E_Rem>0: 0, max|E_Rem|=4.2e-02) | cubiertas probadas 52 (viol 0, con Rem 0)
+    Rem realizado: z=71 L=4707 r=11 d'=35 fallo=(3, 2, 5)
+    Rem realizado: z=71 L=4707 r=13 d'=35 fallo=(3, 2, 5)
+    Rem realizado: z=71 L=5035 r=11 d'=35 fallo=(3, 2, 5)
+    Rem realizado: z=71 L=5035 r=13 d'=35 fallo=(3, 2, 5)
+    Rem realizado: z=71 L=5402 r=11 d'=35 fallo=(3, 2, 5)
+    Rem realizado: z=71 L=5402 r=13 d'=35 fallo=(3, 2, 5)
+    elementos Rem en residuo: 6 | d' distintos: [35] | formas no predichas: []
+  => PASS
+K2 falsacion del Lema 2 fuera de la capa:
+  herencia: 56 visibles probados, r fuera de V+(L): 0
+  elementos Rem encontrados: {'banda_baja': 0, 'capa': 0, 'fuera': 0} | violaciones de paridad (m>=3, j par>=2): 0 []
+  => PASS
+K3 aritmetica del cierre del estrato 5 via (POS):
+  875/121 = 7.231405 (< 7.24: True) | 1375/169 = 8.136095 (< 8.14: True) | 625/49 = 12.755102 | 125/11 = 11.363636
+  sup 125p/q^2 (pares consecutivos, p>=11): excede 1375/169 en [] | igualdad solo en p=11: True | 11p^2-125p+44>0 para p>=13: True
+  candidatos c<125 fuera de {1,5,7} que sobreviven a las cotas: []
+  => PASS
+K4 enumeracion extendida del estrato 5 (evaluador 123a):
+  [A z=61] estrato 5: c=[1, 5, 7] Nmax=3 viol=[] (niveles 60, saltados 0)
+  [A z=67] estrato 5: c=[1, 5, 7] Nmax=3 viol=[] (niveles 60, saltados 0)
+  [B z=61] estrato 5: c=[1, 5, 7] Nmax=3 viol=[] (niveles 60, saltados 0)
+  => PASS
+Tiempo total: 39.5 s
+PASS
