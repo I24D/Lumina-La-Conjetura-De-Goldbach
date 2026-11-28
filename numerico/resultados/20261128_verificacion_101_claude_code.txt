@@ -1,0 +1,117 @@
+Python 3.14.10
+
+=== PARTE F — A100.1: V+, cierre, fórmula de |H| y W_1 = W_max ===
+Definición V+: Nathanson Thm 9.3 (doc 86 §1), beta=2, nivel entero L_s = floor(D/s).
+[PASS] F1 V+(L) cerrado por divisores y V+(L_s) ⊆ V+(L_min) en TODOS los niveles (R1-R3, z=11..29)
+    R1: #sprimes=   13 |H| fórmula=    54 enumeración(doc 94)=    54 W_1 fórmula=68.264353 enumeración=68.264353 argmax W_d = 1 env sin V+=56
+    R2: #sprimes=  426 |H| fórmula=   880 enumeración(doc 94)=   880 W_1 fórmula=1011.279168 enumeración=1011.279168 argmax W_d = 1 env sin V+=1708
+    R3: #sprimes=   67 |H| fórmula=    68 enumeración(doc 94)=    68 W_1 fórmula=69.307280 enumeración=69.307280 argmax W_d = 1 env sin V+=68
+    11: #sprimes=  422 |H| fórmula=   802 enumeración(doc 94)=   802 W_1 fórmula=912.789399 enumeración=912.789399 argmax W_d = 1 env sin V+=1692
+    13: #sprimes=  682 |H| fórmula=  1628 enumeración(doc 94)=  1628 W_1 fórmula=1898.017059 enumeración=1898.017059 argmax W_d = 1 env sin V+=4893
+    17: #sprimes= 1502 |H| fórmula=  5033 enumeración(doc 94)=  5033 W_1 fórmula=6015.881835 enumeración=6015.881835 argmax W_d = 1 env sin V+=17757
+    19: #sprimes= 2090 |H| fórmula=  8245 enumeración(doc 94)=  8245 W_1 fórmula=9943.431548 enumeración=9943.431548 argmax W_d = 1 env sin V+=36683
+    23: #sprimes= 3687 |H| fórmula= 17999 enumeración(doc 94)= 17999 W_1 fórmula=21933.301326 enumeración=21933.301326 argmax W_d = 1 env sin V+=94940
+    29: #sprimes= 7381 |H| fórmula= 47178 enumeración(doc 94)= 47178 W_1 fórmula=58126.020621 enumeración=58126.020621 argmax W_d = 1 env sin V+=274982
+[PASS] F2 |H|: fórmula A100.1 = enumeración de divisores (definición del doc 94) en los 9 modelos
+[PASS] F3 W_1: fórmula = enumeración | max err rel 0.0e+00
+[PASS] F4 Lema 1: argmax_d W_d = 1 y W_max = W_1 en los 9 modelos
+[PASS] F5 R1/R2/R3 del doc 101 §2.3 (|H| y W_1 a 6 decimales)
+[PASS] F6 Tabla del doc 101 §2.4 (#sprimes, |H|, W_1, envolvente) en z=11..29
+[PASS] F7 Lema de inclusión: V+(L) ⊇ {d sin cuadrados, primos < L^δ, d < L^(1-3δ)} (δ=0.10..0.25) y pares p1^3<L | 2255 niveles de z=11..29
+  variante con nivel real D/s (sin suelo): |H| = {11: 804, 13: 1632, 17: 5049, 19: 8251, 23: 18011, 29: 47220}
+  W_1 nivel real: pendiente=4.2862 ± 0.0233 (SE), t(0.975,4)=2.7764, IC95% ±0.0648, LOO [4.2622, 4.3175] ⟹ α=0.4286, IC95% [0.4221, 0.4351], LOO [0.4262, 0.4317]; prefactor (N=z^10) = 0.0320; α locales: 0.438, 0.430, 0.449, 0.414, 0.421
+  |H| nivel real: pendiente=4.2057 ± 0.0165 (SE), t(0.975,4)=2.7764, IC95% ±0.0458, LOO [4.1942, 4.2253] ⟹ α=0.4206, IC95% [0.4160, 0.4252], LOO [0.4194, 0.4225]; prefactor (N=z^10) = 0.0338; α locales: 0.424, 0.421, 0.442, 0.409, 0.416
+
+=== PARTE G — Regresiones α_W, α_H (ventana z=11..29) y extensión de la ventana ===
+  cuantiles t propios: t(0.975,4)=2.776445, t(0.975,6)=2.446912 (tablas: 2.776445, 2.446912)
+[PASS] G0 cuantiles t por integración numérica = tablas
+  W_1  z=11..29: pendiente=4.2886 ± 0.0237 (SE), t(0.975,4)=2.7764, IC95% ±0.0658, LOO [4.2650, 4.3203] ⟹ α=0.4289, IC95% [0.4223, 0.4354], LOO [0.4265, 0.4320]; prefactor (N=z^10) = 0.0317; α locales: 0.438, 0.430, 0.452, 0.414, 0.420
+  |H|  z=11..29: pendiente=4.2079 ± 0.0170 (SE), t(0.975,4)=2.7764, IC95% ±0.0472, LOO [4.1969, 4.2279] ⟹ α=0.4208, IC95% [0.4161, 0.4255], LOO [0.4197, 0.4228]; prefactor (N=z^10) = 0.0335; α locales: 0.424, 0.421, 0.444, 0.409, 0.416
+  env  z=11..29: pendiente=5.2439 ± 0.1288 (SE), t(0.975,4)=2.7764, IC95% ±0.3577, LOO [5.0809, 5.4102] ⟹ α=0.5244, IC95% [0.4886, 0.5602], LOO [0.5081, 0.5410]; prefactor (N=z^10) = 0.0065; α locales: 0.636, 0.480, 0.652, 0.498, 0.459
+[PASS] G1 Pendientes, SE, IC95% y LOO de W_1 y |H| reproducen el doc 101 §2.4 | max desviación 4.8e-05
+[PASS] G2 Envolvente sin V+: pendiente 5.2439 (α_env 0.5244)
+[PASS] G3 α locales de W_1 reproducen 0.438, 0.430, 0.452, 0.414, 0.420
+[PASS] G4 Veredicto en la ventana del doc 101: IC95% de α_W entero > 0.42 | [0.4223, 0.4354]
+  extensión z=31: D=28629151 y=93585 #sprimes=9028 |H|=64082 W_1=79203.30 (0.0 s)
+  extensión z=37: D=69343957 y=168787 #sprimes=15386 |H|=132785 W_1=164856.28 (0.1 s)
+  extensión z=41: D=115856201 y=237655 #sprimes=21015 |H|=203701 W_1=253357.52 (0.1 s)
+  extensión z=43: D=147008443 y=278545 #sprimes=24306 |H|=252569 W_1=314442.97 (0.2 s)
+  extensión z=47: D=229345007 y=374679 #sprimes=31858 |H|=370530 W_1=461917.38 (0.2 s)
+  extensión z=53: D=418195493 y=559225 #sprimes=45997 |H|=620620 W_1=774973.58 (0.4 s)
+  extensión z=59: D=714924299 y=799540 #sprimes=63900 |H|=990997 W_1=1239202.05 (0.6 s)
+  -- ajustes en ventanas ampliadas (MEDICIÓN; puntos deterministas, el 'IC' mide dispersión del ajuste) --
+  W_1 z=11..37: pendiente=4.2806 ± 0.0152 (SE), t(0.975,6)=2.4469, IC95% ±0.0372, LOO [4.2645, 4.2911] ⟹ α=0.4281, IC95% [0.4243, 0.4318], LOO [0.4264, 0.4291]; prefactor (N=z^10) = 0.0324; α locales: 0.438, 0.430, 0.452, 0.414, 0.420, 0.464, 0.414
+  |H| z=11..37: pendiente=4.2113 ± 0.0108 (SE), t(0.975,6)=2.4469, IC95% ±0.0265, LOO [4.2055, 4.2160] ⟹ α=0.4211, IC95% [0.4185, 0.4238], LOO [0.4206, 0.4216]; prefactor (N=z^10) = 0.0332; α locales: 0.424, 0.421, 0.444, 0.409, 0.416, 0.459, 0.412
+  W_1 z=11..59: pendiente=4.2759 ± 0.0079 (SE), t(0.975,11)=2.2010, IC95% ±0.0173, LOO [4.2680, 4.2802] ⟹ α=0.4276, IC95% [0.4259, 0.4293], LOO [0.4268, 0.4280]; prefactor (N=z^10) = 0.0328; α locales: 0.438, 0.430, 0.452, 0.414, 0.420, 0.464, 0.414, 0.419, 0.454, 0.432, 0.431, 0.438
+  |H| z=11..59: pendiente=4.2246 ± 0.0076 (SE), t(0.975,11)=2.2010, IC95% ±0.0168, LOO [4.2183, 4.2276] ⟹ α=0.4225, IC95% [0.4208, 0.4241], LOO [0.4218, 0.4228]; prefactor (N=z^10) = 0.0319; α locales: 0.424, 0.421, 0.444, 0.409, 0.416, 0.459, 0.412, 0.417, 0.451, 0.431, 0.429, 0.436
+  W_1 z=19..59: pendiente=4.2584 ± 0.0130 (SE), t(0.975,8)=2.3060, IC95% ±0.0300, LOO [4.2471, 4.2767] ⟹ α=0.4258, IC95% [0.4228, 0.4288], LOO [0.4247, 0.4277]; prefactor (N=z^10) = 0.0350; α locales: 0.414, 0.420, 0.464, 0.414, 0.419, 0.454, 0.432, 0.431, 0.438
+  |H| z=19..59: pendiente=4.2274 ± 0.0154 (SE), t(0.975,8)=2.3060, IC95% ±0.0354, LOO [4.2136, 4.2509] ⟹ α=0.4227, IC95% [0.4192, 0.4263], LOO [0.4214, 0.4251]; prefactor (N=z^10) = 0.0316; α locales: 0.409, 0.416, 0.459, 0.412, 0.417, 0.451, 0.431, 0.429, 0.436
+  W_1 z=29..59: pendiente=4.2879 ± 0.0181 (SE), t(0.975,6)=2.4469, IC95% ±0.0442, LOO [4.2729, 4.3077] ⟹ α=0.4288, IC95% [0.4244, 0.4332], LOO [0.4273, 0.4308]; prefactor (N=z^10) = 0.0313; α locales: 0.464, 0.414, 0.419, 0.454, 0.432, 0.431, 0.438
+  |H| z=29..59: pendiente=4.2678 ± 0.0187 (SE), t(0.975,6)=2.4469, IC95% ±0.0458, LOO [4.2511, 4.2874] ⟹ α=0.4268, IC95% [0.4222, 0.4314], LOO [0.4251, 0.4287]; prefactor (N=z^10) = 0.0271; α locales: 0.459, 0.412, 0.417, 0.451, 0.431, 0.429, 0.436
+[PASS] G5 z=11..37 reproduce el doc 102 (α_W=0.4281, IC95% [0.4243, 0.4318], LOO [0.4264, 0.4291])
+  -- ventana larga (solo conteo, cómputo propio) --
+  z=61: primos pequeños=15 #sprimes=70797 |H|=1162219 W_1=1454180.59 (cota de saturación 2^15=32768 por nivel; 0.5 s)
+  z=67: primos pequeños=16 #sprimes=94442 |H|=1764646 W_1=2210420.75 (cota de saturación 2^16=65536 por nivel; 0.7 s)
+  z=71: primos pequeños=17 #sprimes=112876 |H|=2301866 W_1=2885435.38 (cota de saturación 2^17=131072 por nivel; 0.9 s)
+  z=73: primos pequeños=18 #sprimes=122923 |H|=2636603 W_1=3306367.53 (cota de saturación 2^18=262144 por nivel; 1.0 s)
+  z=79: primos pequeños=19 #sprimes=156866 |H|=3735822 W_1=4688533.04 (cota de saturación 2^19=524288 por nivel; 1.4 s)
+  z=83: primos pequeños=20 #sprimes=182647 |H|=4659323 W_1=5850648.68 (cota de saturación 2^20=1048576 por nivel; 1.7 s)
+  z=97: primos pequeños=22 #sprimes=295877 |H|=9270979 W_1=11657971.98 (cota de saturación 2^22=4194304 por nivel; 3.4 s)
+  z=113: primos pequeños=27 #sprimes=475098 |H|=18622272 W_1=23460452.93 (cota de saturación 2^27=134217728 por nivel; 6.9 s)
+  z=131: primos pequeños=29 #sprimes=752166 |H|=35584592 W_1=44906014.61 (cota de saturación 2^29=536870912 por nivel; 13.1 s)
+  z=151: primos pequeños=33 #sprimes=1171294 |H|=68050439 W_1=85999638.71 (cota de saturación 2^33=8589934592 por nivel; 25.4 s)
+  W_1 z=59..151: pendiente=4.4990 ± 0.0078 (SE), t(0.975,9)=2.2622, IC95% ±0.0177, LOO [4.4936, 4.5048] ⟹ α=0.4499, IC95% [0.4481, 0.4517], LOO [0.4494, 0.4505]; prefactor (N=z^10) = 0.0135; α locales: 0.480, 0.446, 0.460, 0.490, 0.442, 0.448, 0.442, 0.458, 0.439, 0.457
+  |H| z=59..151: pendiente=4.4880 ± 0.0077 (SE), t(0.975,9)=2.2622, IC95% ±0.0174, LOO [4.4827, 4.4938] ⟹ α=0.4488, IC95% [0.4471, 0.4505], LOO [0.4483, 0.4494]; prefactor (N=z^10) = 0.0113; α locales: 0.478, 0.445, 0.458, 0.489, 0.441, 0.447, 0.441, 0.457, 0.438, 0.456
+  W_1 z=79..151: pendiente=4.4869 ± 0.0121 (SE), t(0.975,4)=2.7764, IC95% ±0.0335, LOO [4.4758, 4.4939] ⟹ α=0.4487, IC95% [0.4453, 0.4520], LOO [0.4476, 0.4494]; prefactor (N=z^10) = 0.0143; α locales: 0.448, 0.442, 0.458, 0.439, 0.457
+[PASS] G6 En z=79..151 el α_W ajustado supera la medida del doc 101 (0.4289) y el α local medio > 0.44 | α_W(79..151)=0.4487; locales 0.448, 0.442, 0.458, 0.439, 0.457
+
+=== PARTE G' — Sensibilidad a la parametrización del doc 94 (P-rev 101.3) ===
+  doc 94: D_A = X^(1/2)/(log X)^C0; la familia del doc 101 usa C0 = 0 (D = z^5). Con X = z^10:
+  C0=1: |H| = [446, 727, 1667, 2360, 4344, 9279]
+  W_1 C0=1: pendiente=3.1667 ± 0.0332 (SE), t(0.975,4)=2.7764, IC95% ±0.0922, LOO [3.1170, 3.2140] ⟹ α=0.3167, IC95% [0.3075, 0.3259], LOO [0.3117, 0.3214]; prefactor (N=z^10) = 0.2223; α locales: 0.293, 0.313, 0.316, 0.324, 0.333
+  |H| C0=1: pendiente=3.1319 ± 0.0292 (SE), t(0.975,4)=2.7764, IC95% ±0.0810, LOO [3.0881, 3.1732] ⟹ α=0.3132, IC95% [0.3051, 0.3213], LOO [0.3088, 0.3173]; prefactor (N=z^10) = 0.2378; α locales: 0.292, 0.309, 0.313, 0.319, 0.327
+  C0=2: |H| = [31, 56, 148, 221, 463, 1156]
+  W_1 C0=2: pendiente=3.7114 ± 0.0510 (SE), t(0.975,4)=2.7764, IC95% ±0.1415, LOO [3.6314, 3.7713] ⟹ α=0.3711, IC95% [0.3570, 0.3853], LOO [0.3631, 0.3771]; prefactor (N=z^10) = 0.0042; α locales: 0.348, 0.359, 0.361, 0.387, 0.397
+  |H| C0=2: pendiente=3.7238 ± 0.0442 (SE), t(0.975,4)=2.7764, IC95% ±0.1227, LOO [3.6538, 3.7737] ⟹ α=0.3724, IC95% [0.3601, 0.3846], LOO [0.3654, 0.3774]; prefactor (N=z^10) = 0.0040; α locales: 0.354, 0.362, 0.360, 0.387, 0.395
+  Cambiar N = z^10 por N = A·z^10 (X = N/A como en el doc 94) solo desplaza ln N: la pendiente en ln N no cambia [T].
+
+=== PARTE H — doc 101 §3.2-3.3: soporte fijo R2, psi real hasta 10^8 ===
+  criba hasta 1e8: 0.8 s; potencias de primos (k>=2): 1404
+[PASS] H0 psi(999983) = 999586.5975 (doc 97) | 999586.5975
+  N=   510510 (primorial ..17): |H_N|=424 cerrado=True W_max=424.95 (argmax d=1) S_BV=9.909969e+08 B_M=9.909969e+08 δ=0.3483 S_BV/(N^1.5 lnN)=2.067e-01 psi/N=1.0000 (0.0 s)
+  N=   999982 (2·79·6329): |H_N|=876 cerrado=True W_max=1006.34 (argmax d=1) S_BV=4.139329e+09 B_M=3.777086e+09 δ=0.3420 S_BV/(N^1.5 lnN)=2.996e-01 psi/N=0.9996 (0.1 s)
+  N=  1048576 (2^20): |H_N|=880 cerrado=True W_max=1011.28 (argmax d=1) S_BV=4.813446e+09 B_M=4.078042e+09 δ=0.3763 S_BV/(N^1.5 lnN)=3.234e-01 psi/N=0.9999 (0.1 s)
+  N=  9699690 (primorial ..19): |H_N|=423 cerrado=True W_max=423.90 (argmax d=1) S_BV=1.954892e+10 B_M=1.954892e+10 δ=0.2962 S_BV/(N^1.5 lnN)=4.022e-02 psi/N=1.0000 (0.2 s)
+  N= 16777216 (2^24): |H_N|=880 cerrado=True W_max=1011.28 (argmax d=1) S_BV=6.737052e+10 B_M=5.692229e+10 δ=0.2743 S_BV/(N^1.5 lnN)=5.893e-02 psi/N=1.0000 (0.6 s)
+  N= 67108864 (2^26): |H_N|=880 cerrado=True W_max=1011.28 (argmax d=1) S_BV=2.793088e+11 B_M=2.468347e+11 δ=0.2624 S_BV/(N^1.5 lnN)=2.819e-02 psi/N=1.0000 (2.4 s)
+  N= 77597520 (2^4·primorial 19): |H_N|=423 cerrado=True W_max=423.90 (argmax d=1) S_BV=1.524628e+11 B_M=1.524628e+11 δ=0.2557 S_BV/(N^1.5 lnN)=1.228e-02 psi/N=1.0000 (1.7 s)
+  N= 99999998 (2·7·23·310559): |H_N|=672 cerrado=True W_max=736.00 (argmax d=1) S_BV=3.210471e+11 B_M=2.946279e+11 δ=0.2594 S_BV/(N^1.5 lnN)=1.743e-02 psi/N=1.0000 (3.0 s)
+[PASS] H1 Tabla del doc 101 §3.2 (|H_N|, W_max, S_BV, B_M, δ) en los 8 N | max desviación relativa 2.1e-07
+[PASS] H2 Lema 1 en los 8 N: argmax_d W_d = 1
+[PASS] H3 Colapso primorial: si H_N solo tiene 1 y primos, B_M = S_BV (identidad M_r = phi(r) E_r) | N con H_N primo: [510510, 9699690, 77597520]
+  β(SBV) = 0.9904 ± 0.0716 (SE), IC95% ±0.1752, LOO [0.9214, 1.0286]
+[PASS] H4S β de SBV reproduce el doc 101 §3.2 | max desviación 4.7e-05
+  β(BM) = 0.9904 ± 0.0588 (SE), IC95% ±0.1439, LOO [0.9327, 1.0215]
+[PASS] H4B β de BM reproduce el doc 101 §3.2 | max desviación 4.6e-05
+  subfamilia 2^e: β_S_BV = 0.9729, LOO [0.9517, 1.0258]
+  subfamilia primoriales: β_S_BV = 1.0031, LOO [0.9878, 1.0127]
+
+=== PARTE I — doc 101 §2.5 y §3.4: aritmética de la extrapolación (definiciones del doc 100 §5.3) ===
+  W_eq(10^6) = 0.02933   (doc 100 §5.3: None; doc 101 §2.5: 644)
+  W_eq(10^12) = 0.3045   (doc 100 §5.3: 0.3; doc 101 §2.5: 853)
+  W_eq(10^24) = 1050   (doc 100 §5.3: 1050.0; doc 101 §2.5: 1051)
+  W_eq(10^100) = 7.243e+31   (doc 100 §5.3: 7.24e+31; doc 101 §2.5: None)
+[PASS] I1 W_eq del doc 100 §5.3 se reproduce (0.30 en 10^12, 1.05e3 en 10^24, 7.24e31 en 10^100)
+[PASS] I2 Los W_eq del doc 101 §2.5 (≈644 en 10^6, ≈853 en 10^12) NO salen de la definición del doc 100 | reales: 0.0293 y 0.305
+  W_max ajustado (doc 101: 0.031·N^0.4289) en 10^12 = 4438; falla de la cota BV = W_max/W_eq = 1.46e+04
+  W_max ajustado (doc 101: 0.031·N^0.4289) en 10^24 = 6.215e+08; falla de la cota BV = W_max/W_eq = 5.92e+05
+[PASS] I3 'Falla por ~5×' en 10^12 (doc 101 §2.5) NO se sostiene con W_eq del doc 100: la falla es ~10^4 | 1.46e+04×
+  exponente total 1+α_W+α_H = 1.8497 frente a 2−2c = 1.920232
+  cota/objetivo = 6.21e-06 · ln^5 N / N^0.0706   (doc 101 §3.4: 0,0119 · ln^5 N / N^0,0705)
+  doc 101 equivale a dividir por 0.0225 en vez de multiplicar: 0.0123
+  cota/objetivo en 10^24 = 64.8 (doc 101: ≈1,2·10^5); baja de 1 hacia N ≈ 10^90 (doc 101: ~10^150)
+[PASS] I4 Constante de §3.4: 0.0119 = c_W·c_H·δ/0.0225; la correcta (×0.0225) es ~2000 veces menor | correcta 6.21e-06
+  directo en 10^24: cota=3.759e+42, objetivo=5.8033e+40 (doc 100: 5,803·10^40), cociente=64.8
+[PASS] I5 Objetivo de Chen en 10^24 = 5.803e40 (doc 100 §5.3)
+
+RESUMEN: 25/25 PASS, 0 FAIL. Tiempo 74.1 s
