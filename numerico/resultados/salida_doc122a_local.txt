@@ -1,0 +1,38 @@
+== DOC 122a: (BAND-delta-HI') exacta, medicion sumada, (OUT-MASS) ==
+K0 identidades y provisiones sobre la capa (z=29 y estres z=53):
+  instancias de capa descompuestas: 11
+  |delta-((Shat-Pi)+E)| = 0.00e+00 | |E-(E_Add+E_Rem)| = 2.22e-16
+  |flujo - (-E_Add)| = 0.00e+00 | |delta-(E_Rem+M-P)| = 2.39e-15
+  provision (i) violada (|E_Rem|>1e-9): 0 | provision (ii) violada (E_Add>1e-9): 0 | BAD>0: 0 | max R_A = 0.0000
+  => PASS
+
+K1 medicion sumada por marco y u0* (max sobre niveles, / Q_c):
+  [A] z=17 u0*=1.0: en el nivel de max U: U = 0.0000 | X = 0.0000 | D = 0.0000 | M = 0.0000 | D/X = s/n || D/X por nivel en [-1.000, -1.000] | maxX = 0.0000 | maxM = 0.0000
+  [A] z=17 u0*=1.2: en el nivel de max U: U = 0.0000 | X = 0.0000 | D = 0.0000 | M = 0.0000 | D/X = s/n || D/X por nivel en [-1.000, -1.000] | maxX = 0.0000 | maxM = 0.0000
+  [A] z=17 u0*=1.4: en el nivel de max U: U = 0.0000 | X = 0.0000 | D = 0.0000 | M = 0.0000 | D/X = s/n || D/X por nivel en [-1.000, -1.000] | maxX = 0.0000 | maxM = 0.0000
+  [A] z=29 u0*=1.0: en el nivel de max U: U = 0.0198 | X = 0.0530 | D = 0.0332 | M = 0.0533 | D/X = 0.627 || D/X por nivel en [0.627, 0.627] | maxX = 0.0530 | maxM = 0.0533
+  [A] z=29 u0*=1.2: en el nivel de max U: U = 0.0198 | X = 0.0530 | D = 0.0332 | M = 0.0533 | D/X = 0.627 || D/X por nivel en [0.627, 0.627] | maxX = 0.0530 | maxM = 0.0533
+  [A] z=29 u0*=1.4: en el nivel de max U: U = 0.0198 | X = 0.0530 | D = 0.0332 | M = 0.0533 | D/X = 0.627 || D/X por nivel en [0.627, 0.627] | maxX = 0.0530 | maxM = 0.0533
+  [A] z=37 u0*=1.0: en el nivel de max U: U = 0.0933 | X = 0.0933 | D = 0.0000 | M = 0.1567 | D/X = 0.000 || D/X por nivel en [0.000, 0.878] | maxX = 0.1570 | maxM = 0.1956
+  [A] z=37 u0*=1.2: en el nivel de max U: U = 0.0933 | X = 0.0933 | D = 0.0000 | M = 0.1567 | D/X = 0.000 || D/X por nivel en [0.000, 0.878] | maxX = 0.1570 | maxM = 0.1956
+  [A] z=37 u0*=1.4: en el nivel de max U: U = 0.0933 | X = 0.0933 | D = 0.0000 | M = 0.1567 | D/X = 0.000 || D/X por nivel en [0.000, 0.878] | maxX = 0.1182 | maxM = 0.1567
+  [B] z=29 u0*=1.0: en el nivel de max U: U = 0.0037 | X = 0.0037 | D = 0.0000 | M = 0.0059 | D/X = 0.000 || D/X por nivel en [0.000, 0.000] | maxX = 0.0037 | maxM = 0.0059
+  [B] z=29 u0*=1.2: en el nivel de max U: U = 0.0037 | X = 0.0037 | D = 0.0000 | M = 0.0059 | D/X = 0.000 || D/X por nivel en [0.000, 0.000] | maxX = 0.0037 | maxM = 0.0059
+  [B] z=29 u0*=1.4: en el nivel de max U: U = 0.0037 | X = 0.0037 | D = 0.0000 | M = 0.0059 | D/X = 0.000 || D/X por nivel en [0.000, 0.000] | maxX = 0.0037 | maxM = 0.0059
+  [A-estres] z=53 u0*=1.0: en el nivel de max U: U = 0.0867 | X = 0.2695 | D = 0.1828 | M = 0.3152 | D/X = 0.678 || D/X por nivel en [0.678, 0.747] | maxX = 0.2695 | maxM = 0.3152
+  [A-estres] z=53 u0*=1.2: en el nivel de max U: U = 0.0867 | X = 0.2695 | D = 0.1828 | M = 0.3152 | D/X = 0.678 || D/X por nivel en [0.678, 0.747] | maxX = 0.2695 | maxM = 0.3152
+  [A-estres] z=53 u0*=1.4: en el nivel de max U: U = 0.0491 | X = 0.1209 | D = 0.0718 | M = 0.1473 | D/X = 0.594 || D/X por nivel en [0.594, 0.732] | maxX = 0.1209 | maxM = 0.1473
+K2 subtotal E = 0 (pooled, u0*=1, masas /phi/Q_c sumadas sobre niveles):
+  instancias de capa: 67 | con exceso > 0: 67 | con E = 0 y exceso > 0: 40 (E == 0.0 exacto: 39)
+  identidades pooled: |flujo - (-E_Add)| max = 0.00e+00 | |delta - (E_Rem+M-P)| max = 2.39e-15 | max R_A = 0.000000
+  estructura de Add en la capa: elementos Add^+ totales = 0 | elementos Add^- totales = 41
+  U total = 1.5360 | U de instancias E = 0 = 0.9020 (58.7%)
+  E = 0 con |Add| = |Rem| = 0 (V = Vhat): 40 | E = 0 con flujo no vacio: 0
+K3 lemas puntuales (pooled): exceso > deficit en 67/67 instancias con exceso (P1 falso); deficit = 0 con exceso > 0 en 40 (P2 falso para todo k)
+  delta^+ <= M bajo (i): violaciones 0 de 67 instancias con E_Rem = 0
+  M pooled = 3.4733 contra delta^+ pooled = 1.5360 (cociente 2.26)
+K4 (FC-2) en la capa: BAD max = 0.000e+00 | conductores con BAD > 0: 0 | HEAD37 min (Add^- no vacio) = 0.1000
+  => PASS
+
+Tiempo total: 1.3 s
+PASS

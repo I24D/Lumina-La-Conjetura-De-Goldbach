@@ -1,0 +1,35 @@
+== DOC 122b: (SLAB-V') familia U_c^deg, z=17..53 ==
+[A] z=17 (60 niveles): viol phi=0 sin-cobertura=0 err doble-contab=0.0e+00 | TeorA viol=0, omega<=2 fuera de hipotesis=0
+  q0= 5: verdadera=0.0000 P=0.0000 (en L=-1) Nmax=0 rebanada=1.7005 Q_c | #c=0 c=1: 0.0000 top3/maxU=0.00
+  q0= 7: verdadera=0.0000 P=0.0000 (en L=-1) Nmax=0 rebanada=2.1257 Q_c | #c=0 c=1: 0.0000 top3/maxU=0.00
+  q0=11: verdadera=0.0000 P=0.0000 (en L=-1) Nmax=0 rebanada=2.4800 Q_c | #c=0 c=1: 0.0000 top3/maxU=0.00
+  tendencia L: P(5)/Q_c en Lmin=112: 0.0000 | en Lmax=83521: 0.0000
+[A] z=29 (60 niveles): viol phi=0 sin-cobertura=0 err doble-contab=5.6e-17 | TeorA viol=0, omega<=2 fuera de hipotesis=10
+  q0= 5: verdadera=0.1993 P=0.5979 (en L=1360) Nmax=3 rebanada=0.9134 Q_c | #c=3 c=1: 0.1993 top3/maxU=1.00
+        U_c^deg/Q_c (max/nivel): c=1:0.1993 c=5:0.1993 c=7:0.1993
+  q0= 7: verdadera=0.0000 P=0.0000 (en L=-1) Nmax=0 rebanada=2.4911 Q_c | #c=0 c=1: 0.0000 top3/maxU=0.00
+  q0=11: verdadera=0.0000 P=0.0000 (en L=-1) Nmax=0 rebanada=2.9063 Q_c | #c=0 c=1: 0.0000 top3/maxU=0.00
+  tendencia L: P(5)/Q_c en Lmin=273: 0.0000 | en Lmax=707281: 0.0000
+[A] z=37 (60 niveles): viol phi=0 sin-cobertura=0 err doble-contab=5.6e-17 | TeorA viol=0, omega<=2 fuera de hipotesis=78
+  q0= 5: verdadera=0.3554 P=0.7109 (en L=410) Nmax=3 rebanada=0.9775 Q_c | #c=3 c=1: 0.3554 top3/maxU=1.00
+        U_c^deg/Q_c (max/nivel): c=1:0.3554 c=5:0.3554 c=7:0.2133
+  q0= 7: verdadera=0.0000 P=0.0000 (en L=-1) Nmax=0 rebanada=1.2796 Q_c | #c=0 c=1: 0.0000 top3/maxU=0.00
+  q0=11: verdadera=0.0000 P=0.0000 (en L=-1) Nmax=0 rebanada=3.1102 Q_c | #c=0 c=1: 0.0000 top3/maxU=0.00
+  tendencia L: P(5)/Q_c en Lmin=410: 0.7109 | en Lmax=1874161: 0.0000
+[B] z=29 (60 niveles): viol phi=0 sin-cobertura=0 err doble-contab=0.0e+00 | TeorA viol=0, omega<=2 fuera de hipotesis=100
+  q0= 5: verdadera=0.0252 P=0.0252 (en L=24399) Nmax=1 rebanada=0.1010 Q_c | #c=1 c=1: 0.0252 top3/maxU=1.00
+        U_c^deg/Q_c (max/nivel): c=1:0.0252
+  q0= 7: verdadera=0.0000 P=0.0000 (en L=-1) Nmax=0 rebanada=0.3295 Q_c | #c=0 c=1: 0.0000 top3/maxU=0.00
+  q0=11: verdadera=0.0000 P=0.0000 (en L=-1) Nmax=0 rebanada=0.7024 Q_c | #c=0 c=1: 0.0000 top3/maxU=0.00
+  tendencia L: P(5)/Q_c en Lmin=24399: 0.0252 | en Lmax=20511149: 0.0000
+[A] z=53 (60 niveles): viol phi=0 sin-cobertura=0 err doble-contab=0.0e+00 | TeorA viol=0, omega<=2 fuera de hipotesis=185
+  q0= 5: verdadera=0.3917 P=0.7834 (en L=747) Nmax=3 rebanada=0.4896 Q_c | #c=3 c=1: 0.3917 top3/maxU=1.00
+        U_c^deg/Q_c (max/nivel): c=1:0.3917 c=5:0.3917 c=7:0.2350
+  q0= 7: verdadera=0.5875 P=1.7626 (en L=1364) Nmax=3 rebanada=1.4100 Q_c | #c=3 c=1: 0.5875 top3/maxU=1.00
+        U_c^deg/Q_c (max/nivel): c=1:0.5875 c=7:0.5875 c=11:0.5875
+  q0=11: verdadera=0.0000 P=0.0000 (en L=-1) Nmax=0 rebanada=3.4272 Q_c | #c=0 c=1: 0.0000 top3/maxU=0.00
+  tendencia L: P(5)/Q_c en Lmin=747: 0.7834 | en Lmax=7890481: 0.0020
+  => PASS
+
+Tiempo total: 5.4 s
+PASS
