@@ -1,0 +1,39 @@
+== DOC 117a: (FLOW-COMP), masa mala contra masa buena ==
+Solo stdlib; importa los docs 109/114/116b sin tocarlos.
+
+K0 Mertens exacto y margenes:
+  Mertens(37) = 15899/18480 = 0.860335 -> margen uniforme min(y)<=37: 1-R_A >= 0.139665
+  Mertens(67) = 0.999174 (<1 [T] doc 114); Mertens(251) = 1.256197
+  => PASS
+
+K1 marcos A/B (instancias del doc 114): por (nivel, r):
+  4113 instancias (nivel, r): max E_Add = 0.000e+00, max E_Rem(doc 114) = -0.000e+00
+  min_r GOOD_Add = -E_Add = -0.000e+00 ; min_r GOOD_Rem = sum_{Rem} a = 0.000e+00
+  BAD = 0 identico en todo el marco (min(y) <= 47 < 73); fraccion minima de masa Add^- con min(y)<=37: 1.0000
+  => (FLOW-COMP) vale en los 4113 con BAD=0. PASS
+
+K2 PRUEBA DECISIVA z=331, r=5 (marco del contraejemplo 116b):
+  L=46948396 [control Y=211]: E_Add(5) = -0.036949 | BAD = 1.086e-03 (13 y malos) | GOOD = 0.038035 | BAD/GOOD = 2.85e-02
+    max R_A = 1.04522 en y=317 | R_A(251) = 1.00220 | masa cabeza37 = 0.0387 | masa cola>=73 = 7.694e-02 | 0.0 s
+    holgura (FC-2): (1-Mertens(37))*cabeza37 / BAD = 4.98
+  L=79051268 [CRUCE Y=251]: E_Add(5) = -0.029314 | BAD = 1.086e-03 (13 y malos) | GOOD = 0.030399 | BAD/GOOD = 3.57e-02
+    max R_A = 1.04522 en y=317 | R_A(251) = 1.00220 | masa cabeza37 = 0.0321 | masa cola>=73 = 4.619e-02 | 0.0 s
+    holgura (FC-2): (1-Mertens(37))*cabeza37 / BAD = 4.13
+  L=113296524 [cruce Y=283]: E_Add(5) = -0.022764 | BAD = 7.301e-04 (6 y malos) | GOOD = 0.023494 | BAD/GOOD = 3.11e-02
+    max R_A = 1.04522 en y=317 | R_A(251) = n/a | masa cabeza37 = 0.0255 | masa cola>=73 = 1.983e-02 | 0.0 s
+    holgura (FC-2): (1-Mertens(37))*cabeza37 / BAD = 4.89
+  L=79051268 lado Rem: E_Rem(doc 114) = -0.000556 | BAD_R = 0.000e+00 | GOOD_R = 0.000556 | max R_R(min>=73) = 0.00000 en y=None
+  => PASS
+
+K3 estres z=101, r visibles con omega(r)<=2:
+  s=100003 L=105097 |V|=152, 40 conductores: max E_Add = 0.000e+00 | max R_A(min>=73) = 0.0000 | BAD>0 en ningun r
+  s=10007 L=1050274 |V|=886, 40 conductores: max E_Add = 0.000e+00 | max R_A(min>=73) = 0.8024 | BAD>0 en ningun r
+  s=1013 L=10375222 |V|=2526, 40 conductores: max E_Add = 0.000e+00 | max R_A(min>=73) = 0.8476 | BAD>0 en ningun r
+  => PASS
+
+K4 termino malo exacto del contraejemplo Rem (116b J3):
+  |a(y)|(R_R-1) = (Mertens(251)-1)/phi(y) = 723245473127227976960016407/57935959295948169533968228630272000 = 1.248e-08
+  => el unico termino malo conocido en Rem pesa < 1e-7. PASS
+
+Tiempo total: 0.3 s
+PASS

@@ -1,0 +1,39 @@
+== DOC 117b: (BAND-delta) via (DESP-SIGN) + (BAND-MOD) ==
+K0 identidades base: Shat(1)=S(1); Shat-Pi = -T^hat; delta = (Shat-Pi) + E:
+  z=29 L=841: |Shat(1)-S(1)|=0.00e+00 |Shat-Pi+T^hat|=3.33e-16 |desc|=5.55e-17
+  z=37 L=410: |Shat(1)-S(1)|=0.00e+00 |Shat-Pi+T^hat|=1.44e-15 |desc|=5.55e-17
+  => PASS
+
+K2 doble conteo de la suma con signo (niveles sueltos):
+  z=29 L=841: LHS=-6.383786e-01 RHS=-6.383786e-01 err=3.33e-16 | LHS/Q_c=-1.2722
+  z=37 L=410: LHS=-7.339610e-01 RHS=-7.339610e-01 err=2.22e-16 | LHS/Q_c=-1.5653
+  d'=385, lambda=9625: W(L=29^2)=1.2702, W(L=29^3)=0.2702 (distintos: la suma interna depende del umbral L/lambda)
+  => PASS
+
+K1/K3/K4/K5 barrido de banda (u_r<1.5, Pi<1/2, r visible>1):
+  [A] z=17 (60 niveles): max_L sum_banda/Q_c: delta+ = 0.0000 | (Shat-Pi)+ = 0.0000 | |Shat-Pi| = 0.0000
+  [A] z=29 (60 niveles): max_L sum_banda/Q_c: delta+ = 0.0198 | (Shat-Pi)+ = 0.1028 | |Shat-Pi| = 0.1028
+  [A] z=37 (60 niveles): max_L sum_banda/Q_c: delta+ = 0.0933 | (Shat-Pi)+ = 0.2103 | |Shat-Pi| = 0.2103
+  [B] z=29 (60 niveles): max_L sum_banda/Q_c: delta+ = 0.0128 | (Shat-Pi)+ = 0.0128 | |Shat-Pi| = 0.0128
+  instancias de banda: 246 | E>0 (contra DESP-SIGN): 0 | violacion reduccion delta+<=(Shat-Pi)+: 1.11e-16
+  signo de Shat-Pi por omega(r) [n+, n-, n0, masa+, masa-]:
+    omega=1: 56, 0, 0, 3.5374, 0.0000
+    omega=2: 187, 0, 0, 0.3211, 0.0000
+    omega=3: 3, 0, 0, 0.0001, 0.0000
+  signo para omega=1 por u_r [n+, n-, masa+, masa-]:
+    u_r en [1,1.5): 56, 0, 3.5374, 0.0000
+  degenerados Vhat={1}: 188 instancias; max (1-Pi)/phi/Q_c por z: {29: 0.1028, 37: 0.1822}
+  (Shat-Pi)+ <= Pi(r) concentra 1.000 de la masa (Shat-Pi)+ no degenerada; max (Shat-Pi)+/Pi = 0.692
+  => PASS
+
+K6 descomposicion degenerado/no-degenerado y suma Pi/phi (niveles representativos):
+  z=29 u_L=1.666 L=273: deg/Q_c=0.0000 (n=0) | nondeg+/Q_c=0.0000 (n=0) | sum Pi/phi/Q_c=0.0000 | max (Shat-Pi)/Pi nondeg=0.000 (u_r>=1: 0.000) | carac. deg OK
+  z=29 u_L=2.000 L=841: deg/Q_c=0.0000 (n=0) | nondeg+/Q_c=0.0000 (n=0) | sum Pi/phi/Q_c=0.0000 | max (Shat-Pi)/Pi nondeg=0.000 (u_r>=1: 0.000) | carac. deg OK
+  z=37 u_L=1.666 L=410: deg/Q_c=0.1822 (n=1) | nondeg+/Q_c=0.0000 (n=0) | sum Pi/phi/Q_c=0.1733 | max (Shat-Pi)/Pi nondeg=0.000 (u_r>=1: 0.000) | carac. deg OK
+  z=37 u_L=2.000 L=1369: deg/Q_c=0.1170 (n=1) | nondeg+/Q_c=0.0933 (n=1) | sum Pi/phi/Q_c=0.2695 | max (Shat-Pi)/Pi nondeg=0.539 (u_r>=1: 0.539) | carac. deg OK
+  z=53 u_L=1.666 L=747: deg/Q_c=0.5183 (n=2) | nondeg+/Q_c=0.0000 (n=0) | sum Pi/phi/Q_c=0.4609 | max (Shat-Pi)/Pi nondeg=0.000 (u_r>=1: 0.000) | carac. deg OK
+  z=53 u_L=2.000 L=2809: deg/Q_c=0.0477 (n=3) | nondeg+/Q_c=0.1486 (n=2) | sum Pi/phi/Q_c=0.2182 | max (Shat-Pi)/Pi nondeg=0.870 (u_r>=1: 0.870) | carac. deg OK
+  => PASS
+
+Tiempo total: 0.6 s
+PASS
