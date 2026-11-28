@@ -1,0 +1,84 @@
+Python 3.14.10
+[PASS] K0 Maquinaria: |H| R2=880, S11=802, S13=1628, S17=5033, S23=17999 (doc 101)
+
+=== §1.2 Lema (106.6) |Δ_r| ≤ φ(r)ω(r)ln N, y la errata del doc 97 ===
+  r > ln N: máx |Δ_r|/(φ(r)ω(r)ln N) = 0.0513 en ('gen', 'R1', 17) (Δ = 11.3329); doc 107: 0,0513 en r = 17
+  todo r ∈ ℋ_N: máx = 0.2330 en ('gen', 'R1', 5) (Δ = 12.8755) — la cota (106.6) también vale
+[PASS] K1a Cota (106.6) se cumple con holgura; máximo 0,0513 en r = 17 (Δ_17 = 11,3329) sobre r > ln N, y ≤ 1 sobre todo ℋ_N
+  máx |Δ_r|/(ω(r)ln N) (la cota impresa del doc 97, sin φ) = 1846.3 en ('gen', 'S23', 458815)
+  r = 458815 = 5·7·13109, φ = 314592, ω = 3: Δ (98.3) = 76522.068094; Δ = S_r − M_r (ruta sin caracteres) = 76522.068094
+  factor sobre ω(r)·ln N = 1846.3; Δ²/φ = 1.8613e+04 = 21.3% de B_Δ(gen/S23)
+[PASS] K1b Contraejemplo a la cota impresa del doc 97: r = 458815, |Δ_r| = 76522,068094 por dos rutas, factor 1846,3, 21% de B_Δ
+  holgura mínima de B_Δ ≤ (ln N)²M_ω: 2.06e+04 (r > ln N en ambos lados); 1.02e+04 (todo ℋ_N)
+[PASS] K1c B_Δ ≤ (ln N)²·M_ω en los 12 puntos, con holgura ≥ 2·10⁴ (convención r > ln N)
+
+=== §1.4 Momentos M_ω, M_φ (familia gen) por ramas y por enumeración ===
+  S11: M_ω ramas=7.1374e+06 enum=7.1374e+06 (doc 7.14e+06); M_φ ramas=1.6385e+06 enum=1.6385e+06 (doc 1.64e+06)
+  S13: M_ω ramas=3.9487e+07 enum=3.9487e+07 (doc 3.95e+07); M_φ ramas=7.4274e+06 enum=7.4274e+06 (doc 7.43e+06)
+  S17: M_ω ramas=5.6398e+08 enum=5.6398e+08 (doc 5.64e+08); M_φ ramas=8.9494e+07 enum=8.9494e+07 (doc 8.95e+07)
+  S19: M_ω ramas=1.7258e+09 enum=1.7258e+09 (doc 1.73e+09); M_φ ramas=2.5212e+08 enum=2.5212e+08 (doc 2.52e+08)
+  S23: M_ω ramas=1.0685e+10 enum=1.0685e+10 (doc 1.07e+10); M_φ ramas=1.3705e+09 enum=1.3705e+09 (doc 1.37e+09)
+[PASS] K2 M_ω y M_φ por ramas = enumeración (error relativo < 10⁻¹²) y = valores del doc 107 §1.4
+
+=== §1.5 B_Δ/T(N) en los 12 puntos y la cadena (107.1)–(107.2) ===
+  T(999982) = 4.0526e+08
+  T(1048576) = 4.3787e+08
+  gen/R1: B_Δ(r>ln N) = 1.7697e+02  B_Δ/T = 4.367e-07  | todo ℋ_N: 2.7742e+02 (6.846e-07)
+  gen/R3: B_Δ(r>ln N) = 9.4136e+01  B_Δ/T = 2.323e-07  | todo ℋ_N: 1.9458e+02 (4.802e-07)
+  gen/S11: B_Δ(r>ln N) = 2.0090e+03  B_Δ/T = 4.957e-06  | todo ℋ_N: 2.1095e+03 (5.205e-06)
+  gen/S13: B_Δ(r>ln N) = 1.0799e+04  B_Δ/T = 2.665e-05  | todo ℋ_N: 1.0900e+04 (2.690e-05)
+  gen/S17: B_Δ(r>ln N) = 2.9109e+04  B_Δ/T = 7.183e-05  | todo ℋ_N: 2.9209e+04 (7.208e-05)
+  gen/S23: B_Δ(r>ln N) = 8.7487e+04  B_Δ/T = 2.159e-04  | todo ℋ_N: 8.7587e+04 (2.161e-04)
+  2e/R1: B_Δ(r>ln N) = 5.4942e+02  B_Δ/T = 1.255e-06  | todo ℋ_N: 6.4987e+02 (1.484e-06)
+  2e/R3: B_Δ(r>ln N) = 9.7403e+01  B_Δ/T = 2.224e-07  | todo ℋ_N: 1.9785e+02 (4.519e-07)
+  2e/S11: B_Δ(r>ln N) = 4.6914e+03  B_Δ/T = 1.071e-05  | todo ℋ_N: 4.7919e+03 (1.094e-05)
+  2e/S13: B_Δ(r>ln N) = 1.1060e+04  B_Δ/T = 2.526e-05  | todo ℋ_N: 1.1160e+04 (2.549e-05)
+  2e/S17: B_Δ(r>ln N) = 2.6441e+04  B_Δ/T = 6.039e-05  | todo ℋ_N: 2.6542e+04 (6.062e-05)
+  2e/S23: B_Δ(r>ln N) = 7.3672e+04  B_Δ/T = 1.683e-04  | todo ℋ_N: 7.3773e+04 (1.685e-04)
+[PASS] K3 máx B_Δ/T = 2,159·10⁻⁴ en gen/S23; R3 ≈ 2,3·10⁻⁷ y R1 ≈ 4,4·10⁻⁷; C_Δ = 10⁻³ cubre con factor ≥ 4,6 | T(999982)=4.0526e+08
+  (107.1): 1/(4 ln²2) = 0.520342; (107.2): 0,0225/(4 ln²2) = 0.0117077; exponente 1−2c = 0.920232
+  cociente decreciente para N > e^(8/(1−2c)) = 5964
+  C_Δ = 1: N₀ = 3.822e+09
+  C_Δ = 0.01: N₀ = 7.398e+12
+  C_Δ = 0.001: N₀ = 2.361e+14
+[PASS] K6 Constantes de (107.1)–(107.2) y N₀ = 3,82·10⁹ / 7,40·10¹² / 2,36·10¹⁴ por bisección propia; «decreciente para N > 5970» es verdadero (umbral exacto 5964,4)
+[PASS] K6b B_Δ ≤ 0,520342·N(ln N)⁴ en los 12 puntos (la cota [T] de (107.1))
+
+=== §2.1 Masa de peso por niveles (sin ψ) y d > D_A^(2/3) ===
+  [ℋ (sin filtro N)] z=11: L=0.0001 S1=0.019 S2=0.380 S3=0.600 S4=0.000 S5=0.000 d>D_A^(2/3)=0.796 d≤D_A^(1/3)=0.000 S2–S5=0.981 |𝒟_C|=581
+  [ℋ (sin filtro N)] z=29: L=0.0001 S1=0.004 S2=0.118 S3=0.641 S4=0.124 S5=0.112 d>D_A^(2/3)=0.973 d≤D_A^(1/3)=0.000 S2–S5=0.996 |𝒟_C|=47177
+  [ℋ (sin filtro N)] desviación máxima frente a la tabla del doc 107 §2.1: 0.0037
+  [ℋ_N, N = 999982] z=11: L=0.0001 S1=0.019 S2=0.381 S3=0.600 S4=0.000 S5=0.000 d>D_A^(2/3)=0.798 d≤D_A^(1/3)=0.000 S2–S5=0.981 |𝒟_C|=577
+  [ℋ_N, N = 999982] z=13: L=0.0001 S1=0.016 S2=0.329 S3=0.636 S4=0.019 S5=0.000 d>D_A^(2/3)=0.857 d≤D_A^(1/3)=0.000 S2–S5=0.984 |𝒟_C|=1357
+  [ℋ_N, N = 999982] z=17: L=0.0002 S1=0.014 S2=0.282 S3=0.652 S4=0.042 S5=0.011 d>D_A^(2/3)=0.916 d≤D_A^(1/3)=0.000 S2–S5=0.986 |𝒟_C|=4870
+  [ℋ_N, N = 999982] z=19: L=0.0002 S1=0.011 S2=0.239 S3=0.644 S4=0.070 S5=0.037 d>D_A^(2/3)=0.931 d≤D_A^(1/3)=0.000 S2–S5=0.989 |𝒟_C|=8218
+  [ℋ_N, N = 999982] z=23: L=0.0001 S1=0.007 S2=0.165 S3=0.660 S4=0.100 S5=0.068 d>D_A^(2/3)=0.954 d≤D_A^(1/3)=0.000 S2–S5=0.993 |𝒟_C|=17954
+  [ℋ_N, N = 999982] z=29: L=0.0001 S1=0.004 S2=0.118 S3=0.643 S4=0.124 S5=0.111 d>D_A^(2/3)=0.973 d≤D_A^(1/3)=0.000 S2–S5=0.996 |𝒟_C|=47102
+  [ℋ_N, N = 999982] desviación máxima frente a la tabla del doc 107 §2.1: 0.0005
+[PASS] K4 Tabla de masas por nivel del doc 107 §2.1 reproducida (a 3 decimales) en z = 11..29 | mejor convención: ℋ_N, N = 999982
+
+=== §2.1 punto 4: calibración con ψ (masa real de ℳ_Ω por nivel, N = 999982) ===
+  z=11: S2+S3 = 0.906 (doc 0.906); S3 = 0.342; S4+S5 = 0.000; L = 0.0018
+  z=13: S2+S3 = 0.908 (doc 0.908); S3 = 0.400; S4+S5 = 0.015; L = 0.0029
+  z=17: S2+S3 = 0.877 (doc 0.877); S3 = 0.448; S4+S5 = 0.061; L = 0.0031
+  z=19: S2+S3 = 0.845 (doc 0.846); S3 = 0.454; S4+S5 = 0.100; L = 0.0041
+  z=23: S2+S3 = 0.809 (doc 0.809); S3 = 0.481; S4+S5 = 0.144; L = 0.0045
+[PASS] K4b Calibración con ψ: S2+S3 = 0,906 / 0,908 / 0,877 / 0,846 / 0,809 (z = 11..23)
+
+=== §2.2 / K5: W* y cota de criba grande por nivel (marco N_f = z^10) ===
+  [ℋ] z=11: W* = 9.61; Σ_ℓ W*_ℓ = 28.1; exceso solo-LS = 3.41e+07 (doc: 3.39e+07)
+  [ℋ] z=13: W* = 15.00; Σ_ℓ W*_ℓ = 64.5; exceso solo-LS = 1.25e+08 (doc: 1.25e+08)
+  [ℋ] z=17: W* = 31.00; Σ_ℓ W*_ℓ = 138.9; exceso solo-LS = 5.49e+08 (doc: 5.47e+08)
+  [ℋ] z=19: W* = 31.00; Σ_ℓ W*_ℓ = 148.8; exceso solo-LS = 7.78e+08 (doc: 7.76e+08)
+  [ℋ] z=23: W* = 31.00; Σ_ℓ W*_ℓ = 163.8; exceso solo-LS = 1.37e+09 (doc: 1.36e+09)
+  [ℋ] z=29: W* = 32.76; Σ_ℓ W*_ℓ = 190.6; exceso solo-LS = 2.73e+09 (doc: 2.72e+09)
+  [ℋ_N] z=11: W* = 9.52; Σ_ℓ W*_ℓ = 28.0; exceso solo-LS = 3.39e+07 (doc: 3.39e+07)
+  [ℋ_N] z=13: W* = 15.00; Σ_ℓ W*_ℓ = 64.3; exceso solo-LS = 1.25e+08 (doc: 1.25e+08)
+  [ℋ_N] z=17: W* = 31.00; Σ_ℓ W*_ℓ = 138.5; exceso solo-LS = 5.47e+08 (doc: 5.47e+08)
+  [ℋ_N] z=19: W* = 31.00; Σ_ℓ W*_ℓ = 148.4; exceso solo-LS = 7.76e+08 (doc: 7.76e+08)
+  [ℋ_N] z=23: W* = 31.00; Σ_ℓ W*_ℓ = 162.8; exceso solo-LS = 1.36e+09 (doc: 1.36e+09)
+  [ℋ_N] z=29: W* = 32.37; Σ_ℓ W*_ℓ = 189.6; exceso solo-LS = 2.72e+09 (doc: 2.72e+09)
+[PASS] K5a W* = 9,52 / 15,00 / 31,00 (z = 11/13/17–23) y Σ_ℓ W*_ℓ = 28,0 (z = 11) … 189,6 (z = 29)
+[PASS] K5b Exceso de la cota de criba grande por nivel frente a T(N_f) (con Λ₂ ≈ N ln N): reproduce la columna solo-LS y es > 1
+
+RESUMEN: 12/12 PASS, 0 FAIL. Tiempo 5.7 s
