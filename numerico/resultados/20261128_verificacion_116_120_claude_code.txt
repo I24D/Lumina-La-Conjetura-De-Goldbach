@@ -1,0 +1,214 @@
+Verificación docs 116-120a (Claude Code). Python 3.14.10
+
+==============================================================================
+Aritmética de los textos
+==============================================================================
+  [PASS] 116b.J0: Mertens(67) = 160107799/160240080 = 0,99917 < 1; Mertens(71) = 1,01346 > 1 | 160107799/160240080 = 0.99917; 1.01346
+  [PASS] 117a.K0: Mertens(37) = 15899/18480 = 0,860335; 1 - Mertens(37) = 2581/18480 = 0,139665 | 15899/18480
+  [PASS] 114.R: R_A(y) <= Mertens(q < min(y)) < 1 también para min(y) = 71 (q <= 67): el umbral real es min(y) >= 73
+  [PASS] 117a.K4: término malo Rem del J3 = (Mertens(251)-1)/phi(20531891) = 1,248e-8 | 1.2484e-08
+  [PASS] 116c.J1: Pi_full(17) = 0,515625 > 1/2 > Pi_full(19) = 0,4834 | 0.515625 / 0.4834
+  [PASS] 116c.B1: B1(5/3) = log(10/3) = 1,2040; B1(2) = log(4/3) = 0,2877
+  [FAIL] 119b.A: aritmética del texto: '5*7*11*13 = 15015' (119b §1) | 5*7*11*13 = 5005 (15015 = 3*5*7*11*13)
+    estrato q0=5: cofactores c < q0^3 libres de cuadrados con primos >= q0: 38 (cota absoluta de N(r))
+    estrato q0=7: cofactores c < q0^3 libres de cuadrados con primos >= q0: 87 (cota absoluta de N(r))
+    estrato q0=11: cofactores c < q0^3 libres de cuadrados con primos >= q0: 297 (cota absoluta de N(r))
+
+==============================================================================
+BARRIDO PRINCIPAL: 4 marcos x 60 niveles (docs 113/114/116/117/118/119/120a)
+==============================================================================
+  marco A z=17: 60 niveles (t=0.0s)
+  marco A z=29: 60 niveles (t=0.0s)
+  marco A z=37: 60 niveles (t=0.0s)
+  marco B z=29: 60 niveles (t=0.0s)
+
+==============================================================================
+Doc 113/114 (control de la maquinaria) y doc 116a (REM-PERS-small)
+==============================================================================
+  [PASS] K0.1: instancias (L, r>1 visible) en 240 niveles = 4113 | medido 4113
+  [PASS] K0.2: |Add| = 6509 y |Rem| = 1049 (doc 113 K6 / 114 K0) | medido 6509 / 1049
+  [PASS] K0.3: visibles = V+(L) (Lema 2 del doc 114, cierre por divisores) | niveles con diferencia: 0
+  [PASS] K0.4: E(r) <= 0 en las 4113 (DESP-SIGN en ventana) y por lados | E>1e-12: 0 | max E/Pi = 0.0e+00 | max E_Add = 0.0e+00 | max E_Rem = -0.0e+00
+  [PASS] K0.5: identidades de flujo E_Add, E_Rem (doc 114) a precisión de máquina | err 5.6e-17 / 1.7e-18
+  [PASS] K0.6: A_min = 1,4273 y 1348 degenerados reales V^(r)={1} (doc 113) | A_min = 1.4273, degenerados reales = 1348
+  [PASS] 116a.J0: Rem^- = 39 en los marcos | medido 39
+  [PASS] 116a.J1: x en Vhat^- examinados = 5568; condición (II) r x q_min^2 < L sin violaciones | medido 5568, violaciones 0
+  [PASS] 116a.J2: fallos fusionados en Vhat^- = 39, uno por x en Rem^-, 0 en primos <= q_min (Lema A: 0 en q_min; Lema B: 0 R2 bajo q_min) | fallos 39, x con un fallo 39, <=q_min 0, en q_min 0, R2<q_min 0
+  [PASS] 116a.J3: pares (x en Vhat^-, p|r, p<q_min) = 2423; razón máxima del lado fusionado = 0,7581 < 1 | medido 2423 pares, razón máx 0.7581
+  [PASS] 116a.J4: familia residual vacía; 0 primos en Rem; R1 nunca en posición propia impar | residuales 0, primos en Rem 0, R1 en posición impar 0
+  [PASS] 116a.J5: aterrizaje psi(x) = x/q_min en Rem^+ : 39/39 | 39 bien, 0 mal
+
+==============================================================================
+Doc 116b J1 (cotas afiladas) y doc 117a K1 (BAD en los marcos)
+==============================================================================
+  [PASS] 116b.J1: 1640 pares (y,q) admisibles; (*), (**), (***) sin violaciones; max R_A = 0,6000 | pares 1640 (socio fuera 0), viol 0/0/0, max R_A = 0.6000 en ('B', 29, 2261685, 323, 23)
+  [PASS] 117a.K1: BAD = 0 idéntico en las 4113 instancias; max R_R = 0,2500 | BAD total = 0, max R_R = 0.2500
+  [PASS] 117b.P: Vhat^(r) = {1} <=> q0^3 r >= L en TODAS las 4113 instancias (Proposición del doc 117b §3.2) | excepciones 0
+
+==============================================================================
+Doc 114 K6 / 116c J2: banda cruda en los 240 niveles
+==============================================================================
+  [PASS] 114.K6: u0=1,5: max cruda 0,6991 Q_c; parte Pi<1/2 0,4408; real 0,3806; max #r 77 | 0.6991 / 0.4408 / 0.3806 / 77
+  [PASS] 116c.J2: máximo muestreado de la parte Pi<1/2: 0,1526 (z=29) y 0,4408 (z=37); 0 en z=17 | A17 0.0000 | A29 0.1526 | A37 0.4408 | B29 0.0191
+
+==============================================================================
+Doc 117b: reducción, signo unilateral, sumas por marco, degenerados
+==============================================================================
+  [PASS] 117b.K1: 246 instancias de banda; E>0 en 0; delta^+ <= (Shat-Pi)^+ (violación máx ~0) | n=246, E>0: 0, violación máx 0.0e+00
+  [PASS] 117b.K3: Shat - Pi > 0 en 246/246; por omega 56/187/3 con masas 3,5374 / 0,3211 / 0,0001 | w=1: +56 -0 0:0 masa+ 3.5374 masa- 0.0000; w=2: +187 -0 0:0 masa+ 0.3211 masa- 0.0000; w=3: +3 -0 0:0 masa+ 0.0001 masa- 0.0000
+  [PASS] 117b.K4: máx por marco de sum delta^+/phi, (Shat-Pi)^+/phi, |Shat-Pi|/phi: A29 0,0198/0,1028/0,1028; A37 0,0933/0,2103/0,2103; B29 0,0128 x3; A17 vacío | A29 0.0198/0.1028/0.1028; A37 0.0933/0.2103/0.2103; B29 0.0128/0.0128/0.0128
+  [PASS] 117b.K5: 188/246 degenerados del modelo; máx (Shat-Pi)^+/Pi no degenerado = 0,692 | degenerados 188, máx 0.6924
+
+==============================================================================
+Doc 118b1: Teorema A, histogramas, estratos
+==============================================================================
+  [PASS] 118b1.J1: histogramas omega de los 188 degenerados {1:1,2:9}, {1:31,2:47}, {2:100}; todos con omega<=2 cumplen L < q0^9 | medido {('A', 29): {1: 1, 2: 9}, ('A', 37): {1: 31, 2: 47}, ('B', 29): {2: 100}}, violaciones 0
+  [PASS] 118b1.J2: suma degenerada visible máx por nivel (1/phi) solo en el estrato 5: 0,1993 / 0,3554 / 0,0252 Q_c | estratos presentes [5]; {('A', 29, 5): 0.1993, ('A', 37, 5): 0.3554, ('B', 29, 5): 0.0252}
+
+==============================================================================
+Doc 114 K7 / 116a (estrés z=53, 10 niveles, <=120 conductores)
+==============================================================================
+  [PASS] 116a.J0s: estrés: 185 instancias, Rem^- = 36, Vhat^- = 498, 221 pares, razón máx 0,4916, 0 fallos <= q_min, psi 36/36 | 185 / 36 / 498 / 221 / 0.4916 / 0 / 36
+
+==============================================================================
+Doc 120a: (BAND-delta-HI), capa u_r en [1, 3/2)
+==============================================================================
+    niveles de estrés z=53 (4 más cercanos a u_L=2): [2585, 2745, 2922, 3122]
+  [PASS] 120a.T: tabla de capa: A29 0,0198/0,1028/0,0830/0,0198; A37 0,0933/0,2103/0,1244/0,0933; B29 0,0128/0,0128/0/0,0073; estrés53 0,0867/0,2695/0,1828/0,0491 | A29 0.0198/0.1028/0.0830/0.0198; A37 0.0933/0.2103/0.1244/0.0933; B29 0.0128/0.0128/0.0000/0.0073; S53 0.0867/0.2695/0.1828/0.0491
+  [FAIL] 120a.K1: 67 no degeneradas con exceso; cobertura 0/67; máx |E|/(Shat-Pi)^+ = 0,9930; E = 0 en 39/67 (58,2 %); 28 con E != 0 | n=67, cobertura 0, máx 0.9930, E=0 estructural 40 (float 40) = 59.7 %, E!=0: 27
+    E=0 estructural pero E != 0 en coma flotante por la ruta de C: 1 caso(s) [('A', 37, 39557, 187, 1.1102230246251565e-16)]
+  [PASS] 120a.K1n: la discrepancia 39 frente a 40 se explica por ruido de coma flotante (E ~ 1e-16 contado como E != 0) | estructural 40 - ruidosos 1 = 39; E!=0 27 + 1 = 28
+  [PASS] 120a.K1b: mediana del afeitado donde E != 0 = 0,6271 (62,7 %) | mediana superior (sorted[n//2]) = 0.6271, mediana estándar = 0.6271
+  [PASS] 120a.K2: 43 instancias no degeneradas (A29, estrés, A37): Rem vacío en todas (E 100 % lado Add); mediana |E_Add|/(Shat-Pi) = 0,5581 | n=43, con Rem no vacío 0, mediana (sorted[n//2]) 0.5581, n_dif>0 = 43
+  [FAIL] 120a.D: ¿todo degenerado del modelo (Vhat={1}) de la capa tiene E = 0 y delta = 1 - Pi? (frase de 120a §1) | degenerados de capa 172, con E != 0: 32 | ej.: A29 L=1360 r=11 |V^(r)|=3 E=-0.4167 delta=0.0991 1-Pi=0.5158
+
+==============================================================================
+Doc 119a: perfil (Shat-Pi)/Pi en la capa alta y sumas por marco
+==============================================================================
+  [PASS] 119a.K1a: máx (Shat-Pi)/Pi en u_r>=1 = 1,2947; perfil ponderado Theta(1) | máx 1.2947 | [1.00,1.25): 1.04-1.06; [1.25,1.40): 0.86-1.04; [1.40,1.45): 0.58-1.07; [1.45,1.50): 0.53-0.70
+  [PASS] 119a.K1b: tabla de 119a §2 (banda total, capas >=1,25 y >=1,40, omega=1, omega=2, mayorante sum Pi/phi) en A29, A37, B29, estrés53 | A29 0.1028/0.1028/0.1028/0.1028/0.0128/0.0965; A37 0.2103/0.2103/0.1182/0.2103/0.0572/0.2695; B29 0.0128/0.0128/0.0073/0.0000/0.0128/0.0124; S53 0.3172/0.2695/0.1209/0.2695/0.0477/0.3911
+
+==============================================================================
+Doc 118b2 J1: partición degenerado / no degenerado con 25 niveles
+==============================================================================
+  [PASS] 118b2.J1: celda no degenerada u_r<1 vacía; tabla 0,0530/0,0965/0,0035 (A29), 0,1570/0,2695/0,1822 (A37), 0,0037/0,0072/0,0128 (B29); instancias 0/1/1, 0/13/28, 0/10/42 | A17 0.0000/0.0000/0.0000/0.0000/0.0000 [0, 0, 0]; A29 0.0000/0.0000/0.0530/0.0965/0.0035 [0, 1, 1]; A37 0.0000/0.0000/0.1570/0.2695/0.1822 [0, 13, 28]; B29 0.0000/0.0000/0.0037/0.0072/0.0128 [0, 10, 42]
+
+==============================================================================
+Docs 116c §3 / 117b K6 / 118a J1 / 118b2 J2: niveles L = floor(z^u)
+==============================================================================
+    z=29 u=2 L=841: cruda 0.0000, real 0.0000, sum Pi/phi por omega ['0.0000', '0.0000', '0.0000']
+    z=29 u=3 L=24389: cruda 0.0191, real 0.0191, sum Pi/phi por omega ['0.0000', '0.0124', '0.0000']
+    z=29 u=4 L=707281: cruda 0.0000, real 0.0000, sum Pi/phi por omega ['0.0000', '0.0000', '0.0000']
+    z=29 u=5/3 L=273: cruda 0.0000, real 0.0000, sum Pi/phi por omega ['0.0000', '0.0000', '0.0000']
+    z=37 u=2 L=1369: cruda 0.4408, real 0.0948, sum Pi/phi por omega ['0.2695', '0.0000', '0.0000']
+    z=37 u=3 L=50653: cruda 0.0791, real 0.0493, sum Pi/phi por omega ['0.0000', '0.0459', '0.0000']
+    z=37 u=4 L=1874161: cruda 0.0006, real 0.0000, sum Pi/phi por omega ['0.0000', '0.0000', '0.0004']
+    z=37 u=5/3 L=410: cruda 0.2710, real 0.1155, sum Pi/phi por omega ['0.1733', '0.0000', '0.0000']
+    z=53 u=2 L=2809: cruda 0.4306, real 0.1043, sum Pi/phi por omega ['0.1746', '0.0436', '0.0000']
+    z=53 u=5/3 L=747: cruda 0.7617, real 0.4108, sum Pi/phi por omega ['0.4609', '0.0000', '0.0000']
+  [PASS] 116c.T: tabla de ventana del doc 116c §3 (cruda/real a L=floor(z^u))
+  [PASS] 118a.J1: (REG-Pi) medido: sum_banda Pi/phi = 0,17-0,46 Q_c (tabla de 118a §5 por omega) | totales ['0.1733', '0.2695', '0.4609', '0.2182', '0.0000', '0.0000']
+  [PASS] 116c.J4: cancelación que el conteo no ve (z=37, L=37^2) | p=7 Pi=0.4875 S=0.6500 delta=0.1625 cruda=0.1271 t=0.0308 factor 4.1; p=11 Pi=0.4514 S=0.5833 delta=0.1320 cruda=0.0796 t=0.0137 factor 5.8
+  [PASS] 118a.J4: familia a z=53: 5 elementos, 5/5 visibles, en banda 77, 91, 143 (degenerados, u_r en [0,750, 0,906]); masa g = 0,0505 = 0,0436 M_full; ventana estricta (11/20, 3/5) vacía | en banda [(77, 0.906, True), (91, 0.864, True), (143, 0.75, True)], g=0.0505, g/M_full=0.0436
+
+==============================================================================
+Doc 117b K2: identidad de doble conteo y W_L(385)
+==============================================================================
+  [PASS] 117b.K2: identidad exacta; signo +1,2722 Q_c y +1,5653 Q_c; lam(385)=9625, W_L(385) = 1,2702 (L=29^2) y 0,2702 (L=29^3) | z=29 L=841: |lhs-rhs|=2.2e-16, sum_r (Shat-Pi)/phi = +1.2722 Q_c; z=29 L=24389: |lhs-rhs|=8.3e-17, sum_r (Shat-Pi)/phi = +0.3557 Q_c; z=37 L=410: |lhs-rhs|=0.0e+00, sum_r (Shat-Pi)/phi = +1.5653 Q_c; W = 1.2702 / 0.2702
+
+==============================================================================
+Doc 119b: reindexación divisor-cofactor de (SLAB-V), paso a paso
+==============================================================================
+  [PASS] 119b.K0: phi(c)phi(r) = phi(d) en todo par; todo cofactor de testigo < q0^3; todo r degenerado visible tiene testigo | violaciones 0 / 0 / 0
+  [PASS] 119b.N: N(r) del doc = |V^(r)| (el número de testigos es el tamaño del soporte desplazado REAL) | discrepancias 0
+    N(r): max 3 / 3 / 1; media 1.20 / 1.41 / 1.00 (A29/A37/B29)
+    (verdadera, P, W)/Q_c por (marco, z, q0): {('A', 17, 5): (0.0, 0.0, 10.35), ('A', 17, 7): (0.0, 0.0, 1.82), ('A', 17, 11): (0.0, 0.0, 0.22), ('A', 29, 5): (0.1993, 0.5979, 16.26), ('A', 29, 7): (0.0, 0.0, 5.99), ('A', 29, 11): (0.0, 0.0, 1.18), ('A', 37, 5): (0.3554, 0.7109, 16.09), ('A', 37, 7): (0.0, 0.0, 9.38), ('A', 37, 11): (0.0, 0.0, 2.04), ('B', 29, 5): (0.0252, 0.0252, 5.46), ('B', 29, 7): (0.0, 0.0, 7.97), ('B', 29, 11): (0.0, 0.0, 1.35)}
+  [PASS] 119b.K1: tabla: verdadera 0,1993/0,3554/0,0252; P 0,5979/0,7109/0,0252; W 16,26/16,09/5,46; N(r) <= 3 | ver línea anterior
+  [PASS] 119b.K2: intercambio W = sum_c U_c exacto | error máx 2.7e-15
+    cofactores que aparecen en W(5): [10, 17, 19, 17]; en W(11): [4, 16, 29, 16]
+    U_5 (q0=5) máx/Q_c: [1.984, 2.325, 2.488, 0.198];  parte c=1 de W(5): [1.701, 0.332, 0.355, 0.065]
+    predicción del modelo Pi_full A(5) ln(5^3) / Q_c: ['z=29: 3.52', 'z=37: 3.52'] (doc: 3,52)
+
+==============================================================================
+Doc 118b1 J3: E(z), kappa0, q0+ y su dependencia en z
+==============================================================================
+    z=17: E/ln z = 0.6134 (p<z) / 0.6517 (p<=z); kappa0 = 0.8961 (p<z) / 0.8926 (p<=z); cola 2E/(ln z)^3 = 0.162
+    z=29: E/ln z = 0.6051 (p<z) / 0.6267 (p<=z); kappa0 = 0.8880 (p<z) / 0.8869 (p<=z); cola 2E/(ln z)^3 = 0.111
+    z=37: E/ln z = 0.6039 (p<z) / 0.6207 (p<=z); kappa0 = 0.8859 (p<z) / 0.8852 (p<=z); cola 2E/(ln z)^3 = 0.095
+    z=53: E/ln z = 0.6053 (p<z) / 0.6169 (p<=z); kappa0 = 0.8837 (p<z) / 0.8834 (p<=z); cola 2E/(ln z)^3 = 0.078
+  [PASS] 118b1.J3: E/ln z = 0,6517/0,6267/0,6207/0,6169, kappa0 0,8926 -> 0,8834, colas 0,162/0,111/0,095/0,078: se reproducen con p <= z (no con P = primos < z)
+    J4: cota Euler estrato 5 / Q_c = ['3.25', '3.72']; suma degenerada en banda sin visibilidad (r < L / todo el enum): {('A', 29): (0.716, 0.716), ('A', 37): (1.394, 1.405), ('B', 29): (0.025, 0.025)}
+  [PASS] 118b1.J4: cota Euler del estrato 5 = 3,25 / 3,72 Q_c (P = primos < z); suma degenerada sin visibilidad 0,716 / 1,405 / 0,025 Q_c
+  [PASS] 118b1.F: q0+(z) = min{q : P(q) >= (ln z)^3} es 13 solo para 26,3 < z <= 1443,6 y crece con z | z=17: 11; z=29: 13; z=1443: 13; z=1444: 17; z=1e+06: 17; z=1e+12: 19; z=1e+30: 23; z=1e+100: 29
+  [FAIL] 118b1.A: aritmética del texto: '5^9 > 2*10^7' (118b1 §2) | 5^9 = 1953125
+
+==============================================================================
+Doc 119a: exponente de la condición m=1 y término principal FL
+==============================================================================
+  [PASS] 119a.E: la condición m=1 de Vhat es r q^3 < L (no r q^2 < L): a z=37, L=37^2, r=7, Vhat = {1, 5} | Vhat^(7) = [1, 5]; primos con 7q^3<L: [5]; con 7q^2<L serían [5, 11, 13]
+  [PASS] 119a.FL: Shat/Pi > 1 de forma estable (defecto del modelo = término principal, hacia F(u) = 2e^gamma/u) | z=10^3 u=1.25: Shat/Pi = 2.280 (|V+|=16; F(u)=2e^g/u=2.850); z=10^3 u=1.45: Shat/Pi = 2.061 (|V+|=35; F(u)=2e^g/u=2.457); z=10^4 u=1.25: Shat/Pi = 2.437 (|V+|=132; F(u)=2e^g/u=2.850); z=10^4 u=1.45: Shat/Pi = 2.129 (|V+|=631; F(u)=2e^g/u=2.457); z=10^5 u=1.25: Shat/Pi = 2.509 (|V+|=1479; F(u)=2e^g/u=2.850); z=10^5 u=1.45: Shat/Pi = 2.206 (|V+|=10375; F(u)=2e^g/u=2.457)
+
+==============================================================================
+Regiones de Mertens: verificación exacta de cajas (116c §2.4, 118b2 §1.3)
+==============================================================================
+  [PASS] 116c.R: cajas propias de medida positiva para u* = 5/2, 3, 7/2, 4 (omega 2, 2, 3, 3): la obstrucción cubre [5/3, 4] | u*=5/2: válida, masa 3.36e-02; u*=3: válida, masa 1.59e-02; u*=7/2: válida, masa 3.12e-04; u*=4: válida, masa 6.84e-06
+  [PASS] 118b2.R: hermana omega=3: visible y con u_r < 0,94 (corta u0* > 0,94); escalera k=2: Nathanson estricto en m=1,3,5 y u_r < 1/2 | hermana u_r < 0.940; escalera u_r < 0.2489
+
+==============================================================================
+Doc 117a K2 / 116b J2: el marco del contraejemplo (z=331, r=5)
+==============================================================================
+    L=46948396 (s=84629 en L_A: True): |union|=8452, E_Add=-0.036949, BAD=1.0856e-03, GOOD=0.038035, GOOD/BAD=35.04, HEAD37=0.0387, cola>=73=0.0769, holgura FC-2=4.98, malos=13 ([251]..[317]), max R_A=1.04522 en 317; E_Rem=-0.000607 BAD_R=0.0e+00 GOOD_R=6.07e-04; S(5)=0.353858 Shat(5)=0.391414 max R_V=1.04522 (#R_V>1: 13)
+    L=79051268 (s=50261 en L_A: True): |union|=11150, E_Add=-0.029314, BAD=1.0856e-03, GOOD=0.030399, GOOD/BAD=28.00, HEAD37=0.0321, cola>=73=0.0462, holgura FC-2=4.13, malos=13 ([251]..[317]), max R_A=1.04522 en 317; E_Rem=-0.000556 BAD_R=0.0e+00 GOOD_R=5.56e-04; S(5)=0.350245 Shat(5)=0.380115 max R_V=1.04522 (#R_V>1: 13)
+    L=113296524 (s=35069 en L_A: True): |union|=13764, E_Add=-0.022764, BAD=7.3012e-04, GOOD=0.023494, GOOD/BAD=32.18, HEAD37=0.0255, cola>=73=0.0198, holgura FC-2=4.89, malos=6 ([283]..[317]), max R_A=1.04522 en 317; E_Rem=-0.000515 BAD_R=0.0e+00 GOOD_R=5.15e-04; S(5)=0.348552 Shat(5)=0.371830 max R_V=1.04522 (#R_V>1: 13)
+  [PASS] 117a.K2: nivel decisivo L=79051268: E_Add=-0,029314, BAD=1,086e-3, GOOD=0,030399 (margen x28), malos = los 13 primos 251..317, max R_A=1,04522 en 317, HEAD37=0,0321, cola=0,0462, holgura 4,13; E_Rem=-0,000556, BAD_R=0 | margen GOOD/BAD = 28.00; R_A(251) exacto = 22633668515439323928857875/22584054598420241438576064
+  [PASS] 117a.K2b: niveles de control: E_Add -0,036949 / -0,022764, BAD 1,086e-3 / 7,30e-4, holguras 4,98 / 4,89 | holguras 4.98 / 4.89
+  [PASS] 117a.S: fuerza lógica: el lado derecho de (FC-2) es MENOR que el de (FLOW-COMP) (FC-2 exige más: es la condición suficiente, más fuerte) | (1-M37)*HEAD37 = 0.00449  <  GOOD = 0.03040 (15 %)
+  [PASS] 114.S1: S(5) <= 1 sobrevive aquí solo por compensación: hay y con R_V(y) > 1 en el soporte completo V^(5) (la ruta puntual de S<=1 también muere) | S(5) = 0.350245, max R_V = 1.04522, #y con R_V>1 = 13
+
+==============================================================================
+Doc 116b J2/J3: contraejemplos con predicados propios
+==============================================================================
+  [PASS] 116b.J2: tabla del contraejemplo R_A en marco (z=331, r=5, y=Y primo): niveles en L_A, R_A exacto = forma cerrada; R_A(251) = la fracción impresa, 50 primos | Y=73 R_A=0.76346 (17 q); Y=101 R_A=0.82415 (22 q); Y=151 R_A=0.90856 (32 q); Y=211 R_A=0.97144 (43 q); Y=251 R_A=1.00220 (50 q); Y=283 R_A=1.02855 (57 q); Y=307 R_A=1.03552 (59 q)
+  [PASS] 116b.J2b: primer cruce de Mertens(Y-1) - 1/4 > 1 en Y = 251 | primer Y = 251
+  [PASS] 116b.J3a: la instancia R_R del doc es correcta como aritmética (y en Rem^+, R_R = Mertens(251) = 1,25620, 52 primos) | R_R=1.25620, 52 primos
+  [FAIL] 116b.J3b: ¿está L = floor(z^5/5) en L_A? (requiere s primo en [z, z^(10/3)) y u_L <= 4) | s = 5 < z = 6052; u_L = 4.815 > 4: el nivel NO está en L_A
+  [PASS] 116b.J3c: instancia PROPIA de R_R(y) > 1 con nivel en L_A (el enunciado del doc sobrevive con otro ejemplo) | z=4001, s=8461, L=121177241479732 (u_L=3.910), rho=659, y=661*653: R_R(y) = 1.02735 con 19 primos
+  [PASS] 116b.C: y COMPUESTO con R_A(y) > 1 en L_A (la 'configuración libre' no exige y primo) | z=28515, s=162655277, L=115904079453194 (u_L=3.157), r=5, y=28513*257*251 (omega 3): R_A(y) = 1.00220 con 50 primos
+
+==============================================================================
+Doc 117a §1b: masa mala de la familia prima libre (r0 = 5) sin PNT
+==============================================================================
+    L=10^12: masa mala máxima de la familia prima = 2.8477e-02 (predicción de Mertens 2.8526e-02); (log log L)/log L = 1.2012e-01; cociente 0.237
+    L=10^15: masa mala máxima de la familia prima = 3.3456e-02 (predicción de Mertens 3.3619e-02); (log log L)/log L = 1.0255e-01; cociente 0.326
+    L=10^18: masa mala máxima de la familia prima = 3.5232e-02 (predicción de Mertens 3.5282e-02); (log log L)/log L = 8.9860e-02; cociente 0.392
+    L=10^21: masa mala máxima de la familia prima = 3.5458e-02 (predicción de Mertens 3.5469e-02); (log log L)/log L = 8.0211e-02; cociente 0.442
+    L=10^24: masa mala máxima de la familia prima = 3.4974e-02 (predicción de Mertens 3.4979e-02); (log log L)/log L = 7.2601e-02; cociente 0.482
+    la predicción (ln t - 1,7153)/t, t = ln L^(1/3), tiene su máximo en t = e^2,715 = 15.1 (L ~ 10^20) y decae después como log log L / log L
+  [PASS] 117a.PNT: la masa mala de la familia prima sigue la predicción de Mertens ELEMENTAL al 1 %: masa = ln5 (ln ln L - 2,81)/ln L (1+o(1)) -> 0, sin PNT | cocientes masa/(loglogL/logL) ['0.237', '0.326', '0.392', '0.442', '0.482'] (-> ln 5 = 1,609)
+
+==============================================================================
+Sumas de Mertens a gran escala (116c J3, 118a J2/J3, 118b2 J0)
+==============================================================================
+  [PASS] 116c.J3a: B1(2): 0,2866 a Z=10^8; B1(5/3): 1,1917 a Z=10^12; cofactor 35: 0,0119 | 0.2866 (lím 0.2877) / 1.1917 (lím 1.2040) / 0.0119 (pred 0.0120)
+  [PASS] 116c.J3c: Pi_full ln z -> K y Q_c ln z -> K M_inf (z = 37 ... 10007) | z=37: 1.4668, 1.6931; z=53: 1.4600, 1.6894; z=101: 1.4690, 1.7035; z=1009: 1.4790, 1.7181; z=10007: 1.4809, 1.7205 | K teórico = 3 e^-gamma C2/(3/4) = 1.48262
+  [PASS] 116c.Minf: M_inf en [1,16181601, 1,16182763] (doc 115) | M(10^7) = 1.16181693, cota superior con cola 1.16181705; K M_inf = 1.72253
+  [PASS] 118a.J2: exterior 0,0850 -> 0,0870 = log(12/11); interior 1,2262 -> 2,1324 (z = 10^4 ... 10^10) | ext ['0.0850', '0.0869', '0.0868', '0.0870'] | int ['1.2262', '1.6249', '1.9101', '2.1324'] | log(12/11) = 0.0870
+  [PASS] 118a.J3: rebanada omega=1 a z=10^12: 1,1935 (B1=1,2040) y 0,2876 (log 4/3=0,2877) | z=10^10: 1.1790, 0.2874 | z=10^12: 1.1935, 0.2876
+  [PASS] 118a.C: constante de la rebanada omega=1: log(10/3)/M_inf = 1,036 | 1.0363
+    J0(b) variantes: corte fijo x_q <= 0,40: ['0.739', '0.800', '0.825']; x_q <= 0,45: ['0.832', '0.865', '0.881']
+    J0(c) los valores impresos 0,166 y 0,282 son las masas de los intervalos (0,55; 0,65) -> 0.1664 y (0,45; 0,60) -> 0.2821 a z=10^6, no las de la subcaja impresa
+  [FAIL] 118b2.J0ab: exterior 0,0869/0,0868 (z=10^6/10^8); fracción con u_r>=1: 0,718/0,781/0,808 | 0.0869 / 0.0868 | ['0.790', '0.833', '0.854']
+  [FAIL] 118b2.J0c: masas de la caja omega=3 a z=10^6: 0,166 y 0,282 (impresas) | medido 0.1481 (lím log(0,65/0,56) = 0.1490) y 0.0935 (lím log(0,55/0,50) = 0.0953)
+
+==============================================================================
+RESUMEN
+==============================================================================
+  Cada chequeo contrasta una afirmación del texto (o una de este informe). FAIL = la afirmación del texto NO se sostiene tal como está escrita: es un hallazgo, interpretado en el informe.
+  FAIL 119b.A: aritmética del texto: '5*7*11*13 = 15015' (119b §1) | 5*7*11*13 = 5005 (15015 = 3*5*7*11*13)
+  FAIL 120a.K1: 67 no degeneradas con exceso; cobertura 0/67; máx |E|/(Shat-Pi)^+ = 0,9930; E = 0 en 39/67 (58,2 %); 28 con E != 0 | n=67, cobertura 0, máx 0.9930, E=0 estructural 40 (float 40) = 59.7 %, E!=0: 27
+  FAIL 120a.D: ¿todo degenerado del modelo (Vhat={1}) de la capa tiene E = 0 y delta = 1 - Pi? (frase de 120a §1) | degenerados de capa 172, con E != 0: 32 | ej.: A29 L=1360 r=11 |V^(r)|=3 E=-0.4167 delta=0.0991 1-Pi=0.5158
+  FAIL 118b1.A: aritmética del texto: '5^9 > 2*10^7' (118b1 §2) | 5^9 = 1953125
+  FAIL 116b.J3b: ¿está L = floor(z^5/5) en L_A? (requiere s primo en [z, z^(10/3)) y u_L <= 4) | s = 5 < z = 6052; u_L = 4.815 > 4: el nivel NO está en L_A
+  FAIL 118b2.J0ab: exterior 0,0869/0,0868 (z=10^6/10^8); fracción con u_r>=1: 0,718/0,781/0,808 | 0.0869 / 0.0868 | ['0.790', '0.833', '0.854']
+  FAIL 118b2.J0c: masas de la caja omega=3 a z=10^6: 0,166 y 0,282 (impresas) | medido 0.1481 (lím log(0,65/0,56) = 0.1490) y 0.0935 (lím log(0,55/0,50) = 0.0953)
+  69/76 afirmaciones confirmadas; 7 hallazgos | 4.2 s
