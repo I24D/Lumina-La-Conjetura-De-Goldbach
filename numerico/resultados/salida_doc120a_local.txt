@@ -1,0 +1,38 @@
+== DOC 120a: (BAND-delta-HI), cancelacion de E en la capa alta ==
+K0 identidades en la capa alta (z=29, dos niveles):
+  L=554355: |delta-((Shat-Pi)+E)| max = 0.00e+00 | |E - (sum_Add a - sum_Rem a)| max = 0.00e+00 | E>0: 0
+  L=387002: |delta-((Shat-Pi)+E)| max = 0.00e+00 | |E - (sum_Add a - sum_Rem a)| max = 0.00e+00 | E>0: 0
+  => PASS
+
+K1 medicion decisiva de la capa alta (max sobre niveles, / Q_c):
+  [A] z=17 (60 niveles): capa u_r>=1: delta^+ = 0.0000 | (Shat-Pi)^+ = 0.0000 | |E| = 0.0000 | delta^+ no-deg = 0.0000 || u_r>=1.4: delta^+ = 0.0000 | (Shat-Pi)^+ = 0.0000 || instancias capa: 0 (no-deg 0, deg 0)
+  [A] z=29 (60 niveles): capa u_r>=1: delta^+ = 0.0198 | (Shat-Pi)^+ = 0.1028 | |E| = 0.0830 | delta^+ no-deg = 0.0198 || u_r>=1.4: delta^+ = 0.0198 | (Shat-Pi)^+ = 0.1028 || instancias capa: 10 (no-deg 2, deg 8)
+  [A] z=37 (60 niveles): capa u_r>=1: delta^+ = 0.0933 | (Shat-Pi)^+ = 0.2103 | |E| = 0.1244 | delta^+ no-deg = 0.0933 || u_r>=1.4: delta^+ = 0.0933 | (Shat-Pi)^+ = 0.1182 || instancias capa: 96 (no-deg 32, deg 64)
+  [B] z=29 (60 niveles): capa u_r>=1: delta^+ = 0.0128 | (Shat-Pi)^+ = 0.0128 | |E| = 0.0000 | delta^+ no-deg = 0.0037 || u_r>=1.4: delta^+ = 0.0073 | (Shat-Pi)^+ = 0.0073 || instancias capa: 124 (no-deg 24, deg 100)
+  [A-estres] z=53 (4 niveles): capa u_r>=1: delta^+ = 0.0867 | (Shat-Pi)^+ = 0.2695 | |E| = 0.1828 | delta^+ no-deg = 0.0867 || u_r>=1.4: delta^+ = 0.0491 | (Shat-Pi)^+ = 0.1209 || instancias capa: 9 (no-deg 9, deg 0)
+  cociente |E|/(Shat-Pi)^+ (capa alta, no degenerado, dif>0; n=67): min = 0.0000 | p25 = 0.0000 | mediana = 0.0000 | p75 = 0.5938 | max = 0.9930
+  cancelacion puntual completa (|E| >= (Shat-Pi)^+): 0/67 = 0.0% de las instancias
+  familia F en banda con peso real (z, L, r, u_r, Pi, Shat-Pi, E, delta):
+    (ningun miembro de F en banda en ventana)
+  => PASS
+
+K2 estructura: E_Add vs E_Rem en la capa alta no degenerada:
+  instancias descompuestas: 43 | |E - (E_Add - E_Rem)| max = 2.22e-16
+  sum_Add a > 0 en 0 instancias; sum_Rem a < 0 en 0  [doc 114: E_Add = sum_Add a <= 0 y E_Rem = -sum_Rem a <= 0 por separado en ventana]
+  masa |.|/phi en la muestra: |E_Add| = 0.4890 (100.0%) | |E_Rem| = 0.0000 (0.0%)
+  cocientes medianos contra (Shat-Pi)^+: |E_Add| = 0.5581 | |E_Rem| = 0.0000 (n=43, dif>0)
+  cobertura puntual (dif>0): solo Add 0/43 | solo Rem 0/43 | E total 0/43
+  => PASS
+
+K3 detalle del cociente: E exactamente 0 vs E != 0 en la capa alta no degenerada (dif>0):
+  instancias: 67 | E == 0 exacto: 39 (58.2%) | E != 0: 28
+  cociente |E|/(Shat-Pi)^+ solo con E != 0 (n=28): min = 0.0000 | mediana = 0.6271 | max = 0.9930
+  [A] z=17: en el nivel de max delta^+ de capa, fraccion en u_r>=1.4: nan
+  [A] z=29: en el nivel de max delta^+ de capa, fraccion en u_r>=1.4: 1.000
+  [A] z=37: en el nivel de max delta^+ de capa, fraccion en u_r>=1.4: 0.000
+  [A-estres] z=53: en el nivel de max delta^+ de capa, fraccion en u_r>=1.4: 0.567
+  [B] z=29: en el nivel de max delta^+ de capa, fraccion en u_r>=1.4: 0.000
+  => PASS
+
+Tiempo total: 2.2 s
+PASS

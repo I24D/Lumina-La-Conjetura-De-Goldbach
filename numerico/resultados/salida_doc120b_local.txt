@@ -1,0 +1,92 @@
+OK    (A1) N=100,m=3,q=7  sumB=41.554558 A_m-L=41.554558
+OK    (A2)-serie falla N=100,m=3,q=7  disc=-1.313565 (predicha (q-2)/(q-1)*E_m=-1.313565)
+OK    (A2)-suya falla N=100,m=3,q=7  disc=-142.381531
+OK    (A2)-corregida N=100,m=3,q=7  disc=-5.55e-16
+OK    Delta117 != Delta118 N=100,m=3,q=7  difieren en -39.169255
+OK    (A3) N=100,m=3,q=7  disc=1.20e-15
+OK    (A3)-CS N=100,m=3,q=7  (q-1)|D|^2=18.327850 <= sum|S|^2=60.228517
+OK    (A7) N=100,m=3,q=7  sum|S|^2=60.228517 Parseval=60.228517
+OK    (A7) S_0 = A_m - L N=100,m=3,q=7  S0=41.554558
+OK    (A4)-reduc-corregida N=100,m=3,q=7  lhs=11.7528 <= 365.1865
+OK    (A4)-D_MEAN suya = (q-1)^2 x corregida N=100,m=3,q=7  ratio=36.0 (q-1)^2=36
+OK    (A1) N=100,m=4,q=7  sumB=3.465736 A_m-L=3.465736
+OK    (A2)-serie falla N=100,m=4,q=7  disc=-36.297433 (predicha (q-2)/(q-1)*E_m=-36.297433)
+OK    (A2)-suya falla N=100,m=4,q=7  disc=-177.365400
+OK    (A2)-corregida N=100,m=4,q=7  disc=+8.88e-16
+OK    Delta117 != Delta118 N=100,m=4,q=7  difieren en -2.888113
+OK    (A3) N=100,m=4,q=7  disc=3.36e-16
+OK    (A3)-CS N=100,m=4,q=7  (q-1)|D|^2=0.080076 <= sum|S|^2=13.933137
+OK    (A7) N=100,m=4,q=7  sum|S|^2=13.933137 Parseval=13.933137
+OK    (A7) S_0 = A_m - L N=100,m=4,q=7  S0=3.465736
+OK    (A4)-reduc-corregida N=100,m=4,q=7  lhs=857.4081 <= 1848.7505
+OK    (A4)-D_MEAN suya = (q-1)^2 x corregida N=100,m=4,q=7  ratio=36.0 (q-1)^2=36
+OK    (A1) N=200,m=5,q=7  sumB=4.828314 A_m-L=4.828314
+OK    (A2)-serie falla N=200,m=5,q=7  disc=-38.923459 (predicha (q-2)/(q-1)*E_m=-38.923459)
+OK    (A2)-suya falla N=200,m=5,q=7  disc=-811.970422
+OK    (A2)-corregida N=200,m=5,q=7  disc=-8.88e-16
+OK    Delta117 != Delta118 N=200,m=5,q=7  difieren en -4.023595
+OK    (A3) N=200,m=5,q=7  disc=1.04e-15
+OK    (A3)-CS N=200,m=5,q=7  (q-1)|D|^2=3.885436 <= sum|S|^2=23.312614
+OK    (A7) N=200,m=5,q=7  sum|S|^2=23.312614 Parseval=23.312614
+OK    (A7) S_0 = A_m - L N=200,m=5,q=7  S0=4.828314
+OK    (A4)-reduc-corregida N=200,m=5,q=7  lhs=3273.9854 <= 8667.0341
+OK    (A4)-D_MEAN suya = (q-1)^2 x corregida N=200,m=5,q=7  ratio=36.0 (q-1)^2=36
+OK    (A1) N=200,m=6,q=11  sumB=2.772589 A_m-L=2.772589
+OK    (A2)-serie falla N=200,m=6,q=11  disc=-90.270306 (predicha (q-2)/(q-1)*E_m=-90.270306)
+OK    (A2)-suya falla N=200,m=6,q=11  disc=-399.489091
+OK    (A2)-corregida N=200,m=6,q=11  disc=-1.78e-15
+OK    Delta117 != Delta118 N=200,m=6,q=11  difieren en -2.495330
+OK    (A3) N=200,m=6,q=11  disc=1.97e-16
+OK    (A3)-CS N=200,m=6,q=11  (q-1)|D|^2=1.729631 <= sum|S|^2=11.530872
+OK    (A7) N=200,m=6,q=11  sum|S|^2=11.530872 Parseval=11.530872
+OK    (A7) S_0 = A_m - L N=200,m=6,q=11  S0=2.772589
+OK    (A4)-reduc-corregida N=200,m=6,q=11  lhs=2588.0903 <= 5698.2614
+OK    (A4)-D_MEAN suya = (q-1)^2 x corregida N=200,m=6,q=11  ratio=100.0 (q-1)^2=100
+OK    (A1) N=500,m=3,q=7  sumB=247.183882 A_m-L=247.183882
+OK    (A2)-serie falla N=500,m=3,q=7  disc=-3.035147 (predicha (q-2)/(q-1)*E_m=-3.035147)
+OK    (A2)-suya falla N=500,m=3,q=7  disc=-755.513322
+OK    (A2)-corregida N=500,m=3,q=7  disc=+7.11e-15
+OK    Delta117 != Delta118 N=500,m=3,q=7  difieren en -205.986569
+OK    (A3) N=500,m=3,q=7  disc=3.48e-14
+OK    (A3)-CS N=500,m=3,q=7  (q-1)|D|^2=4.581363 <= sum|S|^2=469.409097
+OK    (A7) N=500,m=3,q=7  sum|S|^2=469.409097 Parseval=469.409097
+OK    (A7) S_0 = A_m - L N=500,m=3,q=7  S0=247.183882
+OK    (A4)-reduc-corregida N=500,m=3,q=7  lhs=36.8409 <= 2641.0720
+OK    (A4)-D_MEAN suya = (q-1)^2 x corregida N=500,m=3,q=7  ratio=36.0 (q-1)^2=36
+OK    (A1) N=500,m=9,q=13  sumB=85.424855 A_m-L=85.424855
+OK    (A2)-serie falla N=500,m=9,q=13  disc=+1.664822 (predicha (q-2)/(q-1)*E_m=+1.664822)
+OK    (A2)-suya falla N=500,m=9,q=13  disc=-2924.639192
+OK    (A2)-corregida N=500,m=9,q=13  disc=+0.00e+00
+OK    Delta117 != Delta118 N=500,m=9,q=13  difieren en -78.306118
+OK    (A3) N=500,m=9,q=13  disc=9.80e-15
+OK    (A3)-CS N=500,m=9,q=13  (q-1)|D|^2=245.858534 <= sum|S|^2=2839.932294
+OK    (A7) N=500,m=9,q=13  sum|S|^2=2839.932294 Parseval=2839.932294
+OK    (A7) S_0 = A_m - L N=500,m=9,q=13  S0=85.424855
+OK    (A4)-reduc-corregida N=500,m=9,q=13  lhs=6616.8847 <= 143146.4412
+OK    (A4)-D_MEAN suya = (q-1)^2 x corregida N=500,m=9,q=13  ratio=144.0 (q-1)^2=144
+OK    (A1) N=500,m=4,q=11  sumB=4.852030 A_m-L=4.852030
+OK    (A2)-serie falla N=500,m=4,q=11  disc=-221.376625 (predicha (q-2)/(q-1)*E_m=-221.376625)
+OK    (A2)-suya falla N=500,m=4,q=11  disc=-973.854800
+OK    (A2)-corregida N=500,m=4,q=11  disc=+0.00e+00
+OK    Delta117 != Delta118 N=500,m=4,q=11  difieren en -4.366827
+OK    (A3) N=500,m=4,q=11  disc=2.78e-16
+OK    (A3)-CS N=500,m=4,q=11  (q-1)|D|^2=0.432408 <= sum|S|^2=10.089513
+OK    (A7) N=500,m=4,q=11  sum|S|^2=10.089513 Parseval=10.089513
+OK    (A7) S_0 = A_m - L N=500,m=4,q=11  S0=4.852030
+OK    (A4)-reduc-corregida N=500,m=4,q=11  lhs=16655.6794 <= 33938.3059
+OK    (A4)-D_MEAN suya = (q-1)^2 x corregida N=500,m=4,q=11  ratio=100.0 (q-1)^2=100
+OK    (A1) N=300,m=7,q=13  sumB=47.278936 A_m-L=47.278936
+OK    (A2)-serie falla N=300,m=7,q=13  disc=-0.025823 (predicha (q-2)/(q-1)*E_m=-0.025823)
+OK    (A2)-suya falla N=300,m=7,q=13  disc=-1745.547780
+OK    (A2)-corregida N=300,m=7,q=13  disc=-4.44e-16
+OK    Delta117 != Delta118 N=300,m=7,q=13  difieren en -46.117720
+OK    (A3) N=300,m=7,q=13  disc=8.17e-15
+OK    (A3)-CS N=300,m=7,q=13  (q-1)|D|^2=96.875763 <= sum|S|^2=978.321373
+OK    (A7) N=300,m=7,q=13  sum|S|^2=978.321373 Parseval=978.321373
+OK    (A7) S_0 = A_m - L N=300,m=7,q=13  S0=47.278936
+OK    (A4)-reduc-corregida N=300,m=7,q=13  lhs=2826.7288 <= 49335.6391
+OK    (A4)-D_MEAN suya = (q-1)^2 x corregida N=300,m=7,q=13  ratio=144.0 (q-1)^2=144
+OK    (A6) sum_q Omega_{qm} > Omega_m (conteo 106.2)  sum_q=0.2917 > Omega_m=0.1458
+OK    (A6) Theta~(q-1) != Omega_{qm} (doc 115)  Theta~(q-1)=7.800 vs Omega=0.217; lo correcto es Theta~/(q-1)
+
+RESULTADO: PASS
