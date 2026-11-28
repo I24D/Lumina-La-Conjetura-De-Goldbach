@@ -1,0 +1,65 @@
+H0_reproduce | f5_grid=0.9982417384 f5_simp=0.9982417245 (doc88: 0.9982417256)
+H0_reproduce | F4_grid=1.0216415485 F4_simp=1.0216415525 (doc87: 1.021641553)
+H0_reproduce | c110_simp=0.4909952010 (doc88: 0.4909952010)
+H0_reproduce | J0=1.5238762554 (doc87/88: 1.5238762503) Bal0=0.061404 (doc88: 0.061404)
+H1_geometria | c umax umin s_lower
+H1_geometria | 0.0000 4.000000 1.666667 5.000000
+H1_geometria | 0.0200 3.897959 1.564626 4.897959
+H1_geometria | 0.0500 3.736842 1.403509 4.736842
+H1_geometria | 0.0800 3.565217 1.231884 4.565217
+H1_geometria | 0.1000 3.444444 1.111111 4.444444
+H1_geometria | 0.1176 3.333333 1.000000 4.333333
+H1_geometria | umbral c=2/17: umin=1.0000000000 (debe ser 1), umax=3.3333333333 (debe ser 10/3), s_lower=4.3333333333 (debe ser 13/3)
+H2_balance | c Bal(c) f(s_lower) J(c) tail
+H2_balance | 0.0000 0.061404 0.998242 1.523876 0.174900
+H2_balance | 0.0200 0.032934 0.997697 1.572589 0.178469
+H2_balance | 0.0400 -0.000208 0.996963 1.629968 0.182187
+H2_balance | 0.0500 -0.018857 0.996502 1.662509 0.184105
+H2_balance | 0.0600 -0.039104 0.995963 1.698008 0.186063
+H2_balance | 0.0800 -0.085189 0.994590 1.779341 0.190108
+H2_balance | 0.1000 -0.140412 0.992685 1.877528 0.194333
+H2_balance | 0.1176 -0.198889 0.990376 1.982091 0.198220
+H2_balance | c_estrella=0.039884 Bal(c*)=-2.78e-17
+H3_conteo_u | Q=3 k=2 U N(U) asintotico sum1/u prod l/(l-1) cola
+H3_conteo_u | Q=3 U=100 N=5 asym=4.19 sum1/u=1.493827 limite=1.500000 cola=0.006173
+H3_conteo_u | Q=3 U=1000 N=7 asym=6.29 sum1/u=1.499314 limite=1.500000 cola=0.000686
+H3_conteo_u | Q=3 U=10000 N=9 asym=8.38 sum1/u=1.499924 limite=1.500000 cola=0.000076
+H3_conteo_u | Q=3 U=100000 N=11 asym=10.48 sum1/u=1.499992 limite=1.500000 cola=0.000008
+H3_conteo_u | Q=3 U=1000000 N=13 asym=12.58 sum1/u=1.499999 limite=1.500000 cola=0.000001
+H3_conteo_u | Q=15 k=3 U N(U) asintotico sum1/u prod l/(l-1) cola
+H3_conteo_u | Q=15 U=100 N=10 asym=6.00 sum1/u=1.836049 limite=1.875000 cola=0.038951
+H3_conteo_u | Q=15 U=1000 N=19 asym=13.49 sum1/u=1.869605 limite=1.875000 cola=0.005395
+H3_conteo_u | Q=15 U=10000 N=31 asym=23.99 sum1/u=1.874294 limite=1.875000 cola=0.000706
+H3_conteo_u | Q=15 U=100000 N=48 asym=37.48 sum1/u=1.874934 limite=1.875000 cola=0.000066
+H3_conteo_u | Q=15 U=1000000 N=65 asym=53.97 sum1/u=1.874991 limite=1.875000 cola=0.000009
+H3_conteo_u | Q=105 k=4 U N(U) asintotico sum1/u prod l/(l-1) cola
+H3_conteo_u | Q=105 U=100 N=15 asym=4.73 sum1/u=2.091378 limite=2.187500 cola=0.096122
+H3_conteo_u | Q=105 U=1000 N=37 asym=15.97 sum1/u=2.171935 limite=2.187500 cola=0.015565
+H3_conteo_u | Q=105 U=10000 N=73 asym=37.85 sum1/u=2.185178 limite=2.187500 cola=0.002322
+H3_conteo_u | Q=105 U=100000 N=128 asym=73.92 sum1/u=2.187187 limite=2.187500 cola=0.000313
+H3_conteo_u | Q=105 U=1000000 N=203 asym=127.73 sum1/u=2.187458 limite=2.187500 cola=0.000042
+H4_masa | Q=3 N=1e12 t=2 U=763.5 sum1/u=1.499314 (u=1 aporta 1) limite=1.500000
+H4_masa | Q=15 N=1e12 t=2 U=763.5 sum1/u=1.869605 (u=1 aporta 1) limite=1.875000
+H5_cruce | c A' log10(N*)
+H5_cruce | 0.0200 5 632.7
+H5_cruce | 0.0200 10 1605.5
+H5_cruce | 0.0200 20 3738.1
+H5_cruce | 0.0500 5 215.7
+H5_cruce | 0.0500 10 559.9
+H5_cruce | 0.0500 20 1324.0
+H5_cruce | 0.1000 5 93.3
+H5_cruce | 0.1000 10 248.1
+H5_cruce | 0.1000 20 596.1
+H5_cruce | 0.1176 5 76.3
+H5_cruce | 0.1176 10 204.5
+H5_cruce | 0.1176 20 493.5
+H5_cruce | polilog N=1e12 t=2 A'=10: main/error=(log N)^7=1.230e+10
+H6_C0 | c N C0_nec(B=10)
+H6_C0 | 0.0500 1e6 10.13
+H6_C0 | 0.0500 1e12 10.21
+H6_C0 | 0.0500 1e24 10.34
+H6_C0 | 0.1176 1e6 10.31
+H6_C0 | 0.1176 1e12 10.49
+H6_C0 | 0.1176 1e24 10.81
+H6_C0 | polilog (k=2,t=2): C0 = B + (k-1+t)/2 = 11.5 constante
+PASS

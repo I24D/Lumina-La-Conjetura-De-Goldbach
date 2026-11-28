@@ -1,0 +1,145 @@
+== DOC 107: prueba de L105(a) + niveles de M_Omega ==
+Solo stdlib. Las verificaciones son MEDICION de apoyo;
+la prueba de L105(a) es el texto del doc, cadena [T].
+Goldbach sigue abierta.
+
+Soportes: R1=54 R3=68 S11=802 S13=1628 S17=5033 S19=8245 S23=17999 S29=47178 S31=64082 S37=132785
+K0 maquinaria (R2 |H|=880; S11 == Model97; build_H106 == build_H en z=11,13,17): PASS
+
+Doce puntos (medida completa): B_Delta, momentos de conteo y cotas:
+     [gen/S11] N=999982 |Hcal|=793 B_Delta=2.009016e+03 B_Delta/T=4.957e-06
+        M_w=7.137350e+06 M_phi=1.638434e+06 crude/T=3.3616e+00 Dhat^C=8.788862e+09 (0.1s)
+     [gen/S13] N=999982 |Hcal|=1616 B_Delta=1.079911e+04 B_Delta/T=2.665e-05
+        M_w=3.948663e+07 M_phi=7.427324e+06 crude/T=1.8597e+01 Dhat^C=2.801091e+10 (0.2s)
+     [gen/S17] N=999982 |Hcal|=5012 B_Delta=2.910882e+04 B_Delta/T=7.183e-05
+        M_w=5.639827e+08 M_phi=8.949440e+07 crude/T=2.6563e+02 Dhat^C=1.444677e+11 (0.3s)
+     [gen/S19] N=999982 |Hcal|=8214 B_Delta=3.394819e+04 B_Delta/T=8.377e-05
+        M_w=1.725750e+09 M_phi=2.521245e+08 crude/T=8.1280e+02 Dhat^C=2.923808e+11 (0.4s)
+     [gen/S23] N=999982 |Hcal|=17950 B_Delta=8.748678e+04 B_Delta/T=2.159e-04
+        M_w=1.068464e+10 M_phi=1.370518e+09 crude/T=5.0323e+03 Dhat^C=8.119272e+11 (0.9s)
+     [2^e/S11] N=1048576 |Hcal|=797 B_Delta=4.691406e+03 B_Delta/T=1.071e-05
+        M_w=7.157396e+06 M_phi=1.641164e+06 crude/T=3.1414e+00 Dhat^C=1.123404e+10 (0.1s)
+     [2^e/S13] N=1048576 |Hcal|=1623 B_Delta=1.105975e+04 B_Delta/T=2.526e-05
+        M_w=3.957999e+07 M_phi=7.438634e+06 crude/T=1.7372e+01 Dhat^C=3.338424e+10 (0.1s)
+     [2^e/S17] N=1048576 |Hcal|=5028 B_Delta=2.644147e+04 B_Delta/T=6.039e-05
+        M_w=5.656138e+08 M_phi=8.963563e+07 crude/T=2.4825e+02 Dhat^C=1.579528e+11 (0.3s)
+     [2^e/S19] N=1048576 |Hcal|=8240 B_Delta=3.955062e+04 B_Delta/T=9.033e-05
+        M_w=1.731501e+09 M_phi=2.526366e+08 crude/T=7.5996e+02 Dhat^C=3.172835e+11 (0.4s)
+     [2^e/S23] N=1048576 |Hcal|=17994 B_Delta=7.367210e+04 B_Delta/T=1.683e-04
+        M_w=1.073036e+10 M_phi=1.372872e+09 crude/T=4.7096e+03 Dhat^C=8.649974e+11 (0.8s)
+     [gen/R1] N=999982 |Hcal|=49 B_Delta=1.769732e+02 B_Delta/T=4.367e-07 M_w=9.152400e+04 crude/T=4.3106e-02
+     [gen/R3] N=999982 |Hcal|=62 B_Delta=9.413553e+01 B_Delta/T=2.323e-07 M_w=1.035600e+04 crude/T=4.8775e-03
+
+Cota puntual (106.6): max |Delta_r|/(phi(r) omega(r) ln N) y max |Delta_r|/(omega(r) ln N) [la segunda es la cota impresa en el doc 97, NO usada en la prueba]:
+     [gen/R1] ratio_phi=0.0513 ratio_sin_phi=2.4941
+     [gen/S11] ratio_phi=0.0513 ratio_sin_phi=27.9414
+     [gen/S13] ratio_phi=0.0513 ratio_sin_phi=162.3400
+     [gen/S17] ratio_phi=0.0513 ratio_sin_phi=543.6333
+     [gen/S23] ratio_phi=0.0513 ratio_sin_phi=1846.2864
+     [2^e/S23] ratio_phi=0.0511 ratio_sin_phi=702.7265
+K1 cota puntual (106.6) en R1/S11/S13 y B_Delta <= ln^2 N * M_w en los 12 puntos: PASS
+M_w por ramas contra enumeracion directa:
+     [gen/R1] ramas=9.1524000000e+04 directa=9.1524000000e+04 rel=0.00e+00
+     [gen/S11] ramas=7.1373500000e+06 directa=7.1373500000e+06 rel=0.00e+00
+     [2^e/S11] ramas=7.1573960000e+06 directa=7.1573960000e+06 rel=0.00e+00
+     [gen/S13] ramas=3.9486628000e+07 directa=3.9486628000e+07 rel=0.00e+00
+     [2^e/S13] ramas=3.9579994000e+07 directa=3.9579994000e+07 rel=0.00e+00
+     [gen/S17] ramas=5.6398268200e+08 directa=5.6398268200e+08 rel=0.00e+00
+     [2^e/S17] ramas=5.6561383200e+08 directa=5.6561383200e+08 rel=0.00e+00
+     [gen/S19] ramas=1.7257499940e+09 directa=1.7257499940e+09 rel=0.00e+00
+     [2^e/S19] ramas=1.7315006960e+09 directa=1.7315006960e+09 rel=0.00e+00
+     [gen/S23] ramas=1.0684643614e+10 directa=1.0684643614e+10 rel=0.00e+00
+     [2^e/S23] ramas=1.0730355900e+10 directa=1.0730355900e+10 rel=0.00e+00
+K2 M_w por ramas == directa: PASS
+K3 max B_Delta/T(N) en los 12 puntos = 2.159e-04 (doc 106: 2.16e-4) -> C_Delta = 1e-3 cubre la ventana con factor >= 4.6: PASS
+
+Cadena [T]: B_Delta <= chain(N) = N (ln N)^4/(4 (ln 2)^2) = 0.520342 * N (ln N)^4
+    chain(N)/T(N) = 0.01170770 * (ln N)^8 * N^{-(1-2c)}, 1-2c = 0.920232
+    ratio_chain: N=1e6: 4.6775e+01 | 1e9: 2.0799e+00 | 1e12: 3.6046e-02 | 1e15: 3.7278e-04
+    N_0(C_Delta=1e+00) = 3.8223e+09  (ratio en N_0: 1.000e+00)
+    N_0(C_Delta=1e-02) = 7.3984e+12  (ratio en N_0: 1.000e-02)
+    N_0(C_Delta=1e-03) = 2.3611e+14  (ratio en N_0: 1.000e-03)
+K6 identidad de la cadena + N_0 por biseccion: PASS
+
+Niveles de M_Omega (conteo, sin psi): masa de peso sum_d Omega_d^C phi(d)^2 por nivel (tipo, k=omega(d));
+cotas clasicas por nivel en el marco N_f = z^10 contra T(N_f). LS: W*_l (N_f + Q_l^2) N_f ln N_f;
+BDH: W*_l Q_l (Q_l N_f ln N_f + N_f^2/(ln N_f)^2) [A=2, pagando phi(d) <= Q_l].
+  z=11: |D_C|=577 masa total=5.432210e+06 W*=9.5233 (doc 106 z=11,13,17: 9.52/15.00/31.00) N_f=2.594e+10 T(N_f)=1.335526e+16
+     bandas de tamano: d<=D_A^{1/3}: 0.000 | media: 0.202 | d>D_A^{2/3}: 0.798
+     nivel L k=1: |D_l|=    2 Q_l=      7 W*_l=  5.1766 masa=0.0000 | exceso LS=6.253e+06 BDH=3.175e+03 min=3.175e+03
+     nivel L k=2: |D_l|=    1 Q_l=     35 W*_l=  9.5233 masa=0.0000 | exceso LS=1.150e+07 BDH=2.920e+04 min=2.920e+04
+     nivel S k=1: |D_l|=  201 Q_l=   1277 W*_l=  1.5417 masa=0.0192 | exceso LS=1.862e+06 BDH=1.726e+05 min=1.726e+05
+     nivel S k=2: |D_l|=  287 Q_l=   6385 W*_l=  4.7500 masa=0.3808 | exceso LS=5.747e+06 BDH=2.666e+06 min=2.666e+06
+     nivel S k=3: |D_l|=   86 Q_l=  16345 W*_l=  7.0000 masa=0.5999 | exceso LS=8.542e+06 BDH=1.011e+07 min=8.542e+06
+     EXCESO TOTAL (suma de minimos) = 1.1413e+07 ; solo-LS = 3.3907e+07
+  z=13: |D_C|=1357 masa total=3.138393e+07 W*=15.0000 (doc 106 z=11,13,17: 9.52/15.00/31.00) N_f=1.379e+11 T(N_f)=2.522313e+17
+     bandas de tamano: d<=D_A^{1/3}: 0.000 | media: 0.143 | d>D_A^{2/3}: 0.857
+     nivel L k=1: |D_l|=    3 Q_l=     11 W*_l=  6.4034 masa=0.0000 | exceso LS=1.238e+07 BDH=8.067e+03 min=8.067e+03
+     nivel L k=2: |D_l|=    3 Q_l=     77 W*_l= 11.2572 masa=0.0000 | exceso LS=2.176e+07 BDH=9.927e+04 min=9.927e+04
+     nivel L k=3: |D_l|=    1 Q_l=    385 W*_l= 12.1550 masa=0.0001 | exceso LS=2.349e+07 BDH=5.360e+05 min=5.360e+05
+     nivel S k=1: |D_l|=  418 Q_l=   2939 W*_l=  2.1958 masa=0.0161 | exceso LS=4.244e+06 BDH=7.394e+05 min=7.394e+05
+     nivel S k=2: |D_l|=  645 Q_l=  14695 W*_l=  6.5417 masa=0.3287 | exceso LS=1.266e+07 BDH=1.103e+07 min=1.103e+07
+     nivel S k=3: |D_l|=  280 Q_l=  37415 W*_l= 10.7500 masa=0.6364 | exceso LS=2.099e+07 BDH=4.628e+07 min=2.099e+07
+     nivel S k=4: |D_l|=    7 Q_l=  14245 W*_l= 15.0000 masa=0.0186 | exceso LS=2.903e+07 BDH=2.451e+07 min=2.451e+07
+     EXCESO TOTAL (suma de minimos) = 5.7913e+07 ; solo-LS = 1.2455e+08
+  z=17: |D_C|=4870 masa total=4.628328e+08 W*=31.0000 (doc 106 z=11,13,17: 9.52/15.00/31.00) N_f=2.016e+12 T(N_f)=2.925326e+19
+     bandas de tamano: d<=D_A^{1/3}: 0.000 | media: 0.084 | d>D_A^{2/3}: 0.916
+     nivel L k=1: |D_l|=    4 Q_l=     13 W*_l=  8.2138 masa=0.0000 | exceso LS=3.233e+07 BDH=1.848e+04 min=1.848e+04
+     nivel L k=2: |D_l|=    6 Q_l=    143 W*_l= 14.3296 masa=0.0000 | exceso LS=5.640e+07 BDH=3.547e+05 min=3.547e+05
+     nivel L k=3: |D_l|=    4 Q_l=   1001 W*_l= 16.7571 masa=0.0001 | exceso LS=6.596e+07 BDH=2.903e+06 min=2.903e+06
+     nivel L k=4: |D_l|=    1 Q_l=   5005 W*_l= 20.0688 masa=0.0001 | exceso LS=7.900e+07 BDH=1.739e+07 min=1.739e+07
+     nivel S k=1: |D_l|= 1354 Q_l=  11261 W*_l=  2.8622 masa=0.0136 | exceso LS=1.127e+07 BDH=5.579e+06 min=5.579e+06
+     nivel S k=2: |D_l|= 2196 Q_l=  56305 W*_l=  7.9958 masa=0.2819 | exceso LS=3.152e+07 BDH=7.797e+07 min=3.152e+07
+     nivel S k=3: |D_l|= 1234 Q_l= 144445 W*_l= 14.5417 masa=0.6519 | exceso LS=5.783e+07 BDH=3.641e+08 min=5.783e+07
+     nivel S k=4: |D_l|=   68 Q_l=  53515 W*_l= 22.7500 masa=0.0416 | exceso LS=8.968e+07 BDH=2.108e+08 min=8.968e+07
+     nivel S k=5: |D_l|=    3 Q_l= 115115 W*_l= 31.0000 masa=0.0108 | exceso LS=1.228e+08 BDH=6.184e+08 min=1.228e+08
+     EXCESO TOTAL (suma de minimos) = 3.2810e+08 ; solo-LS = 5.4682e+08
+  z=19: |D_C|=8218 masa total=1.446465e+09 W*=31.0000 (doc 106 z=11,13,17: 9.52/15.00/31.00) N_f=6.131e+12 T(N_f)=2.122477e+20
+     bandas de tamano: d<=D_A^{1/3}: 0.000 | media: 0.069 | d>D_A^{2/3}: 0.931
+     nivel L k=1: |D_l|=    5 Q_l=     17 W*_l=  9.2231 masa=0.0000 | exceso LS=4.810e+07 BDH=3.203e+04 min=3.203e+04
+     nivel L k=2: |D_l|=   10 Q_l=    221 W*_l= 15.4596 masa=0.0000 | exceso LS=8.062e+07 BDH=6.979e+05 min=6.979e+05
+     nivel L k=3: |D_l|=    9 Q_l=   1547 W*_l= 19.0359 masa=0.0001 | exceso LS=9.927e+07 BDH=6.016e+06 min=6.016e+06
+     nivel L k=4: |D_l|=    3 Q_l=   7735 W*_l= 23.3199 masa=0.0002 | exceso LS=1.216e+08 BDH=3.685e+07 min=3.685e+07
+     nivel S k=1: |D_l|= 2088 Q_l=  18301 W*_l=  3.4376 masa=0.0112 | exceso LS=1.793e+07 BDH=1.285e+07 min=1.285e+07
+     nivel S k=2: |D_l|= 3541 Q_l=  91505 W*_l=  9.2076 masa=0.2386 | exceso LS=4.808e+07 BDH=1.722e+08 min=4.808e+07
+     nivel S k=3: |D_l|= 2352 Q_l= 251755 W*_l= 14.9208 masa=0.6436 | exceso LS=7.861e+07 BDH=7.682e+08 min=7.861e+07
+     nivel S k=4: |D_l|=  193 Q_l=  98945 W*_l= 22.7500 masa=0.0695 | exceso LS=1.188e+08 BDH=4.600e+08 min=1.188e+08
+     nivel S k=5: |D_l|=   17 Q_l= 242165 W*_l= 31.0000 masa=0.0369 | exceso LS=1.632e+08 BDH=1.535e+09 min=1.632e+08
+     EXCESO TOTAL (suma de minimos) = 4.6517e+08 ; solo-LS = 7.7624e+08
+  z=23: |D_C|=17954 masa total=9.184188e+09 W*=31.0000 (doc 106 z=11,13,17: 9.52/15.00/31.00) N_f=4.143e+13 T(N_f)=6.470340e+21
+     bandas de tamano: d<=D_A^{1/3}: 0.000 | media: 0.046 | d>D_A^{2/3}: 0.954
+     nivel L k=1: |D_l|=    6 Q_l=     19 W*_l= 10.7081 masa=0.0000 | exceso LS=8.905e+07 BDH=5.489e+04 min=5.489e+04
+     nivel L k=2: |D_l|=   15 Q_l=    323 W*_l= 17.7609 masa=0.0000 | exceso LS=1.477e+08 BDH=1.548e+06 min=1.548e+06
+     nivel L k=3: |D_l|=   16 Q_l=   2261 W*_l= 22.5555 masa=0.0000 | exceso LS=1.876e+08 BDH=1.376e+07 min=1.376e+07
+     nivel L k=4: |D_l|=    6 Q_l=  11305 W*_l= 27.5960 masa=0.0001 | exceso LS=2.295e+08 BDH=8.417e+07 min=8.417e+07
+     nivel S k=1: |D_l|= 3685 Q_l=  34591 W*_l=  3.9997 masa=0.0067 | exceso LS=3.326e+07 BDH=3.733e+07 min=3.326e+07
+     nivel S k=2: |D_l|= 7220 Q_l= 172955 W*_l= 10.1165 masa=0.1654 | exceso LS=8.419e+07 BDH=4.721e+08 min=8.419e+07
+     nivel S k=3: |D_l|= 6219 Q_l= 654535 W*_l= 16.3427 masa=0.6600 | exceso LS=1.373e+08 BDH=2.887e+09 min=1.373e+08
+     nivel S k=4: |D_l|=  698 Q_l= 256685 W*_l= 22.7500 masa=0.0997 | exceso LS=1.895e+08 BDH=1.576e+09 min=1.895e+08
+     nivel S k=5: |D_l|=   89 Q_l= 655655 W*_l= 31.0000 masa=0.0681 | exceso LS=2.605e+08 BDH=5.486e+09 min=2.605e+08
+     EXCESO TOTAL (suma de minimos) = 8.0429e+08 ; solo-LS = 1.3586e+09
+  z=29: |D_C|=47102 masa total=8.787181e+10 W*=32.3660 (doc 106 z=11,13,17: 9.52/15.00/31.00) N_f=4.207e+14 T(N_f)=4.169910e+23
+     bandas de tamano: d<=D_A^{1/3}: 0.000 | media: 0.027 | d>D_A^{2/3}: 0.973
+     nivel L k=1: |D_l|=    7 Q_l=     23 W*_l= 12.7665 masa=0.0000 | exceso LS=1.825e+08 BDH=1.099e+05 min=1.099e+05
+     nivel L k=2: |D_l|=   21 Q_l=    437 W*_l= 21.2808 masa=0.0000 | exceso LS=3.042e+08 BDH=3.481e+06 min=3.481e+06
+     nivel L k=3: |D_l|=   31 Q_l=   4807 W*_l= 27.0193 masa=0.0000 | exceso LS=3.862e+08 BDH=4.862e+07 min=4.862e+07
+     nivel L k=4: |D_l|=   22 Q_l=  33649 W*_l= 32.3660 masa=0.0001 | exceso LS=4.626e+08 BDH=4.077e+08 min=4.077e+08
+     nivel S k=1: |D_l|= 7379 Q_l=  74929 W*_l=  4.5589 masa=0.0039 | exceso LS=6.516e+07 BDH=1.279e+08 min=6.516e+07
+     nivel S k=2: |D_l|=17560 Q_l= 417347 W*_l= 11.4866 masa=0.1182 | exceso LS=1.642e+08 BDH=1.795e+09 min=1.642e+08
+     nivel S k=3: |D_l|=18885 Q_l=2086735 W*_l= 20.1638 masa=0.6425 | exceso LS=2.912e+08 BDH=1.575e+10 min=2.912e+08
+     nivel S k=4: |D_l|= 2701 Q_l= 820295 W*_l= 28.9931 masa=0.1243 | exceso LS=4.151e+08 BDH=8.904e+09 min=4.151e+08
+     nivel S k=5: |D_l|=  496 Q_l=2083445 W*_l= 31.0000 masa=0.1111 | exceso LS=4.476e+08 BDH=2.418e+10 min=4.476e+08
+     EXCESO TOTAL (suma de minimos) = 1.8432e+09 ; solo-LS = 2.7187e+09
+K4 masas por nivel suman el total (rel < 1e-12): PASS
+K5 W* por niveles == doc 106; Q_l <= D_A; la cota clasica total NO alcanza T (exceso > 1): PASS
+
+Calibracion con psi (N=999982): fraccion de Dhat^C (= M_Omega medido) por nivel:
+     [S11] Dhat^C=8.788862e+09 | S2:0.564 S3:0.342 S1:0.093 L2:0.002 L1:0.000
+     [S13] Dhat^C=2.801091e+10 | S2:0.508 S3:0.400 S1:0.075 S4:0.015 L2:0.002 L3:0.001 L1:0.000
+     [S17] Dhat^C=1.444677e+11 | S3:0.448 S2:0.429 S1:0.058 S4:0.048 S5:0.013 L3:0.002 L2:0.001 L1:0.000 L4:0.000
+     [S19] Dhat^C=2.923808e+11 | S3:0.454 S2:0.392 S4:0.085 S1:0.051 S5:0.015 L3:0.002 L4:0.001 L2:0.001 L1:0.000
+     [S23] Dhat^C=8.119272e+11 | S3:0.481 S2:0.328 S4:0.114 S1:0.042 S5:0.031 L4:0.002 L3:0.002 L2:0.001 L1:0.000
+
+RESUMEN: K0=PASS K1=PASS K2=PASS K3=PASS K4=PASS K5=PASS K6=PASS
+PASS
+Tiempo total: 9.9 s

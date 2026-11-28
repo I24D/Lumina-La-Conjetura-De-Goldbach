@@ -1,0 +1,9 @@
+H1_bifurcacion: 4/4 (rango roto 5/14=0.3571, u^fix en [1.6725, 3.9942])
+H2_F: F(3)=1.187381612 (2e^g/3=1.187381612) F(4)=1.021641553 alt=1.021641553 F(5/3)=2.137286902 (6e^g/5=2.137286902) dec=True exceso_max=1.147221 (<=1.147221)
+H4_coincidencia: 1497/1497 max_rel=2.55e-16 (2e^g/log(D/s) comun)
+H5_masa_rota: X=1e6 tot=0.268179 rota=0.3168 (s>X^{1/4})
+H5_masa_rota: X=1e9 tot=0.179883 rota=0.3634 (s>X^{1/4})
+H5_masa_rota: X=1e12 tot=0.145189 rota=0.3426 (s>X^{1/4})
+H3_dominio: 4/4 (S(A_s;s) <= S(A_s;z) exacto, conteo y peso)
+H6_resto_limite_fijo: 8/8 modulos con multiplicidad 1, max_pares=1
+PASS

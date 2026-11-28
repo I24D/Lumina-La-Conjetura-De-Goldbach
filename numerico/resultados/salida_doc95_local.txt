@@ -1,0 +1,124 @@
+== DOC 95: revision adversarial doc 94 (Gram / UNIF-U-COND) ==
+Solo stdlib. Modelos sinteticos con pesos lambda^+ de Nathanson.
+
+H0 [S1-fixed A=3 z=11 y=60 D=20000] |M|_pares=50 #m_distintos=50 max_mult=1 |H|=54 h_multi=0 build=0.0s PASS
+H1 [S1-fixed A=3 z=11 y=60 D=20000] G_A(K)=0.149757903123 G_A(bruto)=0.149757903123 relerr=4.16e-16 lema_div=True PASS
+H2 [S1-fixed A=3 z=11 y=60 D=20000] K(h0) maxerr=2.78e-17 (h0=1) | K(s*h0) maxerr=6.94e-18 ((11, 1), n=50) | G_smooth=0.0529486097 G_switch=0.0968092935 G_tot=0.1497579031 epart=0.00e+00 PASS
+H4 [S1-fixed A=3 z=11 y=60 D=20000] Q_s vs Gram: smooth maxerr=3.33e-16 (s=11) full maxerr=3.33e-16 (s=11) | max_s Q_s*ln z=1.9483 (s=59) min=1.6777 (s=11) PASS
+     s=11 diagonal=1.5677 Q_s=0.699653 diag/Q_s=2.2
+     s=13 diagonal=1.5677 Q_s=0.699653 diag/Q_s=2.2
+     s=17 diagonal=1.5677 Q_s=0.699653 diag/Q_s=2.2
+     s=19 diagonal=1.5677 Q_s=0.699653 diag/Q_s=2.2
+     s=23 diagonal=1.5677 Q_s=0.699653 diag/Q_s=2.2
+     s=29 diagonal=1.5677 Q_s=0.699653 diag/Q_s=2.2
+H5 [S1-fixed A=3 z=11 y=60 D=20000] S=sum 1/phi(s)=0.5507 G_switch=0.096809 G_smooth=0.052949 Cauchy(S*G_switch)=0.053312 perdida=1.007 | C=max Q_s*ln z=1.9483 cota_implicada=0.173458 G_A=0.149758 ratio=1.158 PASS
+H6 [S1-fixed A=3 z=11 y=60 D=20000] |K_A(1)|^2=0.0299871898 (20.02% de G_A) G_con1-G_sin1 dif=1.04e-17 | bruto vs con1 relerr=4.16e-16 vs sin1 relerr=3.00e-02 PASS
+H7 [S1-fixed A=3 z=11 y=60 D=20000] dual ingenuo: (cota|R_A|)^2/(objetivo)^2 ~= d(A)*A^2*(ln N)^5/ln z = 7.445e+07 (N=A*z^10=7.781e+10) -- la cota ingenua pierde por ese factor; el paso G_A -> R_A NO esta en la derivacion transcrita
+H8(d1) [S1-fixed A=3 z=11 y=60 D=20000] pares(s,d)=50 distintos=50 D_A=20000: pares<=5*D_A True, distintos<=D_A True -> el conteo es O(D_A), no necesariamente <= D_A
+H8(d2) [S1-fixed A=3 z=11 y=60 D=20000] frac Q_s de h0<=10 (primeros s): ['0.940', '0.940', '0.940', '0.940', '0.940', '0.940'] -- la estimacion de bloque debe restringirse a ah>R0; el rango ah<=R0 necesita tratamiento aparte [P-rev en doc 94]
+H8(d2) [S1-fixed A=3 z=11 y=60 D=20000] frac Q_s de h0<=30 (primeros s): ['0.940', '0.940', '0.940', '0.940', '0.940', '0.940'] -- la estimacion de bloque debe restringirse a ah>R0; el rango ah<=R0 necesita tratamiento aparte [P-rev en doc 94]
+H8(d2) [S1-fixed A=3 z=11 y=60 D=20000] frac Q_s de h0<=100 (primeros s): ['1.000', '1.000', '1.000', '1.000', '1.000', '1.000'] -- la estimacion de bloque debe restringirse a ah>R0; el rango ah<=R0 necesita tratamiento aparte [P-rev en doc 94]
+H8(d3) [S1-fixed A=3 z=11 y=60 D=20000] ortogonalidad r=3: psi(N,chi) directo=128.5754 via E=128.5754 dif=1.36e-10 PASS -- UNIF-U-2M-R => GRH [T, doc 93 Prop. 93.6]; GRH =/=> UNIF-U-2M-R NO probado [N]; 'estrictamente mas fuerte que GRH' queda DEGRADADO a implicacion en un solo sentido
+H9 [S1-fixed A=3 z=11 y=60 D=20000] |M|=50 |H|=54 G_A=0.1497579031 G_A^abs=0.5839624857 cociente G/G^abs=0.256451 sqrt=0.506410
+
+H0 [S1-variable A=3 z=11 y=60 D=20000] |M|_pares=53 #m_distintos=53 max_mult=1 |H|=57 h_multi=3 build=0.0s PASS
+H1 [S1-variable A=3 z=11 y=60 D=20000] G_A(K)=0.144220501132 G_A(bruto)=0.144220501132 relerr=6.11e-16 lema_div=True PASS
+H3 [S1-variable A=3 z=11 y=60 D=20000] CONTRAEJEMPLO variable: max|K(s*h0)-T_s/(phiA*phi(s))|=0.002431 en (11, 1, 0.028819444444444453, 0.03125) | descomposicion con s'>s maxerr=2.08e-17 | h_multi=3 G_multi/G_A=0.0109 PASS(contraejemplo confirmado)
+     detalle: s=11 h0=1 h=11 K_A(h)=0.0288194444 formula=0.0312500000 terminos s'>s presentes
+H4 [S1-variable A=3 z=11 y=60 D=20000] Q_s vs Gram: smooth maxerr=7.57e-02 (s=13) full maxerr=3.33e-16 (s=11) | max_s Q_s*ln z=1.9483 (s=59) min=1.3611 (s=13) PASS
+     (variable: Q_s^smooth != forma de Gram -- la expansion necesita h0 con primos en [z,s); en fixed coinciden)
+     s=11 diagonal=1.5677 Q_s=0.699653 diag/Q_s=2.2
+     s=13 diagonal=1.7335 Q_s=0.567639 diag/Q_s=3.1
+     s=17 diagonal=1.5677 Q_s=0.699653 diag/Q_s=2.2
+     s=19 diagonal=1.5677 Q_s=0.699653 diag/Q_s=2.2
+     s=23 diagonal=1.5677 Q_s=0.699653 diag/Q_s=2.2
+     s=29 diagonal=1.5677 Q_s=0.699653 diag/Q_s=2.2
+     (variable: G_multi=0.001577 explica que G_A=0.144221 supere la cota 0.173458)
+H5 [S1-variable A=3 z=11 y=60 D=20000] S=sum 1/phi(s)=0.5507 G_switch=0.094059 G_smooth=0.051361 Cauchy(S*G_switch)=0.051797 perdida=1.008 | C=max Q_s*ln z=1.9483 cota_implicada=0.173458 G_A=0.144221 ratio=1.203 PASS
+H6 [S1-variable A=3 z=11 y=60 D=20000] |K_A(1)|^2=0.0291513080 (20.21% de G_A) G_con1-G_sin1 dif=6.94e-18 | bruto vs con1 relerr=6.11e-16 vs sin1 relerr=2.92e-02 PASS
+H7 [S1-variable A=3 z=11 y=60 D=20000] dual ingenuo: (cota|R_A|)^2/(objetivo)^2 ~= d(A)*A^2*(ln N)^5/ln z = 7.445e+07 (N=A*z^10=7.781e+10) -- la cota ingenua pierde por ese factor; el paso G_A -> R_A NO esta en la derivacion transcrita
+H8(d1) [S1-variable A=3 z=11 y=60 D=20000] pares(s,d)=53 distintos=53 D_A=20000: pares<=5*D_A True, distintos<=D_A True -> el conteo es O(D_A), no necesariamente <= D_A
+H8(d2) [S1-variable A=3 z=11 y=60 D=20000] frac Q_s de h0<=10 (primeros s): ['0.940', '0.927', '0.940', '0.940', '0.940', '0.940'] -- la estimacion de bloque debe restringirse a ah>R0; el rango ah<=R0 necesita tratamiento aparte [P-rev en doc 94]
+H8(d2) [S1-variable A=3 z=11 y=60 D=20000] frac Q_s de h0<=30 (primeros s): ['0.940', '0.927', '0.940', '0.940', '0.940', '0.940'] -- la estimacion de bloque debe restringirse a ah>R0; el rango ah<=R0 necesita tratamiento aparte [P-rev en doc 94]
+H8(d2) [S1-variable A=3 z=11 y=60 D=20000] frac Q_s de h0<=100 (primeros s): ['1.000', '1.000', '1.000', '1.000', '1.000', '1.000'] -- la estimacion de bloque debe restringirse a ah>R0; el rango ah<=R0 necesita tratamiento aparte [P-rev en doc 94]
+H8(d3) [S1-variable A=3 z=11 y=60 D=20000] ortogonalidad r=3: psi(N,chi) directo=128.5754 via E=128.5754 dif=1.36e-10 PASS -- UNIF-U-2M-R => GRH [T, doc 93 Prop. 93.6]; GRH =/=> UNIF-U-2M-R NO probado [N]; 'estrictamente mas fuerte que GRH' queda DEGRADADO a implicacion en un solo sentido
+H9 [S1-variable A=3 z=11 y=60 D=20000] |M|=53 |H|=57 G_A=0.1442205011 G_A^abs=0.6172111028 cociente G/G^abs=0.233665 sqrt=0.483389
+
+H0 [S2-fixed A=3 z=17 y=120 D=200000] |M|_pares=243 #m_distintos=243 max_mult=1 |H|=256 h_multi=0 build=0.1s PASS
+H1 [S2-fixed A=3 z=17 y=120 D=200000] G_A(K)=0.120153927360 G_A(bruto)=0.120153927360 relerr=1.15e-15 lema_div=True PASS
+H2 [S2-fixed A=3 z=17 y=120 D=200000] K(h0) maxerr=8.33e-17 (h0=1) | K(s*h0) maxerr=3.47e-18 ((19, 1), n=243) | G_smooth=0.0408147485 G_switch=0.0793391789 G_tot=0.1201539274 epart=0.00e+00 PASS
+H4 [S2-fixed A=3 z=17 y=120 D=200000] Q_s vs Gram: smooth maxerr=1.55e-15 (s=17) full maxerr=1.55e-15 (s=17) | max_s Q_s*ln z=1.8227 (s=97) min=1.6787 (s=17) PASS
+     s=17 diagonal=1.8916 Q_s=0.592503 diag/Q_s=3.2
+     s=19 diagonal=1.8861 Q_s=0.598688 diag/Q_s=3.2
+     s=23 diagonal=1.8794 Q_s=0.607085 diag/Q_s=3.1
+     s=29 diagonal=1.8794 Q_s=0.607085 diag/Q_s=3.1
+     s=31 diagonal=1.8794 Q_s=0.607085 diag/Q_s=3.1
+     s=37 diagonal=1.8794 Q_s=0.607085 diag/Q_s=3.1
+H5 [S2-fixed A=3 z=17 y=120 D=200000] S=sum 1/phi(s)=0.5216 G_switch=0.079339 G_smooth=0.040815 Cauchy(S*G_switch)=0.041381 perdida=1.014 | C=max Q_s*ln z=1.8227 cota_implicada=0.127638 G_A=0.120154 ratio=1.062 PASS
+H6 [S2-fixed A=3 z=17 y=120 D=200000] |K_A(1)|^2=0.0190674523 (15.87% de G_A) G_con1-G_sin1 dif=3.47e-18 | bruto vs con1 relerr=1.15e-15 vs sin1 relerr=1.91e-02 PASS
+H7 [S2-fixed A=3 z=17 y=120 D=200000] dual ingenuo: (cota|R_A|)^2/(objetivo)^2 ~= d(A)*A^2*(ln N)^5/ln z = 1.403e+08 (N=A*z^10=6.048e+12) -- la cota ingenua pierde por ese factor; el paso G_A -> R_A NO esta en la derivacion transcrita
+H9 [S2-fixed A=3 z=17 y=120 D=200000] |M|=243 |H|=256 G_A=0.1201539274 G_A^abs=0.8438552244 cociente G/G^abs=0.142387 sqrt=0.377342
+
+H0 [S2-variable A=3 z=17 y=120 D=200000] |M|_pares=280 #m_distintos=280 max_mult=1 |H|=293 h_multi=37 build=0.1s PASS
+H1 [S2-variable A=3 z=17 y=120 D=200000] G_A(K)=0.112449015986 G_A(bruto)=0.112449015986 relerr=4.05e-15 lema_div=True PASS
+H3 [S2-variable A=3 z=17 y=120 D=200000] CONTRAEJEMPLO variable: max|K(s*h0)-T_s/(phiA*phi(s))|=0.002332 en (17, 1, 0.01387891188672439, 0.0162109375) | descomposicion con s'>s maxerr=1.04e-17 | h_multi=37 G_multi/G_A=0.0278 PASS(contraejemplo confirmado)
+     detalle: s=17 h0=1 h=17 K_A(h)=0.0138789119 formula=0.0162109375 terminos s'>s presentes
+H4 [S2-variable A=3 z=17 y=120 D=200000] Q_s vs Gram: smooth maxerr=8.80e-02 (s=23) full maxerr=1.55e-15 (s=17) | max_s Q_s*ln z=1.8227 (s=97) min=1.3863 (s=23) PASS
+     (variable: Q_s^smooth != forma de Gram -- la expansion necesita h0 con primos en [z,s); en fixed coinciden)
+     s=17 diagonal=1.8916 Q_s=0.592503 diag/Q_s=3.2
+     s=19 diagonal=1.9995 Q_s=0.530581 diag/Q_s=3.8
+     s=23 diagonal=2.0968 Q_s=0.489320 diag/Q_s=4.3
+     s=29 diagonal=2.0968 Q_s=0.489320 diag/Q_s=4.3
+     s=31 diagonal=1.9928 Q_s=0.540332 diag/Q_s=3.7
+     s=37 diagonal=1.9928 Q_s=0.540332 diag/Q_s=3.7
+     (variable: G_multi=0.003121 explica que G_A=0.112449 supere la cota 0.127638)
+H5 [S2-variable A=3 z=17 y=120 D=200000] S=sum 1/phi(s)=0.5216 G_switch=0.074984 G_smooth=0.038428 Cauchy(S*G_switch)=0.039109 perdida=1.018 | C=max Q_s*ln z=1.8227 cota_implicada=0.127638 G_A=0.112449 ratio=1.135 PASS
+H6 [S2-variable A=3 z=17 y=120 D=200000] |K_A(1)|^2=0.0181848042 (16.17% de G_A) G_con1-G_sin1 dif=0.00e+00 | bruto vs con1 relerr=4.05e-15 vs sin1 relerr=1.82e-02 PASS
+H7 [S2-variable A=3 z=17 y=120 D=200000] dual ingenuo: (cota|R_A|)^2/(objetivo)^2 ~= d(A)*A^2*(ln N)^5/ln z = 1.403e+08 (N=A*z^10=6.048e+12) -- la cota ingenua pierde por ese factor; el paso G_A -> R_A NO esta en la derivacion transcrita
+H9 [S2-variable A=3 z=17 y=120 D=200000] |M|=280 |H|=293 G_A=0.1124490160 G_A^abs=0.9401056882 cociente G/G^abs=0.119613 sqrt=0.345851
+
+H0 [S3-fixed A=15 z=19 y=150 D=500000] |M|_pares=272 #m_distintos=272 max_mult=1 |H|=283 h_multi=0 build=0.1s PASS
+H1 [S3-fixed A=15 z=19 y=150 D=500000] G_A(K)=0.008008179537 G_A(bruto)=0.008008179537 relerr=4.86e-16 lema_div=True PASS
+H2 [S3-fixed A=15 z=19 y=150 D=500000] K(h0) maxerr=5.55e-17 (h0=1) | K(s*h0) maxerr=8.67e-19 ((19, 1), n=272) | G_smooth=0.0026385076 G_switch=0.0053696719 G_tot=0.0080081795 epart=1.73e-18 PASS
+H4 [S3-fixed A=15 z=19 y=150 D=500000] Q_s vs Gram: smooth maxerr=4.44e-16 (s=19) full maxerr=5.55e-16 (s=19) | max_s Q_s*ln z=2.1367 (s=103) min=2.0228 (s=19) PASS
+     s=19 diagonal=1.5362 Q_s=0.686978 diag/Q_s=2.2
+     s=23 diagonal=1.5362 Q_s=0.686978 diag/Q_s=2.2
+     s=29 diagonal=1.5362 Q_s=0.686978 diag/Q_s=2.2
+     s=31 diagonal=1.5362 Q_s=0.686978 diag/Q_s=2.2
+     s=37 diagonal=1.5362 Q_s=0.686978 diag/Q_s=2.2
+     s=41 diagonal=1.5362 Q_s=0.686978 diag/Q_s=2.2
+H5 [S3-fixed A=15 z=19 y=150 D=500000] S=sum 1/phi(s)=0.4961 G_switch=0.005370 G_smooth=0.002639 Cauchy(S*G_switch)=0.002664 perdida=1.010 | C=max Q_s*ln z=2.1367 cota_implicada=0.008415 G_A=0.008008 ratio=1.051 PASS
+H6 [S3-fixed A=15 z=19 y=150 D=500000] |K_A(1)|^2=0.0016463091 (20.56% de G_A) G_con1-G_sin1 dif=8.67e-19 | bruto vs con1 relerr=4.86e-16 vs sin1 relerr=1.65e-03 PASS
+H7 [S3-fixed A=15 z=19 y=150 D=500000] dual ingenuo: (cota|R_A|)^2/(objetivo)^2 ~= d(A)*A^2*(ln N)^5/ln z = 1.050e+10 (N=A*z^10=9.197e+13) -- la cota ingenua pierde por ese factor; el paso G_A -> R_A NO esta en la derivacion transcrita
+H8(d1) [S3-fixed A=15 z=19 y=150 D=500000] pares(s,d)=272 distintos=272 D_A=500000: pares<=5*D_A True, distintos<=D_A True -> el conteo es O(D_A), no necesariamente <= D_A
+H8(d2) [S3-fixed A=15 z=19 y=150 D=500000] frac Q_s de h0<=10 (primeros s): ['0.750', '0.750', '0.750', '0.750', '0.750', '0.750'] -- la estimacion de bloque debe restringirse a ah>R0; el rango ah<=R0 necesita tratamiento aparte [P-rev en doc 94]
+H8(d2) [S3-fixed A=15 z=19 y=150 D=500000] frac Q_s de h0<=30 (primeros s): ['0.912', '0.912', '0.912', '0.912', '0.912', '0.912'] -- la estimacion de bloque debe restringirse a ah>R0; el rango ah<=R0 necesita tratamiento aparte [P-rev en doc 94]
+H8(d2) [S3-fixed A=15 z=19 y=150 D=500000] frac Q_s de h0<=100 (primeros s): ['0.956', '0.956', '0.956', '0.956', '0.956', '0.956'] -- la estimacion de bloque debe restringirse a ah>R0; el rango ah<=R0 necesita tratamiento aparte [P-rev en doc 94]
+H8(d3) [S3-fixed A=15 z=19 y=150 D=500000] ortogonalidad r=3: psi(N,chi) directo=128.5754 via E=128.5754 dif=1.36e-10 PASS -- UNIF-U-2M-R => GRH [T, doc 93 Prop. 93.6]; GRH =/=> UNIF-U-2M-R NO probado [N]; 'estrictamente mas fuerte que GRH' queda DEGRADADO a implicacion en un solo sentido
+H9 [S3-fixed A=15 z=19 y=150 D=500000] |M|=272 |H|=283 G_A=0.0080081795 G_A^abs=0.0330760238 cociente G/G^abs=0.242114 sqrt=0.492051
+
+H0 [S4-fixed A=3 z=11 y=3000 D=200000] |M|_pares=876 #m_distintos=876 max_mult=1 |H|=880 h_multi=0 build=0.1s PASS
+H1 [S4-fixed A=3 z=11 y=3000 D=200000] G_A(K)=0.469133545584 G_A(bruto)=0.469133545584 relerr=1.78e-14 lema_div=True PASS
+H2 [S4-fixed A=3 z=11 y=3000 D=200000] K(h0) maxerr=2.78e-16 (h0=1) | K(s*h0) maxerr=6.94e-18 ((11, 1), n=876) | G_smooth=0.2489241442 G_switch=0.2202094014 G_tot=0.4691335456 epart=0.00e+00 PASS
+H4 [S4-fixed A=3 z=11 y=3000 D=200000] Q_s vs Gram: smooth maxerr=3.33e-16 (s=11) full maxerr=3.33e-16 (s=11) | max_s Q_s*ln z=2.3979 (s=1597) min=1.6777 (s=11) PASS
+     s=11 diagonal=1.5677 Q_s=0.699653 diag/Q_s=2.2
+     s=13 diagonal=1.5677 Q_s=0.699653 diag/Q_s=2.2
+     s=17 diagonal=1.5677 Q_s=0.699653 diag/Q_s=2.2
+     s=19 diagonal=1.5677 Q_s=0.699653 diag/Q_s=2.2
+     s=23 diagonal=1.5677 Q_s=0.699653 diag/Q_s=2.2
+     s=29 diagonal=1.5677 Q_s=0.699653 diag/Q_s=2.2
+H5 [S4-fixed A=3 z=11 y=3000 D=200000] S=sum 1/phi(s)=1.2005 G_switch=0.220209 G_smooth=0.248924 Cauchy(S*G_switch)=0.264362 perdida=1.062 | C=max Q_s*ln z=2.3979 cota_implicada=0.660427 G_A=0.469134 ratio=1.408 PASS
+H6 [S4-fixed A=3 z=11 y=3000 D=200000] |K_A(1)|^2=0.1596259076 (34.03% de G_A) G_con1-G_sin1 dif=0.00e+00 | bruto vs con1 relerr=1.78e-14 vs sin1 relerr=1.60e-01 PASS
+H7 [S4-fixed A=3 z=11 y=3000 D=200000] dual ingenuo: (cota|R_A|)^2/(objetivo)^2 ~= d(A)*A^2*(ln N)^5/ln z = 7.445e+07 (N=A*z^10=7.781e+10) -- la cota ingenua pierde por ese factor; el paso G_A -> R_A NO esta en la derivacion transcrita
+H9 [S4-fixed A=3 z=11 y=3000 D=200000] |M|=876 |H|=880 G_A=0.4691335456 G_A^abs=1.6425047363 cociente G/G^abs=0.285621 sqrt=0.534435
+     Lumina (doc 94): 1444 pesos, 1451 partes nuevas, norma signada 0.4505669522, mayorante 1.1723577317, cociente 0.384325; aqui |M|=876 |H|=880
+
+TENDENCIA Q_s (modo fixed, D=z^5, y=z^(10/3), A=3):
+  z=11 D=161051 y=2961 #s=422 | Q_s*ln z en [1.6777, 2.3979] max=2.3979 diag_max=1.57 (diag/Q_s~2)
+  z=13 D=371293 y=5166 #s=682 | Q_s*ln z en [1.6331, 2.5649] max=2.5649 diag_max=1.74 (diag/Q_s~2)
+  z=17 D=1419857 y=12633 #s=1502 | Q_s*ln z en [1.6661, 2.8332] max=2.8332 diag_max=1.90 (diag/Q_s~2)
+  z=19 D=2476099 y=18303 #s=2090 | Q_s*ln z en [1.6314, 2.3924] max=2.3924 diag_max=2.02 (diag/Q_s~2)
+  z=23 D=6436343 y=34602 #s=3687 | Q_s*ln z en [1.6495, 2.5476] max=2.5476 diag_max=2.14 (diag/Q_s~3)
+  z=29 D=20511149 y=74931 #s=7381 | Q_s*ln z en [1.6928, 2.7359] max=2.7359 diag_max=2.24 (diag/Q_s~3)
+
+PASS

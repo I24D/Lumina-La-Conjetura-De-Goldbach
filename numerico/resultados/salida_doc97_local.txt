@@ -1,0 +1,93 @@
+== DOC 97: verificacion doc 96 (diagonal / Mobius) ==
+Solo stdlib. Modelos sinteticos con pesos lambda^+ de Nathanson y psi reales hasta N~1e6.
+
+H0 [S1-fixed A=3 z=11 y=60 D=20000] |M|_pares=50 #m_distintos=50 max_mult=1 |H|=54 build=0.0s PASS
+H1 [S1-fixed A=3 z=11 y=60 D=20000] diagonal: max|Q_diag - Q_s(suave)|=0.00e+00 (s=None) | max|Q_diag - Q_full|=0.00e+00 | diag(d=e)/Q_s en [1.62, 2.24] PASS
+H2(b) [S1-fixed A=3 z=11 y=60 D=20000] Q_completo=0.699653 | Q_s/Q_completo en [1.000, 1.161] (media 1.012) -- orden 1, V^+ conserva la cota como medicion
+H7 [S1-fixed A=3 z=11 y=60 D=20000] masa de Q_s (forma diagonal) con r > t:
+     s=11 Q_s=0.699653 | r>11: 0.060 | r>121: 0.000 | r>165: 0.000 | r>1818: 0.000
+     s=13 Q_s=0.699653 | r>11: 0.060 | r>121: 0.000 | r>139: 0.000 | r>1538: 0.000
+     s=17 Q_s=0.699653 | r>11: 0.060 | r>121: 0.000 | r>106: 0.000 | r>1176: 0.000
+     s=19 Q_s=0.699653 | r>11: 0.060 | r>121: 0.000 | r>95: 0.000 | r>1052: 0.000
+
+H0 [S2-fixed A=3 z=17 y=120 D=200000] |M|_pares=243 #m_distintos=243 max_mult=1 |H|=256 build=0.1s PASS
+H1 [S2-fixed A=3 z=17 y=120 D=200000] diagonal: max|Q_diag - Q_s(suave)|=2.22e-16 (s=19) | max|Q_diag - Q_full|=1.11e-16 | diag(d=e)/Q_s en [2.69, 3.19] PASS
+H2(b) [S2-fixed A=3 z=17 y=120 D=200000] Q_completo=0.588048 | Q_s/Q_completo en [1.008, 1.094] (media 1.046) -- orden 1, V^+ conserva la cota como medicion
+H7 [S2-fixed A=3 z=17 y=120 D=200000] masa de Q_s (forma diagonal) con r > t:
+     s=17 Q_s=0.592503 | r>17: 0.157 | r>289: 0.013 | r>692: 0.000 | r>11764: 0.000
+     s=19 Q_s=0.598688 | r>17: 0.180 | r>289: 0.007 | r>619: 0.000 | r>10526: 0.000
+     s=23 Q_s=0.607085 | r>17: 0.208 | r>289: 0.000 | r>511: 0.000 | r>8695: 0.000
+     s=29 Q_s=0.607085 | r>17: 0.208 | r>289: 0.000 | r>405: 0.000 | r>6896: 0.000
+
+H1 [S1-variable A=3 z=11 y=60 D=20000] diagonal: max|Q_diag - Q_s(suave)|=7.57e-02 (s=13) | max|Q_diag - Q_full|=0.00e+00 | diag(d=e)/Q_s en [1.62, 3.05] PASS
+     (variable: Q_s^suave != diagonal; Q_full si coincide -- la diagonal necesita h0 con primos en [z,s))
+
+H0 [S4-fixed A=3 z=11 y=3000 D=200000] |M|_pares=876 #m_distintos=876 max_mult=1 |H|=880 build=0.1s PASS
+H1 [S4-fixed A=3 z=11 y=3000 D=200000] diagonal: max|Q_diag - Q_s(suave)|=0.00e+00 (s=None) | max|Q_diag - Q_full|=0.00e+00 | diag(d=e)/Q_s en [1.00, 2.24] PASS
+H2(b) [S4-fixed A=3 z=11 y=3000 D=200000] Q_completo=0.699653 | Q_s/Q_completo en [1.000, 1.429] (media 1.236) -- orden 1, V^+ conserva la cota como medicion
+
+H2(a) [A=3 z=11] Q_sin_criba=0.699652777778 Q_completo=0.699652777778 relerr=0.00e+00 PASS
+H2(a) [A=3 z=17] Q_sin_criba=0.588048442323 Q_completo=0.588048442323 relerr=3.33e-16 PASS
+H2(a) [A=15 z=19] Q_sin_criba=0.681344589422 Q_completo=0.681344589422 relerr=3.33e-16 PASS
+H2(c) [A=3] Q_completo(z)*ln z:
+     z=    11 Q_completo=0.699653 Q_c*ln z=1.6777
+     z=    17 Q_completo=0.588048 Q_c*ln z=1.6661
+     z=    29 Q_completo=0.501787 Q_c*ln z=1.6897
+     z=   100 Q_completo=0.369123 Q_c*ln z=1.6999
+     z=  1000 Q_completo=0.248397 Q_c*ln z=1.7159
+     z=100000 Q_completo=0.149571 Q_c*ln z=1.7220
+     limite teorico e^-gamma * prod_{p|AN}(1-1/p)^-1 * C2 = 1.7225 (C2=1.0226, factor local=3.0000; convergencia lenta, error O(1/ln z))
+
+H3 [S1-fixed A=3 z=11 y=60 D=20000] perfil kappa, G_A=0.149758 (fraccion de masa con h<=R0):
+     N modelo A*z^10 (lnN=25.08): kappa 1.0/2.0/2.5/2.7/2.8/3.0 -> ['0.560', '0.980', '1.000', '1.000', '1.000', '1.000']
+       sensibilidad corte A*h<=R0:                 -> ['0.334', '0.913', '0.990', '1.000', '1.000', '1.000']
+     N proxy 1e12 (lnN=27.63): kappa 1.0/2.0/2.5/2.7/2.8/3.0 -> ['0.560', '0.984', '1.000', '1.000', '1.000', '1.000']
+       sensibilidad corte A*h<=R0:                 -> ['0.334', '0.932', '0.994', '1.000', '1.000', '1.000']
+     Lumina 94e (N=1e12, A=3): 0.492/0.733/0.873/0.929/0.953/0.991
+H3 [S2-fixed A=3 z=17 y=120 D=200000] perfil kappa, G_A=0.120154 (fraccion de masa con h<=R0):
+     N modelo A*z^10 (lnN=29.43): kappa 1.0/2.0/2.5/2.7/2.8/3.0 -> ['0.391', '0.877', '0.980', '0.999', '1.000', '1.000']
+       sensibilidad corte A*h<=R0:                 -> ['0.253', '0.771', '0.915', '0.956', '0.976', '0.998']
+     N proxy 1e12 (lnN=27.63): kappa 1.0/2.0/2.5/2.7/2.8/3.0 -> ['0.370', '0.869', '0.973', '0.996', '0.999', '1.000']
+       sensibilidad corte A*h<=R0:                 -> ['0.253', '0.761', '0.907', '0.946', '0.966', '0.994']
+     Lumina 94e (N=1e12, A=3): 0.492/0.733/0.873/0.929/0.953/0.991
+H3 [S4-fixed A=3 z=11 y=3000 D=200000] perfil kappa, G_A=0.469134 (fraccion de masa con h<=R0):
+     N modelo A*z^10 (lnN=25.08): kappa 1.0/2.0/2.5/2.7/2.8/3.0 -> ['0.582', '0.840', '0.973', '0.990', '0.997', '0.999']
+       sensibilidad corte A*h<=R0:                 -> ['0.510', '0.761', '0.880', '0.933', '0.963', '0.987']
+     N proxy 1e12 (lnN=27.63): kappa 1.0/2.0/2.5/2.7/2.8/3.0 -> ['0.582', '0.857', '0.981', '0.996', '0.998', '1.000']
+       sensibilidad corte A*h<=R0:                 -> ['0.510', '0.774', '0.898', '0.957', '0.978', '0.994']
+     Lumina 94e (N=1e12, A=3): 0.492/0.733/0.873/0.929/0.953/0.991
+
+H4 [S1-fixed A=3 z=11 y=60 D=20000] kappa=2.7 R0=7794: bloque grande VACIO en este modelo (R0 > max h=1855); mejora no definida aqui
+H4 [S2-fixed A=3 z=17 y=120 D=200000] kappa=2.7 R0=7794: masa bloque grande f=0.0036 | mejora primer factor Cauchy: 1/sqrt(f)=16.68x, 1/f=278.1x | perdida ingenua doc95 1.40e+08 -> tras mejora 8.41e+06 (sigue enorme)
+H4 [S4-fixed A=3 z=11 y=3000 D=200000] kappa=2.7 R0=7794: masa bloque grande f=0.0041 | mejora primer factor Cauchy: 1/sqrt(f)=15.70x, 1/f=246.4x | perdida ingenua doc95 7.45e+07 -> tras mejora 4.74e+06 (sigue enorme)
+
+H5 [A=3 z=29 y=200 D=20511149] N-factor: E0 (N=2^e) vs E1 (N con primos 5,7,11,13)
+     prediccion producto Q(E1)/Q(E0) = 1.7005 | factor local tipo serie singular = 1.7378
+     s=  29 Q_s(E0)=0.502722 Q_s(E1)=0.853494 cociente=1.6977 Q_s*ln z: E0=1.693 E1=2.874
+     s=  43 Q_s(E0)=0.503133 Q_s(E1)=0.853494 cociente=1.6964 Q_s*ln z: E0=1.694 E1=2.874
+     s=  61 Q_s(E0)=0.503805 Q_s(E1)=0.853494 cociente=1.6941 Q_s*ln z: E0=1.696 E1=2.874
+     s=  79 Q_s(E0)=0.504870 Q_s(E1)=0.853494 cociente=1.6905 Q_s*ln z: E0=1.700 E1=2.874
+     s= 101 Q_s(E0)=0.504870 Q_s(E1)=0.853494 cociente=1.6905 Q_s*ln z: E0=1.700 E1=2.874
+     s= 113 Q_s(E0)=0.504870 Q_s(E1)=0.853494 cociente=1.6905 Q_s*ln z: E0=1.700 E1=2.874
+     s= 139 Q_s(E0)=0.505277 Q_s(E1)=0.853494 cociente=1.6892 Q_s*ln z: E0=1.701 E1=2.874
+     s= 163 Q_s(E0)=0.505791 Q_s(E1)=0.853494 cociente=1.6874 Q_s*ln z: E0=1.703 E1=2.874
+     s= 181 Q_s(E0)=0.505791 Q_s(E1)=0.853494 cociente=1.6874 Q_s*ln z: E0=1.703 E1=2.874
+     s= 199 Q_s(E0)=0.506468 Q_s(E1)=0.853494 cociente=1.6852 Q_s*ln z: E0=1.705 E1=2.874
+     cociente E1/E0 en [1.685, 1.698], media 1.691 (prediccion 1.701)
+
+H6 [N=999983 primo, psi(N)=999586.5975] identidad de Mobius S_r vs sum mu(r/d)phi(d)E(N;d,N):
+     r= 3 #chi*=1 S_r=   -715.0038 RHS=   -728.1872 Delta=  13.1833 |S_r-(RHS+Delta)|=3.15e-09 (rel 4.3e-12) |Delta|/|S_r|=0.018
+     r= 5 #chi*=3 S_r=   1046.8240 RHS=   1033.9485 Delta=  12.8755 |S_r-(RHS+Delta)|=9.79e-10 (rel 9.4e-13) |Delta|/|S_r|=0.012
+     r= 6 #chi*=0 S_r=      0.0000 RHS=     -0.6931 Delta=   0.6931 |S_r-(RHS+Delta)|=4.20e-11 (rel 4.2e-11) |Delta|/|S_r|=S_r=0
+     r= 7 #chi*=5 S_r=    526.2080 RHS=    512.5867 Delta=  13.6214 |S_r-(RHS+Delta)|=6.99e-10 (rel 1.3e-12) |Delta|/|S_r|=0.026
+     r= 9 #chi*=4 S_r=    674.8847 RHS=    674.8847 Delta=   0.0000 |S_r-(RHS+Delta)|=6.70e-09 (rel 9.9e-12) |Delta|/|S_r|=0.000
+     r=15 #chi*=3 S_r=   1563.0200 RHS=   1563.0200 Delta=  -0.0000 |S_r-(RHS+Delta)|=6.56e-09 (rel 4.2e-12) |Delta|/|S_r|=0.000
+     r=21 #chi*=5 S_r=   1540.4249 RHS=   1554.0463 Delta= -13.6214 |S_r-(RHS+Delta)|=1.61e-10 (rel 1.0e-13) |Delta|/|S_r|=0.009
+     r=25 #chi*=16 S_r=    357.5449 RHS=    357.5449 Delta=   0.0000 |S_r-(RHS+Delta)|=2.92e-09 (rel 8.2e-12) |Delta|/|S_r|=0.000
+     r=27 #chi*=12 S_r=    791.9846 RHS=    791.9846 Delta=   0.0000 |S_r-(RHS+Delta)|=1.26e-09 (rel 1.6e-12) |Delta|/|S_r|=0.000
+     r=35 #chi*=15 S_r=   2382.8836 RHS=   2374.4999 Delta=   8.3837 |S_r-(RHS+Delta)|=1.66e-09 (rel 7.0e-13) |Delta|/|S_r|=0.004
+     cancelacion termino principal r=6: sum mu(r/d)=0 (exacto, [T])
+     cancelacion termino principal r=15: sum mu(r/d)=0 (exacto, [T])
+     peso relativo de la correccion en el segundo factor: sum (1/phi)|Delta|^2 / sum (1/phi)|S_r|^2 = 1.240e-04
+
+PASS

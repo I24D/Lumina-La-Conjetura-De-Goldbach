@@ -1,0 +1,6 @@
+H1_Th93: 3/3 (pesos mu o 0, |lam|<=1, (9.8) para m<=200)
+H4_densidad_934: max_R=1.022 (ilustracion finita, no prueba)
+H2_coef_afilado: 28/28 modulos, max_pares=1 (peor (1024, 2, 15, [(5, 1)]))
+H3_resto_exacto: 28/28, max|E1|=146.812 max_corr2=146.812 max_corr3=0.000
+H5_precriba_Q: 28/28 (Mobius sobre e|Q exacto)
+PASS
